@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am Ritu Pande. I have expertise in architecting cycbersecurity solutions for connected devices. In my free time , I pursue my interests in area of machine learning, more specifically deep learning. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I also enjoy running, painting and playing the piano 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ritz.pande@gmail.com](mailto:ritz.pande@gmail.com)
