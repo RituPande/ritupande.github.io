@@ -8,7 +8,7 @@ I am Ritu Pande. I have expertise in architecting cycbersecurity solutions for c
 
 ### More Information
 
-I also enjoy running, painting and playing the piano 
+I also enjoy running, painting and playing the piano. I hold a black-belt in Taekwondo and winner of 2 golds in ITF South Asian Championships 2009
 
 ### Contact me
 
