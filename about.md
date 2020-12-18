@@ -10,6 +10,6 @@ Hi! I am Ritu Pande. I am a software architect with expertise in designing cycbe
 
 My other intersts include running, painting and playing the piano.
 
-### Contact me
+### Contact me at:
 
 [ritz.pande@gmail.com](mailto:ritz.pande@gmail.com)
