@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-I am Ritu Pande. I have expertise in architecting cycbersecurity solutions for connected devices. In my free time , I pursue my interests in area of machine learning, more specifically deep learning. 
+Hi! I am Ritu Pande. I am a software architect with expertise in designing cycbersecurity solutions for connected devices. In my free time , I pursue my interests in area of machine learning, more specifically deep learning. 
 
 ### More Information
 
-I also enjoy running, painting and playing the piano. I hold a black-belt in Taekwondo and winner of 2 golds in ITF South Asian Championships 2009
+My other intersts include running, painting and playing the piano.
 
 ### Contact me
 
