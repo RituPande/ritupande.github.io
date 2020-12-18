@@ -2,4 +2,4 @@
 layout: post
 title: Adaptive Traffic Signal Control Using Deep Reinforcement Learning
 ---
-[Eclipse Simulated Urban Mobility](https://www.eclipse.org/sumo/)
+To go to project site click [Here](https://ritupande.github.io/DQL-TSC/)
