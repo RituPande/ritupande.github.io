@@ -32,9 +32,9 @@ $$ f(A)= \sum_{i=1}^n f(\lambda_i) P_i $$
 Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that      
 $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$    
 As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies:    
-- $$ Tr(A)=\sum_{i=i}^n \lambda_i =0 $$    
-- $$ Tr(A^2 )=\sum_{i=i}^n \lambda_i^2 $$ = 2* number. of edges in G   
-- $$ Tr(A^2 )=\sum_{i=i}^n \lambda_i^3 $$ = number of traingles in G    
++ $$ Tr(A)=\sum_{i=i}^n \lambda_i =0 $$    
++ $$ Tr(A^2 )=\sum_{i=i}^n \lambda_i^2 $$ = 2* number. of edges in G   
++ $$ Tr(A^2 )=\sum_{i=i}^n \lambda_i^3 $$ = number of triangles in G    
 
 ## 2. Laplacian Matrix  
 A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance that be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.
