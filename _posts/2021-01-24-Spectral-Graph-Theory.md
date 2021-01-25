@@ -19,15 +19,15 @@ Thus, an eigenvector of matrix A represents the value of labels of all vertices 
 For an undirected graph the matrix A is symmetric and therefore has real and orthogonal eigenvectors.   
 ### 1.2. Representing adjacency matrix in terms of its eigenvectors and eigenvalues
 Let X be matrix of all eigenvectors of adjacency matrix A, then by definition:    
-$$ AX=X\Lambda $$, where $$ \Lambda $$ is a diagonal matrix with eigenvalues of A as its diagonal elements for corresponding eigenvectors in X.    
-Multiplying both sides with  $$ X^{-1} $$      
-$$ A=X\Lambda X^{-1} $$    
-$$ A=\sum_{i=1}^n λ_i  X_i X_i^{-1}=\sum_{i=1}^n λ_i  X_i X_i^{-T} $$ (since X is an orthogonal matrix )      
-Let $$ P_i=X_i X_i^{-T} $$      
-$$ A=\sum_{i=1}^n λ_i  P_i $$          
+	$$ AX=X\Lambda $$, where $$ \Lambda $$ is a diagonal matrix with eigenvalues of A as its diagonal elements for corresponding eigenvectors in X.    
+	Multiplying both sides with  $$ X^{-1} $$      
+	$$ A=X\Lambda X^{-1} $$    
+	$$ A=\sum_{i=1}^n λ_i  X_i X_i^{-1}=\sum_{i=1}^n λ_i  X_i X_i^{-T} $$ (since X is an orthogonal matrix )      
+	Let $$ P_i=X_i X_i^{-T} $$      
+	$$ A=\sum_{i=1}^n λ_i  P_i $$          
 We can see that an adjacency matrix can be written as the summation of the product of its eigenvalues with dot product of corresponding eigenvectors with themselves.
 Also, it can be shown that any function applied to matrix A is equivalent applying the function on the eigenvalues multiplied by the projection matrix    
-$$ f(A)= \sum_{i=1}^n f(\lambda_i) P_i $$    
+	$$ f(A)= \sum_{i=1}^n f(\lambda_i) P_i $$    
 ### 1.3. Properties of adjacency matrices 
 Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that      
 $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$    
