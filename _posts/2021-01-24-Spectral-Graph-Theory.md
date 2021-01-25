@@ -14,7 +14,8 @@ $$ A^k (u,v) $$ = number of walks of length k from u to v
 Before delving further, let us try to get an intuition of what eigenvalues of an adjacency matrix are:   
 A vector x of a graph G provides the values of the labels of each vertex. This implies that Ax calculates the sum of the values of the labels of the vertices that are adjacent to each vertex i.e.  
 $$ Ax=\sum_{i=1}^n x_i $$  
-By definition, if x is an eigenvector of matrix A, then:  
+   
+By definition, if x is an eigenvector of matrix A: 
 $$  Ax=\lambda x  $$
 
 Thus, an eigenvector of matrix A represents the value of labels of all vertices of a graph such that the sum of the values of the labels of the vertices that are adjacent to each vertex is a multiple of the value of the label of the vertex itself.  
@@ -39,10 +40,11 @@ $$ f(A)= \sum_{i=1}^n f(\lambda_i) P_i $$
 Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that      
 $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$    
 As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies:  
-\noindent
-- $$ Tr(A)=\sum_{i=1}^n \lambda_i =0 $$    
-- $$ Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G   
-- $$ Tr(A^2 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G    
+<ul>
+<li> $$ Tr(A)=\sum_{i=1}^n \lambda_i =0 $$ </li>    
+<li> $$ Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G </li>   
+<li> $$ Tr(A^2 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G </li>   
+</ul>
 
 ## 2. Laplacian Matrix  
 A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance that be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.
