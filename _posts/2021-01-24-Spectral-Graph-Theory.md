@@ -2,11 +2,11 @@
 layout: post
 title: Spectral Graph Theory
 ---
-#Introduction  
+# Introduction  
 In mathematics, spectral graph theory is the study of the properties of a graph in relationship to the characteristic polynomial, eigenvalues and eigenvectors of matrices associated with the graph, such as its adjacency matrix or Laplacian matrix.  A spectrum of the graph is defined as eigenvectors of a graph ordered by the magnitude of their corresponding eigenvectors.
 Whether to express a graph as an adjacency matrix of Laplacian matrix depends on the motivation or information that needs to extracted from the graph. If the information required is number of walks of any length n between one vertex and another we use the adjacency matrix to express the graph. If the motivation is to perform graph partitioning, Laplacian matrix is used. In this article we shall focus on undirected graphs.
 
-#Adjacency Matrix  
+# Adjacency Matrix  
 In graph theory , an adjacency matrix is a square matrix whose rows and columns represent vertices of finite graph. The elements of the matrix indicate whether pairs of vertices are adjacent or not in the graph. If the pairs are adjacent, the corresponding entry of the matrix is 1 and 0 otherwise.
 Let A represent an n x n adjacency matrix  of a graph with n nodes, then:
 $ A^k (u,v) $ = number of walks of length k from u to v
@@ -37,7 +37,7 @@ This implies:
 	Tr(A^2 )=∑_(i=i)^n▒λ_i^2 =2* # of edges in G 
 	Tr(A^2 )=∑_(i=i)^n▒λ_i^3 =# traingles in G
 
-#Laplacian Matrix  
+# Laplacian Matrix  
 A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance that be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.
 A Laplacian matrix L of a graph G with n nodes is an n x n matrix defined as:
 L = D – A
