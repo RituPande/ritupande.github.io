@@ -1,41 +1,41 @@
 ---
 layout: post
-title: Spectral Graph Theory
+title: Introduction to Spectral Graph Theory
 ---
 # Introduction  
-In mathematics, spectral graph theory is the study of the properties of a graph in relationship to the characteristic polynomial, eigenvalues and eigenvectors of matrices associated with the graph, such as its adjacency matrix or Laplacian matrix.  A spectrum of the graph is defined as eigenvectors of a graph ordered by the magnitude of their corresponding eigenvectors.
+In mathematics, **spectral graph theory** is the study of the properties of a graph in relationship to the characteristic polynomial, eigenvalues and eigenvectors of matrices associated with the graph, such as its adjacency matrix or Laplacian matrix.  A **spectrum** of the graph is defined as eigenvectors of a graph ordered by the magnitude of their corresponding eigenvectors.
 Whether to express a graph as an adjacency matrix of Laplacian matrix depends on the motivation or information that needs to extracted from the graph. If the information required is number of walks of any length n between one vertex and another we use the adjacency matrix to express the graph. If the motivation is to perform graph partitioning, Laplacian matrix is used. In this article we shall focus on undirected graphs.
 
 # Adjacency Matrix  
-In graph theory , an adjacency matrix is a square matrix whose rows and columns represent vertices of finite graph. The elements of the matrix indicate whether pairs of vertices are adjacent or not in the graph. If the pairs are adjacent, the corresponding entry of the matrix is 1 and 0 otherwise.
-Let A represent an n x n adjacency matrix  of a graph with n nodes, then:
-$ A^k (u,v) $ = number of walks of length k from u to v
-Intuition behind eigenvectors of Adjacency matrix
-Before delving further, let us try to get an intuition of what eigenvalues of an adjacency matrix are: 
-A vector x of a graph G provides the values of the labels of each vertex. This implies that Ax calculates the sum of the values of the labels of the vertices that are adjacent to each vertex i.e. Ax=∑_(i=1)^n▒x_i 
-By definition, if x is an eigenvector of matrix A, then:
-Ax=λx
-Thus, an eigenvector of matrix A represents the value of labels of all vertices of a graph such that the sum of the values of the labels of the vertices that are adjacent to each vertex is a multiple of the value of the label of the vertex itself.
-For an undirected graph the matrix A is symmetric and therefore has real and orthogonal eigenvectors. 
-Representing adjacency matrix in terms of its eigenvectors and eigenvalues
+In graph theory , an adjacency matrix is a square matrix whose rows and columns represent vertices of finite graph. The elements of the matrix indicate whether pairs of vertices are adjacent or not in the graph. If the pairs are adjacent, the corresponding entry of the matrix is 1 and 0 otherwise. 
+Let A represent an n x n adjacency matrix  of a graph with n nodes, then:  
+$$ A^k (u,v) $$ = number of walks of length k from u to v  
+## Intuition behind eigenvectors of Adjacency matrix
+Before delving further, let us try to get an intuition of what eigenvalues of an adjacency matrix are:   
+A vector x of a graph G provides the values of the labels of each vertex. This implies that Ax calculates the sum of the values of the labels of the vertices that are adjacent to each vertex i.e. $$ Ax=∑_(i=1)^n x_i $$  
+By definition, if x is an eigenvector of matrix A, then:  
+$$ Ax=λx $$  
+Thus, an eigenvector of matrix A represents the value of labels of all vertices of a graph such that the sum of the values of the labels of the vertices that are adjacent to each vertex is a multiple of the value of the label of the vertex itself.  
+For an undirected graph the matrix A is symmetric and therefore has real and orthogonal eigenvectors.   
+## Representing adjacency matrix in terms of its eigenvectors and eigenvalues
 Let X be matrix of all eigenvectors of adjacency matrix A, then by definition
-AX=X⋀, where ⋀ is a diagonal matrix with eigenvalues of A as its diagonal elements for corresponding eigenvectors in X.
-Multiplying both sides with  X^(-1)
-A=X⋀X^(-1)
-A=∑_(i=1)^n▒λ_i  X_i X_i^(-1)=∑_(i=1)^n▒λ_i  X_i X_i^(-T)    (since X is an orthogonal matrix ) 
-Let P_i=X_i X_i^(-T)  
-A=∑_(i=1)^n▒λ_i  P_i
+$$ AX=X⋀ $$, where $$ ⋀ $$ is a diagonal matrix with eigenvalues of A as its diagonal elements for corresponding eigenvectors in X.  
+Multiplying both sides with  $$ X^(-1)##  
+$$ A=X⋀X^(-1) $$    
+$$ A=∑_(i=1)^n λ_i  X_i X_i^(-1)=∑_(i=1)^n λ_i  X_i X_i^(-T)##    (since X is an orthogonal matrix )     
+Let $$ P_i=X_i X_i^(-T) $$    
+$$ A=∑_(i=1)^n λ_i  P_i $$    
 We can see that an adjacency matrix can be written as the summation of the product of its eigenvalues with dot product of corresponding eigenvectors with themselves.
-Also, it can be shown that any function applied to matrix A is equivalent applying the function on the eigenvalues multiplied by the projection matrix
-f(A)= ∑_(i=1)^n▒〖〖f(λ〗_i)〗 P_i  
-Properties of adjacency matrices 
-Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that  
-Tr(A^k )=∑_(i=i)^n▒λ_i^k 
-  As A^k (u,v) = number of walks of length k from u to v
-This implies:
-	Tr(A)=∑_(i=i)^n▒λ_i =0
-	Tr(A^2 )=∑_(i=i)^n▒λ_i^2 =2* # of edges in G 
-	Tr(A^2 )=∑_(i=i)^n▒λ_i^3 =# traingles in G
+Also, it can be shown that any function applied to matrix A is equivalent applying the function on the eigenvalues multiplied by the projection matrix    
+$$ f(A)= ∑_(i=1)^n f(λ_i) P_i $$    
+## Properties of adjacency matrices 
+Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that    
+$$ Tr(A^k )=∑_(i=i)^n λ_i^k $$  
+$$ As A^k (u,v) $$ = number of walks of length k from u to v
+it implies:
+	- $$ Tr(A)=∑_(i=i)^n λ_i =0 $$  
+	- $$ Tr(A^2 )=∑_(i=i)^n λ_i^2 $$ = 2*  # of edges in G 
+	- $$ Tr(A^2 )=∑_(i=i)^n λ_i^3 $$ = # traingles in G
 
 # Laplacian Matrix  
 A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance that be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.
