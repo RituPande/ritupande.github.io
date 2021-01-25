@@ -12,22 +12,23 @@ Let A represent an n x n adjacency matrix  of a graph with n nodes, then:
 $$ A^k (u,v) $$ = number of walks of length k from u to v  
 ### 1.1. Intuition behind eigenvectors of Adjacency matrix
 Before delving further, let us try to get an intuition of what eigenvalues of an adjacency matrix are:   
-A vector x of a graph G provides the values of the labels of each vertex. This implies that Ax calculates the sum of the values of the labels of the vertices that are adjacent to each vertex i.e. $$ Ax=\sum_{i=1}^n x_i $$  
+A vector x of a graph G provides the values of the labels of each vertex. This implies that Ax calculates the sum of the values of the labels of the vertices that are adjacent to each vertex i.e.  
+$$ Ax=\sum_{i=1}^n x_i $$  
 By definition, if x is an eigenvector of matrix A, then:  
-$$ \boxed{  Ax=λx } $$
+$$  Ax=\lambda x  $$
 
 Thus, an eigenvector of matrix A represents the value of labels of all vertices of a graph such that the sum of the values of the labels of the vertices that are adjacent to each vertex is a multiple of the value of the label of the vertex itself.  
 For an undirected graph the matrix A is symmetric and therefore has real and orthogonal eigenvectors.   
 ### 1.2. Representing adjacency matrix in terms of its eigenvectors and eigenvalues
 Let X be matrix of all eigenvectors of adjacency matrix A, then by definition:    
-\boxed{
+
 $$ AX=X\Lambda $$, where $$ \Lambda $$ is a diagonal matrix with eigenvalues of A as its diagonal elements for corresponding eigenvectors in X.    
 Multiplying both sides with  $$ X^{-1} $$      
 $$ A=X\Lambda X^{-1} $$    
 $$ A=\sum_{i=1}^n λ_i  X_i X_i^{-1}=\sum_{i=1}^n \lambda_i  X_i X_i^{-T} $$ (since X is an orthogonal matrix )      
 Let $$ P_i=X_i X_i^{-T} $$      
 $$ A=\sum_{i=1}^n λ_i  P_i $$ 
-}  
+
 
 We can see that an adjacency matrix can be written as the summation of the product of its eigenvalues with dot product of corresponding eigenvectors with themselves.
 Also, it can be shown that any function applied to matrix A is equivalent applying the function on the eigenvalues multiplied by the projection matrix    
@@ -37,7 +38,8 @@ $$ f(A)= \sum_{i=1}^n f(\lambda_i) P_i $$
 ### 1.3. Properties of adjacency matrices 
 Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that      
 $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$    
-As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies    
+As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies:  
+\noindent
 - $$ Tr(A)=\sum_{i=1}^n \lambda_i =0 $$    
 - $$ Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G   
 - $$ Tr(A^2 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G    
