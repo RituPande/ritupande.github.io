@@ -2,14 +2,14 @@
 layout: post
 title: Spectral Graph Theory
 ---
-#Introduction
+#Introduction  
 In mathematics, spectral graph theory is the study of the properties of a graph in relationship to the characteristic polynomial, eigenvalues and eigenvectors of matrices associated with the graph, such as its adjacency matrix or Laplacian matrix.  A spectrum of the graph is defined as eigenvectors of a graph ordered by the magnitude of their corresponding eigenvectors.
 Whether to express a graph as an adjacency matrix of Laplacian matrix depends on the motivation or information that needs to extracted from the graph. If the information required is number of walks of any length n between one vertex and another we use the adjacency matrix to express the graph. If the motivation is to perform graph partitioning, Laplacian matrix is used. In this article we shall focus on undirected graphs.
 
-#Adjacency Matrix
+#Adjacency Matrix  
 In graph theory , an adjacency matrix is a square matrix whose rows and columns represent vertices of finite graph. The elements of the matrix indicate whether pairs of vertices are adjacent or not in the graph. If the pairs are adjacent, the corresponding entry of the matrix is 1 and 0 otherwise.
 Let A represent an n x n adjacency matrix  of a graph with n nodes, then:
-$$ A^k (u,v) $$ = number of walks of length k from u to v
+$ A^k (u,v) $ = number of walks of length k from u to v
 Intuition behind eigenvectors of Adjacency matrix
 Before delving further, let us try to get an intuition of what eigenvalues of an adjacency matrix are: 
 A vector x of a graph G provides the values of the labels of each vertex. This implies that Ax calculates the sum of the values of the labels of the vertices that are adjacent to each vertex i.e. Ax=∑_(i=1)^n▒x_i 
@@ -37,7 +37,7 @@ This implies:
 	Tr(A^2 )=∑_(i=i)^n▒λ_i^2 =2* # of edges in G 
 	Tr(A^2 )=∑_(i=i)^n▒λ_i^3 =# traingles in G
 
-#Laplacian Matrix
+#Laplacian Matrix  
 A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance that be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.
 A Laplacian matrix L of a graph G with n nodes is an n x n matrix defined as:
 L = D – A
@@ -52,7 +52,7 @@ Properties of Laplacian matrix
 	∑_i▒x_i ^2=1
 	As Laplacian matrix is symmetric, λ_2=〖min┬x  (x^T Lx)/(x^T x)〗⁡ 
 
-## Intuition behind the second eigenvector and eigenvalue of Laplacian matrix
+## Intuition behind the second eigenvector and eigenvalue of Laplacian matrix  
 To gain an intuition of how the second eigenvector and eigenvalue of Laplacian matrix plays a role in efficient graph partitioning, let us understand what x^T Lx signifies
 x^T Lx= ∑_(i,j=1)^n▒〖L_ij x_i x_j= 〗  ∑_(i,j=1)^n▒〖〖(D〗_ij-A_ij)x_i x_j  〗  
 = ∑_(i,1)^n▒〖D_ii x_i^2  - ∑_((i,j)∈E)^n▒〖〖2x〗_i x_j   〗  〗
@@ -73,14 +73,14 @@ From the properties of the Laplacian matrix defined above, we know that ∑_i▒
 
 
 It can be seen that λ_2 is minimized when the edges are between either the negative labeled nodes or between the positive labeled nodes whereas the edges between the positive and the negative labeled nodes are the ones that contribute maximum to the increase in the value of λ_2. Therefore, it can be seen that the eigenvector x_2  corresponding to λ_2 labels the nodes of a graph such that edges between nodes with positive labels and negative labels is minimized, effectively portioning  the graph into two clusters with lowest conductance possible between the two clusters.  The vector x_2   is called Fiedler vector.
-With this understanding we can define algorithms to partition a graph into two or multiple clusters
-## Algorithm – Spectral Partitioning
+With this understanding we can define algorithms to partition a graph into two or multiple clusters  
+## Algorithm – Spectral Partitioning  
 	Compute the Laplacian matrix, L , for the graph
 	Compute the second largest eigenvalue λ_2  and corresponding eigenvector x_2 of L
 	Classify the nodes corresponding to positive values in x_2 into one partition and negative values into another.
-## Algorithm – K-Way Spectral Clustering
-	Compute the Laplacian matrix, L , for the graph
-	Compute the second largest eigenvalues (λ_2  ,…,λ_n) and corresponding eigenvectors (x_2  ,…,x_n)  of L
+## Algorithm – K-Way Spectral Clustering    
+	Compute the Laplacian matrix, L , for the graph  
+	Compute the second largest eigenvalues (λ_2  ,…,λ_n) and corresponding eigenvectors (x_2  ,…,x_n)  of L  
 	For each node in the graph create a co-ordinate vector such that each co-ordinate corresponds to the value in the corresponding eigenvector. For example for a node 
 n_1 the co-ordinate vector looks like  (x_1^1,x_2^1,…x_n^1 )
 	Perform k-means clustering on co-ordinate vectors of all nodes of the graph to find the required clusters.
