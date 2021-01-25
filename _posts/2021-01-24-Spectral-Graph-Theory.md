@@ -3,7 +3,7 @@ layout: post
 title: Introduction to Spectral Graph Theory
 ---
 # Introduction  
-In mathematics, **spectral graph theory** is the study of the properties of a graph in relationship to the characteristic polynomial, eigenvalues and eigenvectors of matrices associated with the graph, such as its adjacency matrix or Laplacian matrix.  A **spectrum** of the graph is defined as eigenvectors of a graph ordered by the magnitude of their corresponding eigenvectors.
+In mathematics, **spectral graph theory** is the study of the properties of a graph in relationship to the characteristic polynomial, eigenvalues and eigenvectors of matrices associated with the graph, such as its adjacency matrix or Laplacian matrix.  A **spectrum** of the graph is defined as eigenvectors of a graph ordered by the magnitude of their corresponding eigenvalues.  
 Whether to express a graph as an adjacency matrix of Laplacian matrix depends on the motivation or information that needs to extracted from the graph. If the information required is number of walks of any length n between one vertex and another we use the adjacency matrix to express the graph. If the motivation is to perform graph partitioning, Laplacian matrix is used. In this article we shall focus on undirected graphs.
 
 # Adjacency Matrix  
@@ -12,7 +12,7 @@ Let A represent an n x n adjacency matrix  of a graph with n nodes, then:
 $$ A^k (u,v) $$ = number of walks of length k from u to v  
 ## Intuition behind eigenvectors of Adjacency matrix
 Before delving further, let us try to get an intuition of what eigenvalues of an adjacency matrix are:   
-A vector x of a graph G provides the values of the labels of each vertex. This implies that Ax calculates the sum of the values of the labels of the vertices that are adjacent to each vertex i.e. $$ Ax=∑_(i=1)^n x_i $$  
+A vector x of a graph G provides the values of the labels of each vertex. This implies that Ax calculates the sum of the values of the labels of the vertices that are adjacent to each vertex i.e. $$ Ax=\sum_i=1^n x_i $$  
 By definition, if x is an eigenvector of matrix A, then:  
 $$ Ax=λx $$  
 Thus, an eigenvector of matrix A represents the value of labels of all vertices of a graph such that the sum of the values of the labels of the vertices that are adjacent to each vertex is a multiple of the value of the label of the vertex itself.  
