@@ -14,9 +14,8 @@ $$ A^k (u,v) $$ = number of walks of length k from u to v
 Before delving further, let us try to get an intuition of what eigenvalues of an adjacency matrix are:   
 A vector x of a graph G provides the values of the labels of each vertex. This implies that Ax calculates the sum of the values of the labels of the vertices that are adjacent to each vertex i.e. $$ Ax=\sum_{i=1}^n x_i $$  
 By definition, if x is an eigenvector of matrix A, then:  
-\boxed{
-$$ Ax=λx $$
-}
+$$ \boxed{  Ax=λx } $$
+
 Thus, an eigenvector of matrix A represents the value of labels of all vertices of a graph such that the sum of the values of the labels of the vertices that are adjacent to each vertex is a multiple of the value of the label of the vertex itself.  
 For an undirected graph the matrix A is symmetric and therefore has real and orthogonal eigenvectors.   
 ### 1.2. Representing adjacency matrix in terms of its eigenvectors and eigenvalues
