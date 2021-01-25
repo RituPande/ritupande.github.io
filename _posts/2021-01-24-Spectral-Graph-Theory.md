@@ -29,13 +29,13 @@ We can see that an adjacency matrix can be written as the summation of the produ
 Also, it can be shown that any function applied to matrix A is equivalent applying the function on the eigenvalues multiplied by the projection matrix    
 $$ f(A)= \sum_{i=1}^n f(\lambda_i) P_i $$    
 ### 1.3. Properties of adjacency matrices 
-Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that    
-$$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$  
-$$ As A^k (u,v) $$ = number of walks of length k from u to v
-it implies:
-	- $$ Tr(A)=\sum_{i=i}^n \lambda_i =0 $$  
-	- $$ Tr(A^2 )=\sum_(i=i)^n \lambda_i^2 $$ = 2*  # of edges in G 
-	- $$ Tr(A^2 )=\sum_(i=i)^n \lambda_i^3 $$ = # traingles in G
+Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that      
+$$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$    
+$$ As A^k (u,v) $$ = number of walks of length k from u to v  
+It implies:  
+- $$ Tr(A)=\sum_{i=i}^n \lambda_i =0 $$    
+- $$ Tr(A^2 )=\sum_(i=i)^n \lambda_i^2 $$ = 2*  no. of edges in G   
+- $$ Tr(A^2 )=\sum_(i=i)^n \lambda_i^3 $$ = no. traingles in G    
 
 ## 2. Laplacian Matrix  
 A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance that be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.
