@@ -94,5 +94,5 @@ With this understanding we can define algorithms to partition a graph into two o
 1. Compute the Laplacian matrix L  for the graph      
 2. Compute the second largest eigenvalues $$ (\lambda_2  ,…,\lambda_n) $$ and corresponding eigenvectors $$ (x_2  ,…,x_n) $$ of L      
 3. For each node in the graph create a co-ordinate vector such that each co-ordinate corresponds to the value in the corresponding eigenvector. For example for a node 
-n_1 the co-ordinate vector looks like  $$ (x_1^1,x_2^1,…x_n^1 ) $$    
+$$ n_1 $$ the co-ordinate vector looks like  $$ (x_1^1,x_2^1,…x_n^1 ) $$    
 4. Perform k-means clustering on co-ordinate vectors of all nodes of the graph to find the required clusters.  
