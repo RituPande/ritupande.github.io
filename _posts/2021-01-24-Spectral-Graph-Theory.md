@@ -102,3 +102,7 @@ With this understanding we can define algorithms to partition a graph into two o
 3. For each node in the graph create a co-ordinate vector such that each co-ordinate corresponds to the value in the corresponding eigenvector. For example for a node 
 $$ n_1 $$ the co-ordinate vector looks like  $$ (x_1^1,x_2^1,…x_n^1 ) $$    
 4. Perform k-means clustering on co-ordinate vectors of all nodes of the graph to find the required clusters.  
+
+## References
+[1] [Spectral Graph Partitioning](https://www.youtube.com/watch?v=FRZvgNvALJ4&list=PL50vicjSIGR8O390W4X7YMm6f3m2pohSF)
+[2] [Graphs and Their Eigenvalues](https://www.youtube.com/watch?v=XipwoWir5l8&list=PLkpN8cIB_rZFgZK6WLZu7n88c6cjgE2Kw&index=8&t=1544s)
