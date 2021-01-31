@@ -42,9 +42,9 @@ $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$
   
 As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies:  
   
-$$ Tr(A)=\sum_{i=1}^n \lambda_i =0 $$    
-$$ Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G   
-$$ Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G   
+- $$ Tr(A)=\sum_{i=1}^n \lambda_i =0 $$      
+- $$ Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G    
+- $$ Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G     
 
 
 ## 2. Laplacian Matrix  
@@ -61,17 +61,21 @@ Eigenvalues and eigenvectors of a graph represented as a Laplacian matrix can be
 ### 2.1. Properties of Laplacian matrix  
 1. A trivial eigenvector of the matrix L is $$ x_1=[1,…,1] $$ which makes $$ Lx_1=0 $$ which implies that $$ \lambda_1 = 0. $$  
 2. As Laplacian matrix is positive-semidefinite it  has non-negative eigenvectors  
-3. As Laplacian matrix is symmetric, it has real and orthonormal eigenvectors  
-   - An eigenvector x is orthogonal to the trivial eigenvector $$ x_1. x =\sum_{i=1}.x_i = \sum_i x_i = 0 $$    
+3. As Laplacian matrix is symmetric, it has real and orthonormal eigenvectors    
+   - An eigenvector x is orthogonal to the trivial eigenvector $$ x_1. x =\sum_{i=1}.x_i = \sum_i x_i = 0 $$        
    - $$  \sum_i x_i ^2=1 $$   
    - As Laplacian matrix is symmetric, $$ λ_2= min_x  \frac{ x^T Lx }{x^T x} $$   ⁡ 
 
 ### 2.2. Intuition behind the second eigenvector and eigenvalue of Laplacian matrix  
 To gain an intuition of how the second eigenvector and eigenvalue of Laplacian matrix plays a role in efficient graph partitioning, let us understand what $$ x^T Lx $$ signifies  
-$$ x^T Lx= \sum_{i,j=1}^n L_{ij} x_i x_j = \sum_{i,j=1} ^n (D_{ij}-A_{ij})x_i x_j $$    
-$$ = \sum_{i=1}^n D_{ii} x_i^2  - \sum_{i,j \in E}^n 2 x_i x_j $$    
-$$ = \sum_{i,j \in E}^n x_i^2 + x_j^2  - \sum_{i,j \in E}^ n2 x_i x_j $$   
+$$ x^T Lx= \sum_{i,j=1}^n L_{ij} x_i x_j = \sum_{i,j=1} ^n (D_{ij}-A_{ij})x_i x_j $$ 
+  
+$$ = \sum_{i=1}^n D_{ii} x_i^2  - \sum_{i,j \in E}^n 2 x_i x_j $$
+  
+$$ = \sum_{i,j \in E}^n x_i^2 + x_j^2  - \sum_{i,j \in E}^ n2 x_i x_j $$  
+  
 $$ = \sum_{i,j \in E }^n (x_i-x_j)^2  $$  
+  
 Hence, we see that x^T Lx is just the sum of the squared distance between all edges of a graph.  
 We have noted that the second highest eigenvector of L is:  
 $$ \lambda_2=min_x  \frac{x^T Lx} {x^T x }  $$⁡ 
