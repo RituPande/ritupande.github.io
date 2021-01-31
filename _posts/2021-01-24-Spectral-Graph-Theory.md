@@ -82,12 +82,13 @@ From the properties of the Laplacian matrix defined above, we know that $$ \sum_
 It can be seen that $$ \lambda_2 $$ is minimized when the edges are between either the negative labeled nodes or between the positive labeled nodes whereas the edges between the positive and the negative labeled nodes are the ones that contribute maximum to the increase in the value of $$ \lambda_2 $$. Therefore, it can be seen that the eigenvector $$ x_2 $$  corresponding to$$ \lambda_2 $$ labels the nodes of a graph such that edges between nodes with positive labels and negative labels is minimized, effectively portioning  the graph into two clusters with lowest conductance possible between the two clusters.  The vector $$ x_2 $$   is called *Fiedler vector*.  
 With this understanding we can define algorithms to partition a graph into two or multiple clusters    
 ### 2.3. Algorithm – Spectral Partitioning  
-1. Compute the Laplacian matrix, L , for the graph
-2. Compute the second largest eigenvalue λ_2  and corresponding eigenvector x_2 of L
-3. Classify the nodes corresponding to positive values in x_2 into one partition and negative values into another.  
+1. Compute the Laplacian matrix L for the graph
+2. Compute the second largest eigenvalue $$ \lambda_2 $$  and corresponding eigenvector $$ x_2 $$ of L
+3. Classify the nodes corresponding to positive values in $$ x_2 $$ into one partition and negative values into another.  
+  
 ### 2.4. Algorithm – K-Way Spectral Clustering      
-1. Compute the Laplacian matrix, L , for the graph      
-2. Compute the second largest eigenvalues (λ_2  ,…,λ_n) and corresponding eigenvectors (x_2  ,…,x_n)  of L      
+1. Compute the Laplacian matrix L  for the graph      
+2. Compute the second largest eigenvalues $$ (\lambda_2  ,…,\lambda_n) $$ and corresponding eigenvectors $$ (x_2  ,…,x_n) $$ of L      
 3. For each node in the graph create a co-ordinate vector such that each co-ordinate corresponds to the value in the corresponding eigenvector. For example for a node 
 n_1 the co-ordinate vector looks like  $$ (x_1^1,x_2^1,…x_n^1 ) $$    
 4. Perform k-means clustering on co-ordinate vectors of all nodes of the graph to find the required clusters.  
