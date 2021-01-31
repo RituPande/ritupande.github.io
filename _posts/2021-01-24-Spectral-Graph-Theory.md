@@ -74,7 +74,7 @@ $$ \displaystyle = \sum_{i=1}^n D_{ii} x_i^2  - \sum_{i,j \in E}^n 2 x_i x_j $$
 $$ \displaystyle = \sum_{i,j \in E}^n x_i^2 + x_j^2  - \sum_{i,j \in E}^ n2 x_i x_j $$    
 $$ \displaystyle = \sum_{i,j \in E }^n (x_i-x_j)^2  $$  
   
-Hence, we see that x^T Lx is just the sum of the squared distance between all edges of a graph.  
+Hence, we see that $$ \displaystyle x^T Lx $$ is just the sum of the squared distance between all edges of a graph.  
 We have noted that the second highest eigenvector of L is:  
 $$ \displaystyle \lambda_2=min_x  \frac{x^T Lx} {x^T x }  $$⁡   
 Since x is an eigenvector, $$ x^T x=1 $$ . The above equation can therefore be written as:   
