@@ -42,13 +42,11 @@ Once we know how adjacency matrix can be written as in terms of its eigenvalues 
 $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$
   
 As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies:
-<ul>
   
-<li> $$  \displaystyle Tr(A)=\sum_{i=1}^n \lambda_i =0   $$  </li>      
-<li> $$  \displaystyle Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G  </li>  
-<li> $$  \displaystyle Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G  </li>  
-</ul>
-<a/>  
+$$ \displaystyle Tr(A)=\sum_{i=1}^n \lambda_i =0   $$      
+$$ \displaystyle Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G  
+$$ \displaystyle Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G   
+
 
 ## 2. Laplacian Matrix  
 A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance that be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.  
@@ -66,7 +64,7 @@ Eigenvalues and eigenvectors of a graph represented as a Laplacian matrix can be
 2. As Laplacian matrix is positive-semidefinite it  has non-negative eigenvectors  
 3. As Laplacian matrix is symmetric, it has real and orthonormal eigenvectors    
    - An eigenvector x is orthogonal to the trivial eigenvector $$ x_1. x =\sum_{i=1}.x_i = \sum_i x_i = 0 $$        
-   - $$  \sum_i x_i ^2=1 $$   
+   - $$ \sum_i x_i ^2=1 $$   
    - As Laplacian matrix is symmetric, $$  \displaystyle λ_2= min_x  \frac{ x^T Lx }{x^T x} $$   ⁡ 
 
 <a/>  
