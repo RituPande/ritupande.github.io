@@ -47,6 +47,7 @@ As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies
 - $$  \displaystyle Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G    
 - $$  \displaystyle Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G     
 
+<a/>  
 
 ## 2. Laplacian Matrix  
 A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance that be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.  
@@ -67,6 +68,7 @@ Eigenvalues and eigenvectors of a graph represented as a Laplacian matrix can be
    - $$  \sum_i x_i ^2=1 $$   
    - As Laplacian matrix is symmetric, $$  \displaystyle λ_2= min_x  \frac{ x^T Lx }{x^T x} $$   ⁡ 
 
+<a/>  
 ### 2.2. Intuition behind the second eigenvector and eigenvalue of Laplacian matrix  
 To gain an intuition of how the second eigenvector and eigenvalue of Laplacian matrix plays a role in efficient graph partitioning, let us understand what $$ x^T Lx $$ signifies  
 $$  \displaystyle x^T Lx= \sum_{i,j=1}^n L_{ij} x_i x_j = \sum_{i,j=1} ^n (D_{ij}-A_{ij})x_i x_j $$    
