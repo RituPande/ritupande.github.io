@@ -41,7 +41,7 @@ Once we know how adjacency matrix can be written as in terms of its eigenvalues 
 $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$
   
 As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies:  
-  
+\noindent
 - $$ Tr(A)=\sum_{i=1}^n \lambda_i =0 $$      
 - $$ Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G    
 - $$ Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G     
@@ -68,13 +68,10 @@ Eigenvalues and eigenvectors of a graph represented as a Laplacian matrix can be
 
 ### 2.2. Intuition behind the second eigenvector and eigenvalue of Laplacian matrix  
 To gain an intuition of how the second eigenvector and eigenvalue of Laplacian matrix plays a role in efficient graph partitioning, let us understand what $$ x^T Lx $$ signifies  
-$$ x^T Lx= \sum_{i,j=1}^n L_{ij} x_i x_j = \sum_{i,j=1} ^n (D_{ij}-A_{ij})x_i x_j $$ 
-  
-$$ = \sum_{i=1}^n D_{ii} x_i^2  - \sum_{i,j \in E}^n 2 x_i x_j $$
-  
-$$ = \sum_{i,j \in E}^n x_i^2 + x_j^2  - \sum_{i,j \in E}^ n2 x_i x_j $$  
-  
-$$ = \sum_{i,j \in E }^n (x_i-x_j)^2  $$  
+$$  \displaystyle x^T Lx= \sum_{i,j=1}^n L_{ij} x_i x_j = \sum_{i,j=1} ^n (D_{ij}-A_{ij})x_i x_j $$    
+$$ \displaystyle = \sum_{i=1}^n D_{ii} x_i^2  - \sum_{i,j \in E}^n 2 x_i x_j $$  
+$$ \displaystyle = \sum_{i,j \in E}^n x_i^2 + x_j^2  - \sum_{i,j \in E}^ n2 x_i x_j $$    
+$$ \displaystyle = \sum_{i,j \in E }^n (x_i-x_j)^2  $$  
   
 Hence, we see that x^T Lx is just the sum of the squared distance between all edges of a graph.  
 We have noted that the second highest eigenvector of L is:  
