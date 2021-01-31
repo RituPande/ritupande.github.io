@@ -76,9 +76,9 @@ $$ \displaystyle = \sum_{i,j \in E }^n (x_i-x_j)^2  $$
   
 Hence, we see that x^T Lx is just the sum of the squared distance between all edges of a graph.  
 We have noted that the second highest eigenvector of L is:  
-$$ \displaystyle \lambda_2=min_x  \frac{x^T Lx} {x^T x }  $$⁡ 
+$$ \displaystyle \lambda_2=min_x  \frac{x^T Lx} {x^T x }  $$⁡   
 Since x is an eigenvector, $$ x^T x=1 $$ . The above equation can therefore be written as:   
-$$  \displaystyle \lambda_2=min⁡ \sum_{i,j \in E}^n (x_i - x_j)^2 $$       
+$$  \displaystyle \lambda_2=min⁡ \sum_{i,j \in E}^n (x_i - x_j)^2 $$        
 From the properties of the Laplacian matrix defined above, we know that $$ \sum_i x_i = 0 $$. This implies that some of the nodes of the graph in an eigenvectors are labeled as positive and others as negative to make their summation equal to 0.   
 
 It can be seen that $$ \lambda_2 $$ is minimized when the edges are between either the negative labeled nodes or between the positive labeled nodes whereas the edges between the positive and the negative labeled nodes are the ones that contribute maximum to the increase in the value of $$ \lambda_2 $$. Therefore, it can be seen that the eigenvector $$ x_2 $$  corresponding to$$ \lambda_2 $$ labels the nodes of a graph such that edges between nodes with positive labels and negative labels is minimized, effectively portioning  the graph into two clusters with lowest conductance possible between the two clusters.  The vector $$ x_2 $$   is called *Fiedler vector*.  
