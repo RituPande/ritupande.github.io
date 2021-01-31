@@ -41,12 +41,13 @@ $$ \displaystyle f(A)= \sum_{i=1}^n f(\lambda_i) P_i $$
 Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that      
 $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$
   
-As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies   
+As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies:
+<ul>
   
-- $$  \displaystyle Tr(A)=\sum_{i=1}^n \lambda_i =0   $$        
-- $$  \displaystyle Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G    
-- $$  \displaystyle Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G     
-
+<li> $$  \displaystyle Tr(A)=\sum_{i=1}^n \lambda_i =0   $$  </li>      
+<li> $$  \displaystyle Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G  </li>  
+<li> $$  \displaystyle Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G  </li>  
+</ul>
 <a/>  
 
 ## 2. Laplacian Matrix  
