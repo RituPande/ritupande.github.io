@@ -43,9 +43,9 @@ $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$
   
 As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies   
   
-$$  \item \displaystyle Tr(A)=\sum_{i=1}^n \lambda_i =0 $$      
-$$  \item \displaystyle Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G    
-$$  \item \displaystyle Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G     
+- $$  \displaystyle Tr(A)=\sum_{i=1}^n \lambda_i =0   $$        
+- $$  \displaystyle Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G    
+- $$  \displaystyle Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G     
 
 
 ## 2. Laplacian Matrix  
