@@ -64,27 +64,20 @@ Eigenvalues and eigenvectors of a graph represented as a Laplacian matrix can be
 3. As Laplacian matrix is symmetric, it has real and orthonormal eigenvectors  
    - An eigenvector x is orthogonal to the trivial eigenvector $$ x_1. x =\sum_{i=1}.x_i = \sum_i x_i = 0 $$    
    - $$  \sum_i x_i ^2=1 $$   
-   - As Laplacian matrix is symmetric, $$ λ_2= min_x  \frac{ x^T Lx }/{x^T x} $$   ⁡ 
+   - As Laplacian matrix is symmetric, $$ λ_2= min_x  \frac{ x^T Lx }{x^T x} $$   ⁡ 
 
 ### 2.2. Intuition behind the second eigenvector and eigenvalue of Laplacian matrix  
 To gain an intuition of how the second eigenvector and eigenvalue of Laplacian matrix plays a role in efficient graph partitioning, let us understand what $$ x^T Lx $$ signifies  
-$$ x^T Lx= \sum_{i,j=1}^n L_ij x_i x_j = \sum_{i,j=1} ^n (D_ij-A_ij)x_i x_j $$    
-= ∑_(i,1)^n▒〖D_ii x_i^2  - ∑_((i,j)∈E)^n▒〖〖2x〗_i x_j   〗  〗
-= ∑_((i,j)∈E)^n▒〖x_i^2+x_j^2  - ∑_((i,j)∈E)^n▒〖〖2x〗_i x_j   〗  〗
-= ∑_((i,j)∈E)^n▒〖〖〖(x〗_i-x_j)〗^2     〗
-Hence, we see that x^T Lx is just the sum of the squared distance between all edges of a graph.
-We have noted that the second highest eigenvector of L is:
-λ_2=〖min┬x  (x^T Lx)/(x^T x)〗⁡ 
-Since x is an eigenvector, x^T x=1. The above equation can therefore be written as 
-λ_2=min⁡∑_((i,j)∈E)^n▒〖〖〖(x〗_i-x_j)〗^2     〗
-From the properties of the Laplacian matrix defined above, we know that ∑_i▒x_i = 0. This implies that some of the nodes of the graph in an eigenvectors are labeled as positive and others as negative to make their summation equal to 0. 
-
-
-
-
-
-
-
+$$ x^T Lx= \sum_{i,j=1}^n L_{ij} x_i x_j = \sum_{i,j=1} ^n (D_{ij}-A_{ij})x_i x_j $$    
+$$ = \sum_{i=1}^n D_{ii} x_i^2  - \sum_{i,j \in E}^n 2 x_i x_j $$    
+$$ = \sum_{i,j \in E}^n x_i^2 + x_j^2  - \sum_{i,j \in E}^ n2 x_i x_j $$   
+$$ = \sum_{i,j \in E }^n (x_i-x_j)^2  $$  
+Hence, we see that x^T Lx is just the sum of the squared distance between all edges of a graph.  
+We have noted that the second highest eigenvector of L is:  
+$$ \lambda_2=min_x  \frac{x^T Lx} {x^T x }  $$⁡ 
+Since x is an eigenvector, $$ x^T x=1 $$ . The above equation can therefore be written as:   
+$$ \lambda_2=min⁡ \sum_{i,j \in E}^n (x_i - x_j)^2 $$       
+From the properties of the Laplacian matrix defined above, we know that $$ \sum_i x_i = 0 $$. This implies that some of the nodes of the graph in an eigenvectors are labeled as positive and others as negative to make their summation equal to 0.   
 
 It can be seen that $$ \lambda_2 $$ is minimized when the edges are between either the negative labeled nodes or between the positive labeled nodes whereas the edges between the positive and the negative labeled nodes are the ones that contribute maximum to the increase in the value of $$ \lambda_2 $$. Therefore, it can be seen that the eigenvector $$ x_2 $$  corresponding to$$ \lambda_2 $$ labels the nodes of a graph such that edges between nodes with positive labels and negative labels is minimized, effectively portioning  the graph into two clusters with lowest conductance possible between the two clusters.  The vector $$ x_2 $$   is called *Fiedler vector*.  
 With this understanding we can define algorithms to partition a graph into two or multiple clusters    
