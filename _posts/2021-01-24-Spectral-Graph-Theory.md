@@ -23,7 +23,8 @@ For an undirected graph the matrix A is symmetric and therefore has real and ort
 ### 1.2. Representing adjacency matrix in terms of its eigenvectors and eigenvalues
 Let X be matrix of all eigenvectors of adjacency matrix A, then by definition:    
 
-$$ AX=X\Lambda $$, where $$ \Lambda $$ is a diagonal matrix with eigenvalues of A as its diagonal elements for corresponding eigenvectors in X.    
+$$ AX=X\Lambda $$, where $$ \Lambda $$ is a diagonal matrix with eigenvalues of A as its diagonal elements for corresponding eigenvectors in X. 
+  
 Multiplying both sides with  $$ X^{-1} $$      
 $$ \displaystyle A=X\Lambda X^{-1} $$    
 $$ \displaystyle A=\sum_{i=1}^n λ_i  X_i X_i^{-1}=\sum_{i=1}^n \lambda_i  X_i X_i^{-T} $$ (since X is an orthogonal matrix )      
@@ -40,7 +41,7 @@ $$ \displaystyle f(A)= \sum_{i=1}^n f(\lambda_i) P_i $$
 Once we know how adjacency matrix can be written as in terms of its eigenvalues and eigenvectors, we can see that      
 $$ Tr(A^k )=\sum_{i=i}^n \lambda_i^k $$
   
-As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies:  
+As $$ A^k (u,v) $$ = number of walks of length k from u to v, it implies   
   
 - $$  \displaystyle Tr(A)=\sum_{i=1}^n \lambda_i =0 $$      
 - $$  \displaystyle Tr(A^2 )=\sum_{i=1}^n \lambda_i^2 $$ = 2* number. of edges in G    
