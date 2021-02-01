@@ -3,7 +3,7 @@ layout: post
 title: Introduction to Spectral Graph Theory
 ---
 In mathematics, **spectral graph theory** is the study of the properties of a graph in relationship to the characteristic polynomial, eigenvalues and eigenvectors of matrices associated with the graph, such as its adjacency matrix or Laplacian matrix.  A **spectrum** of the graph is defined as eigenvectors of a graph ordered by the magnitude of their corresponding eigenvalues.  
-Whether to express a graph as an adjacency matrix of Laplacian matrix depends on the motivation or information that needs to be extracted from the graph. If the information required is number of walks of any length _n_ between one vertex and another we use the adjacency matrix to express the graph. If the motivation is to perform graph partitioning, Laplacian matrix is used. In this article we shall focus on undirected graphs.
+Whether to express a graph as an adjacency matrix of Laplacian matrix depends on the motivation or information that needs to be extracted from the graph. If the information required is number of walks of any length _n_ between one vertex and another we use the adjacency matrix to express the graph. If the motivation is to perform graph partitioning, Laplacian matrix is used. In this article we shall focus on undirected graphs represented as both Adjacency and Laplacian matrices for these purposes.
 
 ## 1. Adjacency Matrix  
 In graph theory , an adjacency matrix is a square matrix whose rows and columns represent vertices of finite graph. The elements of the matrix indicate whether pairs of vertices are adjacent or not in the graph. If the pairs are adjacent, the corresponding entry of the matrix is 1 and 0 otherwise. 
@@ -101,5 +101,5 @@ $$ n_1 $$ the co-ordinate vector looks like  $$ (x_1^1,x_2^1,…x_n^1 ) $$
 4. Perform k-means clustering on co-ordinate vectors of all nodes of the graph to find the required clusters.  
 
 ## References
-[1] [Spectral Graph Partitioning](https://www.youtube.com/watch?v=FRZvgNvALJ4&list=PL50vicjSIGR8O390W4X7YMm6f3m2pohSF)  
+[1] [Spectral Graph Partitioning](https://www.youtube.com/watch?v=FRZvgNvALJ4&list=PL50vicjSIGR8O390W4X7YMm6f3m2pohSF)    
 [2] [Graphs and Their Eigenvalues](https://www.youtube.com/watch?v=XipwoWir5l8&list=PLkpN8cIB_rZFgZK6WLZu7n88c6cjgE2Kw&index=8&t=1544s)
