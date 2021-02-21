@@ -12,7 +12,11 @@ Let *f* represent a mathematical operation represented by one of the nodes in a 
 * **Back propagation** (shown in red) calculates the gradient of L w.r.t. inputs of each node, passing the gradients thus calculated to nodes down the graph.    
 	* The **input** to the back propagation operation at every node is the partial derivation of L w.r.t. the output of that node z i.e. $$\displaystyle \frac{\partial L}{\partial z} $$   
 	* The **output** of backpropagation is the partial derivatives L w.r.t. to the inputs of the node i.e.  $$ \displaystyle \frac{\partial L}{\partial x}, \frac{\partial L}{\partial y} $$  
-### 1.1 Back propagation **procedure** :  
+  
+### 2. Back Propagation **Procedure**
+
+The back propagation procedure involves the following steps performed on each node of the graph, starting at the result node:  
+
 * If the output of a node is distributed to multiple nodes during forward propagation, the inputs from all of them during to backpropagation are added together i.e $$ \displaystyle \frac{\partial L}{\partial z}=  \frac{\partial L}{\partial z_1 } + \frac{\partial L}{\partial z_2} $$  
 * Calculating the partial derivative of the output of the node z, w.r.t. inputs to the node x and y  i.e.  $$ \displaystyle \frac{\partial z}{\partial x} ,\frac{\partial z}{\partial y} $$  
 * Calculating  $$ \displaystyle \frac{∂L}{∂x},\frac{∂L}{∂y} $$  using chain rule by multiplying the partial derivates calculated in the previous two steps i.e. $$ \displaystyle \frac{∂L}{∂x}=  \frac{∂L}{∂z}.\frac{∂z}{∂x} $$ and $$ \displaystyle \frac{∂L}{∂y}=\frac{∂L}{∂z}.\frac{∂z}{∂y} $$   
@@ -27,7 +31,9 @@ Let *f* represent a mathematical operation represented by one of the nodes in a 
 ## 2. Example    
 
 The computational graph below represents the following mathematical expression:  
+  
 $$ \displaystyle ((x*y) * max(p, q) +1 ) + ((x*y) * max(p, q) +3 ) $$  
+  
 It depicts the computation and the derivatives calculated during a pass of forward and back propagation on the graph  
 <BR>
 <BR>
