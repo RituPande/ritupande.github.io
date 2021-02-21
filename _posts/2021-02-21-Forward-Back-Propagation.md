@@ -13,7 +13,7 @@ Let *f* represent a mathematical operation represented by one of the nodes in a 
 	* The **input** to the back propagation operation at every node is the partial derivation of L w.r.t. the output of that node z i.e. $$\displaystyle \frac{\partial L}{\partial z} $$   
 	* The **output** of backpropagation is the partial derivatives L w.r.t. to the inputs of the node i.e.  $$ \displaystyle \frac{\partial L}{\partial x}, \frac{\partial L}{\partial y} $$  
   
-### 2. Back Propagation **Procedure**
+## 2. Back Propagation **Procedure**
 
 The back propagation procedure involves the following steps performed on each node of the graph, starting at the result node:  
 
@@ -50,6 +50,6 @@ Observing forward propagation and back propagation in multiple computational gra
 * **MAX** gate acts as gradient router. The gradient coming to a node from the nodes further in the computational graph is sent to the parent node with the maximum incoming value during back propagation  
 *  **MUL** gate acts as gradient scaler and switcher. The gradient coming to a node from the nodes further in the computational graph is scaled by the incoming value to the node from one branch and switched to the other during back propagation.    
 
-## 5. Application of Computational Graphs to Learning in Neural networks    
+## 5. Application of Computational Graphs to Learning in Neural Networks    
 
 Neural networks are represented as computational graphs with each node of the graph containing a weight associated with each of its input. Learning in neural networks is performed by updating the weights in each node during back propagation such that the output of  the computational graph is as close as possible to expected output. To be more precise, during back propagation, at each node, not only the partial derivative of the output of the graph is calculated w.r.t.  each input but also w.r.t. weights corresponding to the inputs. Partial derivatives w.r.t. to the inputs to the nodes are propagated back to parent node while the partial derivatives w.r.t. to their weights are updated to minimize the difference between the actual output of the graph and expected output. The nature of update is dependent on the optimization algorithm being used and will be a topic of future posts.
