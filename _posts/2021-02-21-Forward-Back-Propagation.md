@@ -13,14 +13,17 @@ Let *f* represent a mathematical operation represented by one of the nodes in a 
 	* The **input** to the back propagation operation at every node is the partial derivation of L w.r.t. the output of that node z i.e. $$\displaystyle \frac{\partial L}{\partial z} $$   
 	* The **output** of backpropagation is the partial derivatives L w.r.t. to the inputs of the node i.e.  $$ \displaystyle \frac{\partial L}{\partial x}, \frac{\partial L}{\partial y} $$  
 	* Back propagation **procedure** involves the following steps:  
-	  * If the output of a node is distributed to multiple nodes during forward propagation, the inputs from all of them during to backpropagation are added together i.e
-	  $$ \displaystyle \partial \frac{L}{\partial z}=  \frac{\partial L}{\partial z_1 } + \frac{\partial L}{\partial z_2} $$  
-	  * Calculating the partial derivative of the output of the node z, w.r.t. inputs to the node x and y  i.e.  $$ \displaystyle \frac{\partial z}{\partial x} ,\frac{\partial z}{\partial y} $$  
-	  * Calculating  $$ \displaystyle \frac{∂L}{∂x},\frac{∂L}{∂y} $$  using chain rule by multiplying the partial derivates calculated in the previous two steps i.e. $$ \displaystyle \frac{∂L}{∂x}=  \frac{∂L}{∂z}.\frac{∂z}{∂x} $$ and $$ \displaystyle \frac{∂L}{∂y}=\frac{∂L}{∂z}.v\frac{∂z}{∂y} $$   
-  
+		* If the output of a node is distributed to multiple nodes during forward propagation, the inputs from all of them during to backpropagation are added together i.e $$ \displaystyle \frac{\partial L}{\partial z}=  \frac{\partial L}{\partial z_1 } + \frac{\partial L}{\partial z_2} $$  
+	  	* Calculating the partial derivative of the output of the node z, w.r.t. inputs to the node x and y  i.e.  $$ \displaystyle \frac{\partial z}{\partial x} ,\frac{\partial z}{\partial y} $$  
+	  	* Calculating  $$ \displaystyle \frac{∂L}{∂x},\frac{∂L}{∂y} $$  using chain rule by multiplying the partial derivates calculated in the previous two steps i.e. $$ \displaystyle \frac{∂L}{∂x}=  \frac{∂L}{∂z}.\frac{∂z}{∂x} $$ and $$ \displaystyle \frac{∂L}{∂y}=\frac{∂L}{∂z}.v\frac{∂z}{∂y} $$   
+<BR>
+<BR>
+<BR>
+<BR>     
+       
 <p align="center">
   <img src="../images/fbprop.png"> <br> 
-  Figure 1. Forward and Back Proagation in Computational Graphs
+  Figure 1. Forward and Back Propagation in Computational Graphs
 </p> 
 
 ## 2. Example    
@@ -28,7 +31,10 @@ Let *f* represent a mathematical operation represented by one of the nodes in a 
 The computational graph below represents the following mathematical expression:  
 $$ \displaystyle ((x*y) * max(p, q) +1 ) + ((x*y) * max(p, q) +3 ) $$  
 It depicts the computation and the derivatives calculated during a pass of forward and back propagation on the graph  
-  
+<BR>
+<BR>
+<BR>
+<BR>  
 <p align="center">
   <img src="../images/examplefbprop.png"> <br> 
 </p> 
@@ -36,9 +42,9 @@ It depicts the computation and the derivatives calculated during a pass of forwa
 ## 3. ADD, MAX and MUL Gates in Computational Graphs     
 
 Observing forward propagation and back propagation in multiple computational graphs shows that the gradient propagation through the nodes in a computational graph follows a pattern:    
-* ADD gate acts as gradient distributor. The gradient coming to a node from the nodes further in the computational graph are distributed as-is to the parent nodes during back propagation.    
-* MAX gate acts as gradient router. The gradient coming to a node from the nodes further in the computational graph is sent to the parent node with the maximum incoming value during back propagation  
-*  MUL gate acts as gradient scaler and switcher. The gradient coming to a node from the nodes further in the computational graph is scaled by the incoming value to the node from one branch and switched to the other during back propagation.    
+* **ADD** gate acts as gradient distributor. The gradient coming to a node from the nodes further in the computational graph are distributed as-is to the parent nodes during back propagation.    
+* **MAX** gate acts as gradient router. The gradient coming to a node from the nodes further in the computational graph is sent to the parent node with the maximum incoming value during back propagation  
+*  **MUL** gate acts as gradient scaler and switcher. The gradient coming to a node from the nodes further in the computational graph is scaled by the incoming value to the node from one branch and switched to the other during back propagation.    
 
 ## 3. Application of Computational Graphs to Learning in Neural networks    
 
