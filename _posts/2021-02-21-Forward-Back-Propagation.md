@@ -20,7 +20,7 @@ Let *f* represent a mathematical operation represented by one of the nodes in a 
 <p align="center">
   <img src="../images/fbprop.png"> <br><br>
 </p> 
-### 1.1. Back Propagation **Procedure**
+### 1.1. Back Propagation Procedure
 
 The back propagation procedure involves the following steps performed on each node of the graph, starting at the result node:  
 
