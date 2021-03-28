@@ -4,7 +4,7 @@ title: Forward and Back Propagation in Computational Graphs
 ---
 A computational graph is defined as a directed graph where the nodes correspond to mathematical operations. It is used as a way of expressing and evaluating a mathematical expression. Each node of a computational graph has one or two incoming edges carrying the inputs and one outgoing edge representing the result of the operation performed by the node on the inputs. There are two basic operations performed on a computational graph:  
 **Forward Propagation:** Forward propagation involves computing the values of all nodes in the graph to arrive at the final value of the mathematical expression represented by the graph.  
-**Back Propagation:** Back propagation involves calculating partial derivatives of the objective function of the grapth w.r.t the inputs of a graph node using the partial derivaties of the objective function w.r.t. it's output. These partial derivatives explain how the objective function of the graph varies w.r.t to its inputs  
+**Back Propagation:** Back propagation involves calculating partial derivatives of the objective function of the grapth w.r.t the inputs of a graph node using the partial derivatives of the objective function w.r.t. it's output. These partial derivatives explain how the objective function of the graph varies w.r.t to its inputs  
 
 ## 1. Operations on Computational Graphs
 Let *f* represent a mathematical operation represented by one of the nodes in a computational graph whose final output is L, such that  *z=f(x,y)* as depicted in the diagram below.  
@@ -26,7 +26,7 @@ The back propagation procedure involves the following steps performed on each no
 
 * If the output of a node is distributed to multiple nodes during forward propagation, the inputs from all of them during to backpropagation are added together i.e $$ \displaystyle \frac{\partial L}{\partial z}=  \frac{\partial L}{\partial z_1 } + \frac{\partial L}{\partial z_2} $$  
 * Calculating the partial derivative of the output of the node z, w.r.t. inputs to the node x and y  i.e.  $$ \displaystyle \frac{\partial z}{\partial x} ,\frac{\partial z}{\partial y} $$  
-* Calculating  $$ \displaystyle \frac{∂L}{∂x},\frac{∂L}{∂y} $$  using chain rule by multiplying the partial derivates calculated in the previous two steps i.e. $$ \displaystyle \frac{∂L}{∂x}=  \frac{∂L}{∂z}.\frac{∂z}{∂x} $$ and $$ \displaystyle \frac{∂L}{∂y}=\frac{∂L}{∂z}.\frac{∂z}{∂y} $$   
+* Calculating  $$ \displaystyle \frac{∂L}{∂x},\frac{∂L}{∂y} $$  using chain rule by multiplying the partial derivatives calculated in the previous two steps i.e. $$ \displaystyle \frac{∂L}{∂x}=  \frac{∂L}{∂z}.\frac{∂z}{∂x} $$ and $$ \displaystyle \frac{∂L}{∂y}=\frac{∂L}{∂z}.\frac{∂z}{∂y} $$   
 
   
 ## 3. Example    
