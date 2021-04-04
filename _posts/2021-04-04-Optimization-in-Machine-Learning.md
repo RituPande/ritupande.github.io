@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Understanding Optimization in Machine Learning Using Statistical Learning Theory 
+title: Understanding Optimization in Machine Learning
 ---
-Supervised machine learning techniques are used to solve problems which cannot be framed as closed-form equations. These techniques aim to find a **decision function** that best fits data points consisting of inputs and the corresponding outputs generated empirically, called training data. The process involves:  
+Supervised machine learning techniques are used to solve problems which cannot be framed as closed-form equations. These techniques aim to find a ***decision function*** that best fits data points consisting of inputs and the corresponding outputs generated empirically, called training data. The process involves:  
 - Choosing candidate functions amongst which a decision function shall be chosen.
-- Evaluating the candidate functions to choose a decision function amongst them which best fit the training data and also generalize well when evaluated against test data that is collected from the same I.I.D as the training data.  
-  
+- Evaluating the candidate functions to choose a decision function amongst them which best fit the training data and also generalize well when evaluated against test data that is collected from the same I.I.D as the ***training data***.  
+
+## Statistical Learning Theory
 To understand the criteria used to determine the size of the set containing candidate functions and to evaluate them we shall make use of statistical learning theory. It shall also help us understand the role played by optimization techniques in this process and how to choose the most appropriate ones for a given problem.  
 Let us formally define decision function, its inputs, outputs and target:  
 **Input-space:** The set of all possible inputs to a decision function represented as X  
