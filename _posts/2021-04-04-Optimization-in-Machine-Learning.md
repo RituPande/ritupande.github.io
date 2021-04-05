@@ -40,10 +40,11 @@ Note: It should be understood that there is practically no means to know this fu
    
  $$ \displaystyle \hat{f}_F^*=argmin_{f є F }⁡min⁡(\hat{R}_n(f)) $$   
  
-It should be understood that a different dataset yields a different value of $$ \displaystyle \hat(f)_F $$ . The values are random as the dataset is considered random.   
+It should be understood that a different dataset yields a different value of $$ \displaystyle \hat{f}_F $$ . The values are random as the dataset is considered random.   
 The benchmark against which constrained empirical risk minimizer is compared is   constrained Bayes decision function, represented as:  
 $$ \displaystyle f_F^*=argmin(f є F )⁡min⁡(R(f)) $$
-Unfortunately, there is no practical means to identify f_F^* or its risk value as we do not know P_(X ,Y)
+Unfortunately, there is no practical means to identify  $$ \displaystyle f_F^* $$ or its risk value as we do not know $$ \displaystyle P_{X ,Y} $$  
+  
 <p align="center">
   <img src="../images/optimization_in_machine_learning.png"> <br><br>
 </p> 
