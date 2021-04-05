@@ -44,14 +44,14 @@ Note: It should be understood that there is practically no means to know the fun
  
  ***Constrained Emperical Risk and Constrained Emperical Risk Minimser***: Same as in case of *Emperical Risk*, we do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate i $$ \displaystyle R_F(f) $$. Therefore we, calculate *Constrained Emperical Risk and Constrained Emperical Risk Minimser* as follows:  
    
-$$ \displaystyle \hat{R}_n(f)= \frac{1}{n} \sum_1^n l( f(x),y) s.t. f \in F $$          
+$$ \displaystyle \hat{R}_n(f) = \frac{1}{n} \sum_1^n l( f(x),y) s.t. f \in F $$          
 $$  \displaystyle lim_{n→\infty}⁡\hat{R}_n(f) = \hat{R}_F(f)  $$  
   
-$$ \displaystyle \hat{f}_F^*=argmin_{f є F}⁡\hat{R}(f)) $$
+$$ \displaystyle \hat{f}_F^* = argmin_{f є F}⁡\hat{R}(f)) $$
 
 It should be understood that a different dataset yields a different value of $$ \displaystyle \hat{f}_F $$ . The values are random as the dataset is considered random.   
-    
-
+  
+## Emperical Risk Decomposition   
 <p align="center">
   <img src="../images/optimization_in_machine_learning.png"> <br><br>
 </p> 
