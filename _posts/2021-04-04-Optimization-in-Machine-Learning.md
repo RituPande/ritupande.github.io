@@ -47,7 +47,7 @@ Note: It should be understood that there is practically no means to know the fun
 $$ \displaystyle \hat{R}_n(f) = \frac{1}{n} \sum_1^n l( f(x),y) s.t. f \in F $$          
 $$  \displaystyle lim_{n→\infty}⁡\hat{R}_n(f) = \hat{R}_F(f)  $$  
   
-$$ \displaystyle \hat{f}_F^* = argmin_{f є F}⁡\hat{R}(f)) $$
+$$ \displaystyle \hat{f}_F^* = argmin_{f є F}⁡\hat{R}(f) $$
 
 It should be understood that a different dataset yields a different value of $$ \displaystyle \hat{f}_F $$ . The values are random as the dataset is considered random.   
   
