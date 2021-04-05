@@ -51,7 +51,7 @@ $$ \displaystyle \hat{f}_F^* = argmin_{f є F}⁡\hat{R}(f)) $$
 
 It should be understood that a different dataset yields a different value of $$ \displaystyle \hat{f}_F $$ . The values are random as the dataset is considered random.   
   
-## Emperical Risk Decomposition   
+## Excess Risk Decomposition   
 <p align="center">
   <img src="../images/optimization_in_machine_learning.png"> <br><br>
 </p> 
