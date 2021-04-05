@@ -35,7 +35,7 @@ $$  \displaystyle \hat{f^*}=arg min(R(f)) $$
   
 $$  \displaystyle R(\hat{f^*}) $$  is called *Bayes risk*.
   
-Note: It should be understood that there is practically no means to know the function $$ \displatstyle f^* $$ or its risk value as we do not know $$ \displaystyle P_{X ,Y} $$ .   
+Note: It should be understood that there is practically no means to know the function $$ \displaystyle f^* $$ or its risk value as we do not know $$ \displaystyle P_{X ,Y} $$ .   
 
 ***Constrained empirical risk minimizer***: To limit the decision functions which we have to evaluate, domain of the set of decision functions is restricted to what is called **hypothesis space**, represented as *F*.  *F* is chosen to include function that are smooth, easier to work with (e.g. convex) and have better potential to generate good results on unseen data i.e. generalize.  Decision function in set *F* with the lowest risk is called constrained empirical risk minimizer, represented as:  
    
