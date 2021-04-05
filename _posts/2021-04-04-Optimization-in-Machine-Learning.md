@@ -15,15 +15,14 @@ Let us formally define decision function, its inputs, outputs and target:
 **Decision function:** A function that gets an input x є X and produces an action a є A is called a decision function, represented as:   
 $$ \displaystyle f :	X \Rightarrow A $$  
   
-To evaluate a decision function and compare it with others there needs to be a mechanism to quantify how far its outputs or actions are from the targets it is required to predict. With this objective in mind, the following functions are defined:   
- ***loss function***:  A function that evaluates a single action a є A predicted by a decision function against the corresponding outcome y  є Y , represented as:
+To evaluate a decision function and compare it with others there needs to be a mechanism to quantify how far its outputs or actions are from the targets it is required to predict. With this objective in mind, the us define the following:   
+ ***Loss function***:  A function that evaluates a single action a є A predicted by a decision function against the corresponding outcome y  є Y , represented as:
  $$ \displaystyle l( f(x),y) $$    
 ***Risk***: The  expected loss  of a decision function *f* on a new example (x, y) drawn from a I.I.D. $$ \displaystyle  P_{X ,Y} $$ , represented as:    
-$$ \displaystyle R(f)=E[ l( f(x),y)] $$ 
-
-However, we do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate its risk. To solve this problem we attempt to estimate the risk of a decision function that is trained on a dataset $$ \displaystyle D_n=( (x_(1,)  y_(1,) ),… ,(x_(n,)  y_(n,)  ))  $$ where (x,y) is sampled from  $$  \displaystyle P_{X ,Y} $$ .  ***Law of large numbers*** states that as the number of samRples taken from a distribution increases the average of the samples approaches the distribution mean or distribution expectation. Hence, we estimate the risk of the decision function as the average of loss for each data point. Such an estimation of the risk function is called ***Empirical risk***.  
-$$ \displaystyle \hat{R}_n= 1/n \sum_1^n l( f(x),y) $$    
-$$  \displaystyle lim_{n→\infty}⁡\hat{R}_n(f) = R(f) $$        
+$$ \displaystyle R(f)=E[ l( f(x),y)] $$  
+***Empirical risk***: We do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate its risk. To solve this problem we attempt to estimate the risk of a decision function that is trained on a dataset $$ \displaystyle D_n=( (x_(1,)  y_(1,) ),… ,(x_(n,)  y_(n,)  ))  $$ where (x,y) is sampled from  $$  \displaystyle P_{X ,Y} $$ .  Law of large numbers states that as the number of samRples taken from a distribution increases the average of the samples approaches the distribution mean or distribution expectation. Hence, we estimate the risk of the decision function as the average of loss for each data point. Such an estimation of the risk function is called Emperical risk.   
+$$ \displaystyle \hat{R}_n= \frac{1}{n} \sum_1^n l( f(x),y) $$      
+$$  \displaystyle lim_{n→\infty}⁡\hat{R}_n(f) = R(f) $$          
 ***Empirical risk minimizer:***   
 $$  \displaystyle \hat(f)=arg⁡min⁡(\hat{R}_n(f)) $$   
 Once the risk of a decision function is calculated, we need a benchmark against which it can be compared. Ideally, we might want to compare it against the function that achieves the minimal risk among all possible decision functions to solve the given machine learning problem. Such a function is called Bayes decision function, represented as:  
