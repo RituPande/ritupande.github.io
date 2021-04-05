@@ -31,18 +31,18 @@ $$  \displaystyle lim_{n→\infty}⁡\hat{R}_n(f) = R(f) $$
 $$  \displaystyle \hat{f}=arg⁡min⁡(\hat{R}_n(f)) $$   
   
 ***Bayes risk***:  Once the risk of a decision function is calculated, we need a benchmark against which it can be compared. Ideally, we might want to compare it against the function that achieves the minimal risk among all possible decision functions to solve the given machine learning problem. Such a function is called *Bayes decision function* and its corresponding risk is called *Bayes risk* represented as:  
-$$  \displaystyle \hat{f}*=arg min(R(f)) $$    
-$$  \displaystyle R(\hat{f}*) $$  is called *Bayes risk*.
+$$  \displaystyle \hat{f^*}=arg min(R(f)) $$    
+$$  \displaystyle R(\hat{f^*}) $$  is called *Bayes risk*.
   
 Note: It should be understood that there is practically no means to know this function or its risk value as we do not know $$ \displaystyle P_{X ,Y} $$ .   
 
 ***Constrained empirical risk minimizer***: To limit the decision functions which we have to evaluate, domain of the set of decision functions is restricted to what is called **hypothesis space**, represented as *F*.  *F* is chosen to include function that are smooth, easier to work with (e.g. convex) and have better potential to generate good results on unseen data i.e. generalize.  Decision function in set *F* with the lowest risk is called constrained empirical risk minimizer, represented as:  
    
- $$ \displaystyle \hat{f}_F*=argmin_{f є F }⁡min⁡(\hat{R}_n(f)) $$   
+ $$ \displaystyle \hat{f}_F^*=argmin_{f є F }⁡min⁡(\hat{R}_n(f)) $$   
  
 It should be understood that a different dataset yields a different value of $$ \displaystyle \hat(f)_F $$ . The values are random as the dataset is considered random.   
 The benchmark against which constrained empirical risk minimizer is compared is   constrained Bayes decision function, represented as:  
-$$ \displaystyle f_F*=argmin(f є F )⁡min⁡(R(f)) $$
+$$ \displaystyle f_F^*=argmin(f є F )⁡min⁡(R(f)) $$
 Unfortunately, there is no practical means to identify f_F^* or its risk value as we do not know P_(X ,Y)
 <p align="center">
   <img src="../images/optimization_in_machine_learning.png"> <br><br>
@@ -50,11 +50,11 @@ Unfortunately, there is no practical means to identify f_F^* or its risk value a
 Attempt to obtain empirical risk minimizer involves use of various optimization techniques to minimize R(f_F^^). However, optimization techniques do not succeed in finding f_F^(^*) but a function f_F^(~*) that is sufficiently close to f_F^(^*) ( For details see the next section ). Hence, best decision function that we can hope to find is f_F^(~*).
 The excess risk of a decision function is defined as the difference of its risk with the risk of the decision function with least risk for that machine learning problem i.e :
 $$ \displatstyle Excess Risk(f)=R(f)-R(f*) $$
-$$ \displatstyle Excess Risk(\~{f}_F* ) )= R(\~{f})_F* )-R(f*) $$  
+$$ \displatstyle Excess Risk(\~{f}_F* ) )= R(\~{f})_F^* )-R(f^*) $$  
 $$ \displatstyle = R(\~{f}_F*)-R(f_F* )+ R(f_F* )-R(f*) $$  
-$$  \displatstyle = R(\~{f}_F*) -R(\hat{f}_F*)            + R(\hat{f}_F*)-R(f_F* )               + R(f_F* )-R(f*)  
+$$  \displatstyle = R(\~{f}_F*) -R(\hat{f}_F*)            + R(\hat{f}_F^*)-R(f_F^* )               + R(f_F^* )-R(f^*)  
 = Optimization Error      + Estimation Error      + Approximation Error    
   
 If you make Hypothesis space larger approximation error tends to decrease as we might find a function within the hypothesis space whose risk function is closer to  R(f*). On the other hand, if you make Hypothesis space larger, keeping training data fixed,  Estimation Error tends to increase as there is a higher probability of overfitting a function whose risk is far away from risk of R(f_F^*)
 The hypothesis space selection by a data scientist includes managing trade-off between increase in the estimation error due increased hypothesis space and decrease in approximation error. As we get more training data, we can increase the hypothesis space F without risk of overfitting.
-Also, a data scientist needs to decide whether it is worth effort, resources and time to reduce optimization error beyond a point, since estimation and approximation errors often dominate the impact of optimization error to excess risk. Therefore most optimization learning techniques use only first order approximation instead of expending resources in second order approximation techniques, since second order approximation techniques are beneficial only when the initial point is already sufficiently close to f_F^(^^* ).
+Also, a data scientist needs to decide whether it is worth effort, resources and time to reduce optimization error beyond a point, since estimation and approximation errors often dominate the impact of optimization error to excess risk. Therefore most optimization learning techniques use only first order approximation instead of expending resources in second order approximation techniques, since second order approximation techniques are beneficial only when the initial point is already sufficiently close to \hat{f}_F*.  
