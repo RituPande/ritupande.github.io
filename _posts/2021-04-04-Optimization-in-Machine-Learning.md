@@ -37,13 +37,14 @@ $$  \displaystyle R(f^*) $$  is called *Bayes risk*.
   
 Note: It should be understood that there is practically no means to know the function $$ \displaystyle f^* $$ or its risk value as we do not know $$ \displaystyle P_{X ,Y} $$ .   
 
-***Constrained risk and Constrained risk minimser***: To limit the decision functions which we have to evaluate, domain of the set of decision functions is restricted to what is called **hypothesis space**, represented as *F*.  *F* is chosen to include function that are smooth, easier to work with (e.g. convex) and have better potential to generate good results on unseen data i.e. generalize.  Decision function in set *F* with the lowest risk is called *constrained risk minimizer*  
+***Constrained risk and Constrained risk minimser***: To limit the decision functions which we have to evaluate, domain of the set of decision functions is restricted to what is called *hypothesis space*, represented as *F*.  *F* is chosen to include function that are smooth, easier to work with (e.g. convex) and have better potential to generate good results on unseen data i.e. generalize.  Decision function in set *F* with the lowest risk is called *constrained risk minimizer*  
    
- $$ \displaystyle R_F(f) = E[ l( f(x),y)] $$
+ $$ \displaystyle R_F(f) = E[ l( f(x),y)] $$   
  $$  \displaystyle f^*=arg min(R_F(f)) $$ 
  
- ***Constrained Emperical Risk and Constrained Emperical Risk Minimser***: Same as in case of *Emperical Risk*, we do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate i $$ \displaystyle R_F(f) $$. Therefore we, calculate *Constrained Emperical Risk and Constrained Emperical Risk Minimser* as follows:
- $$ \displaystyle \hat{R}_F_n(f)= \frac{1}{n} \sum_1^n l( f(x),y) $$        
+ ***Constrained Emperical Risk and Constrained Emperical Risk Minimser***: Same as in case of *Emperical Risk*, we do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate i $$ \displaystyle R_F(f) $$. Therefore we, calculate *Constrained Emperical Risk and Constrained Emperical Risk Minimser* as follows:  
+   
+$$ \displaystyle \hat{R}_n(f)= \frac{1}{n} \sum_1^n l( f(x),y) s.t. f in F $$          
 $$  \displaystyle lim_{n→\infty}⁡\hat{R}_n(f) = \hat{R}_F(f)  $$   
 
 $$ \displaystyle \hat{f}_F^*=argmin_{f є F}⁡\hat{R}(f)) $$
@@ -65,3 +66,4 @@ $$  \displatstyle = R(\~{f}_F*) -R(\hat{f}_F*)            + R(\hat{f}_F^*)-R(f_F
 If you make Hypothesis space larger approximation error tends to decrease as we might find a function within the hypothesis space whose risk function is closer to  R(f*). On the other hand, if you make Hypothesis space larger, keeping training data fixed,  Estimation Error tends to increase as there is a higher probability of overfitting a function whose risk is far away from risk of R(f_F^*)
 The hypothesis space selection by a data scientist includes managing trade-off between increase in the estimation error due increased hypothesis space and decrease in approximation error. As we get more training data, we can increase the hypothesis space F without risk of overfitting.
 Also, a data scientist needs to decide whether it is worth effort, resources and time to reduce optimization error beyond a point, since estimation and approximation errors often dominate the impact of optimization error to excess risk. Therefore most optimization learning techniques use only first order approximation instead of expending resources in second order approximation techniques, since second order approximation techniques are beneficial only when the initial point is already sufficiently close to \hat{f}_F*.  
+
