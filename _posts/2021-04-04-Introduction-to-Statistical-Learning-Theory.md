@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Understanding Optimization in Machine Learning
+title: Introduction to Statistical Learning Theory
 ---
 Supervised machine learning techniques are used to solve problems which cannot be framed as closed-form equations. These techniques aim to find a ***decision function*** that best fits data points consisting of inputs and the corresponding outputs generated empirically, called training data. The process involves:  
 - Choosing candidate functions amongst which a decision function shall be chosen.
-- Evaluating the candidate functions to choose a decision function amongst them which best fit the training data and also generalize well when evaluated against test data that is collected from the same I.I.D as the ***training data***.  
+- Evaluating the candidate functions to choose a decision function amongst them which best fit the training data and also generalize well when evaluated against test data that is collected from the same I.I.D as the ***training data***.    
+  
+Statistical learning theory helps us ditermine the size of the set of candidate decision functions to be evaluated, and the benchmarks to be used to evaluate them, for a given supervised machine learning problem. It also helps us understand the role played by optimization techniques in this process and how to choose the most appropriate ones for a given problem.  
 
-## Statistical Learning Theory Framework
-To understand the criteria used to determine the size of the set containing candidate functions and to evaluate them we shall make use of statistical learning theory. It shall also help us understand the role played by optimization techniques in this process and how to choose the most appropriate ones for a given problem.  
-Let us formally define decision function, its inputs, outputs and target:  
+## Statistical Learning Framework
+
+This section defines and explains the important terms in statistical learning theory to build a framework to be used to understand evaluation of candidate decision functions and the optimzation algorithms to be used in supervised machine learning.
+
 **Input-space:** The set of all possible inputs to a decision function represented as X  
 **Action-space:** The set of all possible outputs of a decision function represented as A  
 **Outcome-space:** The set of possible outcomes, also called labels or targets, that a decision function is trying to predict, represented as Y  
@@ -74,7 +77,10 @@ $$ \displaystyle Excess Risk(\tilde{f}_F^* ) = R(\tilde{f}_F^* )-R(f^*) $$
   <img src="../images/optimization_in_machine_learning.png"> <br><br>
 </p> 
 
-If you make Hypothesis space larger approximation error tends to decrease as we might find a function within the hypothesis space whose risk function is closer to  R(f*). On the other hand, if you make Hypothesis space larger, keeping training data fixed,  Estimation Error tends to increase as there is a higher probability of overfitting a function whose risk is far away from risk of R(f_F^*)
+## Hypothesis Space
+As discussed earlier, we cannot evaluate all possible decision functions to choose the best candidate due to time and processing constraints. Hence, we restrict the set of candidate function to a set called *hypothesis space*. This section explains the impact of the size of the hypothesis space on the *excess risk* of the decision function chosen after evaluation.  
+
+If the hypothesis space is made larger, approximation error tends to decrease as we might find a function within the hypothesis space whose risk function is closer to  $$ \displaystle R(f^*) $$. On the other hand, a larger hypothesis space while the training data is kept fixed,  tends to increase the *Estimation Error*  as there is a higher probability of overfitting a function whose risk is far away from risk of $$ \displaystyle  R(f_F^*) $$  
 The hypothesis space selection by a data scientist includes managing trade-off between increase in the estimation error due increased hypothesis space and decrease in approximation error. As we get more training data, we can increase the hypothesis space F without risk of overfitting.
 Also, a data scientist needs to decide whether it is worth effort, resources and time to reduce optimization error beyond a point, since estimation and approximation errors often dominate the impact of optimization error to excess risk. Therefore most optimization learning techniques use only first order approximation instead of expending resources in second order approximation techniques, since second order approximation techniques are beneficial only when the initial point is already sufficiently close to \hat{f}_F*.  
 
