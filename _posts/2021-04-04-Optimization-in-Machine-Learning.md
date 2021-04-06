@@ -62,7 +62,8 @@ The ***excess risk** of a decision function is defined as the difference of its 
 <BR>
 $$ \displaystyle Excess Risk(f)=R(f)-R(f*) $$  
 <BR>
-$$ \displaystyle Excess Risk(\tilde{f}_F^* ) = R(\tilde{f}_F^* )-R(f^*) $$    
+$$ \displaystyle Excess Risk(\tilde{f}_F^* ) = R(\tilde{f}_F^* )-R(f^*) $$  
+<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $$ \displaystyle = R(\tilde{f}_F^*)-R(f_F^* )+ R(f_F^* )-R(f^*) $$  
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $$  \displaystyle = R(\tilde{f}_F^*) -R(\hat{f}_F^*)+ R(\hat{f}_F^*)-R(f_F^* ) + R(f_F^* )-R(f^*) $$    
