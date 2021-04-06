@@ -37,14 +37,14 @@ $$  \displaystyle f^*=arg min(R(f)) $$
 <BR>
 $$  \displaystyle R(f^*) $$  is called *Bayes risk*.
 <BR>
-Note: It should be understood that there is practically no means to know the function $$ \displaystyle f^* $$ or its risk value as we do not know $$ \displaystyle P_{X ,Y} $$ .   
+Note: It should be understood that there is practically no means to know the function $$ \displaystyle f^* $$ or its risk value as we do not know $$ \displaystyle P_{X ,Y} $$ 
 <BR>
 ***Constrained risk and Constrained risk minimser***: To limit the decision functions which we have to evaluate, domain of the set of decision functions is restricted to what is called *hypothesis space*, represented as *F*.  *F* is chosen to include function that are smooth, easier to work with (e.g. convex) and have better potential to generate good results on unseen data i.e. generalize.  Decision function in set *F* with the lowest risk is called *constrained risk minimizer*  
 <BR>
 $$ \displaystyle R_F(f) = E[ l( f(x),y)] $$ 
  <BR>
 $$  \displaystyle f^*=arg min(R_F(f)) $$ 
-<BR> 
+<BR><BR>  
  ***Constrained Emperical Risk and Constrained Emperical Risk Minimser***: Same as in case of *Emperical Risk*, we do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate i $$ \displaystyle R_F(f) $$. Therefore we, calculate *Constrained Emperical Risk and Constrained Emperical Risk Minimser* as follows: 
 <BR>
 $$ \displaystyle \hat{R}_n(f) = \frac{1}{n} \sum_1^n l( f(x),y) s.t. f \in F $$   
