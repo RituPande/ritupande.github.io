@@ -56,19 +56,19 @@ It should be understood that a different dataset yields a different value of $$ 
   
 ## Excess Risk Decomposition   
 
-Attempt to obtain constrained empirical risk minimizer involves use of various optimization techniques to minimize $$ \displaystyle \hat{R}_F(f) $$. However, optimization techniques do not succeed in finding $$ \displaystyle \hat{f}_F^* $$ but a function $$ \displaystyle \tilde(f)_F^* $$ that is sufficiently close to it ( For details see the next section ). Hence, best decision function that we can hope to find is  $$ \displaystyle \tilde(f)_F^* $$.  
+Attempt to obtain constrained empirical risk minimizer involves use of various optimization techniques to minimize $$ \displaystyle \hat{R}_F(f) $$. However, optimization techniques do not succeed in finding $$ \displaystyle \hat{f}_F^* $$ but a function $$ \displaystyle \tilde{f}_F^* $$ that is sufficiently close to it ( For details see the next section ). Hence, best decision function that we can hope to find is  $$ \displaystyle \tilde{f}_F^* $$.  
 
 The ***excess risk** of a decision function is defined as the difference of its risk with the risk of the decision function with least risk for that machine learning problem i.e :  
 <BR>
 $$ \displaystyle Excess Risk(f)=R(f)-R(f*) $$  
 <BR>
-$$ \displaystyle Excess Risk(\tilde{f}_F* ) )= R(\tilde{f}_F^* )-R(f^*) $$    
+$$ \displaystyle Excess Risk(\tilde{f}_F^* ) )= R(\tilde{f}_F^* )-R(f^*) $$    
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp; $$ \displaystyle = R(\tilde{f}_F*)-R(f_F* )+ R(f_F* )-R(f*) $$  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $$ \displaystyle = R(\tilde{f}_F^*)-R(f_F^* )+ R(f_F^* )-R(f^*) $$  
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp; $$  \displaystyle = R(\tilde{f}_F*) -R(\hat{f}_F*)+ R(\hat{f}_F^*)-R(f_F^* ) + R(f_F^* )-R(f^*) $$    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $$  \displaystyle = R(\tilde{f}_F^*) -R(\hat{f}_F^*)+ R(\hat{f}_F^*)-R(f_F^* ) + R(f_F^* )-R(f^*) $$    
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;= Optimization Error      + Estimation Error      + Approximation Error      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Optimization Error      + Estimation Error      + Approximation Error      
 
 <p align="center">
   <img src="../images/optimization_in_machine_learning.png"> <br><br>
