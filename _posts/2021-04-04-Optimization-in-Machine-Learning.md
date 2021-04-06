@@ -59,10 +59,10 @@ It should be understood that a different dataset yields a different value of $$ 
 Attempt to obtain constrained empirical risk minimizer involves use of various optimization techniques to minimize $$ \displaystyle R(\hat(f)_F) $$. However, optimization techniques do not succeed in finding $$ \displaystyle \hat(f)_F^* $$ but a function $$ \displaystyle \tilde(f)_F^* $$ that is sufficiently close to it ( For details see the next section ). Hence, best decision function that we can hope to find is  $$ \displaystyle \tilde(f)_F^* $$.  
 
 The ***excess risk** of a decision function is defined as the difference of its risk with the risk of the decision function with least risk for that machine learning problem i.e :
-$$ \displatstyle Excess Risk(f)=R(f)-R(f*) $$  
-$$ \displatstyle Excess Risk(\tilde{f}_F* ) )= R(\tilde{f}_F^* )-R(f^*) $$    
-$$ \displatstyle = R(\tilde{f}_F*)-R(f_F* )+ R(f_F* )-R(f*) $$  
-$$  \displatstyle = R(\tilde{f}_F*) -R(\hat{f}_F*)            + R(\hat{f}_F^*)-R(f_F^* )               + R(f_F^* )-R(f^*) $$    
+$$ \displaystyle Excess Risk(f)=R(f)-R(f*) $$  
+$$ \displaystyle Excess Risk(\tilde{f}_F* ) )= R(\tilde{f}_F^* )-R(f^*) $$    
+$$ \displaystyle = R(\tilde{f}_F*)-R(f_F* )+ R(f_F* )-R(f*) $$  
+$$  \displaystyle = R(\tilde{f}_F*) -R(\hat{f}_F*)            + R(\hat{f}_F^*)-R(f_F^* )               + R(f_F^* )-R(f^*) $$    
 = Optimization Error      + Estimation Error      + Approximation Error      
 
 <p align="center">
