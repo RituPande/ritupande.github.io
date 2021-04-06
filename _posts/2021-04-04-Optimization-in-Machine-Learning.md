@@ -55,17 +55,20 @@ $$ \displaystyle \hat{f}_F^* = argmin_{f є F}⁡\hat{R}(f) $$
 It should be understood that a different dataset yields a different value of $$ \displaystyle \hat{f}_F $$ . The values are random as the dataset is considered random.   
   
 ## Excess Risk Decomposition   
+
+Attempt to obtain constrained empirical risk minimizer involves use of various optimization techniques to minimize $$ \displaystyle R(\hat(f)_F) $$. However, optimization techniques do not succeed in finding $$ \displaystyle \hat(f)_F^* $$ but a function $$ \displaystyle \tilde(f)_F^* $$ that is sufficiently close to it ( For details see the next section ). Hence, best decision function that we can hope to find is  $$ \displaystyle \tilde(f)_F^* $$.  
+
+The ***excess risk** of a decision function is defined as the difference of its risk with the risk of the decision function with least risk for that machine learning problem i.e :
+$$ \displatstyle Excess Risk(f)=R(f)-R(f*) $$  
+$$ \displatstyle Excess Risk(\tilde{f}_F* ) )= R(\tilde{f}_F^* )-R(f^*) $$    
+$$ \displatstyle = R(\tilde{f}_F*)-R(f_F* )+ R(f_F* )-R(f*) $$  
+$$  \displatstyle = R(\tilde{f}_F*) -R(\hat{f}_F*)            + R(\hat{f}_F^*)-R(f_F^* )               + R(f_F^* )-R(f^*) $$    
+= Optimization Error      + Estimation Error      + Approximation Error      
+
 <p align="center">
   <img src="../images/optimization_in_machine_learning.png"> <br><br>
 </p> 
-Attempt to obtain empirical risk minimizer involves use of various optimization techniques to minimize R(f_F^^). However, optimization techniques do not succeed in finding f_F^(^*) but a function f_F^(~*) that is sufficiently close to f_F^(^*) ( For details see the next section ). Hence, best decision function that we can hope to find is f_F^(~*).
-The excess risk of a decision function is defined as the difference of its risk with the risk of the decision function with least risk for that machine learning problem i.e :
-$$ \displatstyle Excess Risk(f)=R(f)-R(f*) $$
-$$ \displatstyle Excess Risk(\~{f}_F* ) )= R(\~{f})_F^* )-R(f^*) $$  
-$$ \displatstyle = R(\~{f}_F*)-R(f_F* )+ R(f_F* )-R(f*) $$  
-$$  \displatstyle = R(\~{f}_F*) -R(\hat{f}_F*)            + R(\hat{f}_F^*)-R(f_F^* )               + R(f_F^* )-R(f^*)  
-= Optimization Error      + Estimation Error      + Approximation Error    
-  
+
 If you make Hypothesis space larger approximation error tends to decrease as we might find a function within the hypothesis space whose risk function is closer to  R(f*). On the other hand, if you make Hypothesis space larger, keeping training data fixed,  Estimation Error tends to increase as there is a higher probability of overfitting a function whose risk is far away from risk of R(f_F^*)
 The hypothesis space selection by a data scientist includes managing trade-off between increase in the estimation error due increased hypothesis space and decrease in approximation error. As we get more training data, we can increase the hypothesis space F without risk of overfitting.
 Also, a data scientist needs to decide whether it is worth effort, resources and time to reduce optimization error beyond a point, since estimation and approximation errors often dominate the impact of optimization error to excess risk. Therefore most optimization learning techniques use only first order approximation instead of expending resources in second order approximation techniques, since second order approximation techniques are beneficial only when the initial point is already sufficiently close to \hat{f}_F*.  
