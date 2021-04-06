@@ -77,10 +77,11 @@ $$ \displaystyle Excess Risk(\tilde{f}_F^* ) = R(\tilde{f}_F^* )-R(f^*) $$
   <img src="../images/optimization_in_machine_learning.png"> <br><br>
 </p> 
 
-## Hypothesis Space
+## Impact of Hypothesis Space
 As discussed earlier, we cannot evaluate all possible decision functions to choose the best candidate due to time and processing constraints. Hence, we restrict the set of candidate function to a set called *hypothesis space*. This section explains the impact of the size of the hypothesis space on the *excess risk* of the decision function chosen after evaluation.  
 
-If the hypothesis space is made larger, approximation error tends to decrease as we might find a function within the hypothesis space whose risk function is closer to  $$ \displaystle R(f^*) $$. On the other hand, a larger hypothesis space while the training data is kept fixed,  tends to increase the *Estimation Error*  as there is a higher probability of overfitting a function whose risk is far away from risk of $$ \displaystyle  R(f_F^*) $$  
-The hypothesis space selection by a data scientist includes managing trade-off between increase in the estimation error due increased hypothesis space and decrease in approximation error. As we get more training data, we can increase the hypothesis space F without risk of overfitting.
-Also, a data scientist needs to decide whether it is worth effort, resources and time to reduce optimization error beyond a point, since estimation and approximation errors often dominate the impact of optimization error to excess risk. Therefore most optimization learning techniques use only first order approximation instead of expending resources in second order approximation techniques, since second order approximation techniques are beneficial only when the initial point is already sufficiently close to \hat{f}_F*.  
+- If the hypothesis space is made larger, approximation error tends to decrease as we might find a function within the hypothesis space whose risk function is closer to  $$ \displaystyle R(f^*) $$. On the other hand, a larger hypothesis space while the training data is kept fixed,  tends to increase the *Estimation Error*  as there is a higher probability of overfitting a function whose risk is far away from risk of $$ \displaystyle  R(f_F^*) $$  
+The hypothesis space selection by a data scientist includes managing trade-off between increase in the estimation error due increased hypothesis space and decrease in approximation error. As we get more training data, we can increase the hypothesis space F without risk of overfitting.  
+  
+- Also, a data scientist needs to decide whether it is worth effort, resources and time to reduce optimization error beyond a point, since estimation and approximation errors often dominate the impact of optimization error to excess risk. Therefore, most optimization learning techniques use only first order approximation instead of expending resources in second order approximation techniques, since second order approximation techniques are beneficial only when the initial point is already sufficiently close to $$ \displaystyle \hat{f}_F* $$.  
 
