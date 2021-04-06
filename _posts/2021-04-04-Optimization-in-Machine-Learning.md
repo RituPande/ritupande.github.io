@@ -23,28 +23,38 @@ To evaluate a decision function and compare it with others there needs to be a m
 ***Risk***: The  expected loss  of a decision function *f* on a new example (x, y) drawn from a I.I.D. $$ \displaystyle  P_{X ,Y} $$ , represented as:    
 $$ \displaystyle R(f)=E[ l( f(x),y)] $$
   
-***Empirical Risk***: We do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate its risk. To solve this problem we attempt to estimate the risk of a decision function that is trained on a dataset $$ \displaystyle D_n=( (x_(1,)  y_(1,) ),… ,(x_(n,)  y_(n,)  ))  $$ where (x,y) is sampled from  $$  \displaystyle P_{X ,Y} $$ .  Law of large numbers states that as the number of samRples taken from a distribution increases the average of the samples approaches the distribution mean or distribution expectation. Hence, we estimate the risk of the decision function as the average of loss for each data point. Such an estimation of the risk function is called *Emperical risk*.   
+***Empirical Risk***: We do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate its risk. To solve this problem we attempt to estimate the risk of a decision function that is trained on a dataset $$ \displaystyle D_n=( (x_(1,)  y_(1,) ),… ,(x_(n,)  y_(n,)  ))  $$ where (x,y) is sampled from  $$  \displaystyle P_{X ,Y} $$ .  Law of large numbers states that as the number of samRples taken from a distribution increases the average of the samples approaches the distribution mean or distribution expectation. Hence, we estimate the risk of the decision function as the average of loss for each data point. Such an estimation of the risk function is called *Emperical risk*.
+<BR>
 $$ \displaystyle \hat{R}_n(f)= \frac{1}{n} \sum_1^n l( f(x),y) $$      
+<BR>
 $$  \displaystyle lim_{n→\infty}⁡\hat{R}_n(f) = R(f) $$ 
-  
+<BR>  
 ***Empirical Risk Minimizer:***  The function that minimizes the emperical risk is called the *Emperical risk minimizer* and is defined as:   
+<BR>
 $$  \displaystyle \hat{f}=arg⁡min⁡(\hat{R}_n(f)) $$   
   
 ***Bayes risk***:  Once the risk of a decision function is calculated, we need a benchmark against which it can be compared. Ideally, we might want to compare it against the function that achieves the minimal risk among all possible decision functions to solve the given machine learning problem. Such a function is called *Bayes decision function* and its corresponding risk is called *Bayes risk* represented as:  
-$$  \displaystyle f^*=arg min(R(f)) $$    
+<BR>
+$$  \displaystyle f^*=arg min(R(f)) $$ 
+<BR>
 $$  \displaystyle R(f^*) $$  is called *Bayes risk*.
-  
+<BR>
 Note: It should be understood that there is practically no means to know the function $$ \displaystyle f^* $$ or its risk value as we do not know $$ \displaystyle P_{X ,Y} $$ .   
 
 ***Constrained risk and Constrained risk minimser***: To limit the decision functions which we have to evaluate, domain of the set of decision functions is restricted to what is called *hypothesis space*, represented as *F*.  *F* is chosen to include function that are smooth, easier to work with (e.g. convex) and have better potential to generate good results on unseen data i.e. generalize.  Decision function in set *F* with the lowest risk is called *constrained risk minimizer*  
-$$ \displaystyle R_F(f) = E[ l( f(x),y)] $$        
+<BR>
+$$ \displaystyle R_F(f) = E[ l( f(x),y)] $$ 
+ <BR>
 $$  \displaystyle f^*=arg min(R_F(f)) $$ 
- 
- ***Constrained Emperical Risk and Constrained Emperical Risk Minimser***: Same as in case of *Emperical Risk*, we do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate i $$ \displaystyle R_F(f) $$. Therefore we, calculate *Constrained Emperical Risk and Constrained Emperical Risk Minimser* as follows:  
-$$ \displaystyle \hat{R}_n(f) = \frac{1}{n} \sum_1^n l( f(x),y) s.t. f \in F $$        
+<BR> 
+ ***Constrained Emperical Risk and Constrained Emperical Risk Minimser***: Same as in case of *Emperical Risk*, we do not know $$ \displaystyle P_{X ,Y} $$ to find the expected value of loss required to calculate i $$ \displaystyle R_F(f) $$. Therefore we, calculate *Constrained Emperical Risk and Constrained Emperical Risk Minimser* as follows: 
+<BR>
+$$ \displaystyle \hat{R}_n(f) = \frac{1}{n} \sum_1^n l( f(x),y) s.t. f \in F $$   
+<BR>
 $$  \displaystyle lim_{n→\infty}⁡\hat{R}_n(f) = \hat{R}_F(f)  $$  
+<BR>
 $$ \displaystyle \hat{f}_F^* = argmin_{f є F}⁡\hat{R}(f) $$
-
+<BR>
 It should be understood that a different dataset yields a different value of $$ \displaystyle \hat{f}_F $$ . The values are random as the dataset is considered random.   
   
 ## Excess Risk Decomposition   
