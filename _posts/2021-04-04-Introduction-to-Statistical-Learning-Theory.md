@@ -87,6 +87,6 @@ The hypothesis space selection by a data scientist includes managing trade-off b
 
 ## 4. References
 
-1. Introduction to Statistical Learning Theory(https://www.youtube.com/watch?v=rqJ8SrnmWu0&list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI&index=3)
-2. Excess Risk Decomposition https://www.youtube.com/watch?v=YA_CE9jat4I&list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI&index=5
+[1] [Introduction to Statistical Learning Theory](https://www.youtube.com/watch?v=rqJ8SrnmWu0&list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI&index=3)  
+[2] [Excess Risk Decomposition](https://www.youtube.com/watch?v=YA_CE9jat4I&list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI&index=5)
 
