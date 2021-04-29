@@ -8,7 +8,7 @@ Supervised machine learning techniques are used to solve problems which cannot b
   
 Statistical learning theory helps us ditermine the size of the set of candidate decision functions to be evaluated, and the benchmarks to be used to evaluate them, for a given supervised machine learning problem. It also helps us understand the role played by optimization techniques in this process and how to choose the most appropriate ones for a given problem.  
 
-## Statistical Learning Framework
+## 1. Statistical Learning Framework
 
 This section defines and explains the important terms in statistical learning theory to build a framework to be used to understand evaluation of candidate decision functions and the optimzation algorithms to be used in supervised machine learning.
 
@@ -57,7 +57,7 @@ $$ \displaystyle \hat{f}_F^* = argmin_{f є F}⁡\hat{R}(f) $$
 <BR>
 It should be understood that a different dataset yields a different value of $$ \displaystyle \hat{f}_F $$ . The values are random as the dataset is considered random.   
   
-## Excess Risk Decomposition   
+## 2. Excess Risk Decomposition   
 
 Attempt to obtain constrained empirical risk minimizer involves use of various optimization techniques to minimize $$ \displaystyle \hat{R}_F(f) $$. However, optimization techniques do not succeed in finding $$ \displaystyle \hat{f}_F^* $$ but a function $$ \displaystyle \tilde{f}_F^* $$ that is sufficiently close to it ( For details see the next section ). Hence, best decision function that we can hope to find is  $$ \displaystyle \tilde{f}_F^* $$.  
 
@@ -77,11 +77,16 @@ $$ \displaystyle Excess Risk(\tilde{f}_F^* ) = R(\tilde{f}_F^* )-R(f^*) $$
   <img src="../images/optimization_in_machine_learning.png"> <br><br>
 </p> 
 
-## Impact of Hypothesis Space
+## 3. Impact of Hypothesis Space
 As discussed earlier, we cannot evaluate all possible decision functions to choose the best candidate due to time and processing constraints. Hence, we restrict the set of candidate function to a set called *hypothesis space*. This section explains the impact of the size of the hypothesis space on the *excess risk* of the decision function chosen after evaluation.  
 
 - If the hypothesis space is made larger, approximation error tends to decrease as we might find a function within the hypothesis space whose risk function is closer to  $$ \displaystyle R(f^*) $$. On the other hand, a larger hypothesis space while the training data is kept fixed,  tends to increase the *Estimation Error*  as there is a higher probability of overfitting a function whose risk is far away from risk of $$ \displaystyle  R(f_F^*) $$  
 The hypothesis space selection by a data scientist includes managing trade-off between increase in the estimation error due increased hypothesis space and decrease in approximation error. As we get more training data, we can increase the hypothesis space F without risk of overfitting.  
   
 - Also, a data scientist needs to decide whether it is worth effort, resources and time to reduce optimization error beyond a point, since estimation and approximation errors often dominate the impact of optimization error to excess risk. Therefore, most optimization learning techniques use only first order approximation instead of expending resources in second order approximation techniques, since second order approximation techniques are beneficial only when the initial point is already sufficiently close to $$ \displaystyle \hat{f}_F* $$.  
+
+## 4. References
+
+1. Introduction to Statistical Learning Theory(https://www.youtube.com/watch?v=rqJ8SrnmWu0&list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI&index=3)
+2. Excess Risk Decomposition https://www.youtube.com/watch?v=YA_CE9jat4I&list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI&index=5
 
