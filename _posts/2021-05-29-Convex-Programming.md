@@ -91,13 +91,18 @@ For $$ x_1, x_2 \in C , g(x) = \nabla f(x) $$
 </p>   
 As we see , $$ f(x_1) + g(x_1)^T (x – x_1 ) $$ is first order approximation of function *f* at $$ x_1 $$. The definition implies that first order approximation of a convex function never overestimates the function  
   
-This property of differentiable convex functions also allows us to understand how the gradient of a convex function changes as its input changes.        
-Let $$ x_1, x_2 \in C s.t. x_2 \geq x_1 $$      
-Using the above property of convex functions:      
+This property of differentiable convex functions also allows us to understand how the gradient of a convex function changes w.r.t. its inputs:
+  
+Let $$ x_1, x_2 \in C s.t. x_2 \geq x_1 $$         
+Using the above property of convex functions:  
+  
 $$ f(x_2)  \geq  f(x_1) + g(x_1)^T (x_2 – x_1 ) $$      
 $$ f(x_1)  \geq  f(x_2) + g(x_2)^T (x_1 – x_2 ) $$      
-The two equations can be combined to give:    
-$$  g(x_2)^T (x_2 – x_1 ) \geq f(x_2) - f(x_1)  \geq   g(x_1)^T (x_2 – x_1 ) $$      
+  
+The two equations can be combined to give:  
+  
+$$  g(x_2)^T (x_2 – x_1 ) \geq f(x_2) - f(x_1)  \geq   g(x_1)^T (x_2 – x_1 ) $$ 
+  
 This implies :      
 $$ g(x_2)  \geq g(x_1) $$ when $$ x_2 \geq x_1 $$ i.e. for a differentiable convex function  of one variable, the gradient is non-decreasing. The converse of the statement is also true.   
   
