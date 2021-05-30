@@ -120,15 +120,14 @@ This property of differential convex functions can be used to :
   
 3. Identify the point at which the value of the function is optimal
 
-  Let $$ g(x^*) $$ = 0 where $$ x^*,x \in C $$, then:
+    Let $$ g(x^*) $$ = 0 where $$ x^*,x \in C $$, then:
 
-  $$ f(x)  \geq  f(x^*) + g(x^*)^T (x – x^* ) $$
-  $$ \implies f(x)  \geq  f(x^*) $$  
+    $$ f(x)  \geq  f(x^*) + g(x^*)^T (x – x^* ) $$
+    $$ \implies f(x)  \geq  f(x^*) $$  
 
-  **i.e.** the value of the convex function at every other point is greater than the value at $$ x^* $$  which implies that  $$ x^* $$ is the global optima.  
-   This implies that x, where $$  \nabla f(x) = 0 $$ represents the global optima for a convex function.
+     **i.e.** the value of the convex function at every other point is greater than the value at $$ x^* $$  which implies that  $$ x^* $$ is the global optima. This implies      that x, where $$  \nabla f(x) = 0 $$ represents the global optima for a convex function.
   
-This property ensures that the most popular first-order optimization technique - *Gradient Descent* and its variants  when  applied to functions that are not convex in the entirety of their domain,  finds a local optima. For convex functions, the algorithm is guaranteed to find the global optima.
+Hence, this property ensures that the most popular first-order optimization technique - *Gradient Descent* and its variants  when  applied to functions that are not convex in the entirety of their domain,  finds a local optima. For convex functions, the algorithm is guaranteed to find the global optima.
   
 ### 2.3 Operations that Preserve Convexity
 -	If $$ f_1,f_2,…,f_k : R^n \rightarrow R $$ are convex functions, then $$ f(x) = \sum_{i=1}^k \alpha_i f_i(x)  $$ is also a convex function.
