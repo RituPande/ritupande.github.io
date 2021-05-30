@@ -82,9 +82,9 @@ $$ C_{\alpha} = { x \in C : f(x) \leq \alpha , \alpha \in  R } $$
 
 
 ### 2.2 Differential Convex Functions 
-If $$ C \subseteq R^n $$ is a convex set and $$ f: \righarrow R $$  is a differentiable function, then *f* is convex iff :    
+If $$ C \subseteq R^n $$ is a convex set and $$ f: \rightarrow R $$  is a differentiable function, then *f* is convex iff :    
 $$ f(x_2)  \geq  f(x_1) + g(x_1)^T (x_2 – x_1 ) $$  
-For $$ x_1, x_2 \in C and g(x) = \nabla x $$ 
+For $$ x_1, x_2 \in C , g(x) = \nabla f(x) $$ 
 <BR><BR>
 <p align="center">
   <img src="../images/diff_convex_function.png"> <br><br>
