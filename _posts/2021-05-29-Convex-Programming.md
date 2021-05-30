@@ -104,8 +104,6 @@ As we see , $$ f(x_1) + g(x_1)^T (x – x_1 ) $$ is first order approximation of
 This property of differential convex functions can be used to :
 1. Find a crude lower bound of a convex function in a specifed interval.  
 2. To understand how the gradient of a convex function changes w.r.t. its inputs
-
-While point-1 is self-explanatory, point-2 might require some explanation:
   
 Let $$ x_1, x_2 \in C s.t. x_2 \geq x_1 $$         
 Using the above property of convex functions:  
@@ -118,9 +116,19 @@ The two equations can be combined to give:
 $$  g(x_2)^T (x_2 – x_1 ) \geq f(x_2) - f(x_1)  \geq   g(x_1)^T (x_2 – x_1 ) $$ 
   
 This implies :      
-$$ g(x_2)  \geq g(x_1) $$ when $$ x_2 \geq x_1 $$ i.e. for a differentiable convex function  of one variable, the gradient is non-decreasing. The converse of the statement is also true.   
+$$ g(x_2)  \geq g(x_1) $$ when $$ x_2 \geq x_1 $$ i.e. for a differentiable convex function  of one variable, the gradient is non-decreasing. The converse of the statement is also true.
   
-This property forms the basis of the most popular first-order optimization technique - *Gradient Descent* and its variants. When the algorithm is applied to functions that are not convex in the entirety of their domain, it finds a local optima. For convex functions, the algorithm is guaranteed to find the global optima.
+3. Identify the point at which the value of the function is optimal
+
+Let $$ g(x^*) $$ = 0 where $$ x^*,x \in C $$, then:
+
+$$ f(x)  \geq  f(x^*) + g(x^*)^T (x – x^* ) $$
+$$ \implies f(x)  \geq  f(x^*) $$  
+  
+**i.e.** the value of the convex function at every other point is greater than the value at $$ x^* $$  which implies that  $$ x^* $$ is the global optima.  
+ This implies that x, where $$  \nabla f(x) = 0 $$ represents the global optima for a convex function.
+  
+This property ensures that the most popular first-order optimization technique - *Gradient Descent* and its variants  when  applied to functions that are not convex in the entirety of their domain,  finds a local optima. For convex functions, the algorithm is guaranteed to find the global optima.
   
 ### 2.3 Operations that Preserve Convexity
 -	If $$ f_1,f_2,…,f_k : R^n \rightarrow R $$ are convex functions, then $$ f(x) = \sum_{i=1}^k \alpha_i f_i(x)  $$ is also a convex function.
