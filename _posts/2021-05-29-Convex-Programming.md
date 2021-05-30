@@ -73,9 +73,9 @@ This implies that any point, on the line segment joining two points on a convex 
 **Jensen's Inequality**  extends the same concepts to multiple points:  
 
   If $$ C \subseteq R^n $$ is a convex set, then function  $$ f : C \rightarrow R $$ is said to be convex iff:  
-  $$ f( \sum_{i=0}^k \lambda x_i )  \leq \sum_{i=0}^k \lambda_i f(x_i) $$  
+  $$ \displaystyle f( \sum_{i=0}^k \lambda x_i )  \leq \sum_{i=0}^k \lambda_i f(x_i) $$  
     
-  **where** $$ x_1,x_2....x_k \in C , \lambda_i >=0, \sum_{i=0}^k \lambda_i = 1 $$  
+  **where** $$ \displaystyle x_1,x_2....x_k \in C , \lambda_i >=0, \sum_{i=0}^k \lambda_i = 1 $$  
     
  
 
