@@ -109,7 +109,7 @@ $$  g(x_2)^T (x_2 – x_1 ) \geq f(x_2) - f(x_1)  \geq   g(x_1)^T (x_2 – x_1 )
 This implies :      
 $$ g(x_2)  \geq g(x_1) $$ when $$ x_2 \geq x_1 $$ i.e. for a differentiable convex function  of one variable, the gradient is non-decreasing. The converse of the statement is also true.   
   
-This property forms the basis of the most popular first-order optimization technique - *Gradient Descent* and its variants.
+This property forms the basis of the most popular first-order optimization technique - *Gradient Descent* and its variants. When the algorithm is applied to functions that are not convex in the entirety of their domain, it finds a local optima. For convex functions, the algorithm is guaranteed to find the global optima.
   
 ### 2.3 Operations that Preserve Convexity
 -	If $$ f_1,f_2,…,f_k : R^n \rightarrow R $$ are convex functions, then $$ f(x) = \sum_{i=1}^k \alpha_i f_i(x)  $$ is also a convex function.
@@ -167,7 +167,11 @@ Note that the solution of the above function is not exactly the optimal value bu
 -	First order condition $$ \nabla f (x)= 0 $$ is a sufficient condition for finding the minimum of the function and second order information is not required. This is because the hessian of a convex function is always positive semi-definite.  
  
 ## Summary
- Restricting the hypothesis set of decision functions of supervised machine learning problems to convex functions over convex sets allows for computationally efficient methods to find their optimal values. There is no fear of being stuck in a local optima as any local optima is also global optima of convex functions. Moreover, if the convex function is differentiable, its first order approximation can be used to find the lower bound of its optimal value within a specified interval. Also, it is guaranteed that the optimal value for a convex function shall lie at $$ \nabla f(x) = 0 $$ and no second order information is necessary. This is because Hessian of a convex function is always positive-semi-definite. All these properties of convex functions make them ideal to be chosen as candidate decision functions in hypothesis set of a machine learning problem.     
+ Restricting the hypothesis set of decision functions of supervised machine learning problems to convex functions over convex sets allows for computationally efficient methods to be used to find their optimal values. There is no fear of being stuck in a local optima as any local optima is also global optima of convex functions. Moreover, if the convex function is differentiable:
+- Its first order approximation can be used to find the lower bound of its optimal value within a specified interval.   
+- It is guaranteed that the optimal value for a convex function shall lie at $$ \nabla f(x) = 0 $$ and no second order information is necessary. This is because Hessian of a convex function is always positive-semi-definite.   
+    
+All these properties of convex functions make them ideal to be chosen as candidate decision functions in hypothesis set of a machine learning problem.     
 
 ## References
 1. [Numerical Optimization by Dr. Shirish K. Shevade, Department of Computer Science and Engineering, IISc Bangalore](http://www.nptelvideos.in/2012/11/numerical-optimization.html)
