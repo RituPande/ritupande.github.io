@@ -22,7 +22,7 @@ This article will answer questions like:
 - What are different flavors of Convex Programming Problem - based on the properties of the convex function being optimized and its use cases .
   
 
-## 1. Convex Set:
+## 1. Convex Set
 
 ** Convex Set ** : A set is called convex if for any two points in the set, the points on the line segment joining the two points lies entirely within the set.   
 
@@ -47,7 +47,7 @@ The equations represents points on the line segment joining $$ x_1, x_2  $$  whe
 This information allows us to formally define *Convex Set* as follows:   
 A set  $$ C  \in  R^n $$  is called **convex set** if for any two points $$ x_1 $$ and $$ x_2 $$ in C and any scalar  $$ \lambda $$  s.t.  $$ \lambda \in [0,1] $$  :  
 $$ \lambda + (1-\lambda ) x_2 \in  C $$    
-
+  
 ### 1.1 Properties of Convex Set    
 -	If $$ C_i $$ is a collection of convex sets, then $$ \displaystyle C_1 \cap C_2 \cap …\cap C_n $$ is a convex set  
 -	If  $$ C_1, C_2 $$ are convex sets then C_1 + C_2  is a convex set  
