@@ -24,7 +24,7 @@ This article will answer questions like:
 
 ## 1. Convex Set
 
-** Convex Set ** : A set is called convex if for any two points in the set, the points on the line segment joining the two points lies entirely within the set.   
+ A set is called *Convex* if for any two points in the set, the points on the line segment joining the two points lies entirely within the set.   
 
 <BR><BR>
 <p align="center">
@@ -50,7 +50,7 @@ $$ \lambda + (1-\lambda ) x_2 \in  C $$
   
 ### 1.1 Properties of Convex Set    
 -	If $$ C_i $$ is a collection of convex sets, then $$ \displaystyle C_1 \cap C_2 \cap …\cap C_n $$ is a convex set  
--	If  $$ C_1, C_2 $$ are convex sets then C_1 + C_2  is a convex set  
+-	If  $$ C_1, C_2 $$ are convex sets then $$ C_1 + C_2 $$ is a convex set  
 -	If $$ C $$ is a convex set then $$ \alpha C $$ is also a convex set   
 -	For a non-empty convex set C, there exists a unique point $$ x_o  \in C $$ which is at a minimum distance from $$ y \notin  C $$. Furthermore, $$ x_o $$ is a minimizing point iff:
   $$ (y-x_o) (x -x_o) < 0 $$  
