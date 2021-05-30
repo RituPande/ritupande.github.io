@@ -103,7 +103,7 @@ As we see , $$ f(x_1) + g(x_1)^T (x – x_1 ) $$ is first order approximation of
   
 This property of differential convex functions can be used to :
 1. Find a crude lower bound of a convex function in a specifed interval.  
-2. To understand how the gradient of a convex function changes w.r.t. its inputs
+2. Understand how the gradient of a convex function changes w.r.t. its inputs
   
     Let $$ x_1, x_2 \in C s.t. x_2 \geq x_1 $$         
     Using the above property of convex functions:  
