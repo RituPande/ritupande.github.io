@@ -102,12 +102,14 @@ Using the above property of convex functions:
 $$ f(x_2)  \geq  f(x_1) + g(x_1)^T (x_2 – x_1 ) $$      
 $$ f(x_1)  \geq  f(x_2) + g(x_2)^T (x_1 – x_2 ) $$      
   
-The two equations can be combined to give:  
+The two equations can be combined to give:
   
 $$  g(x_2)^T (x_2 – x_1 ) \geq f(x_2) - f(x_1)  \geq   g(x_1)^T (x_2 – x_1 ) $$ 
   
 This implies :      
 $$ g(x_2)  \geq g(x_1) $$ when $$ x_2 \geq x_1 $$ i.e. for a differentiable convex function  of one variable, the gradient is non-decreasing. The converse of the statement is also true.   
+  
+This property forms the basis of the most popular first-order optimization technique - *Gradient Descent* and its variants.
   
 ### 2.3 Operations that Preserve Convexity
 -	If $$ f_1,f_2,…,f_k : R^n \rightarrow R $$ are convex functions, then $$ f(x) = \sum_{i=1}^k \alpha_i f_i(x)  $$ is also a convex function.
