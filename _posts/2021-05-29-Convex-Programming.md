@@ -45,8 +45,10 @@ The equations represents points on the line segment joining $$ x_1, x_2  $$  whe
 </p> 
 
 This information allows us to formally define *Convex Set* as follows:   
+  
 A set  $$ C  \in  R^n $$  is called **convex set** if for any two points $$ x_1 $$ and $$ x_2 $$ in C and any scalar  $$ \lambda $$  s.t.  $$ \lambda \in [0,1] $$  :  
 $$ \lambda + (1-\lambda ) x_2 \in  C $$    
+ 
   
 ### 1.1 Properties of Convex Set    
 -	If $$ C_i $$ is a collection of convex sets, then $$ \displaystyle C_1 \cap C_2 \cap …\cap C_n $$ is a convex set  
@@ -67,6 +69,15 @@ This implies that any point, on the line segment joining two points on a convex 
   <img src="../images/convex_function.png"> <br><br>
 </p>   
 
+  
+**Jensen's Inequality**  extends the same concepts to multiple points:  
+
+  If $$ C \subseteq R^n $$ is a convex set, then function  $$ f : C \rightarrow R $$ is said to be convex iff:  
+  $$ f( \{sum_i=0}^k \lambda x_i )  \leq \sum_{i=0}^k \lambda_i f(x_i)$$  
+    
+  **where** $$ x_1,x_2....x_k \in C , \lambda_i >=0, \sum_{i=0}^k \lambda_i = 1 $$  
+    
+ 
 
 *Examples:*    
 - 	$$ f(x) = a^T x + b $$ : This function is both convex and concave for $$ x \in R^n $$  
