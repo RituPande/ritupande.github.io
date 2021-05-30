@@ -49,7 +49,7 @@ A set  $$ C  \in  R^n $$  is called **convex set** if for any two points $$ x_1 
 $$ \lambda + (1-\lambda ) x_2 \in  C $$    
 
 ### 1.1 Properties of Convex Set    
--	If $$ C_i $$ is a collection of convex sets, then $$ \displaystyle C_1 \cap C_2 \cap …\cap C_n is a convex set  
+-	If $$ C_i $$ is a collection of convex sets, then $$ \displaystyle C_1 \cap C_2 \cap …\cap C_n $$ is a convex set  
 -	If  $$ C_1, C_2 $$ are convex sets then C_1 + C_2  is a convex set  
 -	If $$ C $$ is a convex set then $$ \alpha C $$ is also a convex set   
 -	For a non-empty convex set C, there exists a unique point $$ x_o  \in C $$ which is at a minimum distance from $$ y \notin  C $$. Furthermore, $$ x_o $$ is a minimizing point iff:
