@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to Convex Programming
-published: false
+published: true
 ---
 
 In the previous [article](../_posts/2021-04-04-Introduction-to-Statistical-Learning-Theory.md), we discussed that we cannot evaluate all possible decision functions for a machine learning problem, due to time and processing constraints. Hence, we restrict the set of candidate functions to a set called hypothesis space.
