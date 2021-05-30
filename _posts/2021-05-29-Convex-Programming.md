@@ -5,7 +5,7 @@ published: true
 ---
 
 In the previous [article](https://ritupande.github.io/Introduction-to-Statistical-Learning-Theory/), we discussed that we cannot evaluate all possible decision functions for a machine learning problem, due to time and processing constraints. Hence, we restrict the set of candidate functions to a set called hypothesis space.
-Hypothesis set typically includes those functions that are easy to work with and optimize. One such class of functions is called *Convex Functions* and the task of finding the optimal value of such functions is termed as *Convex Programming Problem*.  More formally, 
+Hypothesis space typically includes those functions that are easy to work with and optimize. One such class of functions is called *Convex Functions* and the task of finding the optimal value of such functions is termed as *Convex Programming Problem*.  More formally, 
 
 
 If $$ C \subseteq R^n $$  is a nonempty convex set and $$ f: C \rightarrow R $$ be a convex function then a convex programming problem is defined as:  
@@ -102,12 +102,11 @@ Now that we understand what convex sets and functions are, let us re-state the s
   
 If $$ C \subseteq R^n is a nonempty convex set and f: C \rightarrow R be a convex function then a convex programming problem is defined as:
   
-<p align="center">  
    
 **min** f(x)    
 **s.t.** $$ x \in C $$ 
    
- </p>  
+
 Based on what we have seen till now, we can say that for any convex programming problem, the following properties hold good:    
 -	Every local minimum of a convex function is a global minimum      
 -	Set of all optimal solutions to a convex programming problem form a convex set.     
@@ -118,13 +117,11 @@ A standard convex programming can be modified to add inequality and/or equality 
   
 If $$ C \subseteq R^n is a nonempty convex set and f: C \rightarrow R be a convex function then a constrained convex programming problem is defined as:  
   
-<p align="center">  
   
 **min** f(x)  
 **s.t.**  $$ h_i (x) \leq 0 $$  where h is a convex function and  i= 1 to m    
 $$ e_j(x) = 0  where e(x) = a^T + b $$ and therefore convex and j = 1 to n    
   
- </p>  
   
 As we know,  
   
@@ -136,12 +133,10 @@ Therefore, solutions to h(x) and e(x) i.e. the  constraints to the convex functi
 ### 3.3 Convex  Programming Problem for Differentiable Functions
 If $$ C \subseteq R^n $$ is a nonempty convex set and $$ f: C \rightarrow R $$ be a differential convex function then the convex programming problem providing lower bound on the value of function **f** is defined as:  
   
-<p align="center">   
-  
- **min** $$ f(x_o) + g(x)(x-x_o) $$  
+
+**min** $$ f(x_o) + g(x)(x-x_o) $$  
 **s.t.** $$ x, x_o \in C $$    
 
-</p>  
   
 Note that the solution of the above function is not exactly the optimal value but only a lower bound in a specified interval.  
   
