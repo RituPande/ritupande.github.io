@@ -57,8 +57,9 @@ $$ \lambda + (1-\lambda ) x_2 \in  C $$
 
 
 ## 2. Convex Functions  
-If $$ C \subseteq R^n is a convex set, then function  $$ f : C \rightarrow R $$ is said to be convex if for any $$ x_1, x_2  \in C $$ and  $$ \lambda \in [0,1] $$ :  
-$$ f(\lambda x_1 + (1-\lambda) x_2 )  \leq \lambda f(x_1) + (1- \lambda ) f (x_2)  
+If $$ C \subseteq R^n $$ is a convex set, then function  $$ f : C \rightarrow R $$ is said to be convex if for any $$ x_1, x_2  \in C $$ and  $$ \lambda \in [0,1] $$ :  
+$$ f(\lambda x_1 + (1-\lambda) x_2 )  \leq \lambda f(x_1) + (1- \lambda ) f (x_2)  $$  
+                             
 This implies that any point, on the line segment joining two points on a convex function, lies above the value of the function at that point 
 
 <p align="center">
@@ -66,11 +67,12 @@ This implies that any point, on the line segment joining two points on a convex 
 </p>   
 
 
- Examples:    
-1.	$$ f(x) = a^T x + b $$ : This function is both convex and concave for $$ x \in R^n $$  
-2.	$$ e^x , e ^{-x} $$:  This function is convex for $$ x \in R^n $$  
-3.	$$ log( x ) $$: This function is convex for $$ x \in R^n : x > 0 $$ 
-4.	$$ x^3 $$: This function is convex for $$ x \in R^n : x > 0 $$  
+*Examples:*    
+- 	$$ f(x) = a^T x + b $$ : This function is both convex and concave for $$ x \in R^n $$  
+- 	$$ e^x , e ^{-x} $$:  This function is convex for $$ x \in R^n $$  
+- 	$$ log( x ) $$: This function is convex for $$ x \in R^n : x > 0 $$ 
+- 	$$ x^3 $$: This function is convex for $$ x \in R^n : x > 0 $$  
+    
 ### 2.1 Level Set of Convex Functions  
 Level set of a convex function f(x) is the set of all x for which the value of the function f(x) is below a specified value. More formally:
 If $$ C \subseteq R^n $$ is a nonempty convex set and $$ f: C \rightarrow R $$ be a convex function, then  **level set** of  the function **f**  for a given $$ \alpha $$ is defined as:  
