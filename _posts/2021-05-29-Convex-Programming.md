@@ -75,8 +75,9 @@ This implies that any point, on the line segment joining two points on a convex 
     
 ### 2.1 Level Set of Convex Functions  
 Level set of a convex function f(x) is the set of all x for which the value of the function f(x) is below a specified value. More formally:
-If $$ C \subseteq R^n $$ is a nonempty convex set and $$ f: C \rightarrow R $$ be a convex function, then  **level set** of  the function **f**  for a given $$ \alpha $$ is defined as:  
-$$ C_\alpha = { x \in C : f(x) \leq \alpha , \alpha \in  R $$ }
+If $$ C \subseteq R^n $$ is a nonempty convex set and $$ f: C \rightarrow R $$ be a convex function, then  level set of  the function **f**  for a given $$ \alpha $$ is defined as:  
+$$ C_{\alpha} = { x \in C : f(x) \leq \alpha , \alpha \in  R } $$
+
 
 ### 2.2 Differential Convex Functions 
 If $$ C \subseteq R^n $$ is a convex set and $$ f: \righarrow R is a differentiable function, then *f* is convex iff :  
