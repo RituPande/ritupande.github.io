@@ -33,7 +33,7 @@ The equations represents points on the line segment joining $$ x_1, x_2  $$  whe
 
 </p> 
 
-A set  $$ C  \in  R^n $$  is called **convex set** if for any two points $$ x_1 $$ and $$ x_2 $$ in C and any scalar  $$ \lambda s.t.   \lambda \in [0,1] $$  :  
+A set  $$ C  \in  R^n $$  is called **convex set** if for any two points $$ x_1 $$ and $$ x_2 $$ in C and any scalar  $$ \lambda $$  s.t.  $$ \lambda \in [0,1] $$  :  
 $$ \lambda + (1-\lambda ) x_2 \in  C $$  
 What it means is that  for any two points in a convex set, the points on the line segment joining the two points lies entirely within the set.  
 <BR><BR>
