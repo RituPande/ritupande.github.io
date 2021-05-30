@@ -4,7 +4,7 @@ title: Introduction to Convex Programming
 published: true
 ---
 
-In the previous [article](../_posts/2021-04-04-Introduction-to-Statistical-Learning-Theory.md), we discussed that we cannot evaluate all possible decision functions for a machine learning problem, due to time and processing constraints. Hence, we restrict the set of candidate functions to a set called hypothesis space.
+In the previous [article](https://ritupande.github.io/Introduction-to-Statistical-Learning-Theory/), we discussed that we cannot evaluate all possible decision functions for a machine learning problem, due to time and processing constraints. Hence, we restrict the set of candidate functions to a set called hypothesis space.
 Hypothesis set typically includes those functions that are easy to work with and optimize. One such class of functions is called *Convex Functions* and the task of finding the optimal value of such functions is termed as *Convex Programming Problem*.  More formally, 
 
 
