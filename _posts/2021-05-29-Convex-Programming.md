@@ -58,6 +58,7 @@ $$ \lambda + (1-\lambda ) x_2 \in  C $$
 
 ## 2. Convex Functions  
 If $$ C \subseteq R^n $$ is a convex set, then function  $$ f : C \rightarrow R $$ is said to be convex if for any $$ x_1, x_2  \in C $$ and  $$ \lambda \in [0,1] $$ :  
+  
 $$ f(\lambda x_1 + (1-\lambda) x_2 )  \leq \lambda f(x_1) + (1- \lambda ) f (x_2)  $$  
                              
 This implies that any point, on the line segment joining two points on a convex function, lies above the value of the function at that point 
@@ -74,13 +75,14 @@ This implies that any point, on the line segment joining two points on a convex 
 - 	$$ x^3 $$: This function is convex for $$ x \in R^n : x > 0 $$  
     
 ### 2.1 Level Set of Convex Functions  
-Level set of a convex function f(x) is the set of all x for which the value of the function f(x) is below a specified value. More formally:
+Level set of a convex function f(x) is the set of all x for which the value of the function f(x) is below a specified value. More formally:  
+
 If $$ C \subseteq R^n $$ is a nonempty convex set and $$ f: C \rightarrow R $$ be a convex function, then  level set of  the function **f**  for a given $$ \alpha $$ is defined as:  
 $$ C_{\alpha} = { x \in C : f(x) \leq \alpha , \alpha \in  R } $$
 
 
 ### 2.2 Differential Convex Functions 
-If $$ C \subseteq R^n $$ is a convex set and $$ f: \righarrow R is a differentiable function, then *f* is convex iff :  
+If $$ C \subseteq R^n $$ is a convex set and $$ f: \righarrow R $$  is a differentiable function, then *f* is convex iff :    
 $$ f(x_2)  \geq  f(x_1) + g(x_1)^T (x_2 – x_1 ) $$  
 For $$ x_1, x_2 \in C and g(x) = \nabla x $$ 
 <BR><BR>
