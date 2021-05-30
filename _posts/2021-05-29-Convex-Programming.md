@@ -122,7 +122,7 @@ The above properties of convex functions can be used to form new convex function
 
 Now that we understand what convex sets and functions are, let us re-state the standard convex programming problem:  
   
-If $$ C \subseteq R^n is a nonempty convex set and f: C \rightarrow R be a convex function then a convex programming problem is defined as:
+If $$ C \subseteq R^n $$ is a nonempty convex set and $$ f: C \rightarrow R $$ be a convex function then a convex programming problem is defined as:
   
    
 **min** f(x)    
