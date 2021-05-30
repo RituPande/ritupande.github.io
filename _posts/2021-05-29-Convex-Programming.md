@@ -10,13 +10,10 @@ Hypothesis set typically includes those functions that are easy to work with and
 
 If $$ C \subseteq R^n $$  is a nonempty convex set and $$ f: C \rightarrow R $$ be a convex function then a convex programming problem is defined as:  
   
-<p align="center">  
-   
+ 
 **min** f(x)    
 **s.t.** $$ x \in C $$ 
-   
- </p>
-  
+     
 This article will answer questions like:  
 
 - What are of Convex Sets ?  
