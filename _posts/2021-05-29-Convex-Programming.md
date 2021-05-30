@@ -23,6 +23,17 @@ This article will answer questions like:
   
 
 ## 1. Convex Set:
+
+** Convex Set ** : A set is called convex if for any two points in the set, the points on the line segment joining the two points lies entirely within the set.   
+
+<BR><BR>
+<p align="center">
+  <img src="../images/convex_sets.png"> <br><br>
+  
+</p>   
+  
+To enable us to define this more formally, let us see how a parameterized equation of a line passing through two points can be defined:
+
 A line segment passing through two points $$ x_1, x_2 $$ with parameter $$ \lambda \in R $$  can be written as:    
 $$ \lambda x_1 + (1-\lambda) x_2 $$    
   
@@ -33,16 +44,11 @@ The equations represents points on the line segment joining $$ x_1, x_2  $$  whe
 
 </p> 
 
+This information allows us to formally define *Convex Set* as follows:   
 A set  $$ C  \in  R^n $$  is called **convex set** if for any two points $$ x_1 $$ and $$ x_2 $$ in C and any scalar  $$ \lambda $$  s.t.  $$ \lambda \in [0,1] $$  :  
-$$ \lambda + (1-\lambda ) x_2 \in  C $$  
-What it means is that  for any two points in a convex set, the points on the line segment joining the two points lies entirely within the set.  
-<BR><BR>
-<p align="center">
-  <img src="../images/convex_sets.png"> <br><br>
-  
-</p>   
-  
- ### 1.1 Properties of convex set    
+$$ \lambda + (1-\lambda ) x_2 \in  C $$    
+
+### 1.1 Properties of Convex Set    
 -	If $$ C_i $$ is a collection of convex sets, then $$ \displaystyle C_1 \cap C_2 \cap …\cap C_n is a convex set  
 -	If  $$ C_1, C_2 $$ are convex sets then C_1 + C_2  is a convex set  
 -	If $$ C $$ is a convex set then $$ \alpha C $$ is also a convex set   
