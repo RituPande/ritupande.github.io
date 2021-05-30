@@ -23,10 +23,10 @@ This article will answer questions like:
   
 
 ## 1. Convex Set:
-A line segment passing through two points $$ x_1, x_2 $$ with parameter $$ lambda \in R $$  can be written as:    
-$$ \lambda_x1 x_1 + (1-\lambda) x_2 $$    
+A line segment passing through two points $$ x_1, x_2 $$ with parameter $$ \lambda \in R $$  can be written as:    
+$$ \lambda x_1 + (1-\lambda) x_2 $$    
   
-The equations represents points on the line segment joining $$ x_1, x_2  $$  when $$ lambda in [0,1] $$ . For \lambda values negative or  greater than one, the equation represents the point  beyond the line segment joining  $$ x_1, x_2  $$  
+The equations represents points on the line segment joining $$ x_1, x_2  $$  when $$ \lambda \in [0,1] $$ . For $$ \lambda $$  values negative or  greater than one, the equation represents the point  beyond the line segment joining  $$ x_1, x_2  $$  
 <BR><BR>
 <p align="center">
   <img src="../images/line_segment.png"> <br><br>
