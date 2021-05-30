@@ -83,15 +83,18 @@ $$ C_{\alpha} = { x \in C : f(x) \leq \alpha , \alpha \in  R } $$
 
 ### 2.2 Differential Convex Functions 
 If $$ C \subseteq R^n $$ is a convex set and $$ f: \rightarrow R $$  is a differentiable function, then *f* is convex iff :    
-$$ f(x_2)  \geq  f(x_1) + g(x_1)^T (x_2 – x_1 ) $$  
-For $$ x_1, x_2 \in C , g(x) = \nabla f(x) $$ 
+$$ f(x_2)  \geq  f(x_1) + g(x_1)^T (x_2 – x_1 ) $$ where $$ x_1, x_2 \in C $$ and $$ g(x) = \nabla f(x) $$ 
 <BR><BR>
 <p align="center">
   <img src="../images/diff_convex_function.png"> <br><br>
 </p>   
-As we see , $$ f(x_1) + g(x_1)^T (x – x_1 ) $$ is first order approximation of function *f* at $$ x_1 $$. The definition implies that first order approximation of a convex function never overestimates the function  
+As we see , $$ f(x_1) + g(x_1)^T (x – x_1 ) $$ is first order approximation of function *f* at $$ x_1 $$. The definition implies that first order approximation of a convex function never overestimates the function.  
   
-This property of differentiable convex functions also allows us to understand how the gradient of a convex function changes w.r.t. its inputs:
+This property of differential convex functions can be used to :
+1. Find a crude lower bound of a convex function in a specifed interval.  
+2. To understand how the gradient of a convex function changes w.r.t. its inputs
+
+While point-1 is self-explanatory, point-2 might require some explanation:
   
 Let $$ x_1, x_2 \in C s.t. x_2 \geq x_1 $$         
 Using the above property of convex functions:  
