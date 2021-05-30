@@ -137,12 +137,12 @@ Based on what we have seen till now, we can say that for any convex programming 
 
 A standard convex programming can be modified to add inequality and/or equality constraints to it.   
   
-If $$ C \subseteq R^n is a nonempty convex set and f: C \rightarrow R be a convex function then a constrained convex programming problem is defined as:  
+If $$ C \subseteq R^n $$ is a nonempty convex set and $$ f: C \rightarrow R $$ be a convex function then a constrained convex programming problem is defined as:  
   
   
 **min** f(x)  
 **s.t.**  $$ h_i (x) \leq 0 $$  where h is a convex function and  i= 1 to m    
-$$ e_j(x) = 0  where e(x) = a^T + b $$ and therefore convex and j = 1 to n    
+$$ e_j(x) = 0 $$  where $$ e(x) = a^T + b $$ and therefore convex and j = 1 to n    
   
   
 As we know,  
