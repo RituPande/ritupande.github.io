@@ -112,6 +112,7 @@ This property of differential convex functions can be used to :
     $$ f(x_1)  \geq  f(x_2) + g(x_2)^T (x_1 – x_2 ) $$      
 
     The two equations can be combined to give:  
+      
     $$ g(x_2)^T (x_2 – x_1 ) \geq f(x_2) - f(x_1)  \geq   g(x_1)^T (x_2 – x_1 ) $$ 
 
     This implies, $$ g(x_2)  \geq g(x_1) $$ when $$ x_2 \geq x_1 $$ i.e. for a differentiable convex function  of one variable, the gradient is non-decreasing. The converse of the statement is also true.
@@ -120,8 +121,7 @@ This property of differential convex functions can be used to :
 
     Let $$ g(x^*) $$ = 0 where $$ x^*,x \in C $$, then:
 
-    $$ f(x)  \geq  f(x^*) + g(x^*)^T (x – x^* ) $$  
-    $$ \implies f(x)  \geq  f(x^*) $$  
+    $$ f(x)  \geq  f(x^*) + g(x^*)^T (x – x^* ) \implies f(x)  \geq  f(x^*) $$  
 
      **i.e.** the value of the convex function at every other point is greater than the value at $$ x^* $$  which implies that  $$ x^* $$ is the global optima.
   
