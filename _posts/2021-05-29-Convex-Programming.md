@@ -5,7 +5,7 @@ published: true
 ---
 
 In the [previous](https://ritupande.github.io/Introduction-to-Statistical-Learning-Theory/) article, we discussed that we cannot evaluate all possible decision functions for a machine learning problem, due to time and processing constraints. Hence, we restrict the set of candidate functions to a set called hypothesis space.
-Hypothesis space typically includes those functions that are easy to work with and optimize. One such class of functions is called *Convex Functions* and the task of finding the optimal value of such functions is termed as *Convex Programming Problem*.  More formally, 
+Hypothesis space typically includes those functions that are easy to work with and optimize. One such class of functions is called *Convex Functions* and the task of finding the optimal value of such functions is termed as *Convex Programming* problem.  More formally, 
 
 
 If $$ C \subseteq R^n $$  is a nonempty convex set and $$ f: C \rightarrow R $$ be a convex function then a convex programming problem is defined as:  
