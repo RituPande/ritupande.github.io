@@ -125,6 +125,11 @@ This property of differential convex functions can be used to :
   
 Hence, this property ensures that the most popular first-order optimization technique - *Gradient Descent* and its variants  when  applied to functions that are not convex in the entirety of their domain,  finds a local optima. For convex functions, the algorithm is guaranteed to find the global optima.
   
+**Properties of differential convex functions:**  
+-	If $$ f: C \rightarrow R $$ is a twice differentiable function on a convex set $$ C \subseteq R^n $$. Then f is convex iff its Hessian is positive semi-definite.    
+-	First order condition $$ \nabla f (x)= 0 $$ is a sufficient condition for finding the minimum of the function and second order information is not required. This is because the hessian of a convex function is always positive semi-definite.
+  
+  
 ### 2.3 Operations that Preserve Convexity
 -	If $$ f_1,f_2,…,f_k : R^n \rightarrow R $$ are convex functions, then $$ f(x) = \sum_{i=1}^k \alpha_i f_i(x)  $$ is also a convex function.
 -	If $$ h:R \rightarrow R $$ and $$ f:R \rightarrow R $$   then $$ \psi(x)= h(f(x)) $$ is also convex if :  
@@ -167,20 +172,16 @@ As we know,
   
 Therefore, solutions to h(x) and e(x) i.e. the  constraints to the convex function f(x), are also convex sets  
   
-### 3.3 Convex  Programming Problem for Differentiable Functions
+### 3.3 Lower Bound of Convex  Programming Problem for Differentiable Functions
 If $$ C \subseteq R^n $$ is a nonempty convex set and $$ f: C \rightarrow R $$ be a differential convex function then the convex programming problem providing lower bound on the value of function **f** is defined as:  
   
 
 **min** $$ f(x_o) + g(x)(x-x_o) $$  
 **s.t.** $$ x, x_o \in C $$    
 
+In other words, the solution to the above convex programming problem provides lower bound, within a specified interval containing $$ x_o $$,  to the general convex programming problem where *f* is differentiable
   
-Note that the solution of the above function is not exactly the optimal value but only a lower bound in a specified interval.  
-  
-**Properties of differential convex functions:**  
--	If $$ f: C \rightarrow R $$ is a twice differentiable function on a convex set $$ C \subseteq R^n $$. Then f is convex iff its Hessian is positive semi-definite.    
--	First order condition $$ \nabla f (x)= 0 $$ is a sufficient condition for finding the minimum of the function and second order information is not required. This is because the hessian of a convex function is always positive semi-definite.  
- 
+
 ## Summary
  Restricting the hypothesis set of decision functions of supervised machine learning problems to convex functions over convex sets allows for computationally efficient methods to be used to find their optimal values. There is no fear of being stuck in a local optima as any local optima is also global optima of convex functions. Moreover, if the convex function is differentiable:
 - Its first order approximation can be used to find the lower bound of its optimal value within a specified interval.   
