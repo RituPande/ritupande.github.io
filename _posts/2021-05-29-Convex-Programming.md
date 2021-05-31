@@ -129,8 +129,9 @@ Hence, this property ensures that the most popular first-order optimization tech
   
 ### 2.3 Operations that Preserve Convexity
 -	If $$ f_1,f_2,…,f_k : R^n \rightarrow R $$ are convex functions, then $$ f(x) = \sum_{i=1}^k \alpha_i f_i(x)  $$ is also a convex function.
--	If $$ h:R \rightarrow R $$ and $$ f:R \rightarrow R $$   then $$ \psi(x) h(f(x)) is also convex if
-h is convex and non-decreasing and f is convex or h is convex and non-increasing and f is concave.  
+-	If $$ h:R \rightarrow R $$ and $$ f:R \rightarrow R $$   then $$ \psi(x)= h(f(x)) $$ is also convex if :  
+  h is convex and non-decreasing and f is convex or  
+  h is convex and non-increasing and f is concave.    
     
 The above properties of convex functions can be used to form new convex functions from the ones that are known to be convex.
   
