@@ -47,7 +47,7 @@ The equations represents points on the line segment joining $$ x_1, x_2  $$  whe
 This information allows us to formally define *Convex Set* as follows:   
   
 A set  $$ C  \in  R^n $$  is called **convex set** if for any two points $$ x_1 $$ and $$ x_2 $$ in C and any scalar  $$ \lambda $$  s.t.  $$ \lambda \in [0,1] $$  :  
-$$ \lambda + (1-\lambda ) x_2 \in  C $$    
+$$ \lambda x_1 + (1-\lambda ) x_2 \in  C $$    
  
   
 ### 1.1 Properties of Convex Set    
