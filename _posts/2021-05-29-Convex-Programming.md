@@ -115,8 +115,7 @@ This property of differential convex functions can be used to :
 
     $$  g(x_2)^T (x_2 – x_1 ) \geq f(x_2) - f(x_1)  \geq   g(x_1)^T (x_2 – x_1 ) $$ 
 
-    This implies :      
-    $$ g(x_2)  \geq g(x_1) $$ when $$ x_2 \geq x_1 $$ i.e. for a differentiable convex function  of one variable, the gradient is non-decreasing. The converse of the statement is also true.
+    This implies, $$ g(x_2)  \geq g(x_1) $$ when $$ x_2 \geq x_1 $$ i.e. for a differentiable convex function  of one variable, the gradient is non-decreasing. The converse of the statement is also true.
   
 3. Identify the point at which the value of the function is optimal
 
@@ -125,7 +124,7 @@ This property of differential convex functions can be used to :
     $$ f(x)  \geq  f(x^*) + g(x^*)^T (x – x^* ) $$
     $$ \implies f(x)  \geq  f(x^*) $$  
 
-     **i.e.** the value of the convex function at every other point is greater than the value at $$ x^* $$  which implies that  $$ x^* $$ is the global optima. This implies      that x, where $$  \nabla f(x) = 0 $$ represents the global optima for a convex function.
+     **i.e.** the value of the convex function at every other point is greater than the value at $$ x^* $$  which implies that  $$ x^* $$ is the global optima.
   
 Hence, this property ensures that the most popular first-order optimization technique - *Gradient Descent* and its variants  when  applied to functions that are not convex in the entirety of their domain,  finds a local optima. For convex functions, the algorithm is guaranteed to find the global optima.
   
