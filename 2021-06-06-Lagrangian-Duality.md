@@ -14,6 +14,6 @@ The generalized constrained optimization then reduces to:
 **min** f(x)    
 **s.t.** $$ h(x_i) $$  < = 0 , i = 1,2,...m    
 
-## 1. Lagrangian of a Constarined Optimization Problem
+## 1. Lagrangian of Constrained Optimization Problem
 
 
