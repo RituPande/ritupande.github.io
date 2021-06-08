@@ -22,12 +22,26 @@ The Lagrangian of the general constrained optimization problem can be defined as
   
   \lamda_i 's  are called *Lagrangian multipliers* or *dual variables*   
   
-  Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda) $$ is equivalent to the original optimization problem - the decision function and the constraints.  This can be seen in the equation below:  
+  Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda) $$ is equivalent to the original the decision function and the constraints put together.  This can be seen in the equation below:  
     
-  $$ sup_{\lambda_i \ge 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0}  f(x) + \sum_i=1^m \lambda_i h(x_i)  $$ 
+  $$ sup_{\lambda_i \ge 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0}  f(x) + \sum_i=1^m \lambda_i h(x_i)  $$  
   $$ sup_{\lambda_i \ge 0} L(x, \lambda)  = f(x), when h(x)_i \le 0 $$  
   nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp; = $$ \infinity otherwise $$  
   
-  If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda_i \ge 0} L(x, \lambda)  is infinity. If however, $$ h_i(x) \le 0 $$, then the supremum of Langrangian function can be obtained only by setting the value of \lambda_i to 0. 
+If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda_i \ge 0} L(x, \lambda)  is infinity. If however, $$ h_i(x) \le 0 $$, then the supremum of Langrangian function can be obtained only by setting the value of \lambda_i to 0.  So the optimization problem is equivalent to :
   
-
+ $$ p^* =  inf_x sup_{\lambda_i \ge 0} L(x, \lambda) $$  
+ 
+ This form of the optimization  problem is called the **Primal* form.
+ 
+ The **Lagrangian Dual** problem is defined as:  
+   
+  $$ d^* =  sup_{\lambda_i \ge 0} inf_x L(x, \lambda) $$  
+  
+  ### 1.1  Weak Duality    
+    
+  It can be 
+ 
+  
+## References
+[Lec-9:Langrangian Duality and Convex Optimization from  Foundations of Machine Learning Bloomberg ML EDU](https://bloomberg.github.io/foml/#lecture-9-lagrangian-duality-and-convex-optimization)
