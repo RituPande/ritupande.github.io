@@ -20,7 +20,7 @@ The Lagrangian of the general constrained optimization problem can be defined as
   
   $$ L(x, \lambda) = f(x) + \sum_i=1^m \lambda_i h(x_i) $$    
   
-  \lamda_i 's  are called *Lagrangian multipliers* or *dual variables*   
+  \lamda_i 's  are called ***Lagrangian multipliers*** or ***dual variables***   
   
   Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda) $$ is equivalent to the original the decision function and the constraints put together.  This can be seen in the equation below:  
     
@@ -32,15 +32,22 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   
  $$ p^* =  inf_x sup_{\lambda_i \ge 0} L(x, \lambda) $$  
  
- This form of the optimization  problem is called the **Primal* form.
+ This form of the optimization  problem is called the **Primal** form.
  
- The **Lagrangian Dual** problem is defined as:  
-   
+  
+  ## 2.  Lagrangian Dual    
+    
+  The **Lagrangian Dual** of primal form of a constrained optimization problem is defined as:    
+    
   $$ d^* =  sup_{\lambda_i \ge 0} inf_x L(x, \lambda) $$  
   
-  ### 1.1  Weak Duality    
-    
-  It can be 
+  The Lagrangian dual provides lower limit to the solution of the primal form of any optimization problem.i.e.  
+  $$ d^* \le p* $$   
+  
+  This is called as ***weak duality**
+  
+ 
+  
  
   
 ## References
