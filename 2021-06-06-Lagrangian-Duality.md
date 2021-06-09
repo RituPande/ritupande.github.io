@@ -53,10 +53,12 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   $$ \implies inf_w{ \in W} f(w, z_o ) \le sup_{z \in Z } f(w_o,z ) $$  
   $$ \implies sup_{z_o \in Z} inf_{w \in W} f(w, z_o ) \le inf_{w_o \in W} sup_{z \in Z } f(w_o,z ) $$  
      
-  The above result provides proof that:    
-  $$ d^* \le p* $$  
+  The above result provides proof that:      
+  $$ d^* \le p* $$      
+      
+  $$ d^* = p* $$ is called ***strong duality***  
   
-  ## Lagrangian Dual Function.
+  ### 2.1 Lagrangian Dual Function.
   
   The *Lagrangian Dual Function* is defined as:  
     
@@ -67,10 +69,17 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   **maximize** $$ g( \labmda ) $$    
   **s.t.** $$ \lambda /ge 0 $$  
     
-  $$ \lambda $$ are called ***dual feasible** if $$ \lambda /ge 0 $$  and g( \labmda ) > - \infinity $$  
-  $$ \lambda^* $$ are called ***dual optimal** if they give optimal value for Lagrangian Dual Problem $$  
+  $$ \lambda $$ are called ***dual feasible*** if $$ \lambda /ge 0 $$  and g( \labmda ) > - \infinity $$  
+  $$ \lambda^* $$ are called ***dual optimal*** if they give optimal value for Lagrangian Dual Problem $$  
   
+  ## 3. Why Lanrangian Dual
   
+  What might come to mind immediately is what purpose does taking Lagrangian dual of a primal problem serve ? Why should one bother about it?
+  
+  1. Lagrangian dual  greatly simplifies the primal problem. It removes all constraints from the problem aside the trivial  $$ \lambda /ge 0 $$ constraint, making them part of the objective dunction.    
+  2. Lagrangian dual function is always concave i.e its negative is a convex function. This is so because it only has affine constraints and point-wise minimum of affine functions is always a concave function. So even if the primal problem is not convex, its dual can be solved using convex optimization techniques.  
+  3. $$ d^* $$ can be used as stopping criteria while solving primal optimization problem.    
+  4. If the primal problem is convex, then it almost always guarnatees strong duality.  
   
   
   
