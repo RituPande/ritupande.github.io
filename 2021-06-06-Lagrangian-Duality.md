@@ -35,16 +35,47 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
  This form of the optimization  problem is called the **Primal** form.
  
   
-  ## 2.  Lagrangian Dual    
+  ## 2.  Lagrangian Dual Problem   
     
-  The **Lagrangian Dual** of primal form of a constrained optimization problem is defined as:    
+  The **Lagrangian Dual** of the primal form of a constrained optimization problem is defined as:    
     
   $$ d^* =  sup_{\lambda_i \ge 0} inf_x L(x, \lambda) $$  
   
-  The Lagrangian dual provides lower limit to the solution of the primal form of any optimization problem.i.e.  
+  The Lagrangian dual provides lower bound to the solution of the primal form of any optimization problem.i.e.  
   $$ d^* \le p* $$   
   
-  This is called as ***weak duality**
+  This property is called  ***weak duality*** and the difference between $$ p^* and d^* $$  is called ***duality gap***.   
+  It is easy to prove weak duality:  
+      
+  For any function $$ f: W X Z \rightarrow R and w_o \in W, z_o \in Z  $$:
+  
+  $$ inf_w{ \in W} f(w, z_o )  \ge f(w_o,z_o) \le sup_{z \in Z } f(w_o,z ) $$    
+  $$ \implies inf_w{ \in W} f(w, z_o ) \le sup_{z \in Z } f(w_o,z ) $$  
+  $$ \implies sup_{z_o \in Z} inf_{w \in W} f(w, z_o ) \le inf_{w_o \in W} sup_{z \in Z } f(w_o,z ) $$  
+     
+  The above result provides proof that:    
+  $$ d^* \le p* $$  
+  
+  ## Lagrangian Dual Function.
+  
+  The *Lagrangian Dual Function* is defined as:  
+    
+  $$ \displaystyle g(\lambda) = inf_x L(x, \lambda) = inf_x ( f(x) + \sum_i=1^m \lambda_i h(x_i) ) $$  
+  
+  Writing Lagrangian Dual problem in terms of the Langrangian Dual function:
+  
+  **maximize** $$ g( \labmda ) $$    
+  **s.t.** $$ \lambda /ge 0 $$  
+    
+  $$ \lambda $$ are called ***dual feasible** if $$ \lambda /ge 0 $$  and g( \labmda ) > - \infinity $$  
+  $$ \lambda^* $$ are called ***dual optimal** if they give optimal value for Lagrangian Dual Problem $$  
+  
+  
+  
+  
+  
+  
+  
   
  
   
