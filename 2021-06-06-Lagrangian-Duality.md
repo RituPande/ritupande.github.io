@@ -72,7 +72,7 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   $$ \lambda $$ are called ***dual feasible*** if $$ \lambda /ge 0 $$  and g( \labmda ) > - \infinity $$  
   $$ \lambda^* $$ are called ***dual optimal*** if they give optimal value for Lagrangian Dual Problem $$  
   
-  ## 3. Why Lanrangian Dual
+  ## 3. Why Lagrangian Dual
   
   What might come to mind immediately is what purpose does taking Lagrangian dual of a primal problem serve ? Why should one bother about it?
   
