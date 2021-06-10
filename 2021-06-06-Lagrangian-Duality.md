@@ -74,15 +74,35 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   
   ## 3. Why Lagrangian Dual
   
-  What might come to mind immediately is what purpose does taking Lagrangian dual of a primal problem serve ? Why should one bother about it?
+  What might come to the reader's mind is; what purpose the Lagrangian dual of a primal problem serve ? Why should one bother about it?
   
-  1. Lagrangian dual  greatly simplifies the primal problem. It removes all constraints from the problem aside the trivial  $$ \lambda /ge 0 $$ constraint, making them part of the objective dunction.    
+  1. Lagrangian dual  greatly simplifies the primal problem. It removes all constraints from the problem making them part of the objective dunction. The dual is left with only affine constarints $$ \lambda_i \ge 0 $$   
   2. Lagrangian dual function is always concave i.e its negative is a convex function. This is so because it only has affine constraints and point-wise minimum of affine functions is always a concave function. So even if the primal problem is not convex, its dual can be solved using convex optimization techniques.  
   3. $$ d^* $$ can be used as stopping criteria while solving primal optimization problem.    
   4. If the primal problem is convex, then it almost always guarnatees strong duality.  
   
+  ## 4. Complementary Slackness.
   
+  As we have seen, strong duality is not guatanteed 
   
+  ## 5. Constrained Convex Optimization Problem.
+  
+  As we have seen above, if the primal problem is convex, the dual Lagrangian $$ d^* $$ is almost always equal to $$ p^* $$ i.e. expresses strong duality. The constarined convex optimization problem can be stated as :
+  
+**min** f(x)    
+**s.t.** $$ h(x_i) $$  < = 0 , i = 1,2,...m    
+nbsp;nbsp;nbsp;nbsp;$$ f(x), h_i(x) \in convex functions $$  
+
+To identify if a constrained convex optimization problem expresses strong duality, the following conditions called the ***constaints qualifications***, must be met:
+  
+1. **Slater's constraint qualification** : is a sufficient condition, needed to prove strong duality.
+  - It states that $$ p^* = d^* $$ if atleast one point in the domain of the primal function must satify the constarints with strict inequality i.e be **stricly feasible***.
+  - For constrained convex optimziation problems with only affine constraints, only feasibilty of the constraints is required.
+  
+
+
+
+
   
   
   
