@@ -3,11 +3,11 @@ As we have previously disucssed in [this](https://ritupande.github.io/Introducti
 General constrained optimization problem can be defined as:    
 
 **min** f(x)    
-**s.t.** $$ h(x_i) $$  < = 0 , i = 1,2,...m    
+**s.t.** $$ h(x_i)  \leq 0 $$  , i = 1,2,...m    
 nbsp;nbsp;nbsp;nbsp;$$ e(x_i) $$ = 0, j = 1,2,...,p  
 
 However, equality constraints can be written in form of inequality constraints and therefore not required to be included in the problem definition.  
-i.e.  $$ e(x_i) = 0 \implies   0 \ge e(x_i) \le 0  $$  
+i.e.  $$ e(x_i) = 0 \implies   0 \geq e(x_i) \le 0  $$  
   
 The generalized constrained optimization then reduces to:  
   
@@ -24,13 +24,13 @@ The Lagrangian of the general constrained optimization problem can be defined as
   
   Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda) $$ is equivalent to the original the decision function and the constraints put together.  This can be seen in the equation below:  
     
-  $$ sup_{\lambda_i \ge 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0}  f(x) + \sum_i=1^m \lambda_i h(x_i)  $$  
-  $$ sup_{\lambda_i \ge 0} L(x, \lambda)  = f(x), when h(x)_i \le 0 $$  
+  $$ sup_{\lambda_i \geq 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0}  f(x) + \sum_i=1^m \lambda_i h(x_i)  $$  
+  $$ sup_{\lambda_i \geq 0} L(x, \lambda)  = f(x), when h(x)_i \le 0 $$  
   nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp; = $$ \infinity otherwise $$  
   
 If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda_i \ge 0} L(x, \lambda)  is infinity. If however, $$ h_i(x) \le 0 $$, then the supremum of Langrangian function can be obtained only by setting the value of \lambda_i to 0.  So the optimization problem is equivalent to :
   
- $$ p^* =  inf_x sup_{\lambda_i \ge 0} L(x, \lambda) $$  
+ $$ p^* =  inf_x sup_{\lambda_i \geq 0} L(x, \lambda) $$  
  
  This form of the optimization  problem is called the **Primal** form.
  
@@ -39,22 +39,22 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
     
   The **Lagrangian Dual** of the primal form of a constrained optimization problem is defined as:    
     
-  $$ d^* =  sup_{\lambda_i \ge 0} inf_x L(x, \lambda) $$  
+  $$ d^* =  sup_{\lambda_i \geq 0} inf_x L(x, \lambda) $$  
   
   The Lagrangian dual provides lower bound to the solution of the primal form of any optimization problem.i.e.  
-  $$ d^* \le p* $$   
+  $$ d^* \leq p* $$   
   
   This property is called  ***weak duality*** and the difference between $$ p^* and d^* $$  is called ***duality gap***.   
   It is easy to prove weak duality:  
       
   For any function $$ f: W X Z \rightarrow R and w_o \in W, z_o \in Z  $$:
   
-  $$ inf_w{ \in W} f(w, z_o )  \ge f(w_o,z_o) \le sup_{z \in Z } f(w_o,z ) $$    
-  $$ \implies inf_w{ \in W} f(w, z_o ) \le sup_{z \in Z } f(w_o,z ) $$  
-  $$ \implies sup_{z_o \in Z} inf_{w \in W} f(w, z_o ) \le inf_{w_o \in W} sup_{z \in Z } f(w_o,z ) $$  
+  $$ inf_w{ \in W} f(w, z_o )  \geq f(w_o,z_o) \leq sup_{z \in Z } f(w_o,z ) $$    
+  $$ \implies inf_w{ \in W} f(w, z_o ) \leq sup_{z \in Z } f(w_o,z ) $$  
+  $$ \implies sup_{z_o \in Z} inf_{w \in W} f(w, z_o ) \leq inf_{w_o \in W} sup_{z \in Z } f(w_o,z ) $$  
      
   The above result provides proof that:      
-  $$ d^* \le p* $$      
+  $$ d^* \leq p* $$      
       
   $$ d^* = p* $$ is called ***strong duality***  
   
@@ -67,16 +67,16 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   Writing Lagrangian Dual problem in terms of the Langrangian Dual function:
   
   **maximize** $$ g( \labmda ) $$    
-  **s.t.** $$ \lambda /ge 0 $$  
+  **s.t.** $$ \lambda /geq 0 $$  
     
-  $$ \lambda $$ are called ***dual feasible*** if $$ \lambda /ge 0 $$  and g( \labmda ) > - \infinity $$  
+  $$ \lambda $$ are called ***dual feasible*** if $$ \lambda /geq 0 $$  and g( \labmda ) > - \infinity $$  
   $$ \lambda^* $$ are called ***dual optimal*** if they give optimal value for Lagrangian Dual Problem  
   
   ## 3. Why Lagrangian Dual
   
   What might come to the reader's mind is; what purpose the Lagrangian dual of a primal problem serve ? Why should one bother about it?
   
-  1. Lagrangian dual  greatly simplifies the primal problem. It removes all constraints from the problem making them part of the objective dunction. The dual is left with only affine constarints $$ \lambda_i \ge 0 $$   
+  1. Lagrangian dual  greatly simplifies the primal problem. It removes all constraints from the problem making them part of the objective dunction. The dual is left with only affine constarints $$ \lambda_i \geq 0 $$   
   2. Lagrangian dual function is always concave i.e its negative is a convex function. This is so because it only has affine constraints and point-wise minimum of affine functions is always a concave function. So even if the primal problem is not convex, its dual can be solved using convex optimization techniques.  
   3. $$ d^* $$ can be used as stopping criteria while solving primal optimization problem.    
   4. If the primal problem is convex, then it almost always guarnatees strong duality.  
@@ -96,23 +96,23 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   
     This can be easily proved as follows:
   
-   $$ f(x^*) = g(\lambda^* ) $$   
-    nbsp;nbsp;nbsp;nbsp; $$ = g(\lambda^* ) = inf_x L(x, \lambda^*) $$  
-    nbsp;nbsp;nbsp;nbsp; $$ \le L(x^*, \lambda^*) $$  
-    nbsp;nbsp;nbsp;nbsp; $$  = f(x^*) + \sum_{i=1}^m \lambda_i^* h_(x^*) $$   
-    nbsp;nbsp;nbsp;nbsp; $$ \le f(x^*) $$ Since, $$ \lambda_i^* h_i(x^*) \le 0 $$   
-     
-    This gives us- the following :  
-    $$ f(x^*) \le L(x^*, \lambda^*)  \le f(x^*) $$  
-    $$ \imples  \sum_{i=1}^m \lambda_i^* h_i(x^*) $$  
-    $$ \imples \lambda_i^* h_i(x^*) = 0 $$ Since, $$ \lambda_i^* h_i(x^*) \le 0 $$
+     $$ f(x^*) = g(\lambda^* ) $$   
+     nbsp;nbsp;nbsp;nbsp; $$ = g(\lambda^* ) = inf_x L(x, \lambda^*) $$  
+     nbsp;nbsp;nbsp;nbsp; $$ \leq L(x^*, \lambda^*) $$  
+     nbsp;nbsp;nbsp;nbsp; $$  = f(x^*) + \sum_{i=1}^m \lambda_i^* h_(x^*) $$   
+     nbsp;nbsp;nbsp;nbsp; $$ \leq f(x^*) $$ Since, $$ \lambda_i^* h_i(x^*) \le 0 $$  
+       
+     This gives us the following:  
+     $$ f(x^*) \leq L(x^*, \lambda^*)  \leq f(x^*) $$  
+     $$ \imples  \sum_{i=1}^m \lambda_i^* h_i(x^*) $$  
+     $$ \imples \lambda_i^* h_i(x^*) = 0 $$ Since, $$ \lambda_i^* h_i(x^*) \leq 0 $$
      
   
   - **Primal Feasibility:**  
-     $$ h_i(x) \le 0 $$ 
+     $$ h_i(x) \leq 0 $$ 
     
   - **Dual Feasibility:**  
-     $$ \lambda_i \ge 0 $$     
+     $$ \lambda_i \geq 0 $$     
     
    ### 4.1 Optimality Conditions for Convex Objective Functions
    
