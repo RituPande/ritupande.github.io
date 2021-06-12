@@ -124,5 +124,6 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
    
   
 ## References
-[Lec-9:Langrangian Duality and Convex Optimization from  Foundations of Machine Learning Bloomberg ML EDU](https://bloomberg.github.io/foml/#lecture-9-lagrangian-duality-and-convex-optimization)
+[Lec-9:Langrangian Duality and Convex Optimization from  Foundations of Machine Learning Bloomberg ML EDU](https://bloomberg.github.io/foml/#lecture-9-lagrangian-duality-and-convex-optimization)  
+
 [Lec-12 KKT Conditions](https://www.stat.cmu.edu/~ryantibs/convexopt-F16/scribes/kkt-scribed.pdf)
