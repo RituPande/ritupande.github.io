@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to Lagrangian Duality
-published: true
+published: false
 ---
 As we have previously disucssed in [this](https://ritupande.github.io/Introduction-to-Statistical-Learning-Theory/) article, optimization techniques are used in machine learning to find decision function in the hypothesis set closest to the emperical risk minimizer for the problem. The decision functions for a machine learning problem could be constrained or unconstrained. In this article, we will be focussing on the *Unconstrained Optimization* problems and how *Lagrangian Duality* can be used to solve them.   
   
@@ -9,7 +9,7 @@ General constrained optimization problem can be defined as:
 
 **min** f(x)    
 **s.t.** $$ h(x_i)  \leq 0 $$  , i = 1,2,...m    
-nbsp;nbsp;nbsp;nbsp;$$ e(x_i) $$ = 0, j = 1,2,...,p  
+&nbsp;&nbsp;&nbsp;&nbsp;$$ e(x_i) $$ = 0, j = 1,2,...,p  
 
 However, equality constraints can be written in form of inequality constraints and therefore not required to be included in the problem definition.  
 i.e.  $$ e(x_i) = 0 \implies   0 \geq e(x_i) \le 0  $$  
@@ -31,7 +31,7 @@ The Lagrangian of the general constrained optimization problem can be defined as
     
   $$ sup_{\lambda_i \geq 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0}  f(x) + \sum_i=1^m \lambda_i h(x_i)  $$  
   $$ sup_{\lambda_i \geq 0} L(x, \lambda)  = f(x), when h(x)_i \le 0 $$  
-  nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp; = $$ \infinity otherwise $$  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $$ \infty otherwise $$  
   
 If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda_i \ge 0} L(x, \lambda)  is infinity. If however, $$ h_i(x) \le 0 $$, then the supremum of Langrangian function can be obtained only by setting the value of \lambda_i to 0.  So the optimization problem is equivalent to :
   
@@ -102,15 +102,15 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
     This can be easily proved as follows:
   
      $$ f(x^*) = g(\lambda^* ) $$   
-     nbsp;nbsp;nbsp;nbsp; $$ = g(\lambda^* ) = inf_x L(x, \lambda^*) $$  
-     nbsp;nbsp;nbsp;nbsp; $$ \leq L(x^*, \lambda^*) $$  
-     nbsp;nbsp;nbsp;nbsp; $$  = f(x^*) + \sum_{i=1}^m \lambda_i^* h_(x^*) $$   
-     nbsp;nbsp;nbsp;nbsp; $$ \leq f(x^*) $$ Since, $$ \lambda_i^* h_i(x^*) \le 0 $$  
+     &nbsp;&nbsp;&nbsp;&nbsp; $$ = g(\lambda^* ) = inf_x L(x, \lambda^*) $$  
+     &nbsp;&nbsp;&nbsp;&nbsp; $$ \leq L(x^*, \lambda^*) $$  
+     &nbsp;&nbsp;&nbsp;&nbsp; $$  = f(x^*) + \sum_{i=1}^m \lambda_i^* h_(x^*) $$   
+     &nbsp;&nbsp;&nbsp;&nbsp; $$ \leq f(x^*) $$ Since, $$ \lambda_i^* h_i(x^*) \le 0 $$  
        
      This gives us the following:  
      $$ f(x^*) \leq L(x^*, \lambda^*)  \leq f(x^*) $$  
-     $$ \imples  \sum_{i=1}^m \lambda_i^* h_i(x^*) $$  
-     $$ \imples \lambda_i^* h_i(x^*) = 0 $$ Since, $$ \lambda_i^* h_i(x^*) \leq 0 $$
+     $$ \implies  \sum_{i=1}^m \lambda_i^* h_i(x^*) $$  
+     $$ \implies \lambda_i^* h_i(x^*) = 0 $$ Since, $$ \lambda_i^* h_i(x^*) \leq 0 $$
      
   
   - **Primal Feasibility:**  
