@@ -80,35 +80,34 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   2. Lagrangian dual function is always concave i.e its negative is a convex function. This is so because it only has affine constraints and point-wise minimum of affine functions is always a concave function. So even if the primal problem is not convex, its dual can be solved using convex optimization techniques.  
   3. $$ d^* $$ can be used as stopping criteria while solving primal optimization problem.    
   4. If the primal problem is convex, then it almost always guarnatees strong duality.  
+  5. Duality also lets us formulate optimality conditions for constrained optimisation problems.
   
-  ## 4. Complementary Slackness.
+  ## 4. KKT Conditions for Constrained Optimization problems
   
-  As we have seen, strong duality is not guatanteed 
+  KKT conditions are first order necessary optimality conditions  for a non-linear optimization problems.  
   
-  ## 5. Constrained Convex Optimization Problem.
+  if p* and d* are primal and dual optimal solutions to a constrained optimization problem such that p* = d* then the following are the KKT optimality conditions:
   
-  As we have seen above, if the primal problem is convex, the dual Lagrangian $$ d^* $$ is almost always equal to $$ p^* $$ i.e. expresses strong duality. The constarined convex optimization problem can be stated as :
-  
-**min** f(x)    
-**s.t.** $$ h(x_i) $$  < = 0 , i = 1,2,...m    
-nbsp;nbsp;nbsp;nbsp;$$ f(x), h_i(x) \in convex functions $$  
-
-To identify if a constrained convex optimization problem expresses strong duality, the following conditions called the ***constaints qualifications***, must be met:
-  
-1. **Slater's constraint qualification** : is a sufficient condition, needed to prove strong duality.
-  - It states that $$ p^* = d^* $$ if atleast one point in the domain of the primal function must satify the constarints with strict inequality i.e be **stricly feasible***.
-  - For constrained convex optimziation problems with only affine constraints, only feasibilty of the constraints is required.
-  
-
-
-
-
-  
-  
-  
- 
-  
- 
+  **Stationarity Condition:**   
+  $$ \nabla L = 0 $$  
+    
+  **Complemenatry Slackness:**   
+  $$ \lambda_i h_i(x) = 0 . i = 1,2,...,m $$
+    
+  **Primal Feasibility:**  
+  $$ h_i(x) \le 0 $$ 
+    
+  **Dual Feasibility:**  
+   $$ \lambda_i \ge 0 $$     
+    
+   ### 4.1 Optimality conditions for Convex functions
+   
+   1. if the objective function is convex then the KKT conditions mentiioned in this section  are not only necessary but also sufficient. 
+   2. An addtional sufficient condition for optimmality of constrained convex optimization problem is called the slater's condition:  
+      **Slater's constraint qualification** : is a sufficient condition, needed to prove strong duality for constrained convex optimization problem.  
+      - It states that $$ p^* = d^* $$ if atleast one point in the domain of the primal function must satify the constarints with strict inequality i.e be **stricly feasible***.
+      - For problems with only affine constraints, only feasibilty of the constraints is required.
+   
   
 ## References
 [Lec-9:Langrangian Duality and Convex Optimization from  Foundations of Machine Learning Bloomberg ML EDU](https://bloomberg.github.io/foml/#lecture-9-lagrangian-duality-and-convex-optimization)
