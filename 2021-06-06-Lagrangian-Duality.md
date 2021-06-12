@@ -70,7 +70,7 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   **s.t.** $$ \lambda /ge 0 $$  
     
   $$ \lambda $$ are called ***dual feasible*** if $$ \lambda /ge 0 $$  and g( \labmda ) > - \infinity $$  
-  $$ \lambda^* $$ are called ***dual optimal*** if they give optimal value for Lagrangian Dual Problem $$  
+  $$ \lambda^* $$ are called ***dual optimal*** if they give optimal value for Lagrangian Dual Problem  
   
   ## 3. Why Lagrangian Dual
   
@@ -82,28 +82,42 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   4. If the primal problem is convex, then it almost always guarnatees strong duality.  
   5. Duality also lets us formulate optimality conditions for constrained optimisation problems.
   
-  ## 4. KKT Conditions for Constrained Optimization problems
+  ## 4. KKT Conditions for Constrained Optimization Problems
   
   KKT conditions are first order necessary optimality conditions  for a non-linear optimization problems.  
   
-  if p* and d* are primal and dual optimal solutions to a constrained optimization problem such that p* = d* then the following are the KKT optimality conditions:
+  if p* and d* are primal and dual optimal solutions to a general constrained optimization problem such that p* = d* then the following are the KKT optimality conditions:
   
-  **Stationarity Condition:**   
-  $$ \nabla L = 0 $$  
+  - **Stationarity Condition:**   
+  $$ \partial L = 0 $$  
     
-  **Complemenatry Slackness:**   
-  $$ \lambda_i h_i(x) = 0 . i = 1,2,...,m $$
+  - **Complemenatry Slackness:**   
+    $$ \lambda_i h_i(x) = 0 . i = 1,2,...,m $$
+  
+    This can be easily proved as follows:
+  
+   $$ f(x^*) = g(\lambda^* ) $$   
+    nbsp;nbsp;nbsp;nbsp; $$ = g(\lambda^* ) = inf_x L(x, \lambda^*) $$  
+    nbsp;nbsp;nbsp;nbsp; $$ \le L(x^*, \lambda^*) $$  
+    nbsp;nbsp;nbsp;nbsp; $$  = f(x^*) + \sum_{i=1}^m \lambda_i^* h_(x^*) $$   
+    nbsp;nbsp;nbsp;nbsp; $$ \le f(x^*) $$ Since, $$ \lambda_i^* h_i(x^*) \le 0 $$   
+     
+    This gives us- the following :  
+    $$ f(x^*) \le L(x^*, \lambda^*)  \le f(x^*) $$  
+    $$ \imples  \sum_{i=1}^m \lambda_i^* h_i(x^*) $$  
+    $$ \imples \lambda_i^* h_i(x^*) = 0 $$ Since, $$ \lambda_i^* h_i(x^*) \le 0 $$
+     
+  
+  - **Primal Feasibility:**  
+     $$ h_i(x) \le 0 $$ 
     
-  **Primal Feasibility:**  
-  $$ h_i(x) \le 0 $$ 
+  - **Dual Feasibility:**  
+     $$ \lambda_i \ge 0 $$     
     
-  **Dual Feasibility:**  
-   $$ \lambda_i \ge 0 $$     
-    
-   ### 4.1 Optimality conditions for Convex functions
+   ### 4.1 Optimality Conditions for Convex Objective Functions
    
-   1. if the objective function is convex then the KKT conditions mentiioned in this section  are not only necessary but also sufficient. 
-   2. An addtional sufficient condition for optimmality of constrained convex optimization problem is called the slater's condition:  
+   1. if the objective function of a constrained optimizaton problem  is convex then the KKT conditions mentiioned in this section  are not only necessary but also sufficient. 
+   2. An addtional sufficient condition for optimality of constrained convex optimization problem is called the slater's condition:  
       **Slater's constraint qualification** : is a sufficient condition, needed to prove strong duality for constrained convex optimization problem.  
       - It states that $$ p^* = d^* $$ if atleast one point in the domain of the primal function must satify the constarints with strict inequality i.e be **stricly feasible***.
       - For problems with only affine constraints, only feasibilty of the constraints is required.
@@ -111,3 +125,4 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   
 ## References
 [Lec-9:Langrangian Duality and Convex Optimization from  Foundations of Machine Learning Bloomberg ML EDU](https://bloomberg.github.io/foml/#lecture-9-lagrangian-duality-and-convex-optimization)
+[Lec-12 KKT Conditions](https://www.stat.cmu.edu/~ryantibs/convexopt-F16/scribes/kkt-scribed.pdf)
