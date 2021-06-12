@@ -119,7 +119,7 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
    1. if the objective function of a constrained optimizaton problem  is convex then the KKT conditions mentiioned in this section  are not only necessary but also sufficient. 
    2. An addtional sufficient condition for optimality of constrained convex optimization problem is called the slater's condition:  
       **Slater's constraint qualification** : is a sufficient condition, needed to prove strong duality for constrained convex optimization problem.  
-      - It states that $$ p^* = d^* $$ if atleast one point in the domain of the primal function must satify the constarints with strict inequality i.e be **stricly feasible***.
+      - It states that $$ p^* = d^* $$ if atleast one point in the domain of the primal function must satisfy the constarints with strict inequality i.e be **stricly feasible***.
       - For problems with only affine constraints, only feasibilty of the constraints is required.
    
   
