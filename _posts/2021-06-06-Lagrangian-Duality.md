@@ -21,7 +21,8 @@ The generalized constrained optimization then reduces to:
 
 ## 1. Lagrangian of Constrained Optimization Problem
 
-The Lagrangian of the general constrained optimization problem can be defined as:    
+The Lagrangian of the general constrained optimization problem can be defined as: 
+  
 $$ L(x, \lambda) = f(x) + \sum_{i=1}^m \lambda_i h_i(x) $$    
   
 $$ \lambda_i 's $$  are called ***Lagrangian multipliers*** or ***dual variables***   
@@ -30,7 +31,7 @@ Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda_i) $$ is eq
     
   $$ sup_{\lambda_i \geq 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0}  f(x) + \sum_{i=1}^m \lambda_i h_i(x)  $$  
   $$ sup_{\lambda_i \geq 0} L(x, \lambda)  = f(x) $$ when $$ h_i(x) \leq 0 $$  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $$ \infty $$ otherwise     
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp = $$ \infty $$ otherwise     
   
 If $$ h_i(x) $$ violate the constraints and assume positive value, $$ sup_{\lambda_i \ge 0} L(x, \lambda) $$ is infinity. If however, $$ h_i(x) \leq 0 $$, then the supremum of Langrangian function can be obtained only by setting the value of $$ \lambda_i $$ to 0.  So the optimization problem is equivalent to :
   
