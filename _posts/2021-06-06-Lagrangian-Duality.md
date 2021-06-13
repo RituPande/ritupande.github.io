@@ -114,9 +114,9 @@ $$ d^* =  sup_{\lambda_i \geq 0} \: inf_x \: L(x, \lambda) $$
      $$ \lambda_i \geq 0 $$     
     
 ### 4.1 Optimality Conditions for Convex Objective Functions
-   
-   1. Conditions that guarantee strong duality for convex problems are called ***constraint qualifications***.  
-   2. **Slater's constraint qualification** : is a sufficient condition, needed to prove strong duality for constrained convex optimization problem.  
+   1. For convex problems the KKT conditions are both necessary and sufficient.
+   2. Conditions that guarantee strong duality for convex problems are called ***constraint qualifications***.  
+   3. **Slater's constraint qualification** : is a sufficient condition, needed to prove strong duality for constrained convex optimization problem.  
       - It states that $$ p^* = d^* $$ if atleast one point in the domain of the primal function must satisfy the constarints with strict inequality i.e be **strictly feasible***.
       - For problems with only affine constraints, only feasibilty of the constraints is required.
    
