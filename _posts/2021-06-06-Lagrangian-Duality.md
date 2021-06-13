@@ -21,11 +21,10 @@ The generalized constrained optimization then reduces to:
 
 ## 1. Lagrangian of Constrained Optimization Problem
 
-The Lagrangian of the general constrained optimization problem can be defined as:  
-  
+The Lagrangian of the general constrained optimization problem can be defined as:    
 $$ L(x, \lambda) = f(x) + \sum_{i=1}^m \lambda_i h_i(x) $$    
   
-\lambda_i 's  are called ***Lagrangian multipliers*** or ***dual variables***   
+$$ \lambda_i 's $$  are called ***Lagrangian multipliers*** or ***dual variables***   
   
 Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda_i) $$ is equivalent to the original the decision function and the constraints put together.  This can be seen in the equation below:  
     
@@ -35,14 +34,14 @@ Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda_i) $$ is eq
   
 If $$ h_i(x) $$ violate the constraints and assume positive value, $$ sup_{\lambda_i \ge 0} L(x, \lambda) $$ is infinity. If however, $$ h_i(x) \leq 0 $$, then the supremum of Langrangian function can be obtained only by setting the value of $$ \lambda_i $$ to 0.  So the optimization problem is equivalent to :
   
- $$ p^* =  inf_x\:sup_{\lambda_i \geq 0} L(x, \lambda) $$  
+$$ p^* =  inf_x\:sup_{\lambda_i \geq 0} L(x, \lambda) $$  
  
  This form of the optimization  problem is called the **Primal** form.   
 ## 2.  Lagrangian Dual Problem   
     
   The **Lagrangian Dual** of the primal form of a constrained optimization problem is defined as:    
-    
-  $$ d^* =  sup_{\lambda_i \geq 0} \: inf_x \: L(x, \lambda) $$  
+  
+$$ d^* =  sup_{\lambda_i \geq 0} \: inf_x \: L(x, \lambda) $$  
   
   The Lagrangian dual provides lower bound to the solution of the primal form of any optimization problem.i.e.  
   $$ d^* \leq p* $$   
@@ -93,7 +92,7 @@ If $$ h_i(x) $$ violate the constraints and assume positive value, $$ sup_{\lamb
   - **Complemenatry Slackness:**   
     $$ \lambda_i h_i(x) = 0 . i = 1,2,...,m $$
   
-    This can be easily proved as follows:
+    This can be easily proven as follows:
   
      $$ f(x^*) = g(\lambda^* ) $$   
      &nbsp;&nbsp;&nbsp;&nbsp; $$ = g(\lambda^* ) = inf_x \: L(x, \lambda^*) $$  
@@ -103,8 +102,8 @@ If $$ h_i(x) $$ violate the constraints and assume positive value, $$ sup_{\lamb
        
      This gives us the following:  
      $$ f(x^*) \leq L(x^*, \lambda^*)  \leq f(x^*) $$  
-     $$ \implies  \sum_{i=1}^m \lambda_i^* h_i(x^*) $$  
-     $$ \implies \lambda_i^* h_i(x^*) = 0 $$ Since, $$ \lambda_i^* h_i(x^*) \leq 0 $$
+     $$ \displaystyle \implies  \sum_{i=1}^m \lambda_i^* h_i(x^*) =0  $$  
+     $$ \implies \lambda_i^* h_i(x^*) = 0 $$  i.e. each individual term in summation has to be zero
      
   
   - **Primal Feasibility:**  
@@ -118,7 +117,7 @@ If $$ h_i(x) $$ violate the constraints and assume positive value, $$ sup_{\lamb
    1. if the objective function of a constrained optimizaton problem  is convex then the KKT conditions mentiioned in this section  are not only necessary but also sufficient. 
    2. An addtional sufficient condition for optimality of constrained convex optimization problem is called the slater's condition:  
       **Slater's constraint qualification** : is a sufficient condition, needed to prove strong duality for constrained convex optimization problem.  
-      - It states that $$ p^* = d^* $$ if atleast one point in the domain of the primal function must satisfy the constarints with strict inequality i.e be **stricly feasible***.
+      - It states that $$ p^* = d^* $$ if atleast one point in the domain of the primal function must satisfy the constarints with strict inequality i.e be **strictly feasible***.
       - For problems with only affine constraints, only feasibilty of the constraints is required.
    
   
