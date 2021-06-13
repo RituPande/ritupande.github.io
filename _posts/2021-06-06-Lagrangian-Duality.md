@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to Lagrangian Duality
-published: true
+published: false
 ---
 As we have previously disucssed in [this](https://ritupande.github.io/Introduction-to-Statistical-Learning-Theory/) article, optimization techniques are used in machine learning to find decision function in the hypothesis set closest to the emperical risk minimizer for the problem. The decision functions for a machine learning problem could be constrained or unconstrained. In this article, we will be focussing on the *Unconstrained Optimization* problems and how *Lagrangian Duality* can be used to solve them.   
   
