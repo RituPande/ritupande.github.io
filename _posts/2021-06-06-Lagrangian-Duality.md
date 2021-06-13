@@ -88,7 +88,7 @@ $$ d^* =  sup_{\lambda_i \geq 0} \: inf_x \: L(x, \lambda) $$
   if p* and d* are primal and dual optimal solutions to a general constrained optimization problem such that p* = d* then the following are the KKT optimality conditions:
   
   - **Stationarity Condition:**   
-  $$ \partial L = 0 $$  
+  $$ 0 \in \partial L $$  
     
   - **Complemenatry Slackness:**   
     $$ \lambda_i h_i(x) = 0 . i = 1,2,...,m $$
