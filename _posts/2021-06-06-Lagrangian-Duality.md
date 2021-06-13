@@ -23,28 +23,26 @@ The generalized constrained optimization then reduces to:
 
 The Lagrangian of the general constrained optimization problem can be defined as:  
   
-  $$ L(x, \lambda) = f(x) + \sum_i=1^m \lambda_i h(x_i) $$    
+$$ L(x, \lambda) = f(x) + \sum_{i=1}^m \lambda_i h_i(x) $$    
   
-  \lamda_i 's  are called ***Lagrangian multipliers*** or ***dual variables***   
+\lambda_i 's  are called ***Lagrangian multipliers*** or ***dual variables***   
   
-  Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda) $$ is equivalent to the original the decision function and the constraints put together.  This can be seen in the equation below:  
+Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda_i) $$ is equivalent to the original the decision function and the constraints put together.  This can be seen in the equation below:  
     
-  $$ sup_{\lambda_i \geq 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0}  f(x) + \sum_i=1^m \lambda_i h(x_i)  $$  
-  $$ sup_{\lambda_i \geq 0} L(x, \lambda)  = f(x), when h(x)_i \le 0 $$  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $$ \infty otherwise $$  
+  $$ sup_{\lambda_i \geq 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0}  f(x) + \sum_{i=1}^m \lambda_i h_i(x)  $$  
+  $$ sup_{\lambda_i \geq 0} L(x, \lambda)  = f(x) $$ when $$ h_i(x) \leq 0 $$  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $$ \infty $$ otherwise     
   
-If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda_i \ge 0} L(x, \lambda)  is infinity. If however, $$ h_i(x) \le 0 $$, then the supremum of Langrangian function can be obtained only by setting the value of \lambda_i to 0.  So the optimization problem is equivalent to :
+If $$ h_i(x) $$ violate the constraints and assume positive value, $$ sup_{\lambda_i \ge 0} L(x, \lambda) $$ is infinity. If however, $$ h_i(x) \leq 0 $$, then the supremum of Langrangian function can be obtained only by setting the value of $$ \lambda_i $$ to 0.  So the optimization problem is equivalent to :
   
- $$ p^* =  inf_x sup_{\lambda_i \geq 0} L(x, \lambda) $$  
+ $$ p^* =  inf_x\:sup_{\lambda_i \geq 0} L(x, \lambda) $$  
  
- This form of the optimization  problem is called the **Primal** form.
- 
-  
-  ## 2.  Lagrangian Dual Problem   
+ This form of the optimization  problem is called the **Primal** form.   
+## 2.  Lagrangian Dual Problem   
     
   The **Lagrangian Dual** of the primal form of a constrained optimization problem is defined as:    
     
-  $$ d^* =  sup_{\lambda_i \geq 0} inf_x L(x, \lambda) $$  
+  $$ d^* =  sup_{\lambda_i \geq 0} \: inf_x \: L(x, \lambda) $$  
   
   The Lagrangian dual provides lower bound to the solution of the primal form of any optimization problem.i.e.  
   $$ d^* \leq p* $$   
@@ -52,32 +50,28 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   This property is called  ***weak duality*** and the difference between $$ p^* and d^* $$  is called ***duality gap***.   
   It is easy to prove weak duality:  
       
-  For any function $$ f: W X Z \rightarrow R and w_o \in W, z_o \in Z  $$:
+  For any function $$ f: W\:X\:Z \rightarrow R, w_o \in W, z_o \in Z  $$:
   
-  $$ inf_w{ \in W} f(w, z_o )  \geq f(w_o,z_o) \leq sup_{z \in Z } f(w_o,z ) $$    
-  $$ \implies inf_w{ \in W} f(w, z_o ) \leq sup_{z \in Z } f(w_o,z ) $$  
-  $$ \implies sup_{z_o \in Z} inf_{w \in W} f(w, z_o ) \leq inf_{w_o \in W} sup_{z \in Z } f(w_o,z ) $$  
-     
-  The above result provides proof that:      
-  $$ d^* \leq p* $$      
+  $$ inf_{w\in W} \: f(w, z_o )  \geq f(w_o,z_o) \leq sup_{z \in Z } \: f(w_o,z ) $$    
+  $$ \implies inf_{w\in W} \: f(w, z_o ) \leq sup_{z \in Z } \: f(w_o,z ) $$  
+  $$ \implies sup_{z_o \in Z} \: inf_{w \in W} f(w, z_o ) \leq inf_{w_o \in W} \: sup_{z \in Z } \:f(w_o,z ) $$  
+  $$ \implies d^* \leq p* $$  
       
-  $$ d^* = p* $$ is called ***strong duality***  
-  
-  ### 2.1 Lagrangian Dual Function.
+  When $$ d^* = p* $$ , it is called ***strong duality***    
+### 2.1 Lagrangian Dual Function.
   
   The *Lagrangian Dual Function* is defined as:  
     
-  $$ \displaystyle g(\lambda) = inf_x L(x, \lambda) = inf_x ( f(x) + \sum_i=1^m \lambda_i h(x_i) ) $$  
+  $$ \displaystyle g(\lambda) = inf_x L(x, \lambda) = inf_x ( f(x) + \sum_{i=1}^m \lambda_i h_i(x) ) $$  
   
   Writing Lagrangian Dual problem in terms of the Langrangian Dual function:
   
-  **maximize** $$ g( \labmda ) $$    
-  **s.t.** $$ \lambda /geq 0 $$  
+  **maximize** $$ g( \lambda ) $$    
+  **s.t.** $$ \lambda \geq 0 $$  
     
-  $$ \lambda $$ are called ***dual feasible*** if $$ \lambda /geq 0 $$  and g( \labmda ) > - \infinity $$  
-  $$ \lambda^* $$ are called ***dual optimal*** if they give optimal value for Lagrangian Dual Problem  
-  
-  ## 3. Why Lagrangian Dual
+  $$ \lambda $$ are called ***dual feasible*** if $$ \lambda \geq 0 $$  and g( \labmda ) > - \infinity $$  
+  $$ \lambda^* $$ are called ***dual optimal*** if they give optimal value for Lagrangian Dual Problem    
+## 3. Why Lagrangian Dual
   
   What might come to the reader's mind is; what purpose the Lagrangian dual of a primal problem serve ? Why should one bother about it?
   
@@ -87,7 +81,7 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   4. If the primal problem is convex, then it almost always guarnatees strong duality.  
   5. Duality also lets us formulate optimality conditions for constrained optimisation problems.
   
-  ## 4. KKT Conditions for Constrained Optimization Problems
+## 4. KKT Conditions for Constrained Optimization Problems
   
   KKT conditions are first order necessary optimality conditions  for a non-linear optimization problems.  
   
@@ -102,10 +96,10 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
     This can be easily proved as follows:
   
      $$ f(x^*) = g(\lambda^* ) $$   
-     &nbsp;&nbsp;&nbsp;&nbsp; $$ = g(\lambda^* ) = inf_x L(x, \lambda^*) $$  
+     &nbsp;&nbsp;&nbsp;&nbsp; $$ = g(\lambda^* ) = inf_x \: L(x, \lambda^*) $$  
      &nbsp;&nbsp;&nbsp;&nbsp; $$ \leq L(x^*, \lambda^*) $$  
-     &nbsp;&nbsp;&nbsp;&nbsp; $$  = f(x^*) + \sum_{i=1}^m \lambda_i^* h_(x^*) $$   
-     &nbsp;&nbsp;&nbsp;&nbsp; $$ \leq f(x^*) $$ Since, $$ \lambda_i^* h_i(x^*) \le 0 $$  
+     &nbsp;&nbsp;&nbsp;&nbsp; $$  = f(x^*) + \sum_{i=1}^m \lambda_i^* h_i(x^*) $$   
+     &nbsp;&nbsp;&nbsp;&nbsp; $$ \leq f(x^*) $$ Since, $$ \lambda_i^* h_i(x^*) \leq 0 $$  
        
      This gives us the following:  
      $$ f(x^*) \leq L(x^*, \lambda^*)  \leq f(x^*) $$  
@@ -119,7 +113,7 @@ If $$ h_i(x) $$ violate the constraints and assume positive value,  sup_{\lambda
   - **Dual Feasibility:**  
      $$ \lambda_i \geq 0 $$     
     
-   ### 4.1 Optimality Conditions for Convex Objective Functions
+### 4.1 Optimality Conditions for Convex Objective Functions
    
    1. if the objective function of a constrained optimizaton problem  is convex then the KKT conditions mentiioned in this section  are not only necessary but also sufficient. 
    2. An addtional sufficient condition for optimality of constrained convex optimization problem is called the slater's condition:  
