@@ -31,7 +31,7 @@ Lagrangian of a constrained optimization problem can be viewed as a means of rep
     
 Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda_i) $$ is equivalent to the original the decision function and the constraints put together.  This can be seen in the equation below:  
     
-  $$ sup_{\lambda_i \geq 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0}  f(x) + \sum_{i=1}^m \lambda_i h_i(x)  $$  
+  $$ sup_{\lambda_i \geq 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0} ( f(x) + \sum_{i=1}^m \lambda_i h_i(x))  $$  
   $$ sup_{\lambda_i \geq 0} L(x, \lambda)  = f(x) $$ when $$ h_i(x) \leq 0 $$  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $$ \infty $$ otherwise     
   
