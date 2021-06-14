@@ -71,7 +71,7 @@ $$ d^* =  sup_{\lambda_i \geq 0} \: inf_x \: L(x, \lambda) $$
   **maximize** $$ g( \lambda ) $$    
   **s.t.** $$ \lambda \geq 0 $$  
     
-  $$ \lambda $$ are called ***dual feasible*** if $$ \lambda \geq 0 $$  and g( \labmda ) > - \infinity $$  
+  $$ \lambda $$ are called ***dual feasible*** if $$ \lambda \geq 0 $$  and $$ g( \labmda ) > - \infty $$  
   $$ \lambda^* $$ are called ***dual optimal*** if they give optimal value for Lagrangian Dual Problem    
 ## 3. Why Lagrangian Dual
   
