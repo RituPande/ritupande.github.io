@@ -8,8 +8,8 @@ As we have previously disucssed in [this](https://ritupande.github.io/Introducti
 General constrained optimization problem can be defined as:    
 
 **min** f(x)    
-**s.t.** $$ h(x_i)  \leq 0 $$  , i = 1,2,...m    
-&nbsp;&nbsp;&nbsp;&nbsp;$$ e(x_i) $$ = 0, j = 1,2,...,p  
+**s.t.** $$ h_i(x)  \leq 0 $$  , i = 1,2,...m    
+&nbsp;&nbsp;&nbsp;&nbsp;$$ e_j(x) $$ = 0, j = 1,2,...,p  
 
 However, equality constraints can be written in form of inequality constraints and therefore not required to be included in the problem definition.  
 i.e.  $$ e_i(x) = 0 \implies   0 \geq e(x_i) \le 0  $$  
@@ -17,7 +17,7 @@ i.e.  $$ e_i(x) = 0 \implies   0 \geq e(x_i) \le 0  $$
 The generalized constrained optimization then reduces to:  
   
 **min** f(x)    
-**s.t.** $$ h_(x) $$  < = 0 , i = 1,2,...m    
+**s.t.** $$ h_i(x) $$  < = 0 , i = 1,2,...m    
 
 ## 1. Lagrangian of Constrained Optimization Problem
 
