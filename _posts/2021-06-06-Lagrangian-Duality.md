@@ -17,7 +17,7 @@ i.e.  $$ e_i(x) = 0 \implies   0 \geq e(x_i) \le 0  $$
 The generalized constrained optimization then reduces to:  
   
 **min** f(x)    
-**s.t.** $$ h_i(x) $$  \leq 0 , i = 1,2,...m    
+**s.t.** $$ h_i(x) \leq 0 $$ , i = 1,2,...m    
 
 ## 1. Lagrangian of Constrained Optimization Problem
 
