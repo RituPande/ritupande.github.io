@@ -12,7 +12,7 @@ General constrained optimization problem can be defined as:
 &nbsp;&nbsp;&nbsp;&nbsp;$$ e_j(x) $$ = 0, j = 1,2,...,p  
 
 However, equality constraints can be written in form of inequality constraints and therefore not required to be included in the problem definition.  
-i.e.  $$ e_i(x) = 0 \implies   0 \geq e(x_i) \leq 0  $$  
+i.e.  $$ e_j(x) = 0 \implies   0 \geq e_j(x) \leq 0  $$  
   
 The generalized constrained optimization then reduces to:  
   
