@@ -49,7 +49,7 @@ $$ d^* =  sup_{\lambda_i \geq 0} \: inf_x \: L(x, \lambda) $$
   The Lagrangian dual provides lower bound to the solution of the primal form of any optimization problem.i.e.  
   $$ d^* \leq p* $$   
   
-  This property is called  ***weak duality*** and the difference between $$ p^* and d^* $$  is called ***duality gap***.   
+  This property is called  ***weak duality*** and the difference between $$ p^*$$ and $$ d^* $$  is called ***duality gap***.   
   It is easy to prove weak duality:  
       
   For any function $$ f: W\:X\:Z \rightarrow R, w_o \in W, z_o \in Z  $$:
@@ -90,7 +90,7 @@ $$ d^* =  sup_{\lambda_i \geq 0} \: inf_x \: L(x, \lambda) $$
   if p* and d* are primal and dual optimal solutions to a general constrained optimization problem such that p* = d* then the following are the KKT optimality conditions:
   
   - **Stationarity Condition:**   
-  $$ 0 \in \partial L $$  
+  $$ 0 \in \partial L $$,  where $$ \partial L $$ is subgradient of L   
     
   - **Complemenatry Slackness:**   
     $$ \lambda_i h_i(x) = 0 . i = 1,2,...,m $$
