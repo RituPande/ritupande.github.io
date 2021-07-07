@@ -85,7 +85,7 @@ $$ d^* =  sup_{\lambda_i \geq 0} \: inf_x \: L(x, \lambda) $$
   
 ## 4. KKT Conditions for Constrained Optimization Problems
   
-  KKT conditions are first order necessary optimality conditions  for a non-linear optimization problems.  
+  KKT conditions are first order necessary optimality conditions  for  non-linear optimization problems.  
   
   if p* and d* are primal and dual optimal solutions to a general constrained optimization problem such that p* = d* then the following are the KKT optimality conditions:
   
