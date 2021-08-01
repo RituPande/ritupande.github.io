@@ -8,7 +8,7 @@ Hi! I am Ritu Pande. I am a software architect with expertise in designing cyber
 
 ### More Information
 
-My other intersts include running, painting and playing the piano.
+My other interests include running, painting and playing the piano.
 
 ### Contact me at:
 
