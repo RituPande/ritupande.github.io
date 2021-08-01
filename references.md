@@ -3,7 +3,7 @@ layout: page
 title: References
 permalink: /references/
 ---
-This page conatins links to various resources in machine learning that I have found particularly enlightening and love to go back to:   
+This page conatins links to various machine learning resources that I have found particularly enlightening and love to go back to:   
   
 ## Video Lectures  
 1. [Reinforcement Learning Bootcamp](https://www.youtube.com/playlist?list=PLAdk-EyP1ND8MqJEJnSvaoUShrAWYe51U)    
