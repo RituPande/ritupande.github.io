@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi! I am Ritu Pande. I am a software architect with expertise in designing cybersecurity solutions for connected devices. In my free time , I pursue my interests in area of machine learning, more specifically deep learning. 
+Hi! I am Ritu Pande. I am a software architect with expertise in designing cybersecurity solutions for connected devices. In my free time , I pursue my interests in area of machine learning, more specifically, deep learning. 
 
 ### More Information
 
