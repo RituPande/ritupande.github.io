@@ -14,5 +14,5 @@ This page conatins links to various machine learning resources that I have found
 ## Tutorials  
   
 1. [Understanding LTSMs](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)  
-2. [Deep Learning Course](https://simoninithomas.github.io/deep-rl-course/)
+2. [A Free course in Deep Reinforcement Learning from beginner to expert](https://simoninithomas.github.io/deep-rl-course/)
 3. [Entropy Cross-Entropy and KL-Divergence](https://www.youtube.com/watch?v=ErfnhcEV1O8)      
