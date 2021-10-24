@@ -3,10 +3,10 @@ layout: post
 title: Introduction to Lagrangian Duality
 published: true
 ---
-As we have previously disucssed in [this](https://ritupande.github.io/Introduction-to-Statistical-Learning-Theory/) article, optimization techniques are used in machine learning to find decision function in the hypothesis set closest to the emperical risk minimizer for the problem. The decision functions for a machine learning problem could be constrained or unconstrained. In this article, we will be focussing on the *Constrained Optimization* problems and how *Lagrangian Duality* can be used to solve them.   
+As we have previously disucssed in [this](https://ritupande.github.io/Introduction-to-Statistical-Learning-Theory/) article, optimization techniques are used in machine learning to find decision function in the hypothesis set closest to the emperical risk minimizer for the problem. The decision functions for a machine learning problem could be constrained or unconstrained. In this article, we will be focussing on the *Constrained Optimization* problems and how *Lagrangian Duality* can be used to solve them. 
   
-General constrained optimization problem can be defined as:    
-
+General constrained optimization problem can be defined as:      
+  
 **min** f(x)    
 **s.t.** $$ h_i(x)  \leq 0 $$  , i = 1,2,...m    
 &nbsp;&nbsp;&nbsp;&nbsp;$$ e_j(x) $$ = 0, j = 1,2,...,p  
