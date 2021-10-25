@@ -29,7 +29,7 @@ $$ \lambda_i 's $$  are called ***Lagrangian multipliers*** or ***dual variables
   
 Lagrangian of a constrained optimization problem can be viewed as a means of representing the original problem with relaxed constraints, while imposing penalty to the objective function if the constraints are violated. Lagrangian multipliers can be seen as  penalties that are to be applied in case  corresponding constraints are violated.  
     
-Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda_i) $$ is equivalent to the original the decision function and the constraints put together.  This can be seen in the equation below:  
+Supremum over the Lagriangian, $$ sup_{\lambda_i \ge 0} L(x, \lambda_i) $$ is equivalent to the original decision function and the constraints put together.  This can be seen in the equation below:  
     
   $$ sup_{\lambda_i \geq 0} L(x, \lambda)  =  sup_{\lambda_i \ge 0} ( f(x) + \sum_{i=1}^m \lambda_i h_i(x))  $$  
   $$ sup_{\lambda_i \geq 0} L(x, \lambda)  = f(x) $$ when $$ h_i(x) \leq 0 $$  
