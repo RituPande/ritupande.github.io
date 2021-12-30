@@ -24,7 +24,7 @@ As discussed, in a "steady state",  the node is giving away and receving the sam
 X(t) = A * X(t)  
 $$ X(t) = A^t  * X(0) $$
   
-Since A is a symmetric matrix, it's eigenvectors span  R<sup>n</sup>:  
+Since A is a symmetric matrix, it's eigenvectors span  $$ R^n $$:  
 $$ \displaystyle X(0) = \sum_{i=1}^n  c_i * v_i $$, where v<sub>i</sub>  are eignevectors of A. 
 
 $$ \displaystyle X(t) =  A ^t  \sum_{i=1}^n  c_i * v_i $$  
