@@ -7,7 +7,7 @@ published: true
 Eigenvector centrality is one the most fundamental mechanism used to assign importance to a node in a graph. While Degree Centrality' assigns importance to a node based on  the number of its neighboring nodes, Eignevector Centrality assigns importance to a node in a graph based not only based on the number of its neightbors but also their importance. i.e. a node's importance is proportional to the sum of the importance of it's neighbors.
 
 Let X(t) represent the importance vector of a graph at time-step t, then  
-X(t+1) &propto; A * X(t) 
+$$ X(t+1) \propto A * X(t) $$
   
 In a graph, the eigenvector centrality of node can be viewed as a measure of "steady state" of each node passing its importance to its neighbors. i.e. X(t+1) = X(t). This implies that in "steady state", we are giving away and receving the same amount of centrality to/from the neighboring nodes. Let this "steady state" vector be denoated as v  
   
@@ -27,13 +27,14 @@ $$ \displaystyle X(0) = \sum_{i=1}^n  c_i * v_i $$, where v<sub>i</sub>  are eig
 
 $$ \displaystyle X(t) =  A ^t  \sum_{i=1}^n  c_i * v_i $$  
 $$ \displaystyle X(t) =  \sum_{i=1}^n   c_i * A^t * v_i $$  
-$$ \displaystyle X(t) =  \sum_{i=1}^n   c_i * \lambda_i^t * v_i $$  
+$$ \displaystyle X(t) =  \sum_{i=1}^n   c_i * \lambda_i^t * v_i $$
+  
 Let $$ \lambda_1 $$ be the highest eignevalue:  
 $$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$  
 $$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$   
   
 Multiplying and dividing with $$ \lambda_1^t $$   
-$$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \lambda_1^t \sum_{i=2}^n   c_i * \frac{\lambda_i^t}{\lambda_i^t} * v_i $$  
+$$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \lambda_1^t \sum_{i=2}^n   c_i * \frac{\lambda_i^t}{\lambda_1^t} * v_i $$  
 
 $$ t \to \inf , \frac{\lambda_i^t}{\lambda_i^t} \to 0 $$  
 $$ X(t) =  c_1 * \lambda_1^t * v_1 $$  
