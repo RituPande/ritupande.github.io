@@ -11,29 +11,29 @@ X(t+1) &propto; A * X(t)
   
 In a graph, the eigenvector centrality of node can be viewed as a measure of "steady state" of each node passing its importance to its neighbors. i.e. X(t+1) = X(t). This implies that in "steady state", we are giving away and receving the same amount of centrality to/from the neighboring nodes. Let this "steady state" vector be denoated as v  
   
-v  &propto; A*v  
-v  = &lambda; A*v
+$$ v  \propto A*v $$  
+$$ v  = \lambda A*v $$
 
 By definition, v is an eigenvector of A. Hence, we can conclude that eignevector of an adjacency matrix provides importance ( centrality ) of each node based on the premise that its importance is proportional to the sum of the importances of it's neighbors.  
 
 ### Mathematical Proof
 
 In a "steady state":  
-X(t) = A X(t)  
-X(t) = A <sup>t</sup> X(0)
+X(t) = A * X(t)  
+X(t) = A <sup>t</sup> * X(0)
   
 Since A is a symmetric matrix, it's eigenvectors span  R<sup>n</sup>:  
-$$ X(0) = \sum_{i=1}^n  c_i * v_i $$, where v<sub>i</sub>  are eignevectors of A. 
+$$ \displaystyle X(0) = \sum_{i=1}^n  c_i * v_i $$, where v<sub>i</sub>  are eignevectors of A. 
 
-$$ X(t) =  A ^t  \sum_{i=1}^n  c_i * v_i $$  
-$$ X(t) =  \sum_{i=1}^n   c_i * A^t * v_i $$  
-$$ X(t) =  \sum_{i=1}^n   c_i * \lambda_i^t * v_i $$  
-Let $$ \lambda_1 $$ be the highest eignevalue.
-$$ X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$  
-$$ X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$   
+$$ \displaystyle X(t) =  A ^t  \sum_{i=1}^n  c_i * v_i $$  
+$$ \displaystyle X(t) =  \sum_{i=1}^n   c_i * A^t * v_i $$  
+$$ \displaystyle X(t) =  \sum_{i=1}^n   c_i * \lambda_i^t * v_i $$  
+Let $$ \lambda_1 $$ be the highest eignevalue:  
+$$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$  
+$$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$   
   
 Multiplying and dividing with $$ \lambda_1^t $$   
-$$ X(t) =  c_1 * \lambda_1^t * v_1 + \lambda_1^t \sum_{i=2}^n   c_i * \frac{\lambda_i^t}{\lambda_i^t} * v_i $$  
+$$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \lambda_1^t \sum_{i=2}^n   c_i * \frac{\lambda_i^t}{\lambda_i^t} * v_i $$  
 
 $$ t \to \inf , \frac{\lambda_i^t}{\lambda_i^t} \to 0 $$  
 $$ X(t) =  c_1 * \lambda_1^t * v_1 $$  
