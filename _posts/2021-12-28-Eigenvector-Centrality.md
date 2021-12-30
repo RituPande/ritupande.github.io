@@ -36,7 +36,7 @@ $$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_
 Multiplying and dividing with $$ \lambda_1^t $$   
 $$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \lambda_1^t \sum_{i=2}^n   c_i * \frac{\lambda_i^t}{\lambda_1^t} * v_i $$  
 
-$$ t \to \inf , \frac{\lambda_i^t}{\lambda_i^t} \to 0 $$  
+$$ t \to \inf , \displaystyle \frac{\lambda_i^t}{\lambda_1^t} \to 0 $$  
 $$ X(t) =  c_1 * \lambda_1^t * v_1 $$  
 $$ X(t) \propto v_1 $$  
 
