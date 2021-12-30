@@ -45,7 +45,7 @@ $$ X(t) \propto v_1 $$
 Hence, the largest eigenvector gives the "Eignevector Centrality" for a graph.  
 
 ### References
-1. Eingenvector Centrality(https://www.youtube.com/watch?v=1S1mD0l9FwU&list=LL&index=1&t=176s)  
+[1]. [Eingenvector Centrality](https://www.youtube.com/watch?v=1S1mD0l9FwU&list=LL&index=1&t=176s)  
 
 
 
