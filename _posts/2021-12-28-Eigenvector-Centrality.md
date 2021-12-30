@@ -20,7 +20,7 @@ By definition, v is an eigenvector of A. Hence, we can conclude that eignevector
 
 In a "steady state":  
 X(t) = A * X(t)  
-X(t) = A <sup>t</sup> * X(0)
+$$ X(t) = A^t  * X(0) $$
   
 Since A is a symmetric matrix, it's eigenvectors span  R<sup>n</sup>:  
 $$ \displaystyle X(0) = \sum_{i=1}^n  c_i * v_i $$, where v<sub>i</sub>  are eignevectors of A. 
