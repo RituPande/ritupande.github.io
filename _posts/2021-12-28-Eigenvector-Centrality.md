@@ -9,16 +9,17 @@ Eigenvector centrality is one the most fundamental mechanism used to assign impo
 Let X(t) represent the importance vector of a graph at time-step t, then  
 $$ X(t+1) \propto A * X(t) $$
   
-In a graph, the eigenvector centrality of node can be viewed as a measure of "steady state" of each node passing its importance to its neighbors. i.e. X(t+1) = X(t). This implies that in "steady state", we are giving away and receving the same amount of centrality to/from the neighboring nodes. Let this "steady state" vector be denoated as v  
+In a graph, the eigenvector centrality of node can be viewed as a measure of "steady state" of each node passing its importance to its neighbors. i.e. X(t+1) = X(t). This implies that in "steady state", the node is giving away and receving the same amount of centrality to/from the neighboring nodes. Let this "steady state" vector be denoated as v  
   
 $$ v  \propto A*v $$  
 $$ v  = \lambda A*v $$
 
-By definition, v is an eigenvector of A. Hence, we can conclude that eignevector of an adjacency matrix provides importance ( centrality ) of each node based on the premise that its importance is proportional to the sum of the importances of it's neighbors.  
+By definition, v is an eigenvector of A. Hence, we can intuitively understand that eignevector of an adjacency matrix provides importance ( centrality ) of each node based on the premise that its importance is proportional to the sum of the importances of it's neighbors.  
 
 ### Mathematical Proof
 
-In a "steady state":  
+As discussed, in a "steady state",  the node is giving away and receving the same amount of centrality to/from the neighboring nodes. : 
+
 X(t) = A * X(t)  
 $$ X(t) = A^t  * X(0) $$
   
@@ -39,6 +40,11 @@ $$ \displaystyle X(t) =  c_1 * \lambda_1^t * v_1 + \lambda_1^t \sum_{i=2}^n   c_
 $$ t \to \inf , \displaystyle \frac{\lambda_i^t}{\lambda_1^t} \to 0 $$  
 $$ X(t) =  c_1 * \lambda_1^t * v_1 $$  
 $$ X(t) \propto v_1 $$  
+  
+Hence, the largest eigenvector gives the "Eignevector Centrality" for a graph.  
+
+### References
+1. Eingenvector Centrality(https://www.youtube.com/watch?v=1S1mD0l9FwU&list=LL&index=1&t=176s)  
 
 
 
