@@ -18,13 +18,18 @@ v  = &lambda; A*v
 
 By definition, v is an eigenvector of A. Hence, we can conclude that eignevector of an adjacency matrix provides importance ( centrality ) of each node based on the premise that its importance is proportional to the sum of the importances of it's neighbors.  
 
-## Mathematical Proof
+### Mathematical Proof
 
 X(t) = A X(t)  
 X(t) = A <sup>t</sup> X(0)
   
 Since A is a symmetric matrix, it's eigenvectors span  R<sup>n</sup>:  
-$$ X(0) = \sum_{i=0}^n  c_i * v_i $$, where v<sub>i</sub>  are eignevectors of A.  
-  
+$$ X(0) = \sum_{i=1}^n  c_i * v_i $$, where v<sub>i</sub>  are eignevectors of A. 
+
+$$ X(t) =  A ^t  \sum_{i=1}^n  c_i * v_i $$  
+$$ X(t) =  \sum_{i=1}^n   c_i * A^t * v_i $$  
+$$ X(t) =  \sum_{i=1}^n   c_i * \lambda_i^t * v_i $$  
+$$ X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$  
+$$ X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$  
 
 
