@@ -8,13 +8,23 @@ published: false
 
 Eigenvector centrality is one the most fundamental mechanism used to assign importance to a node in a graph. While Degree Centrality' assigns importance to a node based on  the number of its neighboring nodes, Eignevector Centrality assigns importance to a node in a graph based not only based on the number of its neightbors but also their importance. i.e. a node's importance is proportional to the sum of the importance of it's neighbors.
 
-Let X(t) represent the importance vector of a graph at time-step t, then 
-X(t+1) = A * X(t) 
+Let X(t) represent the importance vector of a graph at time-step t, then  
+X(t+1) &propto; A * X(t) 
   
-In a graph, the eigenvector centrality of node can be viewed as a measure of "steady state" of each node passing its importance to its neighbors. i.e. X(t+1) = X(t) =v
-v = A*v.   
+In a graph, the eigenvector centrality of node can be viewed as a measure of "steady state" of each node passing its importance to its neighbors. i.e. X(t+1) = X(t). This implies that in "steady state", we are giving away and receving the same amount of centrality to/from the neighboring nodes. Let this "steady state" vector be denoated as v  
+  
+v  &propto; A*v  
+v  = &lambda; A*v
 
-By definition, 
+By definition, v is an eigenvector of A. Hence, we can conclude that eignevector of an adjacency matrix provides importance ( centrality ) of each node based on the premise that its importance is proportional to the sum of the importances of it's neighbors.  
 
+## Mathematical Proof
+
+X(t) = A X(t)  
+X(t) = A <sup>t</sup> X(0)
+  
+Since A is a symmetric matrix, it's eigenvectors span  R<sup>n</sup>:  
+$$ X(0) = \sum_{i=0}^n  c_i * v_i $$, where v<sub>i</sub>  are eignevectors of A.  
+  
 
 
