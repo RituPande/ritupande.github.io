@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Eigenvector Centrality
-published: false  
+published: true  
 ---
 
 ## Introduction  
@@ -20,6 +20,7 @@ By definition, v is an eigenvector of A. Hence, we can conclude that eignevector
 
 ### Mathematical Proof
 
+In a "steady state":  
 X(t) = A X(t)  
 X(t) = A <sup>t</sup> X(0)
   
@@ -29,7 +30,16 @@ $$ X(0) = \sum_{i=1}^n  c_i * v_i $$, where v<sub>i</sub>  are eignevectors of A
 $$ X(t) =  A ^t  \sum_{i=1}^n  c_i * v_i $$  
 $$ X(t) =  \sum_{i=1}^n   c_i * A^t * v_i $$  
 $$ X(t) =  \sum_{i=1}^n   c_i * \lambda_i^t * v_i $$  
+Let $$ \lambda_1 $$ be the highest eignevalue.
 $$ X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$  
-$$ X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$  
+$$ X(t) =  c_1 * \lambda_1^t * v_1 + \sum_{i=2}^n   c_i * \lambda_i^t * v_i $$   
+  
+Multiplying and dividing with $$ \lambda_1^t $$   
+$$ X(t) =  c_1 * \lambda_1^t * v_1 + \lambda_1^t \sum_{i=2}^n   c_i * \frac{\lambda_i^t}{\lambda_i^t} * v_i $$  
+
+$$ t \to \inf , \frac{\lambda_i^t}{\lambda_i^t} \to 0 $$  
+$$ X(t) =  c_1 * \lambda_1^t * v_1 $$  
+$$ X(t) \propto v_1 $$  
+
 
 
