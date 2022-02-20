@@ -4,7 +4,9 @@ title: Entropy, Information Gain and Mutual Information
 published: false  
 ---
 
-In this post, we would attempt to gain intuitive and mathematical understanding about concepts of Entropy, Information Gain and  Mutual Information and their application to machine learning.
+**information theory**  is a subfield of mathematics that deals with the quantification of the information in events, random variables, and distributions and storing it in a fashion such that it is robust to errors ( channel encoding and error correction). The field was proposed and developed by Claude Shannon while working at the US telephone company Bell Labs to quantify information for communication. This post provides an introduction to basic concepts of information theory and their application to machine learning.  
+
+
 
 ## 5. References  
 [1]. [What is Information Entropy](https://machinelearningmastery.com/what-is-information-entropy/)    
