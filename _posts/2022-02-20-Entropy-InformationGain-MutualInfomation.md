@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Entropy, Information Gain and Mutual Information
+title: Information Theory and Machine Learning
 published: false  
 ---
 
