@@ -6,7 +6,7 @@ published: false
 
 **Information theory**  is a subfield of mathematics that deals with the quantification of the information in events, random variables, and distributions and storing it in a fashion such that it is robust to errors ( channel encoding and error correction). The field was proposed and developed by Claude Shannon while working at the US telephone company Bell Labs to quantify information for communication. This post provides an introduction to basic concepts of information theory and their application to machine learning.  
 
-## 1. Information of an Event
+## 1. Information
 Information of an event can be intuitively understood as to how much surprise there is an event. Knowledge of an unlikely ( more uncertain ) event occurring is more informative  than learning that a likely event (more certain)  has occurred. This can be summarized as follows:  
 
 Low Probability Event: High Information (surprising, more uncertain).  
@@ -18,19 +18,19 @@ For any event x, the information required to communicate its occurance in bits c
 $$ \displaystyle information(x) =  log_2( \frac{1}{p(x)} ) $$  
 $$ information(x) =  -log_2(p(x)) $$    
   
-## 2. Entropy
+### 1.1 Entropy
 Calculating the information for a random variable is called information entropy. Entropy can be intuitively understood as the average or expected number of bits required to represent or transmit a random event drawn from the probability distribution for the random variable. For a discreet random variable X, which can take K possible values, with probability distribution p, information entropy can be represented as:  
 
 $$ \displaystyle H(X) =  - \sum_1^K p(x) log_2(p(x)) $$ 
 
 It should be noted that a skewed probability distribution has more certainity and less surprise and therefore low entropy. A uniformally distributed random variable has more uncertainity, hence potential for more suprise factor and therefore higher entropy.
 
-## 3. Cross-Entropy
+### 1.2 Cross-Entropy
 Entropy also provides a means to compare two probability distributions. If P is a true distribution and Q an approximation of it, cross entropy can be intuitively understood as  avaerage or expeceted number of bits required to represent an event in P using Q to encode it. More precisely,    
 $$ \displaystyle H(P,Q) = - \sum_1^K p(x)log_2(q(x)) $$  
 where p(x) is the probability of the event x in P and q(x) is the probability of the same event x in Q.  
 
-## 4. KL-Divergence
+###  1.3 KL-Divergence
 
 KL- Divergence can be intuitively understood to be additional bits required to represent an event in true distribution, P by encoding it with its approximate distribution, Q instead of P itself.  
   
