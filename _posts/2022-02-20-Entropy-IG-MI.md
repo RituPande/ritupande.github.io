@@ -26,12 +26,16 @@ $$ \displaystyle H(X) =  - \sum_1^K p(x) log_2(p(x)) $$
 It should be noted that a skewed probability distribution has more certainity and less surprise and therefore low entropy. A uniformally distributed random variable has more uncertainity, hence potential for more suprise factor and therefore higher entropy.
 
 ## 3. Cross-Entropy
-Entropy also provides a means to compare two probability distributions. If P is a target distribution and Q an approximation of it, cross entropy can be intuitively understood as additonal bits required to represent an event in P using Q. More precisely,    
+Entropy also provides a means to compare two probability distributions. If P is a true distribution and Q an approximation of it, cross entropy can be intuitively understood as  avaerage or expeceted number of bits required to represent an event in P using Q to encode it. More precisely,    
 $$ \displaystyle H(P,Q) = - \sum_1^K p(x)log_2(q(x)) $$  
-
 where p(x) is the probability of the event x in P and q(x) is the probability of the same event x in Q.  
 
 ## 4. KL-Divergence
+
+KL- Divergence can be intuitively understood to be additional bits required to represent an event in true distribution, P by encoding it with its approximate distribution, Q instead of P itself.  
+  
+$$ D_{KL}(P \mid \mid Q ) =  H(P,Q) - H(P) $$
+
 
 ## 5. References  
 [1]. [What is Information Entropy](https://machinelearningmastery.com/what-is-information-entropy/)    
