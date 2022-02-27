@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Information Theory and Machine Learning
+title: Information Theory and its Applications to  Machine Learning
 published: false  
 ---
 
