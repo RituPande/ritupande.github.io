@@ -74,7 +74,7 @@ $$ H(X,Y) = H(X) + H(Y) - I(X;Y) $$
   
 ## 2. Applications to Machine Learning
 
-## 5. References  
+## 3. References  
 [1]. [What is Information Entropy](https://machinelearningmastery.com/what-is-information-entropy/)    
 [2]. [Information Gain and Mutual Information for Machine Learning](https://machinelearningmastery.com/information-gain-and-mutual-information/)    
 [3]. [Wikipedia-Mutual Information](https://en.wikipedia.org/wiki/Mutual_information)  
