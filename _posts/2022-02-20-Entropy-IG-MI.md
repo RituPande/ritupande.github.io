@@ -55,3 +55,4 @@ $$ I (X, Y ) = H(X) – H(X \mid Y) = H(Y) -  H(Y \mid X)  $$
 ## 5. References  
 [1]. [What is Information Entropy](https://machinelearningmastery.com/what-is-information-entropy/)    
 [2]. [Information Gain and Mutual Information for Machine Learning](https://machinelearningmastery.com/information-gain-and-mutual-information/)    
+[3]. [Wikipedia-Mutual Information](https://en.wikipedia.org/wiki/Mutual_information)  
