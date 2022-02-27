@@ -37,8 +37,20 @@ KL- Divergence can be intuitively understood to be additional bits required to r
 $$ D_{KL}(P \mid \mid Q ) =  H(P,Q) - H(P) $$
 
 ### 1.4 Conditional Entropy  
+Conditional entropy quantifies the  amount of information or bits needed to describe the outcome of a random variable Y given that the value of another random variable X is known.
+
+$$ H(Y \mid X ) = E_X(H(Y \mid X=x) ) $$  
   
-## 2. Information Gain
+$$ = - \sum_{x \in X } p(x)* \sum_{y \in Y } p(y \mid x ) log_2( p(y \mid x ) $$  
+   
+$$ = - \sum_{x \in X } \sum_{y \in Y } p(x)*  p(y \mid x ) log_2( p(y \mid x ) $$   
+  
+$$ = - \sum_{x \in X } \sum_{y \in Y } p(x,y) log_2( p(y \mid x ) $$   
+  
+
+
+ 
+### 1.5. Information Gain
 Information Gain measures the reduction in entropy or surprise by splitting a dataset according to a given value of a random variable.In this way, entropy can be used as a calculation of the purity of a dataset.  Information gain provides a way to use entropy to calculate how a change to the dataset impacts the purity of the dataset, e.g. the distribution of classes. A smaller entropy suggests more purity or less surprise. An entropy of 0 bits indicates a dataset contains only one class. One or more bits indicate how impure the dataset is. More impure the dataset, higher the entropy.  
   
 if a dataset D, is divided into two groups $$ G_1 $$ and $$ G_2 $$ based on a variable a, the information gain can be written as: 
@@ -48,13 +60,19 @@ $$ IG(D, a) = H(D) - H(D \mid a ) $$
 $$ H(D \mid a ) can be calculated as follows:
 $$ \displaystyle H(D \mid a )  = $$  \frac{count(G_1)}{count(D)} * H(G_1) + \frac{count(G_2)}{count(D)} * H(G_2) $$  
   
-## Mutual Information  
+### 1.6 Mutual Information  
 Mutual information is a measure the amount of information one can obtain from one random variable given another.The mutual information between two random variables X and Y can be stated formally as:  
-$$ I (X, Y ) = H(X) – H(X \mid Y) = H(Y) -  H(Y \mid X) = I ( Y, X ) $$
+$$ I (X; Y ) = H(X) – H(X \mid Y) = H(Y) -  H(Y \mid X) = I ( Y; X ) $$
 
 <p align="center">
   <img src="../images/MI.jpg"> <br> 
 </p> 
+
+### 1.7 Joint Entropy  
+Joint entropy is the measure of total number of bits required to represent the simultaneous outcome of two randon variables and is represented as:
+$$ H(X,Y) = H(X) + H(Y) - I(X;Y) $$  
+  
+## 2. Applications to Machine Learning
 
 ## 5. References  
 [1]. [What is Information Entropy](https://machinelearningmastery.com/what-is-information-entropy/)    
