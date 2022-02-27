@@ -46,7 +46,7 @@ $$ = - \sum_{x \in X } p(x)* \sum_{y \in Y } p(y \mid x ) log_2( p(y \mid x ) $$
    
 $$ = - \sum_{x \in X } \sum_{y \in Y } p(x)*  p(y \mid x ) log_2( p(y \mid x ) $$   
   
-$$ = - \sum_{x \in X } \sum_{y \in Y } p(x,y) log_2( p(y \mid x ) $$   
+$$ = - \sum_{x \in X } \sum_{y \in Y } p(x,y) log_2( p(y \mid x ) ) $$   
   
 
 
