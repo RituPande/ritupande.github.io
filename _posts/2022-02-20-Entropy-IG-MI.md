@@ -50,7 +50,7 @@ $$ \displaystyle H(D \mid a )  = $$  \frac{count(G_1)}{count(D)} * H(G_1) + \fra
   
 ## Mutual Information  
 Mutual information is a measure the amount of information one can obtain from one random variable given another.The mutual information between two random variables X and Y can be stated formally as:  
-$$ I (X, Y ) = H(X) – H(X \mid Y) = H(Y) -  H(Y \mid X)  $$
+$$ I (X, Y ) = H(X) – H(X \mid Y) = H(Y) -  H(Y \mid X) = I ( Y, X ) $$
 
 <p align="center">
   <img src="../images/MI.jpg"> <br> 
