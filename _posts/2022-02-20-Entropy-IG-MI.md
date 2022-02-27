@@ -75,6 +75,22 @@ $$ H(X,Y) = H(X) + H(Y) - I(X;Y) $$
   
 ## 2. Applications to Machine Learning
 
+### 2.1 Log-Likehood Loss for Classifiation Tasks
+
+In a supervised machine learning task, we attempt to learn parameters of a model, $$ \theta $$, given data  Y.
+i.e. P(\theta \mid X,Y ).   
+
+Using Baye's rule,  
+
+$$ P(\theta \mid Y ) = \frac{P(Y \mid \theta ) P(\theta) }{ P(y) }  $$
+$$ P(\theta \mid Y ) \propto P(Y \mid \theta ) P(\theta) $$
+
+Here p(\theta) is the *prior*. If we assume no prior information of the parameter \thera 
+
+
+### 2.2 Decision Trees
+
+
 ## 3. References  
 [1]. [What is Information Entropy](https://machinelearningmastery.com/what-is-information-entropy/)    
 [2]. [Information Gain and Mutual Information for Machine Learning](https://machinelearningmastery.com/information-gain-and-mutual-information/)    
