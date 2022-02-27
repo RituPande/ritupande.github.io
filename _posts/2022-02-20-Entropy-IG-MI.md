@@ -37,7 +37,8 @@ KL- Divergence can be intuitively understood to be additional bits required to r
 $$ D_{KL}(P \mid \mid Q ) =  H(P,Q) - H(P) $$
 
 ### 1.4 Conditional Entropy  
-Conditional entropy quantifies the  amount of information or bits needed to describe the outcome of a random variable Y given that the value of another random variable X is known.
+Conditional entropy quantifies the  amount of information or bits needed to describe the outcome of a random variable Y given that the value of another random variable X is known. If $$ H( X \mind Y ) = 0 $$, it means that outcome of X can be completely concluded if Y is known and there is no additional information required to be provided.
+$$ H( X \mind Y ) = H(X ) $$ if X and Y are completely independent. Hence, even if outcome of Y is known, the number of bits required to represent the outcome of X is same as the entropy of X, had Y not been known.
 
 $$ H(Y \mid X ) = E_X(H(Y \mid X=x) ) $$  
   
