@@ -30,13 +30,13 @@ If P is a true distribution and Q an approximation of it, cross entropy can be i
 $$ \displaystyle H(P,Q) = - \sum_1^K p(x)log_2(q(x)) $$  
 where p(x) is the probability of the event x in P and q(x) is the probability of the same event x in Q.  
   
-### 1.3 Conditional Entropy  
-
 ###  1.3 KL-Divergence
 
 KL- Divergence can be intuitively understood to be additional bits required to represent an event in true distribution, P by encoding it with its approximate distribution, Q instead of P itself.  
   
 $$ D_{KL}(P \mid \mid Q ) =  H(P,Q) - H(P) $$
+
+### 1.4 Conditional Entropy  
   
 ## 2. Information Gain
 Information Gain measures the reduction in entropy or surprise by splitting a dataset according to a given value of a random variable.In this way, entropy can be used as a calculation of the purity of a dataset.  Information gain provides a way to use entropy to calculate how a change to the dataset impacts the purity of the dataset, e.g. the distribution of classes. A smaller entropy suggests more purity or less surprise. An entropy of 0 bits indicates a dataset contains only one class. One or more bits indicate how impure the dataset is. More impure the dataset, higher the entropy.  
