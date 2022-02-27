@@ -29,6 +29,8 @@ It should be noted that a skewed probability distribution has more certainity an
 If P is a true distribution and Q an approximation of it, cross entropy can be intuitively understood as  average or expeceted number of bits required to represent an event in P using Q to encode it. More precisely,    
 $$ \displaystyle H(P,Q) = - \sum_1^K p(x)log_2(q(x)) $$  
 where p(x) is the probability of the event x in P and q(x) is the probability of the same event x in Q.  
+  
+### 1.3 Conditional Entropy  
 
 ###  1.3 KL-Divergence
 
@@ -37,7 +39,18 @@ KL- Divergence can be intuitively understood to be additional bits required to r
 $$ D_{KL}(P \mid \mid Q ) =  H(P,Q) - H(P) $$
   
 ## 2. Information Gain
-Information Gain measures the reduction in entropy or surprise by splitting a dataset according to a given value of a random variable.In this way, entropy can be used as a calculation of the purity of a dataset.  Information gain provides a way to use entropy to calculate how a change to the dataset impacts the purity of the dataset, e.g. the distribution of classes. A smaller entropy suggests more purity or less surprise. An entropy of 0 bits indicates a dataset contains only one class. One or more bits indicate how impure the dataset is. More impure the dataset, higher the entropy.
+Information Gain measures the reduction in entropy or surprise by splitting a dataset according to a given value of a random variable.In this way, entropy can be used as a calculation of the purity of a dataset.  Information gain provides a way to use entropy to calculate how a change to the dataset impacts the purity of the dataset, e.g. the distribution of classes. A smaller entropy suggests more purity or less surprise. An entropy of 0 bits indicates a dataset contains only one class. One or more bits indicate how impure the dataset is. More impure the dataset, higher the entropy.  
+  
+if a dataset D, is divided into two groups $$ G_1 $$ and $$ G_2 $$ based on a variable a, the information gain can be written as:   
+  
+$$ IG(D, a) = H(D) - H(D \mid a ) $$  
+  
+$$ H(D \mid a ) can be calculated as follows:
+$$ \displaystyle H(D \mid a )  = $$  \frac{count(G_1)}{count(D)} * H(G_1) + \frac{count(G_2)}{count(D)} * H(G_2) $$  
+  
+## Mutual Information  
+Mutual information is a measure the amount of information one can obtain from one random variable given another.The mutual information between two random variables X and Y can be stated formally as:  
+$$ I (X, Y ) = H(X) – H(X \mid Y) = H(Y) -  H(Y \mid X)  $$
 
 ## 5. References  
 [1]. [What is Information Entropy](https://machinelearningmastery.com/what-is-information-entropy/)    
