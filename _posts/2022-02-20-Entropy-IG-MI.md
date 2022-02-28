@@ -75,30 +75,34 @@ $$ H(X,Y) = H(X) + H(Y) - I(X;Y) $$
   
 ## 2. Applications to Machine Learning
 
-### 2.1 Log-Likehood Loss for Classifiation Tasks
+### 2.1 Cross-Entropy:Loss function for Classifiation Tasks 
 
-In a supervised machine learning task, we attempt to learn parameters of a model, $$ \theta $$, given data  Y  to classify data into C classes.
-i.e. we try to maximize P(\theta \mid X,Y ).   
+In a supervised machine learning task, we attempt to learn parameters of a model, $$ \theta $$,  which given oberserved variable X , classifies it to unobserved variable  Y.
+During training, both X and Y are provided to the model and the parameters are tuned against on objective function that maximizes maximize P(\theta \mid X,Y ).   
 
 Using Baye's rule,  
 
-$$ P(\theta \mid Y ) = \frac{P(Y \mid \theta ) P(\theta) }{ P(y) }  $$
+$$ P(\theta \mid Y ) = \frac{P(Y \mid \theta ) P(\theta) }{ P(Y) }  $$
 $$ P(\theta \mid Y ) \propto P(Y \mid \theta ) P(\theta) $$
 
 Here p(\theta) is the *prior*. If we assume no prior information of the parameter $$ \theta $$ and assume the prior to be a uniform distribution over all C classes, the equation reduces to:  
+$$ P(\theta \mid X ) \propto P(Y \mid \theta ) $$    
+  
+If $$ \hat{y} $$ is the output of the model that produces a probability distribution of input X belonging to one of the C classes:  
+$$ P(\theta \mid Y ) \propto \prod_{i=1}^C P(\hat{y_i} \mid \theta_i ) $$  
+  
+The  objective function $$ L(Y,\theta) $$  of such a model, can be written as:     
+$$ f(Y;\theta ) = \prod_{i=1}^C \hat{p}(y_i \mid \theta_i ) $$  
+  
+Taking log on both sides, the resulting log-likelihood function L, which when maximized, learns model parameters that predicts probability distribution that classifies the input observed variable(s) X to C different classes assumed  by the unobserved variable Y. The same effect can be achieved by minimizing the negative of the log-likelihood.    
+$$ L(Y;\theta ) = - \sum_{i=1}^C  log(\hat{p}(y_i \mid \theta_i ) ) $$ 
 
-$$ P(\theta \mid Y ) \propto P(Y \mid \theta ) $$    
-$$ P(\theta \mid Y ) \propto \prod_1^C P(y_i \mid \theta_i ) $$  
-  
-A supervised learning classsification model predicts the probability of data belonging to a specific class. Therefore, it's  objective function could be the likelihood function L, which when maximized during training, would update the model parameter $$ \theta $$ to predict the class in the ground-truth.     
-$$ L(Y;\theta ) = \prod_1^C \hat{p}(y_i \mid \theta_i ) $$  
-  
-If log is taken on both sides:  
-$$ L(Y;\theta ) = \sum_1^C  log(\hat{p}(y_i \mid \theta_i ) ) $$ 
+Now, for a classification problem, the ground-truth value of Y is a one-hot encoded vector, with only a single element 1 ( corresponding to the true class) and remaining all elements 0. Also, input X to the model can belong to only one class which is found by calculating  $$ argmax(\hat{p}) $$ and corresponds to the elment whose corresponding value is 1 in the one-hot-encoding of the ground-truth. Hence,  L(Y;\theta ) is dependent only on $$ \hat{p}(y_i \mid \theta_i ) $$ where $$ y_i = 1 $$.  This can be achieved by modifying the above equation as:  
 
-Now, we know that for 
-  
-  
+$$ L(Y;\theta ) = - \sum_{i=1}^C  y_i log(\hat{p}(y_i \mid \theta_i ) ) $$ 
+
+If we look closely, this is nothing but the formula for cross-entropy between ground-truth distribution and predicted distribution of the model. This implies that for supervised clasification task, cross-entropy can be used as the loss or objective function. 
+
 
 ### 2.2 Decision Trees
 
