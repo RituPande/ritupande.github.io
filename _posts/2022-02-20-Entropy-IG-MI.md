@@ -77,16 +77,28 @@ $$ H(X,Y) = H(X) + H(Y) - I(X;Y) $$
 
 ### 2.1 Log-Likehood Loss for Classifiation Tasks
 
-In a supervised machine learning task, we attempt to learn parameters of a model, $$ \theta $$, given data  Y.
-i.e. P(\theta \mid X,Y ).   
+In a supervised machine learning task, we attempt to learn parameters of a model, $$ \theta $$, given data  Y  to classify data into C classes.
+i.e. we try to maximize P(\theta \mid X,Y ).   
 
 Using Baye's rule,  
 
 $$ P(\theta \mid Y ) = \frac{P(Y \mid \theta ) P(\theta) }{ P(y) }  $$
 $$ P(\theta \mid Y ) \propto P(Y \mid \theta ) P(\theta) $$
 
-Here p(\theta) is the *prior*. If we assume no prior information of the parameter \thera 
+Here p(\theta) is the *prior*. If we assume no prior information of the parameter $$ \theta $$ and assume the prior to be a uniform distribution over all C classes, the equation reduces to:  
 
+$$ P(\theta \mid Y ) \propto P(Y \mid \theta ) $$    
+$$ P(\theta \mid Y ) \propto \prod_1^C P(y_i \mid \theta_i ) $$  
+  
+A supervised learning classsification model predicts the probability of data belonging to a specific class. Therefore, it's  objective function could be the likelihood function L, which when maximized during training, would update the model parameter $$ \theta $$ to predict the class in the ground-truth.     
+$$ L(Y;\theta ) = \prod_1^C \hat{p}(y_i \mid \theta_i ) $$  
+  
+If log is taken on both sides:  
+$$ L(Y;\theta ) = \sum_1^C  log(\hat{p}(y_i \mid \theta_i ) ) $$ 
+
+Now, we know that for 
+  
+  
 
 ### 2.2 Decision Trees
 
