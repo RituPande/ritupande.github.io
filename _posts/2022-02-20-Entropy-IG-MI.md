@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Information Theory and its Applications to  Machine Learning
-published: false  
+published: true  
 ---
 
 **Information theory**  is a subfield of mathematics that deals with the quantification of the information in events, random variables, and distributions and storing it in a fashion such that it is robust to errors ( channel encoding and error correction). The field was proposed and developed by Claude Shannon while working at the US telephone company Bell Labs to quantify information for communication. This post provides an introduction to basic concepts of information theory and their application to machine learning.  
@@ -106,8 +106,13 @@ If we look closely, this is nothing but the formula for cross-entropy between gr
 ### 2.2 Information Gain: Decision Trees
 Information Gain can be used as the split criteria in decision trees. Dataset is split using each variable in it at each level.  The variable split that results in the maximum information gain i.e. leave the resulting split datasets with least entropy, is chosen as the variable to split the tree at that level
   
-### 2.3 Mutual Information: Feature Selection
+### 2.3 Mutual Information: Feature Selection  
+Fetaure selection is one area in machine learning where mutual information can be of help. Mutual information between each input varibale and the target variable can be calculated. Input variables with greater mutual information  carry more information about target variable within them than the variables with lower mutual information value. Mutual Information can therefore be used as a criteria for feature selection.  
 
+### 2.3 Mutual Information: Graph Learning
+
+- Mutual information can be used to model data as a graphical structure using mutual information to calculate the association between nodes in the graphical representation of the data. 
+- It is also used in graph represenational learning to create node embeddings that maximizes the mutual information between the input node features and their embeddings. Refer [4] for details
 
 ## 3. References  
 [1]. [What is Information Entropy](https://machinelearningmastery.com/what-is-information-entropy/)    
