@@ -83,7 +83,7 @@ $$ P(\theta \mid X ) \propto P(Y \mid \theta ) $$
 If $$ \hat{y} $$ is the output of the model that produces a probability distribution of input X belonging to one of the C classes:  
 $$ P(\theta \mid Y ) \propto \prod_{i=1}^C P(\hat{y_i} \mid \theta_i ) $$  
   
-The  objective function $$ L(Y,\theta) $$  of such a model, can be written as:     
+The  objective function $$ f(Y,\theta) $$  of such a model, can be written as:     
 $$ f(Y;\theta ) = \prod_{i=1}^C \hat{p}(y_i \mid \theta_i ) $$  
   
 Taking log on both sides, the resulting log-likelihood function L, which when maximized, learns model parameters that predicts probability distribution that classifies the input observed variable(s) X to C different classes assumed  by the unobserved variable Y. The same effect can be achieved by minimizing the negative of the log-likelihood.   
