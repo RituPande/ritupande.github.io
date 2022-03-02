@@ -52,7 +52,7 @@ if a dataset D, is divided into two groups $$ G_1 $$ and $$ G_2 $$ based on a va
 $$ IG(D, a) = H(D) - H(D \mid a ) $$  
   
 $$ H(D \mid a ) $$ can be calculated as follows:  
-$$ \displaystyle H(D \mid a )  = $$  \frac{count(G_1)}{count(D)} * H(G_1) + \frac{count(G_2)}{count(D)} * H(G_2) $$  
+$$ \displaystyle H(D \mid a )  = \frac{count(G_1)}{count(D)} * H(G_1) + \frac{count(G_2)}{count(D)} * H(G_2) $$  
   
 ### 1.6 Mutual Information  
 Mutual information is a measure the amount of information one can obtain from one random variable given another.The mutual information between two random variables X and Y can be stated formally as:  
@@ -108,5 +108,5 @@ Fetaure selection is one area in machine learning where mutual information can b
 ## 3. References  
 [1]. [What is Information Entropy](https://machinelearningmastery.com/what-is-information-entropy/)    
 [2]. [Information Gain and Mutual Information for Machine Learning](https://machinelearningmastery.com/information-gain-and-mutual-information/)    
-[3]. [Wikipedia-Mutual Information](https://en.wikipedia.org/wiki/Mutual_information) 
+[3]. [Wikipedia-Mutual Information](https://en.wikipedia.org/wiki/Mutual_information)   
 [4]. [Graph Representation Learning via Graphical Mutual Information Maximization]( https://arxiv.org/pdf/2002.01169.pdf)
