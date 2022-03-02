@@ -102,9 +102,11 @@ Now, for a classification problem, the ground-truth value of Y is a one-hot enco
 $$ L(Y;\theta ) = - \sum_{i=1}^C  y_i log(\hat{p}(y_i \mid \theta_i ) ) $$ 
 
 If we look closely, this is nothing but the formula for cross-entropy between ground-truth distribution and predicted distribution of the model. This implies that for supervised clasification task, cross-entropy can be used as the loss or objective function. 
-
-
-### 2.2 Decision Trees
+  
+### 2.2 Information Gain: Decision Trees
+Information Gain can be used as the split criteria in decision trees. Dataset is split using each variable in it at each level.  The variable split that results in the maximum information gain i.e. leave the resulting split datasets with least entropy, is chosen as the variable to split the tree at that level
+  
+### 2.3 Mutual Information: Feature Selection
 
 
 ## 3. References  
