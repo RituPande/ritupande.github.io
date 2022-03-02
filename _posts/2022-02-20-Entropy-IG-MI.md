@@ -74,8 +74,8 @@ In a supervised machine learning task, we attempt to learn parameters of a model
 During training, both X and Y are provided to the model and the parameters are tuned against on objective function that maximizes maximize P(\theta \mid X,Y ).   
 
 Using Baye's rule,  
-$$ P(\theta \mid Y ) = \frac{P(Y \mid \theta ) P(\theta) }{ P(Y) }  $$  
-$$ P(\theta \mid Y ) \propto P(Y \mid \theta ) P(\theta) $$
+$$ \displaystyle P(\theta \mid Y ) = \frac{P(Y \mid \theta ) P(\theta) }{ P(Y) }  $$  
+$$ \displaystyle P(\theta \mid Y ) \propto P(Y \mid \theta ) P(\theta) $$
 
 Here p(\theta) is the *prior*. If we assume no prior information of the parameter $$ \theta $$ and assume the prior to be a uniform distribution over all C classes, the equation reduces to:  
 $$ P(\theta \mid X ) \propto P(Y \mid \theta ) $$    
