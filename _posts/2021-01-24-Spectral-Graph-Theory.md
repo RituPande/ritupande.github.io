@@ -48,7 +48,7 @@ $$ \displaystyle Tr(A^3 )=\sum_{i=1}^n \lambda_i^3 $$ = number of triangles in G
 
 
 ## 2. Laplacian Matrix  
-A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance that be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.  
+A graph is represented as a Laplacian matrix when the motivation is to partition the graph. Partitioning the graph involves dividing the graph to two pieces such that the resulting pieces have low conductance. Conductance can be intuitively understood as a measure to define how well connected a subset of a graph is with rest of the graph. Low conductance means that the subset is not well connected with the rest of the graph.  
   
 A Laplacian matrix L of a graph G with n nodes is an n x n matrix defined as:    
 $$ L = D – A $$  
