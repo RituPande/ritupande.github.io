@@ -9,7 +9,9 @@ This page conatins links to various machine learning resources that I have found
 1. [Reinforcement Learning Bootcamp](https://www.youtube.com/playlist?list=PLAdk-EyP1ND8MqJEJnSvaoUShrAWYe51U)    
 2. [Numerical Optimization-NPTEL](https://nptel.ac.in/courses/106/108/106108056/#)  
 3. [Hidden Markov Models](https://www.youtube.com/playlist?list=PLix7MmR3doRo3NGNzrq48FItR3TDyuLCo)  
-4. [Foundations of Machine Learning- Bloomberg ML EDU](https://bloomberg.github.io/foml/#home)  
+4. [Foundations of Machine Learning- Bloomberg ML EDU](https://bloomberg.github.io/foml/#home)     
+5. [Algorthmic Differentition - Forward Mode](https://www.youtube.com/watch?v=B-1hsAfdGHw)     
+6. [Algorthmic Differentition - Reverse Mode](https://www.youtube.com/watch?v=v-tJ06Ua_7M)   
   
 ## Tutorials  
   
