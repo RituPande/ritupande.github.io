@@ -71,7 +71,7 @@ $$ H(X,Y) = H(X) + H(Y) - I(X;Y) $$
 ### 2.1 Cross-Entropy:Loss function for Classification Tasks 
 
 In a supervised machine learning task, we attempt to learn parameters of a model, $$ \theta $$,  which given oberserved variable X , classifies it to unobserved variable  Y.
-During training, both X and Y are provided to the model and the parameters are tuned against on objective function that maximizes maximize P(\theta \mid X,Y ).   
+During training, both X and Y are provided to the model and the parameters are tuned against on objective function that maximizes maximize $$ P(\theta \mid X,Y ) $$.   
 
 Using Baye's rule,  
 $$ \displaystyle P(\theta \mid Y ) = \frac{P(Y \mid \theta ) P(\theta) }{ P(Y) }  $$  
