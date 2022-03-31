@@ -12,7 +12,7 @@ Information of an event can be intuitively understood as to how much surprise th
 Low Probability Event: High Information (surprising, more uncertain).  
 High Probability Event: Low Information (unsurprising, more certain).
 
-If an event has a probability of 0.25 i.e $$ \frac{1}{4} $$, it occurs only once in 4 possibile outcomes. Therefore, to communicate that such an event has occurred, information about which of the 4 possible outcomes has occurred has to be passed. This requires log<sub>2</sub>(4) = 2 bits of information to be trasnmitted.
+If an event has a probability of 0.25 i.e $$ \frac{1}{4} $$, it occurs only once in 4 possibile outcomes. Therefore, to communicate that such an event has occurred, information about which of the 4 possible outcomes has occurred has to be passed. This requires $$ log_2(4) = 2 $$  bits of information to be trasnmitted.
     
 For any event x, the information required to communicate its occurance in bits can be calculated as:    
 $$ \displaystyle information(x) =  log_2( \frac{1}{p(x)} ) $$  
@@ -77,7 +77,7 @@ Using Baye's rule,
 $$ \displaystyle P(\theta \mid Y ) = \frac{P(Y \mid \theta ) P(\theta) }{ P(Y) }  $$  
 $$ \displaystyle P(\theta \mid Y ) \propto P(Y \mid \theta ) P(\theta) $$
 
-Here p(\theta) is the *prior*. If we assume no prior information of the parameter $$ \theta $$ and assume the prior to be a uniform distribution over all C classes, the equation reduces to:  
+Here $$ p(\theta) $$ is the *prior*. If we assume no prior information of the parameter $$ \theta $$ and assume the prior to be a uniform distribution over all C classes, the equation reduces to:  
 $$ P(\theta \mid X ) \propto P(Y \mid \theta ) $$    
   
 If $$ \hat{y} $$ is the output of the model that produces a probability distribution of input X belonging to one of the C classes:  
