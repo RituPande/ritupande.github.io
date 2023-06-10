@@ -10,7 +10,7 @@ I am also software architect with expertise in designing cybersecurity solutions
 
 ### News
 
-<span style="color:blue"> <b> June 2023 </b> </span>  
+<span style="color:blue"> <b> 2023 </b> </span>  
 Our paper [Hierarchical Neural Cellular Automata]() was accedpted at ALife 2023 for an oral presentation.  
 
 ### Contact me at:
