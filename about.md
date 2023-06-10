@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi! I am Ritu Pande. I am an independent researcher with interest in modelling biological processes  using geometric deep learning and as self-organizing systems 
+Hi! I am Ritu Pande, an independent researcher, with interest in modelling biological processes using geometric deep learning and as self-organizing systems 
 
 I am also software architect with expertise in designing cybersecurity solutions for connected devices. 
 
