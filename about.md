@@ -12,7 +12,7 @@ I am also software architect with 20+ years of expertise in designing cybersecur
 
 <span style="color:gray"> <b> June 2023 </b></span>  
   
-Our paper [Hierarchical Neural Cellular Automata]() was accepted at ALife conference 2023 for an oral presentation.  
+Our paper [Hierarchical Neural Cellular Automata]() was accepted at Alife conference 2023 for an oral presentation.  
 
 ### Contact me at:
 
