@@ -3,7 +3,7 @@ layout: profile
 title: Ritu Pande
 ---
 
-I am Ritu Pande, an independent researcher, with interest in modelling biological processes using geometric deep learning. I am also interested in researching  whether modelling biological processes as self-organising systems produces any insight into diseases, such as, cancer or autoimmune disorders, arising out of loss of system homeostatis . 
+I am Ritu Pande, an independent researcher, with interest in modelling biological processes using geometric deep learning. My interests also span modelling biological processes as self-organising systems and researching  whether this throws any insight into diseases, such as, cancer or autoimmune disorders, arising out of loss of system homeostatis. 
 
 I am also software architect with 20+ years of expertise in designing cybersecurity solutions for connected devices. 
 
