@@ -1,7 +1,7 @@
 ---
 layout: page
-title: References
-permalink: /references/
+title: Resources
+permalink: /resources/
 ---
 This page conatins links to various machine learning resources that I have found particularly enlightening and love to go back to:   
   
