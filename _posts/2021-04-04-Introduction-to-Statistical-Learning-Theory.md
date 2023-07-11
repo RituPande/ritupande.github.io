@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introduction to Statistical Learning Theory
+permalink: /blog/statisticallearning/
 ---
 Supervised machine learning techniques are used to solve problems which cannot be framed as closed-form equations. These techniques aim to find a ***decision function*** that best fits data points consisting of inputs and the corresponding outputs generated empirically, called training data. The process involves:  
 - Choosing candidate functions amongst which a decision function shall be chosen.
