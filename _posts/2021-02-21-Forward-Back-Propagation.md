@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Forward and Back Propagation in Computational Graphs
-permalink: /blog/computationalgraphs/
+permalink: /blog/Forward-Back-Propagation/
 ---
 A computational graph is defined as a directed graph where the nodes correspond to mathematical operations. It is used as a way of expressing and evaluating a mathematical expression. Each node of a computational graph has one or two incoming edges carrying the inputs and one outgoing edge representing the result of the operation performed by the node on the inputs. There are two basic operations performed on a computational graph:  
 **Forward Propagation:** Forward propagation involves computing the values of all nodes in the graph to arrive at the final value of the mathematical expression represented by the graph.  
