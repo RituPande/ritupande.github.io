@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to Spectral Graph Theory
-permalink: /blog/sgt/
+permalink: /blog/spectral/
 ---
 In mathematics, **spectral graph theory** is the study of the properties of a graph in relationship to the characteristic polynomial, eigenvalues and eigenvectors of matrices associated with the graph, such as its adjacency matrix or Laplacian matrix.  A **spectrum** of the graph is defined as eigenvectors of a graph ordered by the magnitude of their corresponding eigenvalues.  
 Whether to express a graph as an adjacency matrix of Laplacian matrix depends on the motivation or information that needs to be extracted from the graph. If the information required is number of walks of any length _n_ between one vertex and another we use the adjacency matrix to express the graph. If the motivation is to perform graph partitioning, Laplacian matrix is used. In this article we shall focus on undirected graphs represented as both Adjacency and Laplacian matrices for these purposes.
