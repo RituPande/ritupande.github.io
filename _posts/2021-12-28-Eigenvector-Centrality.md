@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Eigenvector Centrality
+permalink: /blog/Eigenvector-Centrality/
 published: true  
 ---
 
