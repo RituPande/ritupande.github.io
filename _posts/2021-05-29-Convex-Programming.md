@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introduction to Convex Programming
+permalink: /Convex-Programming/
 published: true
 ---
 
