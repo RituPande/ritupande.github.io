@@ -26,6 +26,4 @@ P(X) = Evidence
 P(Z,X; \Theta) = Model  
 P(Z|X ) = Posterior  
 
-Expectation Maximixation : Mechanism to find the value of $$ \Theta $$ that maximizes the likelihood function that is dependent on observed values X and latent variables Z. As variable Z is unobserved it is difficult to find a closed form solution for 
-P( X,Z;\Theta ). Expectation maximization allows for maximum likelihoodto be calculated using  $$ \Sum_Z P(X, \Theta ) $$, i.e. marginalized over Z.
-
+Expectation Maximixation : Mechanism to find the value of $$ \Theta $$ that maximizes the likelihood function that is dependent on observed values X and latent variables Z.
