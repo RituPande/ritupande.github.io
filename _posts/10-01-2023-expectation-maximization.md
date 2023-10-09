@@ -27,3 +27,5 @@ P(Z,X; \Theta) = Model
 P(Z|X ) = Posterior  
 
 Expectation Maximixation : Mechanism to find the value of $$ \Theta $$ that maximizes the likelihood function that is dependent on observed values X and latent variables Z.
+
+Jensen's Inequality:  $$ E[f(x)] \ge f( E(x) )  
