@@ -28,4 +28,8 @@ P(Z|X ) = Posterior
 
 Expectation Maximixation : Mechanism to find the value of $$ \Theta $$ that maximizes the likelihood function that is dependent on observed values X and latent variables Z.
 
-Jensen's Inequality:  $$ E[f(x)] \ge f( E(x) ) $$ , when $$ f $$ is convex
+Jensen's Inequality:   
+$$ E[f(x)] \ge f( E(x) ) $$ , when $$ f $$ is convex  
+IF f is scritcly convex AND $$ E[f(X)] \eq f( E(X) ) $$ THEN  
+&nbsp;&nbsp;&nbsp;&nbsp; $$ X = E(X) $$ with probability 1
+  
