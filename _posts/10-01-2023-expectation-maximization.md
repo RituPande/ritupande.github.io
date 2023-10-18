@@ -21,15 +21,38 @@ $$ \phi_j $$ = P( Z_i =j )
   
 This imples that the probability that an observed datapoint is sampled from a distribution from a set of K distributions is not a one-hot vector but a softmax.  
 
-P(Z) = Class Prior for latent variable Z  
+$$ P(Z) $$ = Class Prior for latent variable Z  
 P(X) = Evidence  
 P(Z,X; \Theta) = Model  
 P(Z|X ) = Posterior  
 
-Expectation Maximixation : Mechanism to find the value of $$ \Theta $$ that maximizes the likelihood function that is dependent on observed values X and latent variables Z.
-
 Jensen's Inequality:   
 $$ E[f(x)] \ge f( E(x) ) $$ , when $$ f $$ is convex  
 IF f is stricly convex AND $$ E[f(X)] \eq f( E(X) ) $$ THEN  
-&nbsp;&nbsp;&nbsp;&nbsp; $$ X = E(X) $$ with probability 1
+&nbsp;&nbsp;&nbsp;&nbsp; $$ X = E(X) $$ with probability 1 i.e. the value of X is a constant.
+
+Expectation Maximization : Mechanism to find the value of $$ \Theta $$ that maximizes the likelihood function that is dependent on observed values X and latent variables Z.  
+Objective : max  $$ log ( \sum_Z P(X,Z, \Theta ) )  $$
+
+Multiply and divide by a probbaility distribution $$ Q(z) $$  
+$$ \frac{ Q(z) * log ( \sum_Z P(X,Z, \Theta ) ) }{ Q(z) }  $$  
+$$ \ge E_{z~Q(z)}( \frac{log ( \sum_Z P(X,Z, \Theta ) ) }{ Q(z) } $$  
+This value is called Evidence Lower Bound or ELBO  
+
+Algorithm :  
+
+Randomly initalize  $$ \Theta $$  
+
+Loop till convergence  
+E-Step:
+  for each i  
+      Set  $$ Q_i(z) = P(Z_i|x_i ;\Theta) $$  
+M-Step:
+  $$ \Theta = arg max_{\Theta} $$ \sum_{i=1}^n ELBO(x_i; \Theta ) $$
+
+
+
+
+
+
   
