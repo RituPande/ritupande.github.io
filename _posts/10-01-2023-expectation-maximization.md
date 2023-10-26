@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mathematics for Generative AI
-permalink: /blog/mathematics-for-generative-ai/
+title: Expectation Maximization
+permalink: /blog/expectation-maximization/
 published: true
 ---
 
