@@ -2,7 +2,7 @@
 layout: post
 title: Expectation Maximization
 permalink: /blog/expectation-maximization/
-published: true
+published: false
 header-includes:
   - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 ---
