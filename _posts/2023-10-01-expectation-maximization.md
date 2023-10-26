@@ -2,7 +2,7 @@
 layout: post
 title: Expectation Maximization
 permalink: /blog/expectation-maximization/
-published: true
+published: false
 ---
 
 In this post we shall explore expectation maximization, a mathematical tool used in many generative-ai algorithms, in detail.  
