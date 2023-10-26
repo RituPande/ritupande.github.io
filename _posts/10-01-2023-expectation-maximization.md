@@ -2,7 +2,7 @@
 layout: post
 title: Mathematics for Generative AI
 permalink: /blog/mathematics-for-generative-ai/
-published: false
+published: true
 ---
 
 In this post we shall explore expectation maximization, a mathematical tool used in many generative-ai algorithms, in detail.  
