@@ -2,7 +2,9 @@
 layout: post
 title: Expectation Maximization
 permalink: /blog/expectation-maximization/
-published: false
+published: true
+header-includes:
+  - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 ---
 
 In this post we shall explore expectation maximization, a mathematical tool used in many generative-ai algorithms, in detail.  
