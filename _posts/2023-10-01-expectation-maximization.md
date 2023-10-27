@@ -3,8 +3,6 @@ layout: post
 title: Expectation Maximization
 permalink: /blog/expectation-maximization/
 published: false
-header-includes:
-  - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 ---
 
 In this post we shall explore expectation maximization, a mathematical tool used in many generative-ai algorithms, in detail.  
@@ -34,10 +32,10 @@ IF f is stricly convex AND $$ E[f(X)] \eq f( E(X) ) $$ THEN
 &nbsp;&nbsp;&nbsp;&nbsp; $$ X = E(X) $$ with probability 1 i.e. the value of X is a constant.
 
 Expectation Maximization : Mechanism to find the value of $$ \Theta $$ that maximizes the likelihood function that is dependent on observed values X and latent variables Z.  
-Objective : max  $$ log ( \sum_Z P(X,Z, \Theta ) )  $$
+Objective : max  $$ log ( \sum_j P(X,z_j, \Theta ) )  $$
 
-Multiply and divide by a probbaility distribution $$ Q(z) $$  
-$$ \frac{ Q(z) * log ( \sum_Z P(X,Z, \Theta ) ) }{ Q(z) }  $$  
+Multiply and divide by a probaility distribution $$ Q(z) $$  
+$$ \frac{ Q(z) * log ( \sum_j P(X,z_j, \Theta ) ) }{ Q(z) }  $$  
 $$ \ge E_{z~Q(z)}( \frac{log ( \sum_Z P(X,Z, \Theta ) ) }{ Q(z) } $$  
 This value is called Evidence Lower Bound or ELBO  
 
@@ -52,22 +50,7 @@ E-Step:
 M-Step:
   $$ \Theta = arg max_{\Theta} $$ \sum_{i=1}^n ELBO(x_i; \Theta ) $$
 
-\begin{algorithm}[H]
-\DontPrintSemicolon
-\SetAlgoLined
-\KwResult{Write here the result}
-\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
-\Input{Write here the input}
-\Output{Write here the output}
-\BlankLine
-\While{While condition}{
-    instructions\;
-    \eIf{condition}{
-        instructions1\;
-        instructions2\;
-    }{
-        instructions3\;
-    }
-}
-\caption{While loop with If/Else condition}
-\end{algorithm} 
+
+### Gaussian Mixture Models
+
+Models that make the assumption that the evidence X can be sampled from multiple gaussian distribution are called Gaussian Mixture Models i.e Q(z) is assumed to be a gausian.
