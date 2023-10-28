@@ -32,11 +32,11 @@ IF f is stricly convex AND $$ E[f(X)] \eq f( E(X) ) $$ THEN
 &nbsp;&nbsp;&nbsp;&nbsp; $$ X = E(X) $$ with probability 1 i.e. the value of X is a constant.
 
 Expectation Maximization : Mechanism to find the value of $$ \Theta $$ that maximizes the likelihood function that is dependent on observed values X and latent variables Z.  
-Objective : max  $$ log ( \sum_j P(X,z_j, \Theta ) )  $$
+Objective : max  $$  \sum_i \sum_j log ( P(x_i,z_j, \Theta ) )  $$
 
 Multiply and divide by a probaility distribution $$ Q(z) $$  
-$$ \frac{ Q(z) * log ( \sum_j P(X,z_j, \Theta ) ) }{ Q(z) }  $$  
-$$ \ge E_{z~Q(z)}( \frac{log ( \sum_Z P(X,Z, \Theta ) ) }{ Q(z) } $$  
+$$\sum_i \sum_j \frac{ Q(z_j) * log (  P(x_i,z_j, \Theta ) ) }{ Q(z_j) }  $$  
+$$ \ge  \sum_i E_{z~Q(z)}( \frac{log ( P(x_i,z, \Theta ) ) }{ Q(z) } $$  
 This value is called Evidence Lower Bound or ELBO  
 
 Algorithm :  
