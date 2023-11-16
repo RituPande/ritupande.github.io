@@ -5,7 +5,7 @@ permalink: /blog/expectation-maximization/
 published: false
 ---
 
-In this post we shall explore expectation maximization, a mathematical tool used in many generative-ai algorithms, in detail. Expectation maximization is a means to calculate the maximum likelohood estimate in presence of latent variables. 
+In this post we shall explore *expectation maximization*, a mathematical tool used in many generative-ai algorithms, in detail. Expectation maximization is a means to calculate the maximum likelohood estimate in presence of latent variables.  
 
 Let $X = { x_1, x_2, ....x_n }$ be observed samples from a distribution parameterized by $\theta$.  
 Probability: Chance of occurance of an event.   
