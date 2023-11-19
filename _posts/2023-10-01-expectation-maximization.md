@@ -10,7 +10,7 @@ In this post we shall explore *expectation maximization*, a mathematical tool us
 ## Background
 In this section we cover the necessry definitions and notations to understand the expecation maximization algorithm:  
   
-Let $X = { x_1, x_2, ....x_n }$ be samples taken from a distribution model parameterized by $\Theta$ as part of an experiment:   
+Let $X= \{x_1, x_2, ....x_n\}$ be samples taken from a distribution model parameterized by $\Theta$ as part of an experiment:   
 * **Probability**: Chance of occurance of an event.   
 * **Probability distribution**: A mathematical function that gives probabilities of all the possible outcomes of an experiment, written as  $P (x_i | \Theta )$. The sum of probabilities of all outcomes must sum to 1 .  
 * **Likelihood**: If the paramter of a distribution model are represented as $\Theta$ , then the likehood function is the joint probability of all the observed data points as a function of $\Theta$ i.e. it outputs the likeliness of different values of the parameter $\Theta$ to model the distribution from which the observed data could be sampled, written as $L(\Theta| X )$.  
@@ -18,7 +18,7 @@ Let $X = { x_1, x_2, ....x_n }$ be samples taken from a distribution model param
 
 ## Latent variables
 
-Assume now that $X$  is dependent on a hidden or latent variable $Z = {z_1, z_2,...z_k}.  $Z is called latent varible because they is not observed. Assume that Z is sampled from a probability distribution Q:
+Assume now that $X$  is dependent on a hidden or latent variable $Z = {z_1, z_2,...z_k} sampled from a probability distibution Q$.  $Z$ is called latent varible because they is not observed.
 
 $Z_i = \Phi $$ , where \Phi is a multinomial s.t.  
 $$\phi_j \ge 0; \sum_{j=0}^K \phi_j = 1 $$  
