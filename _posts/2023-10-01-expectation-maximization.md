@@ -7,12 +7,15 @@ published: false
 
 In this post we shall explore *expectation maximization*, a mathematical tool used in many generative-ai algorithms, in detail. Expectation maximization is a means to calculate the maximum likelohood estimate in presence of latent variables.  
 
-Let $X = { x_1, x_2, ....x_n }$ be observed samples from a distribution parameterized by $\theta$.  
-Probability: Chance of occurance of an event.   
-Probability distribution: A mathematical function that gives probabilities of all the possible outcomes of an experiment. The sum of all outcomes must sum to 1, written as  $P (x_i | \Theta )$ .  
-Likelihood: If the paramter of a distribution model are represented as $$\Theta $$ , then the likehood function is the joint probability of all the observed data points as a function of $$ \Theta $$ i.e. it outputs the likeliness of different values of the parameter $$\Theta $$ to model the distribution from which the observed data could be sampled, written as $L(\Theta| X )$.  
-Maximum Liklihood: Mechanism to find the value of $$\theta $$ that maximizes the likelihood function given X.  
-
+## Background
+In this section we cover the necessry definitions and notations to understand the expecation maximization algorithm:  
+  
+Let $X = { x_1, x_2, ....x_n }$ be samples taken from a distribution model parameterized by $Theta$ as part of an experiment:   
+**Probability**: Chance of occurance of an event.   
+**Probability distribution**: A mathematical function that gives probabilities of all the possible outcomes of an experiment, written as  $P (x_i | \Theta )$. The sum of all outcomes must sum to 1 .  
+**Likelihood**: If the paramter of a distribution model are represented as $$\Theta $$ , then the likehood function is the joint probability of all the observed data points as a function of $$ \Theta $$ i.e. it outputs the likeliness of different values of the parameter $$\Theta $$ to model the distribution from which the observed data could be sampled, written as $L(\Theta| X )$.  
+**Maximum Liklihood**: Mechanism to find the value of $$Theta $$ that maximizes the likelihood function given $X$.    
+  
 Assume now that X has come not just from one but $K$ probability distributions, represented by set of parameters \Theta. The probabaility of observed point $$ x_i $$ to come from one of the K distributions is ditermined by a latent variable $$ Z $$ s.t.   
 $$Z_i = \Phi $$ , where \Phi is a multinomial s.t.  
 $$\phi_j \ge 0; \sum_{j=0}^K \phi_j = 1 $$  
