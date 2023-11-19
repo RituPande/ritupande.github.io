@@ -18,8 +18,9 @@ Let $X = { x_1, x_2, ....x_n }$ be samples taken from a distribution model param
 
 ## Latent variables
 
-Assume now that $X$ has come not just from one but $K$ probability distributions, represented by set of parameters \Theta. The probabaility of observed point $$ x_i $$ to come from one of the K distributions is ditermined by a latent variable $$ Z $$ s.t.   
-$$Z_i = \Phi $$ , where \Phi is a multinomial s.t.  
+Assume now that $X$  is dependent on a hidden or latent variable $Z = {z_1, z_2,...z_k}.  $Z is called latent varible because they is not observed. Assume that Z is sampled from a probability distribution Q:
+
+$Z_i = \Phi $$ , where \Phi is a multinomial s.t.  
 $$\phi_j \ge 0; \sum_{j=0}^K \phi_j = 1 $$  
   
 $\phi_j = P( Z_i =j )$  
