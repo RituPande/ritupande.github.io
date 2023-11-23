@@ -21,9 +21,11 @@ Each observation $x_i \in X$ is dependent on all possible $K$ values of Z.based 
 * **Posterior**: The probability distribution of latent variables Z given $x_i \in X$, denoted as $P(Z|x_i)$ .
 * **Prior**: The probability distribution of latent variables known from prior experience, denoted as $P(Z)$
 Each observation $x_i \in X$ is dependent on $k$ hidden variables $\\{z_1, z_2, .... z_k\\}$
-* **Model**: A computaional framework that calculates the joint probability of varibales X and Z parameterized by $\Theta$, denoted as $P(X,Z; \Theta)$.
+* **Model**: A computational framework that maximizes the joint probability of varibales X and Z parameterized by $\Theta$, denoted as $\displaystyle \sum_i^N \sum_j^K P(x_i,z_j; \Theta)$.  
 
-Expectation Maximixation
+## Expectation Maximixation
+In the presence of unobserved latent variables, it is not possible to get a closed form equation to maximize the joint probability of $X$ and $Z$. Expectation maximization, tries instead to approximate $\displaystyle \sum_i^N \sum_j^K P(x_i,z_j; \Theta)$ by $\displaystyle \sum_i^N P(X)$ indirectly.  
+
 
 ### Jensen's Inequality:   
 $$E[f(x)] \ge f( E(x) ) $$ , when $$ f $$ is convex  
