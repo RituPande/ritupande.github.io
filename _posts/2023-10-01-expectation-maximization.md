@@ -18,7 +18,7 @@ Let $X= \\{x_1, x_2, ....x_n \\}$ be samples taken from a distribution model par
 * **Latent variables**: Assume that $X$  is dependent on another random variable $Z = \\{ z_1, z_2,...z_k \\}$ that is not observed. Such a variable is called hidden or latent variable. $Z$ is called latent variable because they is not observed.
 Each observation $x_i \in X$ is dependent on all possible $K$ values of Z.based on the *posterior*.    
 * **Evidence**: The probability distribution of X given Z, denoted as $P(X|Z)$ i.e. the probability ditribution of observed data.
-* **Posterior**: The probability distribution of latent variables Z given $x_i in X$, denoted as $P(Z|x_i)$ .
+* **Posterior**: The probability distribution of latent variables Z given $x_i \in X$, denoted as $P(Z|x_i)$ .
 * **Prior**: The probability distribution of latent variables known from prior experience, denoted as $P(Z)$
 Each observation $x_i \in X$ is dependent on $k$ hidden variables $\\{z_1, z_2, .... z_k\\}$
 * **Model**: A computaional framework that calculates the joint probability of varibales X and Z parameterized by $\Theta$, denoted as $P(X,Z; \Theta)$.
