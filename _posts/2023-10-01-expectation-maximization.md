@@ -16,22 +16,16 @@ Let $X= \\{x_1, x_2, ....x_n \\}$ be samples taken from a distribution model par
 * **Likelihood**: If the paramter of a distribution model are represented as $\Theta$ , then the likehood function is the joint probability of all the observed data points as a function of $\Theta$ i.e. it outputs the likeliness of different values of the parameter $\Theta$ to model the distribution from which the observed data could be sampled, written as $L(\Theta| X )$.  
 * **Maximum Liklihood**: Mechanism to find the value of $\Theta$ that maximizes the likelihood function given $X$.    
 * **Latent variables**: Assume that $X$  is dependent on another random variable $Z = \\{ z_1, z_2,...z_k \\}$ that is not observed. Such a variable is called hidden or latent variable. $Z$ is called latent variable because they is not observed.
+Each observation $x_i \in X$ is dependent on all possible $K$ values of Z.based on the *posterior*.    
 * **Evidence**: The probability distribution of X given Z, denoted as $P(X|Z)$ i.e. the probability ditribution of observed data.
-* **Posterior**: The probability distribution of latent variables Z given X, denoted as $P(Z|X)$ .
+* **Posterior**: The probability distribution of latent variables Z given $x_i in X$, denoted as $P(Z|x_i)$ .
 * **Prior**: The probability distribution of latent variables known from prior experience, denoted as $P(Z)$
 Each observation $x_i \in X$ is dependent on $k$ hidden variables $\\{z_1, z_2, .... z_k\\}$
-  
-$\displaystyle P(X|Z)= \frac{P(Z|X) *P(X)}{P(Z)}$
+* **Model**: A computaional framework that calculates the joint probability of varibales X and Z parameterized by $\Theta$, denoted as $P(X,Z; \Theta)$.
 
+Expectation Maximixation
 
-  
-
-P(Z)  = Class Prior for latent variable Z  
-P(X) = Evidence  
-P(Z,X; \Theta) = Model  
-P(Z|X ) = Posterior  
-
-Jensen's Inequality:   
+### Jensen's Inequality:   
 $$E[f(x)] \ge f( E(x) ) $$ , when $$ f $$ is convex  
 IF f is stricly convex AND $$E[f(X)] \eq f( E(X) ) $$ THEN  
 &nbsp;&nbsp;&nbsp;&nbsp; $$X = E(X) $$ with probability 1 i.e. the value of X is a constant.
