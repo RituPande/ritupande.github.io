@@ -32,14 +32,24 @@ Each observation $x_i \in X$ is dependent on $k$ hidden variables $\\{z_1, z_2, 
 ## Expectation Maximixation
 If we are tasked with creating a computational model which maximizes the probability of observed data $X= \\{x_1, x_2, ....x_n \\}$ which are dependent latent variables $Z=\\{z_1, z_2, .... z_k\\}$ , it is not possible to get a closed form equation to maximize the liklihood function of the joint probability of $X$ and $Z$ . Expectation maximization, tries instead to obtain the maximum liklihood of the observed data by indirectly accounting for Z in :
   
-$\displaystyle L(\Theta| X ) = \sum_{i=1}^N log P(x_i; \Theta)  $  
+$\displaystyle L(\Theta| X ) = \sum_{i=1}^N log (P(x_i; \Theta))  $  
   
-The above equation can include $Z$ by marginalizing for all values of $Z$ :
-$\sum_{i=1}^N \sum_{j=1}^K log ( P(x_i,z_j; \Theta ) )$  
+The above equation can include $Z$ by marginalizing for all values of $Z$ :  
+$\displaystyle = \sum_{i=1}^N \sum_{j=1}^K log ( P(x_i,z_j; \Theta ) )$  
 
-Let us assume there is a distribution $Q$ from which $Z$ is sampled for each $x_i$. We multiply and divide the above equation by Q(z_j):  
-$\sum_i \sum_j \frac{ Q(z_j) * log (  P(x_i,z_j, \Theta ))  }{ Q(z_j) } $  
-$$\ge  \sum_i E_{z~Q(z)}( \frac{log ( P(x_i,z, \Theta ) ) }{ Q(z) } $$  
+Let us assume there is a distribution $Q$ from which $Z$ is sampled for each $x_i$. We multiply and divide the above expression by $Q(z_j)$:    
+  
+$\displaystyle =\sum_i \sum_j log \frac{ Q(z_j) * P(x_i,z_j, \Theta ) }{ Q(z_j) }$  
+
+By definition of Expectation:  
+  
+$\displaystyle = \sum_i log ( E_{z \sim Q(z)}\frac{P(x_i,z, \Theta ) }{ Q(z) }) $   
+
+Using Jenson's inequaltity: 
+    
+$\displaystyle \ge \sum_i E_{z \sim Q(z)}log( \frac{P(x_i,z, \Theta ) }{ Q(z) })$   
+
+
 This value is called Evidence Lower Bound or ELBO  
 
 Algorithm :  
