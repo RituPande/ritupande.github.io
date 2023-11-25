@@ -21,7 +21,8 @@ Each observation $x_i \in X$ is dependent, with some probability on all possible
 * **Posterior**: The probability distribution of latent variables Z given $x_i \in X$, denoted as $P(Z|x_i)$ .
 * **Prior**: The probability distribution of latent variables known from prior experience, denoted as $P(Z)$
 Each observation $x_i \in X$ is dependent on $k$ hidden variables $\\{z_1, z_2, .... z_k\\}$
-* **Model**: A computational framework that maximizes the joint probability of variables X and Z parameterized by $\Theta$, denoted as $\displaystyle \sum_i^N \sum_j^K P(x_i,z_j; \Theta)$.  
+* **Model**: A computational framework that maximizes the joint probability of variables X and Z parameterized by $\Theta$, denoted as $\displaystyle \sum_i^N \sum_j^K P(x_i,z_j; \Theta)$. This , can be evaluated as:
+$P(X|Z,\Theta) * P(Z)$
 
 ### Jensen's Inequality:   
 * $E[f(x)] \ge f( E(x))$  , when $f$ is convex  
@@ -49,8 +50,7 @@ Using Jenson's inequaltity:
     
 $\displaystyle \ge \sum_i E_{z \sim Q(z)}log( \frac{P(x_i,z, \Theta ) }{ Q(z) })$   
 
-
-This value is called Evidence Lower Bound or ELBO  
+This expression is termed as $ELBO(X, Q, \Theta )$  
 
 Algorithm :  
 
