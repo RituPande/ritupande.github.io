@@ -69,15 +69,9 @@ $\displaystyle Q(z) = P(z|x^{(i)}) $
 
 Thus, the EM Algorithm can be framed as follows:
 
-Randomly initalize  $$\Theta $$  
-
-Loop till convergence  
-E-Step:
-  for each i  
-      Set  $$ Q_i(z) = P(Z_j|x_i ;\Theta) $$  
-M-Step:
-  $$\Theta = arg max_{\Theta} $$ \sum_{i=1}^n ELBO(x_i; \Theta ) $$
-
+<p align="center">
+  <img src="../images/emalgo.png"> <br><br>
+</p>   
 
 ### Gaussian Mixture Models
 
