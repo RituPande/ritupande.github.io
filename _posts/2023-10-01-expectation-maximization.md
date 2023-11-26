@@ -53,9 +53,21 @@ Since $log$ is a concave function: using Jenson's inequaltity:
     
 $\displaystyle \ge \sum_{i=1^N} E_{z \sim Q(z)}log( \frac{P(x^{(i)},z, \Theta ) }{ Q(z) })$   
 
-This expression is termed as $ELBO(X, Q, \Theta )$  or the **E**vidence **L**ower **Bo**und
+This expression is termed as $ELBO(X, Q, \Theta )$  or the **E**vidence **L**ower **Bo**und and based on  the above derivation, it is clear that $L(\Theta| X )$ is always greater than this value. However, Jenson's inequality also says that ELBO will be exactly equal to $L(\Theta| X )$ if:
+  
+$\displaystyle \frac{P(x^{(i)},z, \Theta ) }{ Q(z) } = c$, a constant 
 
-Algorithm :  
+$\displaystyle Q(z) \propto P(x^{(i)},z, \Theta )$  
+
+Since $Q$ is a probability distribution $\sum_z Q(z)=1$. Therefore to convert proportionality to equality, we can normalize the right-hand side:
+  
+$\displaystyle Q(z) = \frac{P(x^{(i)},z, \Theta )}{\sum_z P(x^{(i)},z, \Theta )}$  
+
+$\displaystyle Q(z) = \frac{P(x^{(i)},z, \Theta )}{P(x^{(i)},\Theta )}$  
+
+$\displaystyle Q(z) = P(z|x^{(i)}) $  
+
+Thus, the EM Algorithm can be framed as follows:
 
 Randomly initalize  $$\Theta $$  
 
