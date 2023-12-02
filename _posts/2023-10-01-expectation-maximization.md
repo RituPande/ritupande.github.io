@@ -75,3 +75,6 @@ Thus, the EM Algorithm can be framed as follows:
   <img src="../images/emalgo.png" > <br><br>
 </p>   
 
+- The *Expectation* step calculates the value of $Q(z)=P(z|x^{(i)})$, the value at which ELBO is exactly equal to $L(\Theta| X )$ for a specific value of $\Theta$.  
+-  The *Maximization* step, calculates the new value of  $\Theta$, that would maximize the  or the value of $ELBO(X, Q, \Theta )$ with the value of $Q$ calculated in the expectation step held constant.
+-  These two steps performed iteratively. converges towards the maximum value of $L(\Theta| X )$.
