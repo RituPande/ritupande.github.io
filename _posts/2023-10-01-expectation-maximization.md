@@ -67,7 +67,7 @@ $\displaystyle Q(z) = \frac{P(x^{(i)},z, \Theta )}{P(x^{(i)},\Theta )}$
 
 $\displaystyle Q(z) = P(z|x^{(i)}) $  
 
-This implies that the best likelihood value can be achieved for given parameters $\Theta$ if we can minimize the KL-Divergence between $Q(Z^{(i)})$ and $P(Z{(i)}|x^{(i)})$ 
+This implies that the best likelihood value can be achieved for given parameters $\Theta$ if we can minimize the KL-Divergence between $Q(Z^{(i)})$ and $P(Z^{(i)}|x^{(i)})$ 
 
 Thus, the EM Algorithm can be framed as follows:
 
