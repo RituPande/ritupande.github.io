@@ -86,3 +86,11 @@ Thus, the EM Algorithm can be framed as follows:
  - Emperically, using techniques like *Gibbs Sampling* to approximate it's value.
 
 ## 3. Example: Gaussian Mixture Model 
+In this section, we see will see how expectation maximization algorithm is applied to Gaussian Mixture Models. The generic expectation maximization algorithm derived above places no restriction on $Q$ to be of any specific distribution type. Gaussian Mixture Models model data that is derived from multiple gaussian distributions.
+
+**Given:**   
+Evidence = $x^{(i)}$, for i=1,2,...,N   
+Number of latent Varibles: K  
+**Model:**  
+$Z^{(i)}$ = $\pi^{(i)}$  
+$P(x^{(i)} | Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$  
