@@ -82,8 +82,10 @@ Thus, the EM Algorithm can be framed as follows:
  ### 2.2 Calculating $Q(z)$
 
  Calculating value of $Q(z)$ requires calculating $P(z|x^{(i)})$. There are different ways to do that:
- - Analytically, by using Baye's theorm. However, this is not always computationally possible for complex, real-world models.
- - Emperically, using techniques like *Gibbs Sampling* to approximate it's value.
+ - Analytically, by using Baye's theorm.However, for complex models the posterior cannot be calculated analytically  
+ - Emperically, using MCMC (Markov Chain Monte Carlo) techniques like *Gibbs Sampling* to approximate it's value.
+
+Lastly, an alternative to using MCMC to approximate the posterior of a complex model, we can use mean-field variational inference, a topic discussed in the next post.  
 
 ## 3. Example: Gaussian Mixture Model 
 In this section, we see will see how expectation maximization algorithm is applied to Gaussian Mixture Models. The generic expectation maximization algorithm derived above places no restriction on $Q$ to be of any specific distribution type. Gaussian Mixture Models model data that is derived from multiple gaussian distributions. It provides a softmax ( probability distribution) of how an observed variable is dependent on the latent ones.
