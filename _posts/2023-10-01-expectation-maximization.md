@@ -96,3 +96,8 @@ Number of latent Varibles: K
 **Model:**  
 $Z^{(i)}$ = $\pi^{(i)}$  
 $P(x^{(i)} | Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$  
+
+<p align="left">
+  <img src="../images/gmm.png" > <br><br>
+</p>   
+
