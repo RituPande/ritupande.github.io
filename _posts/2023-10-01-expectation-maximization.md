@@ -102,4 +102,8 @@ $P(x^{(i)} | Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$
   <img src="../images/gmm.png" > <br><br>
 </p>   
 
-
+If we refer the general expectation maximization algorithm:  
+- $\Theta=\pi^{(i)},\mu,\sigma^{2}$ , where each parameter is a K-dimensional vector.
+    
+- $\displaystyle P(Z^{(i)}|x^{(i)})=\frac{P(x^{(i)}|Z^{(i)}) *P(Z^{(i)})}{P(x^{(i)})} = \displaystyle \frac{P(x^{(i)}|Z^{(i)}) *P(Z^{(i)})}{\sum_{k=1}^K P(x^{(i)}|z_k^{(i)})*P(z_k^{(i)})}$
+  
