@@ -87,12 +87,13 @@ Thus, the EM Algorithm can be framed as follows:
 
 Lastly, an alternative to using MCMC to approximate the posterior of a complex model, we can use mean-field variational inference, a topic discussed in the next post.  
 
-## 3. Example: Gaussian Mixture Model 
-In this section, we see will see how expectation maximization algorithm is applied to Gaussian Mixture Models. The generic expectation maximization algorithm derived above places no restriction on $Q$ to be of any specific distribution type. Gaussian Mixture Models model data that is derived from multiple gaussian distributions. It provides a softmax ( probability distribution) of how an observed variable is dependent on the latent ones.
+## 3. Example: Univariate Gaussian Mixture Model 
+In this section, we see will see how expectation maximization algorithm is applied to Gaussian Mixture Models. The generic expectation maximization algorithm derived above places no restriction on underlying distribution type that generates the data. Gaussian Mixture Models model data that is derived from multiple gaussian distributions.  The latent variable, is a categorical variable that ditermines the softmax ( probability distribution) of gaussian distributions an observation is derived from.
 
 **Given:**   
-Evidence = $x^{(i)}$, for i=1,2,...,N   
-Number of latent Varibles: K  
+Evidence = $x^{(i)}$, for i=1,2,..., $N$  
+Latent Variable = $Z$, which is categorical   
+$|Z|$: $K$  
 **Model:**  
 $Z^{(i)}$ = $\pi^{(i)}$  
 $P(x^{(i)} | Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$  
@@ -100,4 +101,5 @@ $P(x^{(i)} | Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$
 <p align="left">
   <img src="../images/gmm.png" > <br><br>
 </p>   
+
 
