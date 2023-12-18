@@ -95,7 +95,7 @@ Evidence = $x^{(i)}$, for i=1,2,..., $N$
 Latent Variable = $Z$, which is categorical   
 $|Z|$: $K$  
 **Model:**  
-$Z^{(i)}$ = $\pi^{(i)}$  
+$P(Z^{(i)})$ = $\pi^{(i)}$  
 $P(x^{(i)} | Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$  
 
 <p align="left">
@@ -104,6 +104,13 @@ $P(x^{(i)} | Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$
 
 If we refer the general expectation maximization algorithm:  
 - $\Theta=\pi^{(i)},\mu,\sigma^{2}$ , where each parameter is a K-dimensional vector.
+
+- Expectation:
+  * $\displaystyle P(Z^{(i)}|x^{(i)})=\frac{P(x^{(i)}|Z^{(i)}) *P(Z^{(i)})}{P(x^{(i)})} = \displaystyle \frac{P(x^{(i)}|Z^{(i)}) *P(Z^{(i)})}{\sum_k P(x^{(i)}|z_k^{(i)})*P(z_k^{(i)})}$
+  * $P(x^{(i)}|Z^{(i)})$ can be replaced with $\mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$
+  * $P(Z^{(i)})$ with $\pi^{(i)}$
+ - Maximization
+   * in $ELBO(X, Q, \Theta )$ $P(x^{(i)},z^{(i)}, \mu_k,\sigma_k  )$ is replaced with $P(x^{(i)} | z^{(i)}) *  \pi^{(i)}$
+   * The result in then partially differentiated for each parameter $\mu_k,\sigma_k,\pi_k^{(i)}$ resulting in the following algorithm
     
-- $\displaystyle P(Z^{(i)}|x^{(i)})=\frac{P(x^{(i)}|Z^{(i)}) *P(Z^{(i)})}{P(x^{(i)})} = \displaystyle \frac{P(x^{(i)}|Z^{(i)}) *P(Z^{(i)})}{\sum_{k=1}^K P(x^{(i)}|z_k^{(i)})*P(z_k^{(i)})}$
   
