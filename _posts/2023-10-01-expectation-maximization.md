@@ -95,7 +95,7 @@ Evidence = $x^{(i)}$, for i=1,2,..., $N$
 Latent Variable = $Z$, which is categorical   
 $|Z|$: $K$  
 **Model:**  
-$Z^{(i)}$ = multinomial($\pi^{(i)}$) 
+$Z^{(i)}$ = multinomial($\pi$) 
 $P(x^{(i)} | Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$  
 
 <p align="left">
@@ -103,19 +103,23 @@ $P(x^{(i)} | Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$
 </p>   
 
 If we refer the general expectation maximization algorithm:  
-- $\Theta=\pi^{(i)},\mu,\sigma^{2}$ , where each parameter is a K-dimensional vector.
+- $\Theta=\pi,\mu,\sigma^{2}$ , where each parameter is a K-dimensional vector.
 
 - Expectation:
-  * $\displaystyle w_k^{(i)} =  Q_k^{(i)}P(z_k^{(i)}|x^{(i)})=\frac{P(x^{(i)}|z_k^{(i)}) *P(z_k^{(i)})}{P(x^{(i)})} = \displaystyle \frac{P(x^{(i)}|z_k^{(i)}) *P(z_k^{(i)})}{\sum_k P(x^{(i)}|z_k^{(i)})*P(z_k^{(i)})}$
+  * $\displaystyle w_k^{(i)} =  Q_k * P(z_k^{(i)}|x^{(i)})=\frac{P(x^{(i)}|z_k^{(i)}) *P(z_k^{(i)})}{P(x^{(i)})} = \displaystyle \frac{P(x^{(i)}|z_k^{(i)}) *P(z_k^{(i)})}{\sum_k P(x^{(i)}|z_k^{(i)})*P(z_k^{(i)})}$
   * $P(x^{(i)}|z_k^{(i)})$ can be replaced with $\mathcal{N}(\mu_{z_k^{(i)}},\sigma^{2}_{Z^{(i)}})$
-  * $P(z_k^{(i)})$ with $\pi^{(i)}$
+  * $P(z_k^{(i)})$ with $\pi$
  - Maximization
-   * in $ELBO(X, Q, \Theta )$ $P(x^{(i)},z_k^{(i)}, \mu_k,\sigma_k  )$ is replaced with $P(x^{(i)} | z_k^{(i)}) *  \pi^{(i)}$
-   * The result in then partially differentiated for each parameter $\mu_k,\sigma_k,\pi_k^{(i)}$ and equated to zero the find out the value of the parameters, resulting in the following algorithm.  
+   * in $ELBO(X, Q, \Theta )$ $P(x^{(i)},z_k^{(i)}, \mu_k,\sigma_k  )$ is replaced with $P(x^{(i)} | z_k^{(i)}) *  \pi$
+   * The result in then partially differentiated for each parameter $\mu_k,\sigma_k,\pi_k$ and equated to zero the find out the value of the parameters, resulting in the following algorithm.  
   
 <p align="left">
   <img src="../images/gmmalgo.png" > <br><br>
 </p>   
  
-    
-
+ Refer to this [link](https://youtu.be/vl_5evp-CYo?si=9mi2CLANt88OltB9) for a very good example of implementation of gaussian mixture model in python.
+ 
+## 4. References
+1. [Stanford CS229: Machine Learning | Summer 2019 | Lecture 16 - K-means, GMM, and EM](https://youtu.be/LmpkKwsyQj4?si=bMGq-nweN55eyStP)  
+2. [Stanford CS229: Machine Learning | Summer 2019 | Lecture 17 - Factor Analysis & ELBO](https://youtu.be/pA-bo8_HNy4?si=n1v4R0MAhuhOe4vd)  
+3.[Gaussian Mixture Model | Intuition & Introduction | TensorFlow Probability](https://youtu.be/atDp5bkzej4?si=Uf_hHpdoxtiYkFxe)  
