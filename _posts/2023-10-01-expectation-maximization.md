@@ -120,6 +120,6 @@ If we refer the general expectation maximization algorithm:
  Refer to this [link](https://youtu.be/vl_5evp-CYo?si=9mi2CLANt88OltB9) for a very good example of implementation of gaussian mixture model in python.
  
 ## 4. References
-1. [Stanford CS229: Machine Learning | Summer 2019 | Lecture 16 - K-means, GMM, and EM](https://youtu.be/LmpkKwsyQj4?si=bMGq-nweN55eyStP)  
-2. [Stanford CS229: Machine Learning | Summer 2019 | Lecture 17 - Factor Analysis & ELBO](https://youtu.be/pA-bo8_HNy4?si=n1v4R0MAhuhOe4vd)  
-3.[Gaussian Mixture Model | Intuition & Introduction | TensorFlow Probability](https://youtu.be/atDp5bkzej4?si=Uf_hHpdoxtiYkFxe)  
+[1]. [Stanford CS229: Machine Learning | Summer 2019 | Lecture 16 - K-means, GMM, and EM](https://youtu.be/LmpkKwsyQj4?si=bMGq-nweN55eyStP)  
+[2]. [Stanford CS229: Machine Learning | Summer 2019 | Lecture 17 - Factor Analysis & ELBO](https://youtu.be/pA-bo8_HNy4?si=n1v4R0MAhuhOe4vd)  
+[3] .[Gaussian Mixture Model | Intuition & Introduction | TensorFlow Probability](https://youtu.be/atDp5bkzej4?si=Uf_hHpdoxtiYkFxe)  
