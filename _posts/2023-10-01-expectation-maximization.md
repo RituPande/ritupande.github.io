@@ -2,7 +2,7 @@
 layout: post
 title: Expectation Maximization
 permalink: /blog/expectation-maximization/
-published: True
+published: false
 ---
 
 In this post we shall explore *expectation maximization*, a mathematical tool used in many generative-ai algorithms, in detail. Expectation maximization is a means to calculate the maximum likelihood estimate in presence of latent variables. 
