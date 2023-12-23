@@ -2,7 +2,7 @@
 layout: post
 title: Expectation Maximization
 permalink: /blog/expectation-maximization/
-published: false
+published: true
 ---
 
 In this post we shall explore *expectation maximization*, a mathematical tool used in many generative-ai algorithms, in detail. Expectation maximization is a means to calculate the maximum likelihood estimate in presence of latent variables. 
@@ -12,8 +12,8 @@ In this section we cover the necessry definitions and notations to understand th
 ### 1.1 Definitions
 Let $$X= \{x^{(1)}, x^{(2)}, ....x^{(3)} \}$$ be samples taken from a distribution model parameterized by $$\Theta$$ as part of an experiment:   
 * **Probability**: Chance of occurance of an event.   
-* **Probability distribution**: A mathematical function that gives probabilities of all the possible outcomes of an experiment, written as  $$P (x^{(i)} | \Theta )$$. The sum of probabilities of all outcomes must sum to 1 .  
-* **Likelihood**: If the paramter of a distribution model are represented as $$\Theta$$ , then the likehood function is the joint probability of all the observed data points as a function of $$\Theta$$ i.e. it outputs the likeliness of different values of the parameter $$\Theta$$ to model the distribution from which the observed data could be sampled, written as $$L(\Theta| X )$$.  
+* **Probability distribution**: A mathematical function that gives probabilities of all the possible outcomes of an experiment, written as  $$P (x^{(i)}|\Theta )$$. The sum of probabilities of all outcomes must sum to 1 .  
+* **Likelihood**: If the paramter of a distribution model are represented as $$\Theta$$ , then the likehood function is the joint probability of all the observed data points as a function of $$\Theta$$ i.e. it outputs the likeliness of different values of the parameter $$\Theta$$ to model the distribution from which the observed data could be sampled, written as $$L(\Theta|X)$$.  
 * **Maximum Liklihood**: Mechanism to find the value of $$\Theta$$ that maximizes the likelihood function given $X$.    
 * **Latent variables**: Assume that each $$x^{(i)}$$  is dependent on another random variable $$Z^{(i)} = \{ z_1^{(i)}, z_2^{(i)},...z_k^{(i)} \}$$ that is not observed. Such a variable is called hidden or latent variable. $$Z$$ is called latent variable because it is not observed.
 Each observation $$x^{(i)} \in X$$ is dependent, with some probability on all possible $$K$$ values of $$Z$$, called the *posterior*.    
