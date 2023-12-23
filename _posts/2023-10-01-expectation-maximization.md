@@ -2,7 +2,7 @@
 layout: post
 title: Expectation Maximization
 permalink: /blog/expectation-maximization/
-published: false
+published: true
 ---
 
 In this post we shall explore *expectation maximization*, a mathematical tool used in many generative-ai algorithms, in detail. Expectation maximization is a means to calculate the maximum likelihood estimate in presence of latent variables. 
@@ -58,22 +58,22 @@ The objective of EM algorithn is to maximize the log likelihood of the observed 
 
 This expression is termed as $$ELBO(X, Q, \Theta )$$  or the **E**vidence **L**ower **Bo**und and based on  the above derivation, it is clear that $$L(\Theta \mid X )$$ is always greater than this value. 
 
-**Finding Q**  
+**Deriving Q: **  
 Jenson's inequality states that ELBO will be exactly equal to $$L(\Theta \mid X )$$   
   
 a. if $$\displaystyle \frac{P(x^{(i)},z, \Theta ) }{ Q(z) } = c$$, a constant 
-
+  
 b. This implies: $$\displaystyle Q(z) \propto P(x^{(i)},z, \Theta )$$  
-
-Since $$Q$$ is a probability distribution $$\sum_z Q(z)=1$$. Therefore to convert proportionality to equality, we can normalize the right-hand side:
+  
+Since $$Q$$ is a probability distribution $$\sum_z Q(z)=1$$. Therefore to convert proportionality to equality, we can normalize the right-hand side:  
   
 c. Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{\sum_z P(x^{(i)},z, \Theta )}$$  
-
+  
 d. Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{P(x^{(i)},\Theta )}$$  
-
+  
 e. Q(z) = $$\displaystyle P(z \mid x^{(i)})$$  
-
-This implies that the best likelihood value can be achieved for given parameters $\Theta$ if we can minimize the KL-Divergence between $$Q(Z^{(i)})$$ and $$P(Z^{(i)} \mid x^{(i)})$$ 
+  
+This implies that the best likelihood value can be achieved for given parameters $$\Theta$$ if we can minimize the KL-Divergence between $$Q(Z^{(i)})$$ and $$P(Z^{(i)} \mid x^{(i)})$$ 
 
 Thus, the EM Algorithm can be framed as follows:
 
