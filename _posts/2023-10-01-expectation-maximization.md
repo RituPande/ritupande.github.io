@@ -2,7 +2,7 @@
 layout: post
 title: Expectation Maximization
 permalink: /blog/expectation-maximization/
-published: false
+published: true
 ---
 
 In this post we shall explore *expectation maximization*, a mathematical tool used in many generative-ai algorithms, in detail. Expectation maximization is a means to calculate the maximum likelihood estimate in presence of latent variables. 
@@ -46,17 +46,15 @@ If we are tasked with creating a computational model which maximizes the probabi
 ### 2.1 Derivation of EM Algoritm
 The objective of EM algorithn is to maximize the log likelihood of the observed data in presence of latent variables:  
   
-*Log Likelihood function* $$\displaystyle L(\Theta \mid X ) = \sum_{i=1}^N log (P(x^{(i)}; \Theta))$$    
+1. Log Likelihood function: $$\displaystyle L(\Theta \mid X ) = \sum_{i=1}^N log (P(x^{(i)}; \Theta))$$    
   
-The above equation can be modified to introduce $$Z$$: $$\displaystyle L(\Theta \mid X ) = \sum_{i=1}^N \sum_{j=1}^K log ( P(x^{(i)},z_j^{(i)}; \Theta ) )$$  
+2. The above equation can be modified to introduce $$Z$$: $$\displaystyle L(\Theta \mid X ) = \sum_{i=1}^N \sum_{j=1}^K log ( P(x^{(i)},z_j^{(i)}; \Theta ) )$$  
 
-Let us assume there is a distribution $$Q$$ from which $$Z$$ is sampled for each $$x_i$$. We multiply and divide the above expression by $$Q(z_j)$$:    
-  
-This gives: $$\displaystyle L(\Theta \mid X ) =\sum_{i=1^N} \sum_{j=1^K} log \frac{ Q(z_j) * P(x^{(i)},z_j^{(i)}; \Theta ) }{ Q(z_j^{(i)}) }$$  
+3. Let us assume there is a distribution $$Q$$ from which $$Z$$ is sampled for each $$x_i$$. We multiply and divide the above expression by $$Q(z_j)$$: $$\displaystyle L(\Theta \mid X ) =\sum_{i=1^N} \sum_{j=1^K} log \frac{ Q(z_j) * P(x^{(i)},z_j^{(i)}; \Theta ) }{ Q(z_j^{(i)}) }$$  
 
-By definition of Expectation: $$\displaystyle L(\Theta \mid X ) = \sum_{i=1}^N log ( E_{z \sim Q(Z^{(i)})}\frac{P(x^{(i)},z, \Theta ) }{ Q(z) })$$   
+4. By definition of Expectation: $$\displaystyle L(\Theta \mid X ) = \sum_{i=1}^N log ( E_{z \sim Q(Z^{(i)})}\frac{P(x^{(i)},z, \Theta ) }{ Q(z) })$$   
 
-Since $$log$$ is a concave function: using Jenson's inequaltity: $$\displaystyle L(\Theta \mid X ) \ge \sum_{i=1}^N E_{z \sim Q(Z^{(i)})}log( \frac{P(x^{(i)},z, \Theta ) }{ Q(z) })$$     
+5. Since $$log$$ is a concave function,using Jenson's inequaltity: $$\displaystyle L(\Theta \mid X ) \ge \sum_{i=1}^N E_{z \sim Q(Z^{(i)})}log( \frac{P(x^{(i)},z, \Theta ) }{ Q(z) })$$     
 
 This expression is termed as $$ELBO(X, Q, \Theta )$$  or the **E**vidence **L**ower **Bo**und and based on  the above derivation, it is clear that $$L(\Theta \mid X )$$ is always greater than this value. However, Jenson's inequality also says that ELBO will be exactly equal to $$L(\Theta \mid X )$$   
   
