@@ -50,25 +50,28 @@ The objective of EM algorithn is to maximize the log likelihood of the observed 
   
 2. The above equation can be modified to introduce $$Z$$: $$\displaystyle L(\Theta \mid X ) = \sum_{i=1}^N \sum_{j=1}^K log ( P(x^{(i)},z_j^{(i)}; \Theta ) )$$  
 
-3. Let us assume there is a distribution $$Q$$ from which $$Z$$ is sampled for each $$x_i$$. We multiply and divide the above expression by $$Q(z_j)$$: $$\displaystyle L(\Theta \mid X ) =\sum_{i=1^N} \sum_{j=1^K} log \frac{ Q(z_j) * P(x^{(i)},z_j^{(i)}; \Theta ) }{ Q(z_j^{(i)}) }$$  
+3. Let us assume there is a distribution $$Q$$ from which $$Z$$ is sampled for each $$x_i$$. We multiply and divide the above expression by $$Q(z_j)$$: $$\displaystyle L(\Theta \mid X ) =\sum_{i=1}^N \sum_{j=1}^K log \frac{ Q(z_j) * P(x^{(i)},z_j^{(i)}; \Theta ) }{ Q(z_j^{(i)}) }$$  
 
-4. By definition of Expectation: $$\displaystyle L(\Theta \mid X ) = \sum_{i=1}^N log ( E_{z \sim Q(Z^{(i)})}\frac{P(x^{(i)},z, \Theta ) }{ Q(z) })$$   
+4. By definition of expectation:  $$\displaystyle L(\Theta \mid X ) = \sum_{i=1}^N log ( E_{z \sim Q(Z^{(i)})}\frac{P(x^{(i)},z, \Theta ) }{ Q(z) })$$   
 
 5. Since $$log$$ is a concave function,using Jenson's inequaltity: $$\displaystyle L(\Theta \mid X ) \ge \sum_{i=1}^N E_{z \sim Q(Z^{(i)})}log( \frac{P(x^{(i)},z, \Theta ) }{ Q(z) })$$     
 
-This expression is termed as $$ELBO(X, Q, \Theta )$$  or the **E**vidence **L**ower **Bo**und and based on  the above derivation, it is clear that $$L(\Theta \mid X )$$ is always greater than this value. However, Jenson's inequality also says that ELBO will be exactly equal to $$L(\Theta \mid X )$$   
-  
-if $$\displaystyle \frac{P(x^{(i)},z, \Theta ) }{ Q(z) } = c$$, a constant 
+This expression is termed as $$ELBO(X, Q, \Theta )$$  or the **E**vidence **L**ower **Bo**und and based on  the above derivation, it is clear that $$L(\Theta \mid X )$$ is always greater than this value. 
 
-This implies: $$\displaystyle Q(z) \propto P(x^{(i)},z, \Theta )$$  
+**Finding Q**  
+Jenson's inequality states that ELBO will be exactly equal to $$L(\Theta \mid X )$$   
+  
+a. if $$\displaystyle \frac{P(x^{(i)},z, \Theta ) }{ Q(z) } = c$$, a constant 
+
+b. This implies: $$\displaystyle Q(z) \propto P(x^{(i)},z, \Theta )$$  
 
 Since $$Q$$ is a probability distribution $$\sum_z Q(z)=1$$. Therefore to convert proportionality to equality, we can normalize the right-hand side:
   
-Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{\sum_z P(x^{(i)},z, \Theta )}$$  
+c. Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{\sum_z P(x^{(i)},z, \Theta )}$$  
 
-Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{P(x^{(i)},\Theta )}$$  
+d. Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{P(x^{(i)},\Theta )}$$  
 
-Q(z) = $$\displaystyle P(z \mid x^{(i)}) $$  
+e. Q(z) = $$\displaystyle P(z \mid x^{(i)})$$  
 
 This implies that the best likelihood value can be achieved for given parameters $\Theta$ if we can minimize the KL-Divergence between $$Q(Z^{(i)})$$ and $$P(Z^{(i)} \mid x^{(i)})$$ 
 
