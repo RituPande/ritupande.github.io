@@ -67,7 +67,7 @@ $$ f(\lambda x_1 + (1-\lambda) x_2 )  \leq \lambda f(x_1) + (1- \lambda ) f (x_2
 This implies that any point, on the line segment joining two points on a convex function, lies above the value of the function at that point 
 
 <p align="center">
-  <img src="../images/convex_function.png"> <br><br>
+  <img src="../../images/convex_function.png"> <br><br>
 </p>   
 
   
