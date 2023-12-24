@@ -83,7 +83,7 @@ $$  \displaystyle \lambda_2=min⁡ \sum_{i,j \in E}^n (x_i - x_j)^2 $$
 From the properties of the Laplacian matrix defined above, we know that $$ \sum_i x_i = 0 $$. This implies that some of the nodes of the graph in an eigenvectors are labeled as positive and others as negative to make their summation equal to 0. 
 
 <p align="center">
-  <img src="../images/graph-partitioning.png"> <br> 
+  <img src="../../images/graph-partitioning.png"> <br> 
   Figure 1. Graph Partitioning
 </p> 
 
