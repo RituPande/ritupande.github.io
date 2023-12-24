@@ -75,7 +75,7 @@ $$ \displaystyle Excess Risk(\tilde{f}_F^* ) = R(\tilde{f}_F^* )-R(f^*) $$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Optimization Error      + Estimation Error      + Approximation Error      
 
 <p align="center">
-  <img src="../images/optimization_in_machine_learning.png"> <br><br>
+  <img src="../../images/optimization_in_machine_learning.png"> <br><br>
 </p> 
 
 ## 3. Impact of Hypothesis Space
