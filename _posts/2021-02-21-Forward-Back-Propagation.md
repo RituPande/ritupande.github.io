@@ -19,7 +19,7 @@ Let *f* represent a mathematical operation represented by one of the nodes in a 
 <BR>
        
 <p align="center">
-  <img src="../images/fbprop.png"> <br><br>
+  <img src="../../images/fbprop.png"> <br><br>
 </p> 
 ### 1.1. Back Propagation Procedure
 
@@ -42,7 +42,7 @@ It depicts the computation and the derivatives calculated during a pass of forwa
 <BR>
  
 <p align="center">
-  <img src="../images/examplefbprop.png"> <br> 
+  <img src="../../images/examplefbprop.png"> <br> 
 </p> 
 	 
 ## 4. ADD, MAX, RELU and MUL Gates in Computational Graphs     
