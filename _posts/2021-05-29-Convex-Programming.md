@@ -29,7 +29,7 @@ This article will answer questions like:
 
 <BR><BR>
 <p align="center">
-  <img src="../images/convex_sets.png"> <br><br>
+  <img src="../../images/convex_sets.png"> <br><br>
   
 </p>   
   
@@ -41,7 +41,7 @@ $$ \lambda x_1 + (1-\lambda) x_2 $$
 The equations represents points on the line segment joining $$ x_1, x_2  $$  when $$ \lambda \in [0,1] $$ . For $$ \lambda $$  values negative or  greater than one, the equation represents the point  beyond the line segment joining  $$ x_1, x_2  $$  
 <BR><BR>
 <p align="center">
-  <img src="../images/line_segment.png"> <br><br>
+  <img src="../../images/line_segment.png"> <br><br>
 
 </p> 
 
@@ -98,7 +98,7 @@ If $$ C \subseteq R^n $$ is a convex set and $$ f: \rightarrow R $$  is a differ
 $$ f(x_2)  \geq  f(x_1) + g(x_1)^T (x_2 – x_1 ) $$ where $$ x_1, x_2 \in C $$ and $$ g(x) = \nabla f(x) $$ 
 <BR><BR>
 <p align="center">
-  <img src="../images/diff_convex_function.png"> <br><br>
+  <img src="../../images/diff_convex_function.png"> <br><br>
 </p>   
 As we see , $$ f(x_1) + g(x_1)^T (x – x_1 ) $$ is first order approximation of function *f* at $$ x_1 $$. The definition implies that first order approximation of a convex function never overestimates the function.  
   
