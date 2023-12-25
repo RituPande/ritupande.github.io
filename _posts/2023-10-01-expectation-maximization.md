@@ -99,18 +99,18 @@ Lastly, an alternative to using MCMC to approximate the posterior of a complex m
 ## 3. Example: Univariate Gaussian Mixture Model 
 In this section, we see will see how expectation maximization algorithm is applied to Gaussian Mixture Models. The generic expectation maximization algorithm derived above places no restriction on underlying distribution type that generates the data. Gaussian Mixture Models model data that is derived from multiple gaussian distributions.  The latent variable, is a categorical variable that ditermines the softmax ( probability distribution) of gaussian distributions an observation is derived from.
 
-**Given:**   
-Evidence = $$x^{(i)}$$, for i=1,2,..., $$N$$  
-Latent Variable = $$Z$$, which is categorical   
-Number of different values the latent variable can take: $$|Z| = K$$  
-**Model:**  
-* $$Z^{(i)}$$ = multinomial($$\pi$$) 
-* and $$P(x^{(i)} \mid Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$$  
+* **Given:**   
+    Evidence = $$x^{(i)}$$, for i=1,2,..., $$N$$  
+    Latent Variable = $$Z$$, which is categorical   
+    Number of different values the latent variable can take: $$|Z| = K$$  
+* **Model:**  
+  - $$Z^{(i)}$$ = multinomial($$\pi$$) 
+  - and $$P(x^{(i)} \mid Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$$  
 
 <p align="left">
   <img src="../../images/gmm.png" > <br><br>
 </p>   
-
+* **Algorithm:**
 If we refer the general expectation maximization algorithm:  
 - $$\Theta=\pi,\mu,\sigma^{2}$$ , where each parameter is a K-dimensional vector.
 
