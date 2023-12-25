@@ -100,9 +100,9 @@ Lastly, an alternative to using MCMC to approximate the posterior of a complex m
 In this section, we see will see how expectation maximization algorithm is applied to Gaussian Mixture Models. The generic expectation maximization algorithm derived above places no restriction on underlying distribution type that generates the data. Gaussian Mixture Models model data that is derived from multiple gaussian distributions.  The latent variable, is a categorical variable that ditermines the softmax ( probability distribution) of gaussian distributions an observation is derived from.
 
 ### 3.1 Given
-Evidence = $$x^{(i)}$$, for i=1,2,..., $$N$$  
-Latent Variable = $$Z$$, which is categorical   
-Number of different values the latent variable can take: $$|Z| = K$$  
+* Evidence = $$x^{(i)}$$, for i=1,2,..., $$N$$  
+* Latent Variable = $$Z$$, which is categorical   
+* Number of different values the latent variable can take: $$|Z| = K$$  
     
 ### 3.2 Model  
   * $$Z^{(i)}$$ = multinomial($$\pi$$) 
