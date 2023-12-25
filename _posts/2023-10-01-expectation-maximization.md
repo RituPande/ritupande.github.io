@@ -110,7 +110,7 @@ In this section, we see will see how expectation maximization algorithm is appli
 <p align="left">
   <img src="../../images/gmm.png" > <br><br>
 </p>   
-* **Algorithm:**
+* **Algorithm:**  
 If we refer the general expectation maximization algorithm:  
 - $$\Theta=\pi,\mu,\sigma^{2}$$ , where each parameter is a K-dimensional vector.
 
