@@ -99,31 +99,33 @@ Lastly, an alternative to using MCMC to approximate the posterior of a complex m
 ## 3. Example: Univariate Gaussian Mixture Model 
 In this section, we see will see how expectation maximization algorithm is applied to Gaussian Mixture Models. The generic expectation maximization algorithm derived above places no restriction on underlying distribution type that generates the data. Gaussian Mixture Models model data that is derived from multiple gaussian distributions.  The latent variable, is a categorical variable that ditermines the softmax ( probability distribution) of gaussian distributions an observation is derived from.
 
-* **Given:**   
+### 3.1 Given   
     Evidence = $$x^{(i)}$$, for i=1,2,..., $$N$$  
     Latent Variable = $$Z$$, which is categorical   
     Number of different values the latent variable can take: $$|Z| = K$$  
-* **Model:**  
-  - $$Z^{(i)}$$ = multinomial($$\pi$$) 
-  - and $$P(x^{(i)} \mid Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$$  
+    
+### 3.2 Model  
+  * $$Z^{(i)}$$ = multinomial($$\pi$$) 
+  * and $$P(x^{(i)} \mid Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$$  
 
 <p align="left">
   <img src="../../images/gmm.png" > <br><br>
-</p>   
-* **Algorithm:**  
-If we refer the general expectation maximization algorithm:  
-- $$\Theta=\pi,\mu,\sigma^{2}$$ , where each parameter is a K-dimensional vector.
+</p>
 
-- Expectation:
-  * $$\displaystyle w_k^{(i)} =  Q_k * P(z_k^{(i)} \mid x^{(i)})=\frac{P(x^{(i)} \mid z_k^{(i)}) *P(z_k^{(i)})}{P(x^{(i)})} = \displaystyle \frac{P(x^{(i)} \mid z_k^{(i)}) *P(z_k^{(i)})}{\sum_k P(x^{(i)} \mid z_k^{(i)})*P(z_k^{(i)})}$$
+### 3.3. Algorithm  
+If we refer the general expectation maximization algorithm:  
+* $$\Theta=\pi,\mu,\sigma^{2}$$ , where each parameter is a K-dimensional vector.
+
+* Expectation:
+  -  $$\displaystyle w_k^{(i)} =  Q_k * P(z_k^{(i)} \mid x^{(i)})=\frac{P(x^{(i)} \mid z_k^{(i)}) *P(z_k^{(i)})}{P(x^{(i)})} = \displaystyle \frac{P(x^{(i)} \mid z_k^{(i)}) *P(z_k^{(i)})}{\sum_k P(x^{(i)} \mid z_k^{(i)})*P(z_k^{(i)})}$$
       
-  * $$P(x^{(i)} \mid z_k^{(i)})$$ can be replaced with $$\mathcal{N}(\mu_{z_k^{(i)}},\sigma^{2}_{Z^{(i)}})$$
+  -  $$P(x^{(i)} \mid z_k^{(i)})$$ can be replaced with $$\mathcal{N}(\mu_{z_k^{(i)}},\sigma^{2}_{Z^{(i)}})$$
       
-  * $$P(z_k^{(i)})$$ with $$\pi$$
- - Maximization
-   * in $$ELBO(X, Q, \Theta )$$ $$P(x^{(i)},z_k^{(i)}, \mu_k,\sigma_k  )$$ is replaced with $$P(x^{(i)} \mid z_k^{(i)}) *  \pi$$
+  -  $$P(z_k^{(i)})$$ with $$\pi$$
+  * Maximization
+     - in $$ELBO(X, Q, \Theta )$$ $$P(x^{(i)},z_k^{(i)}, \mu_k,\sigma_k  )$$ is replaced with $$P(x^{(i)} \mid z_k^{(i)}) *  \pi$$
        
-   * The result in then partially differentiated for each parameter $$\mu_k,\sigma_k,\pi_k$$ and equated to zero the find out the value of the parameters, resulting in the following algorithm.  
+   - The result in then partially differentiated for each parameter $$\mu_k,\sigma_k,\pi_k$$ and equated to zero the find out the value of the parameters, resulting in the following algorithm.  
   
 <p align="left">
   <img src="../../images/gmmalgo.png" > <br><br>
