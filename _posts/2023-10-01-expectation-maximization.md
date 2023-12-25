@@ -65,7 +65,7 @@ Jenson's inequality states that ELBO will be exactly equal to $$L(\Theta \mid X 
   
 2. This implies: $$\displaystyle Q(z) \propto P(x^{(i)},z, \Theta )$$  
   
-3. Since $$Q$$ is a probability distribution $$\sum_z Q(z)=1$$. Therefore to convert proportionality to equality, we can normalize the right-hand side:  Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{\sum_z P(x^{(i)},z, \Theta )}$$  
+3. Since $$Q$$ is a probability distribution $$\sum_z Q(z)=1$$. Therefore to convert proportionality to equality, we can normalize the right-hand side:  $$Q(z) = \displaystyle \frac{P(x^{(i)},z, \Theta )}{\sum_z P(x^{(i)},z, \Theta )}$$  
   
 4. Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{P(x^{(i)},\Theta )}$$  
   
@@ -84,7 +84,7 @@ Thus, the EM Algorithm can be framed as follows:
 -  The *Maximization* step, calculates the new value of  $$\Theta$$, that would maximize the  or the value of $$ELBO(X, Q, \Theta )$$ with the value of $$Q$$ calculated in the expectation step held constant.
 -  These two steps performed iteratively converges the parameters $$\Theta$$ towards values that maximizes the value of $$L(\Theta \mid X )$$.  
   
- ### 2.4 Calculating Q(z)  
+ ### 2.4 Calculating Q 
 
  Calculating value of $$Q(z)$$ requires calculating $$P(z \mid x^{(i)})$$. There are different ways to do that:
  - Analytically, by using Baye's theorm.However, for complex models the posterior cannot be calculated analytically  
