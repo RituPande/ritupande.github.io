@@ -88,7 +88,7 @@ Using the derivations above, the EM Algorithm can be framed as follows:
 
 ### 2.4 Calculating Q 
 
- Calculating value of $$Q(z)$$ in the Em algorithm requires calculating $$P(z \mid x^{(i)})$$. There are different ways to do that:
+ Calculating value of $$Q(z)$$ in the EM algorithm requires calculating $$P(z \mid x^{(i)})$$. There are different ways to do that:
    
  - Analytically, by using Baye's theorm.However, for complex models the posterior cannot be calculated analytically
      
