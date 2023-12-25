@@ -101,8 +101,8 @@ In this section, we see will see how expectation maximization algorithm is appli
 
 ### 3.1 Given
 * Evidence = $$x^{(i)}$$, for i=1,2,..., $$N$$  
-* Latent Variable = $$Z$$, which is categorical   
-* Number of different values the latent variable can take: $$|Z| = K$$  
+* The fact that the observations are depedent on a latent variable = $$Z$$, which is categorical   
+* Number of different values the latent variable can take:$$K$$  
     
 ### 3.2 Model  
   * $$Z^{(i)}$$ = multinomial($$\pi$$) 
