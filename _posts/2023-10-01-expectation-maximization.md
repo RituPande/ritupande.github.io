@@ -74,7 +74,7 @@ Jenson's inequality states that ELBO will be exactly equal to $$L(\Theta \mid X 
 This implies that the best likelihood value can be achieved for given parameters $$\Theta$$ if we can minimize the KL-Divergence between $$Q(Z^{(i)})$$ and $$P(Z^{(i)} \mid x^{(i)})$$ 
 
 ### 2.3 The EM Algorithm
-Thus, the EM Algorithm can be framed as follows:
+Using the derivations above, the EM Algorithm can be framed as follows:
 
 <p align="left">
   <img src="../../images/emalgo.png" > <br><br>
@@ -88,7 +88,8 @@ Thus, the EM Algorithm can be framed as follows:
 
 ### 2.4 Calculating Q 
 
- Calculating value of $$Q(z)$$ requires calculating $$P(z \mid x^{(i)})$$. There are different ways to do that:
+ Calculating value of $$Q(z)$$ in the Em algorithm requires calculating $$P(z \mid x^{(i)})$$. There are different ways to do that:
+   
  - Analytically, by using Baye's theorm.However, for complex models the posterior cannot be calculated analytically
      
  - Emperically, using MCMC (Markov Chain Monte Carlo) techniques like *Gibbs Sampling* to approximate it's value.
