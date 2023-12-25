@@ -65,9 +65,7 @@ Jenson's inequality states that ELBO will be exactly equal to $$L(\Theta \mid X 
   
 2. This implies: $$\displaystyle Q(z) \propto P(x^{(i)},z, \Theta )$$  
   
-Since $$Q$$ is a probability distribution $$\sum_z Q(z)=1$$. Therefore to convert proportionality to equality, we can normalize the right-hand side:  
-  
-3. Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{\sum_z P(x^{(i)},z, \Theta )}$$  
+3. Since $$Q$$ is a probability distribution $$\sum_z Q(z)=1$$. Therefore to convert proportionality to equality, we can normalize the right-hand side:  Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{\sum_z P(x^{(i)},z, \Theta )}$$  
   
 4. Q(z) = $$\displaystyle \frac{P(x^{(i)},z, \Theta )}{P(x^{(i)},\Theta )}$$  
   
