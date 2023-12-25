@@ -58,7 +58,7 @@ The objective of EM algorithn is to maximize the log likelihood of the observed 
 
 This expression is termed as $$ELBO(X, Q, \Theta )$$  or the **E**vidence **L**ower **Bo**und and based on  the above derivation, it is clear that $$L(\Theta \mid X )$$ is always greater than this value. 
 
-### 2.2 **Deriving Q:**  
+### 2.2 **Deriving Q**  
 Jenson's inequality states that ELBO will be exactly equal to $$L(\Theta \mid X )$$   
   
 1. if $$\displaystyle \frac{P(x^{(i)},z, \Theta ) }{ Q(z) } = c$$, a constant 
@@ -84,9 +84,9 @@ Thus, the EM Algorithm can be framed as follows:
 
 - The *Expectation* step calculates the value of $$Q(z)=P(z \mid x^{(i)})$$, the value at which ELBO is exactly equal to $$L(\Theta \mid X )$$ for a specific value of $$\Theta$$.  
 -  The *Maximization* step, calculates the new value of  $$\Theta$$, that would maximize the  or the value of $$ELBO(X, Q, \Theta )$$ with the value of $$Q$$ calculated in the expectation step held constant.
--  These two steps performed iteratively converges the parameters $$\Theta$$ towards values that maximizes the value of $$L(\Theta \mid X )$$.
-
- ### 2.4 Calculating Q(z)
+-  These two steps performed iteratively converges the parameters $$\Theta$$ towards values that maximizes the value of $$L(\Theta \mid X )$$.  
+  
+ ### 2.4 Calculating Q(z)  
 
  Calculating value of $$Q(z)$$ requires calculating $$P(z \mid x^{(i)})$$. There are different ways to do that:
  - Analytically, by using Baye's theorm.However, for complex models the posterior cannot be calculated analytically  
