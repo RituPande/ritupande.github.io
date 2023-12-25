@@ -80,16 +80,19 @@ Thus, the EM Algorithm can be framed as follows:
   <img src="../../images/emalgo.png" > <br><br>
 </p>   
 
-- The *Expectation* step calculates the value of $$Q(z)=P(z \mid x^{(i)})$$, the value at which ELBO is exactly equal to $$L(\Theta \mid X )$$ for a specific value of $$\Theta$$.  
+- The *Expectation* step calculates the value of $$Q(z)=P(z \mid x^{(i)})$$, the value at which ELBO is exactly equal to $$L(\Theta \mid X )$$ for a specific value of $$\Theta$$.
+    
 -  The *Maximization* step, calculates the new value of  $$\Theta$$, that would maximize the  or the value of $$ELBO(X, Q, \Theta )$$ with the value of $$Q$$ calculated in the expectation step held constant.
+    
 -  These two steps performed iteratively converges the parameters $$\Theta$$ towards values that maximizes the value of $$L(\Theta \mid X )$$.  
-  
- ### 2.4 Calculating Q 
+
+### 2.4 Calculating Q 
 
  Calculating value of $$Q(z)$$ requires calculating $$P(z \mid x^{(i)})$$. There are different ways to do that:
- - Analytically, by using Baye's theorm.However, for complex models the posterior cannot be calculated analytically  
+ - Analytically, by using Baye's theorm.However, for complex models the posterior cannot be calculated analytically
+     
  - Emperically, using MCMC (Markov Chain Monte Carlo) techniques like *Gibbs Sampling* to approximate it's value.
-
+     
 Lastly, an alternative to using MCMC to approximate the posterior of a complex model, we can use mean-field variational inference, a topic discussed in the next post.  
 
 ## 3. Example: Univariate Gaussian Mixture Model 
@@ -112,10 +115,13 @@ If we refer the general expectation maximization algorithm:
 
 - Expectation:
   * $$\displaystyle w_k^{(i)} =  Q_k * P(z_k^{(i)} \mid x^{(i)})=\frac{P(x^{(i)} \mid z_k^{(i)}) *P(z_k^{(i)})}{P(x^{(i)})} = \displaystyle \frac{P(x^{(i)} \mid z_k^{(i)}) *P(z_k^{(i)})}{\sum_k P(x^{(i)} \mid z_k^{(i)})*P(z_k^{(i)})}$$
+      
   * $$P(x^{(i)} \mid z_k^{(i)})$$ can be replaced with $$\mathcal{N}(\mu_{z_k^{(i)}},\sigma^{2}_{Z^{(i)}})$$
+      
   * $$P(z_k^{(i)})$$ with $$\pi$$
  - Maximization
    * in $$ELBO(X, Q, \Theta )$$ $$P(x^{(i)},z_k^{(i)}, \mu_k,\sigma_k  )$$ is replaced with $$P(x^{(i)} \mid z_k^{(i)}) *  \pi$$
+       
    * The result in then partially differentiated for each parameter $$\mu_k,\sigma_k,\pi_k$$ and equated to zero the find out the value of the parameters, resulting in the following algorithm.  
   
 <p align="left">
