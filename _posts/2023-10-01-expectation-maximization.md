@@ -17,7 +17,7 @@ Let $$X= \{x^{(1)}, x^{(2)}, ....x^{(3)} \}$$ be samples taken from a distributi
     
 * **Likelihood**: If the paramter of a distribution model are represented as $$\Theta$$ , then the likehood function is the joint probability of all the observed data points as a function of $$\Theta$$ i.e. it outputs the likeliness of different values of the parameter $$\Theta$$ to model the distribution from which the observed data could be sampled, written as $$L(\Theta \mid X)$$.
     
-* **Maximum Liklihood**: Mechanism to find the value of $$\Theta$$ that maximizes the likelihood function given $X$.
+* **Maximum Liklihood**: Mechanism to find the value of $$\Theta$$ that maximizes the likelihood function given $$X$$.
     
 * **Latent variables**: Assume that each $$x^{(i)}$$  is dependent on another random variable $$Z^{(i)} = \{ z_1^{(i)}, z_2^{(i)},...z_k^{(i)} \}$$ that is not observed. Such a variable is called hidden or latent variable. $$Z$$ is called latent variable because it is not observed.
 Each observation $$x^{(i)} \in X$$ is dependent, with some probability on all possible $$K$$ values of $$Z$$, called the *posterior*.
@@ -100,11 +100,15 @@ Lastly, an alternative to using MCMC to approximate the posterior of a complex m
 In this section, we see will see how expectation maximization algorithm is applied to Gaussian Mixture Models. The generic expectation maximization algorithm derived above places no restriction on underlying distribution type that generates the data. Gaussian Mixture Models model data that is derived from multiple gaussian distributions.  The latent variable, is a categorical variable that ditermines the softmax ( probability distribution) of gaussian distributions an observation is derived from.
 
 ### 3.1 Given
+As a first step to model any data we identify what information is available to us.   
+  
 * Evidence = $$x^{(i)}$$, for i=1,2,..., $$N$$  
 * The fact that the observations are depedent on a latent variable = $$Z$$, which is categorical   
 * Number of different values the latent variable can take:$$K$$  
     
-### 3.2 Model  
+### 3.2 Model
+Next, we decide that we shall use gaussian distribution to model the latent variable.    
+  
   * $$Z^{(i)}$$ = multinomial($$\pi$$) 
   * and $$P(x^{(i)} \mid Z^{(i)}) = \mathcal{N}(\mu_{Z^{(i)}},\sigma^{2}_{Z^{(i)}})$$  
 
@@ -113,7 +117,7 @@ In this section, we see will see how expectation maximization algorithm is appli
 </p>
 
 ### 3.3. Algorithm  
-If we refer the general expectation maximization algorithm:  
+To derive the algorithm to fit data into a gausssian mixture model, we refer the general expectation maximization algorithm:  
 * $$\Theta=\pi,\mu,\sigma^{2}$$ , where each parameter is a K-dimensional vector.
 
 * Expectation:
