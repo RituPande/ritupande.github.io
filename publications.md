@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-permalink: /projects/
+permalink: /publications/
 ---
 * [Hierarchical Neural Cellular Automata.](https://direct.mit.edu/isal/proceedings/isal/35/20/116844)  
   R. Pande, D. Grattarola  
