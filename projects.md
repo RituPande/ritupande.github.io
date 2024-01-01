@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Projects
 permalink: /projects/
 ---
+### Publications
+1. Hierarchical Neural Cellular Automata.[paper](https://direct.mit.edu/isal/proceedings/isal/35/20/116844),[code](https://github.com/RituPande/hnca/),[talk](https://youtu.be/rRF2qzxO-uA?si=3ij9r4p5xKn9K1mc)  
 
-### [1. Adaptive Traffic Signal Control Using Deep Reinforcement Learning](https://ritupande.github.io/DQL-TSC/)    
-Classical Traffic Signal Control uses fixed signal duration and sequence based on estimates of expected traffic on each intersection leg . In this project I explore the possibility of using deep reinforcement learning to adapt the traffic signal duration and sequence to changing traffic conditions autonomously.  
-  
-### [2. Connectionist Temporal Classification: A Study](https://ritupande.github.io/ctc/)  
-In this project I explore the fundamentals of Connectionist Temporal Classification algorithm and how to use its Keras/Tensorflow implementation to break Captcha 2.0.    
+     
+### Projects
+1. Adaptive Traffic Signal Control Using Deep Reinforcement Learning. [code](https://ritupande.github.io/DQL-TSC/)    
+2. Connectionist Temporal Classification: A Study. [code] (https://ritupande.github.io/ctc/)  
 
