@@ -9,6 +9,6 @@ permalink: /publications/
 
      
 # Projects
-* Adaptive Traffic Signal Control Using Deep Reinforcement Learning. [Code](https://ritupande.github.io/DQL-TSC/)    
-* Connectionist Temporal Classification: A Study. [Code](https://ritupande.github.io/ctc/)  
+* Adaptive Traffic Signal Control Using Deep Reinforcement Learning.| [Code](https://ritupande.github.io/DQL-TSC/)    
+* Connectionist Temporal Classification: A Study. | [Code](https://ritupande.github.io/ctc/)  
 
