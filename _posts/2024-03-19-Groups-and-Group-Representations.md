@@ -20,7 +20,7 @@ Historically, the groups were not separate from their ***representation*** as a 
 
 ### 3.3 Homomorphism Groups
 
-### 4 Group Actions
+## 4 Group Actions
 
 ## 5. Group Represenations
 
