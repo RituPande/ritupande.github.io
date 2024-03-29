@@ -15,7 +15,7 @@ Historically, the groups were not separate from their ***representation*** as a 
 ## 3. Groups
 
 ### 3.1 Abstract Groups
-A ***Group*** is a set G which is closed under an operation ∗ (i.e., for any $$ x, y \in  G, x ∗ y \in G $$ ) and satisfies the following properties:
+A ***Group*** is a set G which is closed under an operation ∗ (i.e., for any $$x, y \in  G, x ∗ y \in G $$) and satisfies the following properties:
 -  Identity: There is an element e in G, such that for every $$x \in G, e ∗ x = x ∗ e = x$$.    
 - Inverse: For every x in G there is an element y ∈ G such that $$x ∗ y = y ∗ x = e$$ , where again e is the identity.
 - Associativity: he following identity holds for every $$x, y, z \in G:x ∗ (y ∗ z) = (x ∗ y) ∗ z$$.  
