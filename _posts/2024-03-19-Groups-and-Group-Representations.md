@@ -18,7 +18,7 @@ Historically, the groups were not separate from their ***representation*** as a 
 
 ### 3.2 Transformation Groups
 
-### 3.3 Homomorphism Groups
+### 3.3 Homomorphism and Isomorphism
 
 ## 4 Group Actions
 
