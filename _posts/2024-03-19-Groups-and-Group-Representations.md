@@ -28,7 +28,7 @@ A ***Field*** is a set $$\cal{F}$$ which is closed under two operations + and * 
 - $$\cal{F}$$ − {0} (the set F without the additive identity 0) is an abelian group under *.  
 
 
-General Linear Group $$GL(n,\cal{F})$$ is a non-abelian group of inveritible n X n matrices under the operation $$*$$ where $$*$$ represents matrix multiplcation. Since the matrices in this group are invertible, teh determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$  and modular group $$\cal{Z_p}$$
+General Linear Group $$GL(n,\cal{F})$$ is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, teh determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$  and modular group $$\cal{Z_p}$$
 
 Special Linear Group $$SL(n,\cal{F})$$ is a subgroup of  $$GL(n,\cal{F})$$ with the diterminant of the matrices being  one.
 
