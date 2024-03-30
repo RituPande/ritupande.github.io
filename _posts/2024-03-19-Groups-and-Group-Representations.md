@@ -12,9 +12,8 @@ Historically, the groups were not separate from their ***representation*** as a 
 
 ## 2. How is group theory relevant in machine learning
 
-## 3. Groups
 
-### 3.1 Abstract Groups
+## 3 Abstract Groups
 A ***Group*** is a set G which is closed under an operation ∗ (i.e., for any $$x, y \in  G, x ∗ y \in G $$) and satisfies the following properties:
 -  Identity: There is an element e in G, such that for every $$x \in G, e ∗ x = x ∗ e = x$$.    
 - Inverse: For every x in G there is an element y ∈ G such that $$x ∗ y = y ∗ x = e$$ , where again e is the identity.
@@ -28,7 +27,7 @@ A ***Field*** is a set F which is closed under two operations + and * such that:
 
 
 
-### 3.2 Transformation Groups
+## Transformation Groups
 
 ## 4 Homomorphism and Isomorphism
 
