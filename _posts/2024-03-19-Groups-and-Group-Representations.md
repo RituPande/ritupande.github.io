@@ -22,9 +22,9 @@ A ***Group*** is a set G which is closed under an operation ∗ (i.e., for any $
 
   A group that is also commutative i.e.  for every $$x, y \in G: x ∗ y  = y ∗ z $$ is called an ***abelian*** group.
 
-A ***Field*** is a set F which is closed under two operations + and × such that:    
+A ***Field*** is a set F which is closed under two operations + and * such that:    
 - F is an abelian group under + and  
-- F − {0} (the set F without the additive identity 0) is an abelian group under ×.  
+- F − {0} (the set F without the additive identity 0) is an abelian group under *.  
 
 
 
