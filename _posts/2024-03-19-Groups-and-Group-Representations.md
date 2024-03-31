@@ -28,7 +28,17 @@ A ***Field*** is a set $$\cal{F}$$ which is closed under two operations + and * 
 - $$\cal{F}$$ − {0} (the set F without the additive identity 0) is an abelian group under *.  
 
 
-General Linear Group $$GL(n,\cal{F})$$ is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, teh determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$  and modular group $$\cal{Z_p}$$
+### 3.2 Quotient Group
+
+The Quotient group $$(\cal{Z}_n; +)$$ is the set of all congruence classes of $$\cal{Z}$$ modulo n where a congruence class $$a \in \cal{Z}$$  modulo n is defined as:
+$$\bar{a}$$ = a + nk where $$k \in \cal{Z}$$
+
+There are always n-1 congruence classes for $$\cal{Z}_n$$. For example, 
+$$\cal{Z}_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
+
+### 3.2 General Linear Group and Special Linear Group 
+
+General Linear Group $$GL(n,\cal{F})$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, teh determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$ and quotitent group $$\cal{Z_p}$$
 
 Special Linear Group $$SL(n,\cal{F})$$ is a subgroup of  $$GL(n,\cal{F})$$ with the diterminant of the matrices being  one.
 
