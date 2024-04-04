@@ -42,7 +42,7 @@ General Linear Group $$GL(n,\cal{F})$$ or $$GL_n(\cal{F})$$, is a non-abelian gr
 
 Special Linear Group $$SL(n,\cal{F})$$ or $$SL_n(\cal{F})$$ is a subgroup of  $$GL(n,\cal{F})$$ with the diterminant of the matrices being  one.
 
-## Transformation Groups
+## 4. Transformation Groups
 
 To understand what a transformation group is, we need to clearly define a transformation
 A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* a set X.
@@ -51,9 +51,9 @@ Two transformations can be composed to produce a third, and every transformation
 
 A ***transformation group*** is any subgroup of Aut X for some set X
 
-## 4 Homomorphism and Isomorphism
+## 5. Homomorphism and Isomorphism
 
-## 5 Group Actions
+## 6 Group Actions
 
 ## 6. Group Represenations
 
