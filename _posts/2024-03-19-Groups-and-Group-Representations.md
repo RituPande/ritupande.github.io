@@ -38,11 +38,18 @@ $$\cal{Z}_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
 
 ### 3.2 General Linear Groups and Special Linear Groups 
 
-General Linear Group $$GL(n,\cal{F})$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, teh determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$ and quotitent group $$\cal{Z_p}$$
+General Linear Group $$GL(n,\cal{F})$$ or $$GL_n(\cal{F})$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$ and quotitent group $$\cal{Z_p}$$
 
-Special Linear Group $$SL(n,\cal{F})$$ is a subgroup of  $$GL(n,\cal{F})$$ with the diterminant of the matrices being  one.
+Special Linear Group $$SL(n,\cal{F})$$ or $$SL_n(\cal{F})$$ is a subgroup of  $$GL(n,\cal{F})$$ with the diterminant of the matrices being  one.
 
 ## Transformation Groups
+
+To understand what a transformation group is, we need to clearly define a transformation
+A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* a set X.
+
+Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of X forms a group under composition, whose identity element is the identity transformation ***e** fixing every element. Such a group is called **Aut X** or Automorphism of set X
+
+A ***transformation group*** is any subgroup of Aut X for some set X
 
 ## 4 Homomorphism and Isomorphism
 
