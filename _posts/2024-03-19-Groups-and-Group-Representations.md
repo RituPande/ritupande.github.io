@@ -53,6 +53,33 @@ A ***transformation group*** is any subgroup of Aut X for some set X
 
 ## 5. Homomorphism and Isomorphism
 
+Homomorphism is a tool to identify whether two groups are similar, identical or completely dissimilar. Let us consider two groups:  
+
+G(Z, +): Infinite group of all integers  
+H(Z/2Z, +): Finite group of integers mod 2-{0, 1}   
+
+At the face of it, these two groups seem to be complely different with no similarities. However, notice that:  
+G = { odd } U { even }  
+  
+even + even = even  
+even + odd  = odd  
+odd + even  = odd  
+odd + odd   = even 
+  
+Shifting the focus to group H: 
+  
+0 + 0 =  0 mod 2  
+0 + 1 =  1 mod 2  
+1 + 0 =  1 mod 2
+1 + 1 =  0 mod 2  
+
+
+
+
+
+
+
+
 ## 6 Group Actions
 
 ## 6. Group Represenations
