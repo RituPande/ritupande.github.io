@@ -53,7 +53,7 @@ A ***transformation group*** is any subgroup of Aut X for some set X
 
 ## 5. Homomorphism and Isomorphism
 
-Homomorphism is a tool to compare two groups, to identify whether two groups are similar, identical or completely dissimilar. Let us consider two groups:  
+***Homomorphism*** is a mathematical tool to compare two groups. it is used to identify whether two groups are similar, identical or completely dissimilar. Let us consider two groups:  
 
 G(Z, +): Infinite group of all integers  
 H(Z/2Z, +): Finite group of integers mod 2-{0, 1}   
@@ -73,9 +73,10 @@ Shifting the focus to group H:
 1 + 0 =  1 mod 2  
 1 + 1 =  0 mod 2   
 
-Dividing two group G into two sets of even and odd integers, one can see that its behavior is similar to that of group H.    
-Let us consider a function ***f***:  
-$$ f: Z /rightarrow Z/2Z$$  
+Dividing two group G into two sets of even and odd integers, one can see that its behavior is similar to that of group H.   More formally, Let us consider a function ***f***:  
+     
+$$f: Z /rightarrow Z/2Z$$  
+  
 that maps each *even* element of G to $$0 \in H$$ and each *odd* element of G to $$1 \in H$$     
   
 if we apply ***f*** to every element of G, we are able to see similarity between G and H.  
@@ -86,15 +87,7 @@ such that, f(x*y) = f(x) o f(y), where $$x,y \in G$$
 
 if such a function exists, this implies that the two group have some underlying structural similarity. Such a function ***f*** is called ***group homomorphism*** or ***homomorphism*** in short.  Note, that the function  ***f*** is not required to be bijective and the direction of mapping from one group to another matters.
 
-if ***f**** is bijective then the groups are not just similar but identical. Such a function is called ***group isomorphism*** or ***isomorphism*** 
-
-
-
-
-
-
-
-
+if ***f**** is bijective then the groups are not just similar but identical. Such a function is called ***group isomorphism*** or ***isomorphism***, in short.
 
 
 ## 6 Group Actions
