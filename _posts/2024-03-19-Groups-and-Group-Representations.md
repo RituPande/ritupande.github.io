@@ -53,12 +53,12 @@ A ***transformation group*** is any subgroup of Aut X for some set X
 
 ## 5. Homomorphism and Isomorphism
 
-Homomorphism is a tool to identify whether two groups are similar, identical or completely dissimilar. Let us consider two groups:  
+Homomorphism is a tool to compare two groups, to identify whether two groups are similar, identical or completely dissimilar. Let us consider two groups:  
 
 G(Z, +): Infinite group of all integers  
 H(Z/2Z, +): Finite group of integers mod 2-{0, 1}   
 
-At the face of it, these two groups seem to be complely different with no similarities. However, notice that:  
+At the surface, these two groups seem to be complely different with no similarities. However, notice that:  
 G = { odd } U { even }  
   
 even + even = even  
@@ -73,7 +73,7 @@ Shifting the focus to group H:
 1 + 0 =  1 mod 2  
 1 + 1 =  0 mod 2   
 
-We see that the if we divide group G into two sets of even and odd integers, its behavior is similar to that of group H.  
+Dividing two group G into two sets of even and odd integers, one can see that its behavior is similar to that of group H.    
 Let us consider a function ***f***:  
 $$ f: Z /rightarrow Z/2Z$$  
 that maps each *even* element of G to $$0 \in H$$ and each *odd* element of G to $$1 \in H$$     
@@ -83,6 +83,10 @@ if we apply ***f*** to every element of G, we are able to see similarity between
 ***f*** ,in general, is a mathematical tool that given two groups (G,*) and (H,o) maps every element of G to an element in H i.e. 
 $$f: G \right arrow H$$  
 such that, f(x*y) = f(x) o f(y), where $$x,y \in G$$  
+
+if such a function exists, this implies that the two group have some underlying structural similarity. Such a function ***f*** is called ***group homomorphism*** or ***homomorphism*** in short.  Note, that the function  ***f*** is not required to be bijective and the direction of mapping from one group to another matters.
+
+if ***f**** is bijective then the groups are not just similar but identical. Such a function is called ***group isomorphism*** or ***isomorphism*** 
 
 
 
