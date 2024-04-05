@@ -47,7 +47,7 @@ Special Linear Group $$SL(n,\cal{F})$$ or $$SL_n(\cal{F})$$ is a subgroup of  $$
 To understand what a transformation group is, we need to clearly define a transformation
 A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* a set X.
 
-Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of X forms a group under composition, whose identity element is the identity transformation ***e** fixing every element. Such a group is called **Aut X** or Automorphism of set X
+Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of X forms a group under composition, whose identity element is the identity transformation ***e*** fixing every element. Such a group is called **Aut X** or Automorphism of set X
 
 A ***transformation group*** is any subgroup of Aut X for some set X
 
@@ -70,8 +70,21 @@ Shifting the focus to group H:
   
 0 + 0 =  0 mod 2  
 0 + 1 =  1 mod 2  
-1 + 0 =  1 mod 2
-1 + 1 =  0 mod 2  
+1 + 0 =  1 mod 2  
+1 + 1 =  0 mod 2   
+
+We see that the if we divide group G into two sets of even and odd integers, its behavior is similar to that of group H.  
+Let us consider a function ***f***:  
+$$ f: Z /rightarrow Z/2Z$$  
+that maps each *even* element of G to $$0 \in H$$ and each *odd* element of G to $$1 \in H$$     
+  
+if we apply ***f*** to every element of G, we are able to see similarity between G and H.  
+
+***f*** ,in general, is a mathematical tool that given two groups (G,*) and (H,o) maps every element of G to an element in H i.e. 
+$$f: G \right arrow H$$  
+such that, f(x*y) = f(x) o f(y), where $$x,y \in G$$  
+
+
 
 
 
