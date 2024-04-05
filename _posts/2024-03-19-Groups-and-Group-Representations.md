@@ -27,8 +27,8 @@ A ***Field*** is a set $$\cal{F}$$ which is closed under two operations + and * 
 - $$\cal{F}$$ is an abelian group under + and  
 - $$\cal{F}$$ − {0} (the set F without the additive identity 0) is an abelian group under *.  
 
-
-### 3.1 Quotient Groups
+### 3.1 Examples of Abstract groups
+#### 3.1.1 Quotient Groups
 
 The Quotient group $$(\cal{Z}_n; +)$$ is the set of all congruence classes of $$\cal{Z}$$ modulo n where a congruence class $$a \in \cal{Z}$$  modulo n is defined as:
 $$\bar{a}$$ = a + nk where $$k \in \cal{Z}$$
@@ -36,22 +36,13 @@ $$\bar{a}$$ = a + nk where $$k \in \cal{Z}$$
 There are always n-1 congruence classes for $$\cal{Z}_n$$. For example, 
 $$\cal{Z}_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
 
-### 3.2 General Linear Groups and Special Linear Groups 
+#### 3.1.2 General Linear Groups and Special Linear Groups 
 
 General Linear Group $$GL(n,\cal{F})$$ or $$GL_n(\cal{F})$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$ and quotitent group $$\cal{Z_p}$$
 
 Special Linear Group $$SL(n,\cal{F})$$ or $$SL_n(\cal{F})$$ is a subgroup of  $$GL(n,\cal{F})$$ with the diterminant of the matrices being  one.
 
-## 4. Transformation Groups
-
-To understand what a transformation group is, we need to clearly define a transformation
-A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* a set X.
-
-Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of X forms a group under composition, whose identity element is the identity transformation ***e*** fixing every element. Such a group is called **Aut X** or Automorphism of set X
-
-A ***transformation group*** is any subgroup of Aut X for some set X
-
-## 5. Homomorphism and Isomorphism
+### 3.2 Group Homomorphism and Isomorphism
 
 ***Homomorphism*** is a mathematical tool to compare two groups. it is used to identify whether two groups are similar, identical or completely dissimilar. Let us consider two groups:  
 
@@ -89,8 +80,16 @@ if such a function exists, this implies that the two group have some underlying 
 
 if ***f**** is bijective then the groups are not just similar but identical. Such a function is called ***group isomorphism*** or ***isomorphism***, in short.
 
+## 4. Transformation Groups
 
-## 6 Group Actions
+To understand what a transformation group is, we need to clearly define a transformation
+A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* a set X.
+
+Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of X forms a group under composition, whose identity element is the identity transformation ***e*** fixing every element. Such a group is called **Aut X** or Automorphism of set X
+
+A ***transformation group*** is any subgroup of Aut X for some set X
+
+## 5 Group Actions
 
 ## 6. Group Represenations
 
