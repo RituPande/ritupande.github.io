@@ -100,9 +100,16 @@ For example, $$D_4$$, a group of all possible transformations of a square that e
 
 $$D_4$$ is isomorphic to $$Z/nZ$$.
 #### 4.1.2. Groups of Linear tranformation
+
+A vector $$V \in R^n$$ can be written as a column vector with n-elements. A linear transformation:  
+$$T: R^n \rightarrow R^n$$   
+is a linear map defines where it sends the basis of V. The group of such linear maps that preserves the vector space of a vector for a given basis is called the group of linear transformation as is defined as $$GL(R^n)$$.This transformation is achieved by left multiplying an n x n matrix with the vector V. This implies that:  
+$$GL_n(R)$$ is isomorphic to $$GL(R^n)$$ for a given choice of basis. 
+  
+This is true for complex numbers as well.
+
 #### 4.1.3.Symmetric Groups
 
-A vectot $$V in R^n$$ can be written as a column vector with n-elements
 
 ## 5 Group Actions
 
