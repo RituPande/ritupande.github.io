@@ -85,9 +85,24 @@ if ***f**** is bijective then the groups are not just similar but identical. Suc
 To understand what a transformation group is, we need to clearly define a transformation
 A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* a set X.
 
-Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of X forms a group under composition, whose identity element is the identity transformation ***e*** fixing every element. Such a group is called **Aut X** or Automorphism of set X
+Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of X forms a group under composition, whose identity element is the identity transformation *e* fixing every element. Such a group is called **Aut X** or Automorphism of set X
 
-A ***transformation group*** is any subgroup of Aut X for some set X
+A ***transformation group*** is any subgroup of Aut X for some set X.
+
+It should be understood that every abstract groups is isomorphic to a transformation group.
+
+### 4.1 Examples of Transformation Groups
+
+#### 4.1.1. Dihedral group Dn
+A Diheral group $$D_n$$ is a collection of symmetries of a regular n-gon (for any n > 3) forms the dihedral group $$D_n$$ under composition. It is easy to check that this group has exactly 2n elements: n rotations and n reflections. $$D_n$$ is non-abelian.  
+  
+For example $$D_4$$ a group of all possible transformations of a square that ensures the same orientation and structure before and after the tranformations includes 6 elements: rotation by 0, 90, 180 and 270 dgrees, a horizontal flip ( or reflection ) and a vertical flip.   
+
+$$D_4$$ is isomorphic to $$Z/nZ$$.
+#### 4.1.2. Groups of Linear tranformation
+#### 4.1.3.Symmetric Groups
+
+A vectot $$V in R^n$$ can be written as a column vector with n-elements
 
 ## 5 Group Actions
 
