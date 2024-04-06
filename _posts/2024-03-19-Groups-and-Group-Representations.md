@@ -38,9 +38,9 @@ $$\cal{Z}_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
 
 #### 3.1.2 General Linear Groups and Special Linear Groups 
 
-General Linear Group $$GL(n,\cal{F})$$ or $$GL_n(\cal{F})$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$ and quotitent group $$\cal{Z_p}$$
+General Linear Group $$GL_n(\cal{F})$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$ and quotitent group $$\cal{Z_p}$$
 
-Special Linear Group $$SL(n,\cal{F})$$ or $$SL_n(\cal{F})$$ is a subgroup of  $$GL(n,\cal{F})$$ with the diterminant of the matrices being  one.
+Special Linear Group $$SL_n(\cal{F})$$ is a subgroup of  $$GL_n(\cal{F})$$ with the diterminant of the matrices being  one.
 
 ### 3.2 Group Homomorphism and Isomorphism
 
@@ -66,14 +66,14 @@ Shifting the focus to group H:
 
 Dividing two group G into two sets of even and odd integers, one can see that its behavior is similar to that of group H.   More formally, Let us consider a function ***f***:  
      
-$$f: Z /rightarrow Z/2Z$$  
+$$f: Z \rightarrow Z/2Z$$  
   
 that maps each *even* element of G to $$0 \in H$$ and each *odd* element of G to $$1 \in H$$     
   
 if we apply ***f*** to every element of G, we are able to see similarity between G and H.  
 
 ***f*** ,in general, is a mathematical tool that given two groups (G,*) and (H,o) maps every element of G to an element in H i.e. 
-$$f: G \right arrow H$$  
+$$f: G \rightarrow H$$  
 such that, f(x*y) = f(x) o f(y), where $$x,y \in G$$  
 
 if such a function exists, this implies that the two group have some underlying structural similarity. Such a function ***f*** is called ***group homomorphism*** or ***homomorphism*** in short.  Note, that the function  ***f*** is not required to be bijective and the direction of mapping from one group to another matters.
