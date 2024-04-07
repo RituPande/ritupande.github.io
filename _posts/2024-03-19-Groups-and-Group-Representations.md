@@ -140,7 +140,7 @@ Group created by a group product is abelian if all the participating groups in t
 ## 6. Group Actions
 An action of G on Y is a way to assign to each g in G some transformation of X, compatibly with the group structure of G. Formally, A (left) action of a group (G,*) on a set Y ( finite or infinite), is a map: 
 
-$$G X Y \rigtharrow Y$$  
+$$G \times Y  \rightarrow Y$$  
 such that, $$(g,y) \rightarrow g.y$$ where $$g \in G, y \in Y$$  and it satisfies:  
 
 (1) $$g1 . (g2 . y) = (g1 * g2).y$$ ,  for $$g1, g2 \in G, y in Y$$
