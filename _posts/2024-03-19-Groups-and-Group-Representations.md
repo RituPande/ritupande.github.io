@@ -143,8 +143,8 @@ An action of G on Y is a way to assign to each g in G some transformation of X, 
 $$G X Y \rigtharrow Y$$  
 such that, $$(g,y) \rightarrow g.y$$ where $$g \in G, y \in Y$$  and it satisfies:  
 
--  g1 . (g2 . y) = (g1 * g2).y,  for $$g1, g2 \in G, y in Y$$
-- $$e_g.y = x$$ for all y \in Y where $$e_g$$ is the identity of the group
+(1) $$g1 . (g2 . y) = (g1 * g2).y$$ ,  for $$g1, g2 \in G, y in Y$$
+(2) $$e_g.y = y$$ for all $$y \in Y$$ where $$e_g$$ is the identity of the group
 
 
 ## 7. Group Representations
