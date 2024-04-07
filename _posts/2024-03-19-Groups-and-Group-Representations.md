@@ -124,10 +124,22 @@ Then f * g applied to $$S_4$$ results in { 3,1,2,4}
 
 The identity element of $$S_n$$, is a fixed ordering of its element. Except for $$S_1$$ and $$S_2$$, all symmetric groups are non-abelien. Disjoint permutation however commute.
 
-## 5 Direct Product
+## 5 Direct Product of Groups
+The direct products of two groups (G,*) and (H,o) is a cartesian product, such that:  
+G X H: (g,h), where  $$g \in G, h\in H$$  
+i.e an ordered pair of every element of G and every element of H.  
+  
+Such a direct product itself forms a group whose operator . is defined as:
+(g,h).(g',h') = (g*g', h o h') where (g,h),(g',h') $$\in$$ G X H  
+
+It should be noted that group products are not just limited to two groups. Products can be performed on more than two groups or even infinite groups.   
+  
+Group created by a group product is abelian if all the participating groups in the product are abelian. If even a single participating group is non-abelian the group resuting from their product is non-abelian.
+
+
 ## 6 Group Actions
 
-## 7. Group Represenations
+## 7. Group Representations
 
 ## 8. References
 1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)  
