@@ -93,7 +93,7 @@ It should be understood that every abstract groups is isomorphic to a transforma
 
 ### 4.1 Examples of Transformation Groups
 
-#### 4.1.1. Dihedral group Dn
+#### 4.1.1. Dihedral group
 A Diheral group $$D_n$$ is a collection of symmetries of a regular n-gon (for any n > 3) forms the dihedral group $$D_n$$ under composition. It is easy to check that this group has exactly 2n elements: n rotations and n reflections. $$D_n$$ is non-abelian.  
   
 For example, $$D_4$$, a group of all possible transformations of a square that ensures the same orientation and structure before and after the tranformations includes 6 elements: rotation by 0, 90, 180 and 270 dgrees, a horizontal flip ( or reflection ) and a vertical flip.   
@@ -109,6 +109,9 @@ $$GL_n(R)$$ is isomorphic to $$GL(R^n)$$ for a given choice of basis.
 This is true for complex numbers as well.
 
 #### 4.1.3.Symmetric Groups
+A symmetric group $$S_n$$ is the group of permutations of a set with n elements. No matter how one permutes the elements of a set, the set still remains the same. Hence, a symmetric group $$S_n$$ is a finite transformation group with n! elements.
+There are many notations for describing a permutation, but the most convinient and compact is the *cycle notation* 
+
 
 
 ## 5 Group Actions
