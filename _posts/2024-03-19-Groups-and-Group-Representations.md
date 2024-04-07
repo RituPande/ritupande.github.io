@@ -96,9 +96,9 @@ It should be understood that every abstract groups is isomorphic to a transforma
 #### 4.1.1. Dihedral group
 A Diheral group $$D_n$$ is a collection of symmetries of a regular n-gon (for any n > 3) forms the dihedral group $$D_n$$ under composition. It is easy to check that this group has exactly 2n elements: n rotations and n reflections. $$D_n$$ is non-abelian.  
   
-For example, $$D_4$$, a group of all possible transformations of a square that ensures the same orientation and structure before and after the tranformations includes 6 elements: rotation by 0, 90, 180 and 270 dgrees, a horizontal flip ( or reflection ) and a vertical flip.   
+For example, $$D_4$$, a group of all possible transformations of a square that ensures the same orientation and structure before and after the tranformations includes 8 elements: rotation by 0, 90, 180 and 270 dgrees, a horizontal flip ( or reflection ) and a vertical flip applied to each of the first four rotation transformations.   
 
-$$D_4$$ is isomorphic to $$Z/nZ$$.
+$$D_4$$ is isomorphic to $$Z/8Z$$. In general a dihedral group $$D_n$$ has 2n elements and is isomorphic to $$Z/2nZ$$ 
 #### 4.1.2. Groups of Linear tranformation
 
 A vector $$V \in R^n$$ can be written as a column vector with n-elements. A linear transformation:  
