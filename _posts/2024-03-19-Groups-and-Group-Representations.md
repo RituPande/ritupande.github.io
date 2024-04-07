@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Groups and Group Representations
+title: Basics of Groups and Group Representations
 permalink: /blog/group-representations/
 published: false
 ---
@@ -110,9 +110,19 @@ This is true for complex numbers as well.
 
 #### 4.1.3.Symmetric Groups
 A symmetric group $$S_n$$ is the group of permutations of a set with n elements. No matter how one permutes the elements of a set, the set still remains the same. Hence, a symmetric group $$S_n$$ is a finite transformation group with n! elements.
-There are many notations for describing a permutation, but the most convinient and compact is the *cycle notation* 
+There are many notations for describing a permutation, but the most convinient and compact is the *cycle notation*. A transposition(swapping ) of elements of a set is represented as a tuple (s,d), where s is the element's source index and d is the destination index. A cycle is represented as a tuple of more than two elements.    
+  
+For example, Let $$S_3$$ = {1,2,3,4}  
+1. Swapping the first two elements of the set is denoted as **(1,2)** which transforms $$S_3$$ to {2,1,3,4}.  
+2. Next is we wish to move the resultant set such that element at indexes move as follows:  $$1 \rightarrow 2, 2 \rightarrow 3 , 3 \rightarow 4, 4 \rightarow 1$$, the transform  is denoted as **(1,2,3,4)** which transforms the set resulting from transform in the first step to {4,2,1,3}.
+3. Permutations can also be disjoint, for example (1,2)(3,4) transforms the resultant set from step 2 to {2,4,1,3}. The notation (1,2)(3,4), denotes that first transposition (1,2) is performed and then (3,4).
 
+Two permutations and be combined under the composition operator * to create a new permulation. The permutation are composed right to left. For example,  
+  
+Let $$S_4$$ = {1,2,3,4} , f = (1,2) and g=(2,3)  
+Then f * g applied to $$S_4$$ results in { 3,1,2,4}
 
+The identity element of $$S_n$$, is a fixed ordering of its element. Except for $$S_1$$ and $$S_2$$, all symmetric groups are non-abelien. Disjoint permutation however commute.
 
 ## 5 Group Actions
 
