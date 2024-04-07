@@ -114,9 +114,9 @@ There are many notations for describing a permutation, but the most convinient a
   
 For example, Let $$S_3$$ = {1,2,3,4}  
 1. Swapping the first two elements of the set is denoted as **(1,2)** which transforms $$S_3$$ to {2,1,3,4}.  
-2. Next is we wish to move the resultant set such that element at indexes move as follows:  $$1 \rightarrow 2, 2 \rightarrow 3 , 3 \rightarow 4, 4 \rightarow 1$$, the transform  is denoted as **(1,2,3,4)** which transforms the set resulting from transform in the first step to {4,2,1,3}.
-3. Permutations can also be disjoint, for example (1,2)(3,4) transforms the resultant set from step 2 to {2,4,1,3}. The notation (1,2)(3,4), denotes that first transposition (1,2) is performed and then (3,4).
-
+2. Next is we wish to move the resultant set such that element at indexes move as follows:  $$1 \rightarrow 2, 2 \rightarrow 3 , 3 \rightarrow 4, 4 \rightarrow 1$$, the transform  is denoted as **(1,2,3,4)** which transforms the set resulting from transform in the first step to {4,2,1,3}.  
+3. Permutations can also be disjoint, for example (1,2)(3,4) transforms the resultant set from step 2 to {2,4,1,3}. The notation (1,2)(3,4), denotes that first transposition (1,2) is performed and then (3,4).  
+  
 Two permutations and be combined under the composition operator * to create a new permulation. The permutation are composed right to left. For example,  
   
 Let $$S_4$$ = {1,2,3,4} , f = (1,2) and g=(2,3)  
@@ -124,12 +124,15 @@ Then f * g applied to $$S_4$$ results in { 3,1,2,4}
 
 The identity element of $$S_n$$, is a fixed ordering of its element. Except for $$S_1$$ and $$S_2$$, all symmetric groups are non-abelien. Disjoint permutation however commute.
 
-## 5 Group Actions
+## 5 Direct Product
+## 6 Group Actions
 
-## 6. Group Represenations
+## 7. Group Represenations
 
-## 7. References
-1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)
+## 8. References
+1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)  
+2. [Groups and their Representations](https://dept.math.lsa.umich.edu/~kesmith/rep.pdf)
+3. [Socratica-Abstract Algebra Playlist](https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6)
 
 
 
