@@ -72,9 +72,9 @@ that maps each *even* element of G to $$0 \in H$$ and each *odd* element of G to
   
 if we apply ***f*** to every element of G, we are able to see similarity between G and H.  
 
-***f*** ,in general, is a mathematical tool that given two groups (G,*) and (H,o) maps every element of G to an element in H i.e. 
+***f*** ,in general, is a mathematical tool that given two groups (G,*) and (H,$$ \circo $$) maps every element of G to an element in H i.e. 
 $$f: G \rightarrow H$$  
-such that, f(x*y) = f(x) o f(y), where $$x,y \in G$$  
+such that, $$f(x*y) = f(x) \circo f(y)$$, where $$x,y \in G$$  
 
 if such a function exists, this implies that the two group have some underlying structural similarity. Such a function ***f*** is called ***group homomorphism*** or ***homomorphism*** in short.  Note, that the function  ***f*** is not required to be bijective and the direction of mapping from one group to another matters.
 
@@ -146,6 +146,10 @@ such that, $$(g,y) \rightarrow g.y$$ where $$g \in G, y \in Y$$  and it satisfie
 (1) $$g1 . (g2 . y) = (g1 * g2).y$$ ,  for $$g1, g2 \in G, y \in Y$$
 (2) $$e_g.y = y$$ for all $$y \in Y$$ where $$e_g$$ is the identity of the group
 
+Based on condition (1) it can be said that group action is a group homomorphism.
+
+Let us take an example of set Y={1,2,3,4} which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on Y, $$r_1$$ ( rotation by 90 degrees) results in Y being {4,1,2,3}; a horizontal flip on Y results in Y being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as: 
+$$A: D_4 \rightarrow S_4$$
 
 ## 7. Group Representations
 
