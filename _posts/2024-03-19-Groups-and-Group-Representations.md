@@ -130,7 +130,7 @@ G X H: (g,h), where  $$g \in G, h\in H$$
 i.e an ordered pair of every element of G and every element of H.  
   
 Such a direct product itself forms a group whose operator . is defined as:
-(g,h).(g',h') = (g*g', h o h') where (g,h),(g',h') $$\in$$ G X H  
+(g,h).(g',h') = (g*g', h o h') where (g,h),(g',h') $$\in G \cross H$$  
 
 It should be noted that group products are not just limited to two groups. Products can be performed on more than two groups or even infinite groups.   
   
