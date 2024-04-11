@@ -152,7 +152,7 @@ $$A: D_4 \rightarrow S_4$$
 In the coming subsections we  discuss *orbits* and *stablizers*. These are constructs that relate the structure of the group with the structure of the set they act upon.
 ### 6.1. Orbits
 
-Two points $$x,y \in X$$ acted on by a group $$G$$ are called G-equivalent if there is an element $$g \in G$$ such that when $$g$$ acts on $$x$$, it results in moving $$x$$ to $$y$$, i.e. $$y = gx$$. This results in the set $$X$$ being divided into classes where one class is all the points $$y$$, that can be reached by $$x$$ if every possible element of G acts on it. Each such class is called an **Orbit***. We can formally denote orbit of $$x$$ as:  
+Two points $$x,y \in X$$ acted on by a group $$G$$ are called G-equivalent if there is an element $$g \in G$$ such that when $$g$$ acts on $$x$$, it results in moving $$x$$ to $$y$$, i.e. $$y = gx$$. Note that G-equivalent is an equivalence relation. This results in the set $$X$$ being divided into equivalent classes where one class is all the points $$y$$, that can be reached by $$x$$ if every possible element of G acts on it. Each such class is called an **Orbit***. We can formally denote orbit of $$x$$ as:  
 $$O_x = G.x$$
 
 ### 6.1. Stablizers
