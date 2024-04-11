@@ -138,18 +138,27 @@ Group created by a group product is abelian if all the participating groups in t
 
 
 ## 6. Group Actions
-An action of G on Y is a way to assign to each g in G some transformation of X, compatibly with the group structure of G. Formally, A (left) action of a group (G,*) on a set Y ( finite or infinite), is a map: 
+An action of G on X is a way to assign to each g in G some transformation of X, compatibly with the group structure of G. Formally, A (left) action of a group (G,*) on a set X ( finite or infinite), is a map: 
 
-$$G \times Y  \rightarrow Y$$  
-such that, $$(g,y) \rightarrow g.y$$ where $$g \in G, y \in Y$$  and it satisfies:  
+$$G \times X  \rightarrow Y$$  
+such that, $$(g,x) \rightarrow g.x$$ where $$g \in G, x \in X$$  and it satisfies:  
 
-(1) $$g1 . (g2 . y) = (g1 * g2).y$$ ,  for $$g1, g2 \in G, y \in Y$$
-(2) $$e_g.y = y$$ for all $$y \in Y$$ where $$e_g$$ is the identity of the group
+(1) $$g1 . (g2 . x) = (g1 * g2).x$$ ,  for $$g1, g2 \in G, x \in X$$
+(2) $$e_g.x = x$$ for all $$x \in X$$ where $$e_g$$ is the identity of the group
 
-Based on condition (1) it can be said that group action is a group homomorphism.
+Based on condition (1) it can be said that group action is a group homomorphism.Let us take an example of set X={1,2,3,4} which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being {4,1,2,3}; a horizontal flip on X results in X being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as: 
+$$A: D_4 \rightarrow S_4$$    
+  
+In the coming subsections we  discuss *orbits* and *stablizers*. These are constructs that relate the structure of the group with the structure of the set they act upon.
+### 6.1. Orbits
 
-Let us take an example of set Y={1,2,3,4} which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on Y, $$r_1$$ ( rotation by 90 degrees) results in Y being {4,1,2,3}; a horizontal flip on Y results in Y being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as: 
-$$A: D_4 \rightarrow S_4$$
+Two points $$x,y \in X$$ acted on by a group $$G$$ are called G-equivalent if there is an element $$g \in G$$ such that when $$g$$ acts on $$x$$, it results in moving $$x$$ to $$y, i.e. $$y = gx$$. This results in the set $$X$$ being divided into classes where one class is all the points $$y$$, that can be reached by $$x$$ if every possible element of G acts on it. Each such class is called an **Orbit***. We can formally denote orbit of $$x$$ as:  
+$$ O_x = G.x$$
+
+### 6.1. Stablizers
+
+All the elements of $$G$$ which do not move an element $$x \in X$$ when they act on it are called stablizers of $$x$$. Formally, stablizer of an element $$x \in X, G_x$$ is a subgroup of a group $$G$$, such that:   
+$$G_x={ g:g.x=x }$$   
 
 ## 7. Group Representations
 
