@@ -185,8 +185,8 @@ $$\begin{pmatrix}
 
 ### 7.2 Left Regular Representation
 
-Left regular representation is a kind of permutation represenatation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g*g_i$$ where i=1,2...,|G| is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:
-$$ G \rightarrow GL(F^{|G|}) $$
+Left regular representation is a kind of permutation represenatation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g \* g_i$$ where i=1,2...,|G| is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:  
+$$G \rightarrow GL(F^{|G|})$$
 
 
 
