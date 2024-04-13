@@ -202,14 +202,14 @@ Note, that this representation has a dimension 1.
 
 $$Z_n$$ can be represented in 2 dimensions and visualized as two perpendicular axis rotating about the origin.
 The representation is therefore a homomorphism such that:  
-$$ S_n \rightarrow R^n $$  
+$$ S_n \rightarrow R^2 $$  
 
 ```math
 $$\begin{pmatrix}
 cos(\frac{2\pi m}{n}) & -sin(\frac{2\pi m}{n})  \\
-sin(\frac{2\pi m}{n}) & cos(\frac{2\pi m}{n})  \end{pmatrix}$$
+sin(\frac{2\pi m}{n}) & cos(\frac{2\pi m}{n})  \end{pmatrix} $$
 ```
-where, m=\{1,2,3,...,n}
+where, $$m=\{1,2,3,...,n\}$$
 ## 8. References
 1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)  
 2. [Groups and their Representations](https://dept.math.lsa.umich.edu/~kesmith/rep.pdf)
