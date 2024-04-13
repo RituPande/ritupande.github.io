@@ -130,8 +130,10 @@ G X H: (g,h), where  $$g \in G, h\in H$$
 i.e an ordered pair of every element of G and every element of H.  
   
 Such a direct product itself forms a group whose operator . is defined as:
-(g,h).(g',h') = (g*g', h o h') where (g,h),(g',h') $$\in G \cross H$$  
-
+```math
+$$ (g,h).(g',h') = (g*g', h \circ h') $$    
+```
+where $$(g,h),(g',h') \in G \times H$$  
 It should be noted that group products are not just limited to two groups. Products can be performed on more than two groups or even infinite groups.   
   
 Group created by a group product is abelian if all the participating groups in the product are abelian. If even a single participating group is non-abelian the group resuting from their product is non-abelian.
