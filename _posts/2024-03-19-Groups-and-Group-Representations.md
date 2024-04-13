@@ -211,9 +211,10 @@ sin(\frac{2\pi m}{n}) & cos(\frac{2\pi m}{n})  \end{pmatrix}
 ```
 where, $$m=\{1,2,3,...,n\}$$
 ## 8. References
-1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)  
-2. [Groups and their Representations](https://dept.math.lsa.umich.edu/~kesmith/rep.pdf)
-3. [Socratica-Abstract Algebra Playlist](https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6)
+1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)    
+2. [Groups and their Representations](https://dept.math.lsa.umich.edu/~kesmith/rep.pdf)  
+3. [Socratica-Abstract Algebra Playlist](https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6)  
+4. [Representation of Finite Groups](https://www.youtube.com/watch?v=LaVmkzu9iK4)
 
 
 
