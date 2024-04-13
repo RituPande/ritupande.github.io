@@ -8,7 +8,7 @@ published: false
 ## 1. Introduction
 The natural world around us is rife with examples of transformations applied to objects that retain some underlying property of the object before and after the transformation. For example, rigid motions in 3D-space that preserve a particular molecule.   A simple example is rotation of a 2-D square ( in XY plane ) about the Z axis. A 0, 90, 180 and 270  degree rotation has no impact on the square shape and orientation.  Such transformations are called ***symmetries***.Two symmetries can be combined to form another symmetry and every symmetry has an opposite or inverse symmetry. For instance,  90 and 180 degree rotation can be combined to produce a 270 degree rotation that does not change a square. Also,a  rotation counterclockwise by 90 degrees can be undone by rotation clockwise by 90 degrees. ***Groups*** are a collection of transformations that preserve some underlying structure of a set to  which they are applied.
 
-Historically, the groups were not separate from their ***representation*** as a set of transformations. However, in the late nineteenth century Cayley formulated an ***abstract*** definition of a group that separated it from it from its representation as a group of transformations or ***tranformation groups*** . This enabled effective study of transformations which might drastically differ in how they are represented but in essence can be defined as the same generic abstract objects.  Representation theory aims to understand different ways in which abstract groups can be realized as transformation groups.
+Historically, the groups were not separate from their ***representation*** as a set of transformations. However, in the late nineteenth century Cayley formulated an ***abstract*** definition of a group that separated it from it from its representation as a group of transformations or ***tranformation groups*** . This enabled effective study of transformations which might drastically differ in how they are represented but in essence can be defined as the same generic abstract objects.  Representation theory aims to understand different ways in which  groups can be realized as transformation groups that perform linear transformation of a euclidean space.
 
 ## 2. How is group theory relevant in machine learning
 
@@ -162,14 +162,31 @@ $$G_x=\\{ g:g.x=x \\}$$
 
 ## 7. Group Representations
 
-The goal of representation theory is to understand the dierent ways in which abstract groups can be  realized as transformation groups. In practice, we are mainly interested in understanding how groups can be represented as groups of linear transformations of euclidean space. More specifically, it is group homomorphism from an abstract group G to the groups $$GL(V)$$ i.e.   
-$$G /rightarrow GL(V)$$ 
+The goal of representation theory is to understand the dierent ways in which  groups can be  realized as transformation groups, primarily, as groups of linear transformations of euclidean space. More specifically, it is group homomorphism from an group G to the groups $$GL(V)$$ i.e.   
+$$G \rightarrow GL(V)$$ 
 
 The *dimension of the representation* is the dimension of the vector V.
-Every group admits a *trivial representation* on every vector space which  sends very element of G to the identity transformation i.e. do not cause any change to V.
+Every group admits a *trivial representation* on every vector space which  sends very element of G to the identity transformation i.e. do not cause any change to V.  
+  
+Following subsections give examples of group representations
 
+### 7.1 Permutation Representation
+Permuatation representation is a group homomorphism of $$S_n$$ to $$R^n$$ i.e.  
 
+$$S_n \rightarrow GL(R^n)$$  
 
+For example for $$S_3$$, (12) can be represented as: 
+```math
+$$\begin{pmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1 \end{pmatrix}$$
+```
+
+### 7.2 Left Regular Representation
+
+Left regular representation is a kind of permutation represenatation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g*g_i$$ where i=1,2...,|G| is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:
+$$ G \rightarrow GL(F^{|G|}) $$
 
 
 
