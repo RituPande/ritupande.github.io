@@ -199,15 +199,15 @@ $$ S_n \rightarrow \{\pm 1 \}= GL(F)$$
 Note, that this representation has a dimension 1. 
 
 ### 7.4 Representation of $$Z_n$$
-
+  
 $$Z_n$$ can be represented in 2 dimensions and visualized as two perpendicular axis rotating about the origin.
 The representation is therefore a homomorphism such that:  
 $$ S_n \rightarrow R^2 $$  
 
 ```math
-$$\begin{pmatrix}
+\begin{pmatrix}
 cos(\frac{2\pi m}{n}) & -sin(\frac{2\pi m}{n})  \\
-sin(\frac{2\pi m}{n}) & cos(\frac{2\pi m}{n})  \end{pmatrix} $$
+sin(\frac{2\pi m}{n}) & cos(\frac{2\pi m}{n})  \end{pmatrix}
 ```
 where, $$m=\{1,2,3,...,n\}$$
 ## 8. References
