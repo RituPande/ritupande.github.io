@@ -162,6 +162,17 @@ $$G_x=\\{ g:g.x=x \\}$$
 
 ## 7. Group Representations
 
+The goal of representation theory is to understand the dierent ways in which abstract groups can be  realized as transformation groups. In practice, we are mainly interested in understanding how groups can be represented as groups of linear transformations of euclidean space. More specifically, it is group homomorphism from an abstract group G to the groups $$GL(V)$$ i.e.   
+$$ G /rightarrow GL(V)$$ 
+
+The *dimension of the representation* is the dimension of the vector V.
+Every group admits a *trivial representation* on every vector space which  sends very element of G to the identity transformation i.e. do not cause any change to V.
+
+
+
+
+
+
 ## 8. References
 1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)  
 2. [Groups and their Representations](https://dept.math.lsa.umich.edu/~kesmith/rep.pdf)
