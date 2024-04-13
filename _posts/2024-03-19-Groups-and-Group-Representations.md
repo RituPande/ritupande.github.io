@@ -188,7 +188,15 @@ $$\begin{pmatrix}
 Left regular representation is a kind of permutation represenatation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g \* g_i$$ where i=1,2...,|G| is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:  
 $$G \rightarrow GL(F^{|G|})$$
 
+### 7.3 Alternating Representation of $$S_n$$
 
+Any transformation in $$S_n$$ can be formulated as a sequence of transpositions between two elements of a set. if the number of such transpositions is even, the transformation can  be represented +1 and if the number of transpositions is odd, the tranformation can be written as -1. More formally,  
+
+$$ S_n \rightarrow \{\pm 1 \}= GL(F)$$   
+  
+Note, that this representation has a dimension 1. 
+
+### 7.4 Representation of $$Z_n$$
 
 ## 8. References
 1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)  
