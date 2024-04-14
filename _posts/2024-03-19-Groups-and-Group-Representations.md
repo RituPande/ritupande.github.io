@@ -2,7 +2,7 @@
 layout: post
 title: Basics of Groups and Group Representations
 permalink: /blog/group-representations/
-published: false
+published: true
 ---
 
 ## 1. Introduction
@@ -155,7 +155,7 @@ An action of G on X is a way to assign to each g in G some transformation of X, 
 $$G \times X  \rightarrow Y$$  
 such that, $$(g,x) \rightarrow g.x$$ where $$g \in G, x \in X$$  and it satisfies:  
 
-(1) $$g1 . (g2 . x) = (g1 * g2).x$$ ,  for $$g1, g2 \in G, x \in X$$
+(1) $$g1 . (g2 . x) = (g1 * g2).x$$ ,  for $$g1, g2 \in G, x \in X$$  
 (2) $$e_g.x = x$$ for all $$x \in X$$ where $$e_g$$ is the identity of the group
 
 Based on condition (1) it can be said that group action is a group homomorphism.Let us take an example of set X={1,2,3,4} which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being {4,1,2,3}; a horizontal flip on X results in X being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as: 
@@ -214,11 +214,10 @@ $$Z_n$$ can be represented in 2 dimensions and visualized as two perpendicular a
 The representation is therefore a homomorphism such that:  
 $$ S_n \rightarrow R^2 $$  
 
-```math
-\begin{pmatrix}
+$$\begin{pmatrix}
 cos(\frac{2\pi m}{n}) & -sin(\frac{2\pi m}{n})  \\
-sin(\frac{2\pi m}{n}) & cos(\frac{2\pi m}{n})  \end{pmatrix}
-```
+sin(\frac{2\pi m}{n}) & cos(\frac{2\pi m}{n})  \end{pmatrix}$$
+
 where, $$m=\{1,2,3,...,n\}$$
 ## 8. References
 1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)    
