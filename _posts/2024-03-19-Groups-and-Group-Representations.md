@@ -12,7 +12,17 @@ Historically, the groups were not separate from their ***representation*** as a 
 
 ## 2. How is group theory relevant in machine learning
 
+In machine leanring there are several tasks that require classification, prediction and detection of structured data. For classification it is requried that that the output of the model does not change with change in orientation of position of the strcutured data ( **invariance** ). For prediction and detection tasks, it is required that the output of the model changes in the same way as the input changes (**equivariance**). For instance, is a model that detect the co-ordinates of a person in a pitcure on the left. It should be able to detect the correct co-ordinates of the same person if the location of the person changes.   
 
+Traditionally, the way to achieve invariance in the output of the machine leaning model is data augmentmentation. This however has several disadvantages:  
+- This does not guarantee invariance as it is not possible to take into account every possible chaange in input data structure that should not impact thje model output via data augmentation.  
+- Data augmentation can significantly increase training time and resources.  
+- There is significant redundancy in features learned by the model.  
+
+  What if the machine learning model learns features of the input data taking into account the underlying symmetries in the data? For example, CNNs have translational invariance and equivariance built in its model opeartions. Convolution operation ensures translational equivariance and pooling operations ensure invariance.  
+   
+This is where group theory can help. If we know the underlying symmetries in the data, we can ensure that while designing the model, we use those operations ( tranformations) that preserve those underlying symmetries. This would ensure that we no longer need additional processes like data augmentation to achieve a more reliable model that is efficient to train.
+ 
 ## 3 Abstract Groups
 A ***Group*** is a set G which is closed under an operation ∗ (i.e., for any $$x, y \in  G, x ∗ y \in G $$) and satisfies the following properties:
 -  Identity: There is an element e in G, such that for every $$x \in G, e ∗ x = x ∗ e = x$$.    
