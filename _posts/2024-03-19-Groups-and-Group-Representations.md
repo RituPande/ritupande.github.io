@@ -155,7 +155,7 @@ An action of G on X is a way to assign to each g in G some transformation of X, 
 $$G \times X  \rightarrow Y$$  
 such that, $$(g,x) \rightarrow g.x$$ where $$g \in G, x \in X$$  and it satisfies:  
 
-(1) $$g1 . (g2 . x) = (g1 * g2).x$$ ,  for $$g1, g2 \in G, x \in X$$  
+(1) $$g_1 . (g_2 . x) = (g_1 * g_2).x$$ ,  for $$g_1, g_2 \in G, x \in X$$  
 (2) $$e_g.x = x$$ for all $$x \in X$$ where $$e_g$$ is the identity of the group
 
 Based on condition (1) it can be said that group action is a group homomorphism.Let us take an example of set X={1,2,3,4} which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being {4,1,2,3}; a horizontal flip on X results in X being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as: 
@@ -188,12 +188,10 @@ Permuatation representation is a group homomorphism of $$S_n$$ to $$R^n$$ i.e.
 $$S_n \rightarrow GL(R^n)$$  
 
 For example for $$S_3$$, (12) can be represented as: 
-```math
 $$\begin{pmatrix}
 0 & 1 & 0 \\
 1 & 0 & 0 \\
 0 & 0 & 1 \end{pmatrix}$$
-```
 
 ### 7.2 Left Regular Representation
 
