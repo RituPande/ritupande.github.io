@@ -2,7 +2,7 @@
 layout: post
 title: Basics of Groups and Group Representations
 permalink: /blog/group-representations/
-published: false
+published: true
 ---
 
 ## 1. Introduction
