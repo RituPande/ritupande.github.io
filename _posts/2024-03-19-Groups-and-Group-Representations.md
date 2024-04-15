@@ -8,7 +8,7 @@ published: true
 ## 1. Introduction
 The natural world around us is rife with examples of transformations applied to objects that retain some underlying property of the object before and after the transformation. For example, rigid motions in 3D-space that preserve a particular molecule.   A simple example is rotation of a 2-D square ( in XY plane ) about the Z axis. A 0, 90, 180 and 270  degree rotation has no impact on the square shape and orientation.  Such transformations are called ***symmetries***.Two symmetries can be combined to form another symmetry and every symmetry has an opposite or inverse symmetry. For instance,  90 and 180 degree rotation can be combined to produce a 270 degree rotation that does not change a square. Also,a  rotation counterclockwise by 90 degrees can be undone by rotation clockwise by 90 degrees. ***Groups*** are a collection of transformations that preserve some underlying structure of a set to  which they are applied.
 
-Historically, the groups were not separate from their ***representation*** as a set of transformations. However, in the late nineteenth century Cayley formulated an ***abstract*** definition of a group that separated it from it from its representation as a group of transformations or ***tranformation groups*** . This enabled effective study of transformations which might drastically differ in how they are represented but in essence can be defined as the same generic abstract objects.  Representation theory aims to understand different ways in which  groups can be realized as linear transformations of a euclidean space.
+Historically, groups were not separate from their ***representation*** as a set of transformations. However, in the late nineteenth century Cayley formulated an ***abstract*** definition of a group that separated it from it from its representation as a group of transformations or ***tranformation groups*** . This enabled effective study of transformations which might drastically differ in how they are represented but in essence can be defined as the same generic abstract objects.  Representation theory aims to understand different ways in which  groups can be realized as linear transformations of a euclidean space.
 
 ## 2. How is group theory relevant in machine learning
 
@@ -40,7 +40,8 @@ A ***Field*** is a set $$F$$ which is closed under two operations + and * such t
 ### 3.1 Examples of Abstract groups
 #### 3.1.1 Quotient Groups
 
-The Quotient group $$(Z_n; +)$$ is the set of all congruence classes of $$Z$$ modulo n where a congruence class $$a \equiv Z \pmod{n} is defined as:  
+The Quotient group $$(Z_n; +)$$ is the set of all congruence classes of $$Z$$ modulo n where a congruence class $$a \equiv Z \pmod{n}$$ is defined as:   
+  
 $$\bar{a}$$ = a + nk where $$k \in Z$$
   
 There are always $$n-1$$ congruence classes for $$Z_n$$. For example:  
@@ -48,19 +49,20 @@ $$Z_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
 
 #### 3.1.2 General Linear Groups and Special Linear Groups 
 
-General Linear Group $$GL_n(F)$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$R$$, rational numbers $$Q$$, complex numbers $$C$$ and quotitent group $$Z_p$$
+General Linear Group $$GL_n(F)$$, is a non-abelian group of inveritible $$ n \times n $$ matrices under the operation $$*$$ where $$*$$ represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$R$$, rational numbers $$Q$$, complex numbers $$C$$ and quotitent group $$Z_p$$
 
 Special Linear Group $$SL_n(F)$$ is a subgroup of  $$GL_n(F)$$ with the determinant of the matrices being  one.
 
 ### 3.2 Group Homomorphism and Isomorphism
 
-***Homomorphism*** is a mathematical tool to compare two groups. it is used to identify whether two groups are similar, identical or completely dissimilar. Let us consider two groups:  
+***Homomorphism*** is a mathematical tool to compare two groups. it is used to identify whether two groups are similar, identical or completely dissimilar. Let us start with an example: 
+#### 3.2.1 Example 
+Consider two groups:  
 
 - $$G(Z, +)$$: Infinite group of all integers  
 - $$H(Z/2Z, +)$$: Finite group of integers mod 2-{0, 1}   
 
 At the surface, these two groups seem to be complely different with no similarities. However, notice that:  
-  
 $$G = \{ odd \} \cup  \{ even \}$$  
   
 It can also be seen that:  
@@ -70,7 +72,7 @@ $$even + odd  = odd$$
 $$odd + even  = odd$$  
 $$odd + odd   = even$$ 
   
-Shifting the focus to group H:  
+Shifting the focus to group $$H$$:  
   
 $$0 + 0 \equiv   0 \pmod{2}$$  
 $$0 + 1 \equiv   1 \pmod{2}$$  
@@ -84,14 +86,15 @@ $$f: Z \rightarrow Z/2Z$$
 that maps each *even* element of G to $$0 \in H$$ and each *odd* element of G to $$1 \in H$$     
   
 if we apply $$f$$ to every element of G, we are able to see similarity between G and H.  
-
-$$f$$ ,in general, is a mathematical tool that given two groups $$(G,*)$$ and $$(H, \circ ) $$ maps every element of G to an element in H i.e.  
-  
+#### 3.2.2 Generalization 
+In general, a function that given two groups $$(G,*)$$ and $$(H, \circ ) $$ maps every element of G to an element in H i.e. 
+    
 $$f: G \rightarrow H$$    
-such that, $$f(x*y) = f(x) \circ f(y)$$, where $$x,y \in G$$  
   
-if such a function exists, this implies that the two group have some underlying structural similarity. Such a function $$f$$  is called ***group homomorphism*** or ***homomorphism*** in short.  Note, that the function  $$f$$  is not required to be bijective and the direction of mapping from one group to another matters.
-
+such that, $$f(x*y) = f(x) \circ f(y)$$, where $$x,y \in G$$  is called ***group homomorphism*** or ***homomorphism*** in short.
+    
+if such a function exists, this implies that the two group have some underlying structural similarity. Note, that the function  $$f$$  is not required to be bijective and the direction of mapping from one group to another matters.  
+  
 if $$f$$ is bijective then the groups are not just similar but identical. Such a function is called ***group isomorphism*** or ***isomorphism***, in short.
 
 ## 4. Transformation Groups
@@ -132,22 +135,24 @@ For example, Let $$S_3=4= \{1,2,3,4\}$$
 1. Swapping the first two elements of the set is denoted as **(1,2)** which transforms $$S_4$$ to $$\{2,1,3,4\}$$.  
 2. Next is we wish to move the resultant set such that element at indexes move as follows:  $$1 \rightarrow 2, 2 \rightarrow 3 , 3 \rightarrow 4, 4 \rightarrow 1$$, the transform  is denoted as $$(1,2,3,4)$$ which transforms the set resulting from transform in the first step to $$\{4,2,1,3\}$$.  
 3. Permutations can also be disjoint, for example $$(1,2)(3,4)$$ transforms the resultant set from step 2 to $$\{2,4,1,3\}$$. The notation $$(1,2)(3,4)$$, denotes that first transposition $$(1,2)$$ is performed and then $$(3,4)$$.  
-    
-Two permutations and be combined under the composition operator * to create a new permulation. The permutation are composed right to left. For example,  
-    
-Let $$S_4 = {1,2,3,4} , f = (1,2) , g=(2,3) $$    
-Then f * g applied to $$S_4$$ results in { 3,1,2,4}  
+4. Two permutations and be combined under the composition operator * to create a new permulation. The permutation are composed right to left. For example: 
+   
+  Let $$S_4 = {1,2,3,4} , f = (1,2) , g=(2,3) $$    
+  Then f * g applied to $$S_4$$ results in { 3,1,2,4}  
   
 The identity element of $$S_n$$, is a fixed ordering of its element. Except for $$S_1$$ and $$S_2$$, all symmetric groups are non-abelien. Disjoint permutation however commute.
 
 ## 5. Direct Product of Groups
-The direct products of two groups $$(G,*)$$ and $$(H, \circ )$$ is a cartesian product, such that:  
+The direct products of two groups $$(G,*)$$ and $$(H, \circ )$$ is a cartesian product, such that: 
+  
 $$ G \times H: (g,h)$$, where  $$g \in G, h\in H$$  
+  
 i.e an ordered pair of every element of G and every element of H.  
   
 Such a direct product itself forms a group whose operator . is defined as:
+    
+$$ (g,h).(g',h') = (g*g', h \circ h') $$  
   
-$$ (g,h).(g',h') = (g*g', h \circ h') $$    
 where $$(g,h),(g',h') \in G \times H$$  
     
 It should be noted that group products are not just limited to two groups. Products can be performed on more than two groups or even infinite groups.   
@@ -163,7 +168,7 @@ such that, $$(g,x) \rightarrow g.x$$ where $$g \in G, x \in X$$  and it satisfie
 - $$g_1 . (g_2 . x) = (g_1 * g_2).x$$ ,  for $$g_1, g_2 \in G, x \in X$$  
 - $$e_g.x = x$$ for all $$x \in X$$ where $$e_g$$ is the identity of the group
 
-Based on the first it can be said that group action is a group homomorphism.Let us take an example of set X={1,2,3,4} which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being {4,1,2,3}; a horizontal flip on X results in X being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as:   
+Based on the first it can be said that group action is a group homomorphism.Let us take an example of set X$$=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being $${\4,1,2,3\}$$; a horizontal flip on X results in X being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as:   
   
 $$A: D_4 \rightarrow S_4$$    
   
