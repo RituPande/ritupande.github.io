@@ -67,34 +67,17 @@ At the surface, these two groups seem to be complely different with no similarit
 $$G = \{ odd \} \cup  \{ even \}$$  
   
 if we consider $$G$$ as a group with two kind of elements, $$even$$ and $$odd$$, and compare it with $$H$$:
- <table>
-   <tr>
-     <th>Group $$G$$</th>
-     <th>Group $$H$$</th>
-    </tr>
-    <tr>
-    <td> $$even + even = even$$</td>
-     <td>  $$0 + 0 \equiv   0 \pmod{2}$$</td>
-    </tr>
-    <tr>
-    <td> $$even + odd  = odd$$ </td>
-     <td> $$0 + 1 \equiv   1 \pmod{2}$$ </td>
-    </tr>
-    <tr>
-    <td> $$odd + even  = odd$$ </td>
-     <td> $$1 + 0 \equiv   1 \pmod{2}$$ </td>
-    </tr>
-    <tr>
-    <td> $$odd + odd   = even$$ </td>
-     <td> $$1 + 1 \equiv   0 \pmod{2}$$ </td>
-    </tr>
-  </table>
-we can see that its behavior of the two groups is very similar.   More formally, Let us consider a function $$f$$ :  
-     
+|Group $G$|Group $H$|
+|---------|---------|
+| $even + even = even$ | $0 + 0 \equiv   0 \pmod{2}$ |
+| $even + odd  = odd$ | $0 + 1 \equiv   1 \pmod{2}$ |
+| $odd + even  = odd$ | $1 + 0 \equiv   1 \pmod{2}$ |
+| $odd + odd   = even$ | $1 + 1 \equiv   0 \pmod{2}$ |
+ 
+we can see that its behavior of the two groups is very similar.   More formally, Let us consider a function $$f$$ that maps each *even* element of G to $$0 \in H$$ and each *odd* element of G to $$1 \in H$$:  
+       
 $$f: Z \rightarrow Z/2Z$$  
-  
-that maps each *even* element of G to $$0 \in H$$ and each *odd* element of G to $$1 \in H$$     
-  
+    
 If we apply $$f$$ to every element of G, we are able to see similarity between G and H.  
 #### 3.2.2 Generalization 
 In general, a function that given two groups $$(G,*)$$ and $$(H, \circ ) $$ maps every element of G to an element in H i.e. 
@@ -141,7 +124,7 @@ This is true for complex numbers as well.
 A symmetric group $$S_n$$ is the group of permutations of a set with n elements. No matter how one permutes the elements of a set, the set still remains the same. Hence, a symmetric group $$S_n$$ is a finite transformation group with n! elements.
 There are many notations for describing a permutation, but the most convinient and compact is the *cycle notation*. A transposition(swapping ) of elements of a set is represented as a tuple (s,d), where s is the element's source index and d is the destination index. A cycle is represented as a tuple of more than two elements.    
   
-For example, Let $$S_3=4= \{1,2,3,4\}$$  
+For example, Let $$S_4= \{1,2,3,4\}$$  
   
 1. Swapping the first two elements of the set is denoted as **(1,2)** which transforms $$S_4$$ to $$\{2,1,3,4\}$$.
   
