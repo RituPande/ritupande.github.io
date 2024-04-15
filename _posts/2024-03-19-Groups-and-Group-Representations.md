@@ -132,20 +132,22 @@ A symmetric group $$S_n$$ is the group of permutations of a set with n elements.
 There are many notations for describing a permutation, but the most convinient and compact is the *cycle notation*. A transposition(swapping ) of elements of a set is represented as a tuple (s,d), where s is the element's source index and d is the destination index. A cycle is represented as a tuple of more than two elements.    
   
 For example, Let $$S_3=4= \{1,2,3,4\}$$  
-1. Swapping the first two elements of the set is denoted as **(1,2)** which transforms $$S_4$$ to $$\{2,1,3,4\}$$.  
-2. Next is we wish to move the resultant set such that element at indexes move as follows:  $$1 \rightarrow 2, 2 \rightarrow 3 , 3 \rightarrow 4, 4 \rightarrow 1$$, the transform  is denoted as $$(1,2,3,4)$$ which transforms the set resulting from transform in the first step to $$\{4,2,1,3\}$$.  
-3. Permutations can also be disjoint, for example $$(1,2)(3,4)$$ transforms the resultant set from step 2 to $$\{2,4,1,3\}$$. The notation $$(1,2)(3,4)$$, denotes that first transposition $$(1,2)$$ is performed and then $$(3,4)$$.  
-4. Two permutations and be combined under the composition operator * to create a new permulation. The permutation are composed right to left. For example: 
-   
-  Let $$S_4 = {1,2,3,4} , f = (1,2) , g=(2,3) $$    
-  Then f * g applied to $$S_4$$ results in { 3,1,2,4}  
+  
+1. Swapping the first two elements of the set is denoted as **(1,2)** which transforms $$S_4$$ to $$\{2,1,3,4\}$$.
+  
+2. Next is we wish to move the resultant set such that element at indexes move as follows:  $$1 \rightarrow 2, 2 \rightarrow 3 , 3 \rightarrow 4, 4 \rightarrow 1$$, the transform  is denoted as $$(1,2,3,4)$$ which transforms the set resulting from transform in the first step to $$\{4,2,1,3\}$$.
+    
+3. Permutations can also be disjoint, for example $$(1,2)(3,4)$$ transforms the resultant set from step 2 to $$\{2,4,1,3\}$$. The notation $$(1,2)(3,4)$$, denotes that first transposition $$(1,2)$$ is performed and then $$(3,4)$$.
+     
+4. Two permutations and be combined under the composition operator * to create a new permulation. The permutation are composed right to left. For example, Let $$S_4 = {1,2,3,4} , f = (1,2) , g=(2,3) $$. Then f * g applied to $$S_4$$ results in { 3,1,2,4}      
   
 The identity element of $$S_n$$, is a fixed ordering of its element. Except for $$S_1$$ and $$S_2$$, all symmetric groups are non-abelien. Disjoint permutation however commute.
 
 ## 5. Direct Product of Groups
-The direct products of two groups $$(G,*)$$ and $$(H, \circ )$$ is a cartesian product, such that: 
-  
-$$ G \times H: (g,h)$$, where  $$g \in G, h\in H$$  
+The direct products of two groups $$(G,*)$$ and $$(H, \circ )$$ is a cartesian product, such that:  
+    
+$$ G \times H: (g,h)$$
+where  $$g \in G, h\in H$$  
   
 i.e an ordered pair of every element of G and every element of H.  
   
@@ -168,26 +170,29 @@ such that, $$(g,x) \rightarrow g.x$$ where $$g \in G, x \in X$$  and it satisfie
 - $$g_1 . (g_2 . x) = (g_1 * g_2).x$$ ,  for $$g_1, g_2 \in G, x \in X$$  
 - $$e_g.x = x$$ for all $$x \in X$$ where $$e_g$$ is the identity of the group
 
-Based on the first it can be said that group action is a group homomorphism.Let us take an example of set X$$=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being $${\4,1,2,3\}$$; a horizontal flip on X results in X being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as:   
+Based on the first it can be said that group action is a group homomorphism.Let us take an example of set X$$=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being $$\{4,1,2,3\}$$; a horizontal flip on X results in X being permuted by $$(12)(34)$$. The group action $$A$$ on $$D_4$$ can be written as:   
   
 $$A: D_4 \rightarrow S_4$$    
   
 In the coming subsections we  discuss *orbits* and *stablizers*. These are constructs that relate the structure of the group with the structure of the set they act upon.
 ### 6.1. Orbits
 
-Two points $$x,y \in X$$ acted on by a group $$G$$ are called G-equivalent if there is an element $$g \in G$$ such that when $$g$$ acts on $$x$$, it results in moving $$x$$ to $$y$$, i.e. $$y = gx$$. Note that G-equivalent is an equivalence relation. This results in the set $$X$$ being divided into equivalent classes where one class is all the points $$y$$, that can be reached by $$x$$ if every possible element of G acts on it. Each such class is called an **Orbit***. We can formally denote orbit of $$x$$ as:  
+Two points $$x,y \in X$$ acted on by a group $$G$$ are called G-equivalent if there is an element $$g \in G$$ such that when $$g$$ acts on $$x$$, it results in moving $$x$$ to $$y$$, i.e. $$y = gx$$. Note that G-equivalent is an equivalence relation. This results in the set $$X$$ being divided into equivalent classes where one class is all the points $$y$$, that can be reached by $$x$$ if every possible element of G acts on it. Each such class is called an ***Orbit***. We can formally denote orbit of $$x$$ as:  
+  
 $$O_x = G.x$$
 
 ### 6.1. Stablizers
 
 All the elements of $$G$$ which do not move an element $$x \in X$$ when they act on it are called stablizers of $$x$$. Formally, stablizer of an element $$x \in X, G_x$$ is a subgroup of a group $$G$$, such that:   
-$$G_x=\\{ g:g.x=x \\}$$   
+  
+$$G_x=\{ g:g.x=x \}$$   
 
 ## 7. Group Representations
 
 The goal of representation theory is to understand the dierent ways in which  groups can be  realized as transformation groups, primarily, as groups of linear transformations of euclidean space. More specifically, it is group homomorphism from an group G to the groups $$GL(V)$$ i.e.   
+  
 $$G \rightarrow GL(V)$$ 
-
+  
 The *dimension of the representation* is the dimension of the vector V.
 Every group admits a *trivial representation* on every vector space which  sends very element of G to the identity transformation i.e. do not cause any change to V.  
   
@@ -198,7 +203,8 @@ Permuatation representation,$$r$$ is a group homomorphism of $$S_n$$ to $$R^n$$ 
 
 $$ r: S_n \rightarrow GL(R^n)$$  
 
-For example for $$S_3, (12) $$ can be represented as: 
+For example for $$S_3, (12) $$ can be represented as:  
+  
 $$r=\begin{pmatrix}
 0 & 1 & 0 \\
 1 & 0 & 0 \\
@@ -206,7 +212,8 @@ $$r=\begin{pmatrix}
 
 ### 7.2 Left Regular Representation
 
-Left regular representation,r, is a kind of permutation representation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g \* g_i$$ where i=1,2...,|G| is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:  
+Left regular representation,r, is a kind of permutation representation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g * g_i$$ where $$i=1,2...,\|G\|$$ is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:  
+  
 $$r: G \rightarrow GL(F^{\|G\|})$$
 
 ### 7.3 Alternating Representation of $$S_n$$
