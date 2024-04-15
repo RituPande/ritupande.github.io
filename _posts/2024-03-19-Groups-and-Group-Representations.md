@@ -63,12 +63,13 @@ Consider two groups:
 - $$H(Z/2Z, +)$$: Finite group of integers mod 2-{0, 1}   
 
 At the surface, these two groups seem to be complely different with no similarities. However, closer examination of group $$G$$ reveals that:  
+  
 $$G = \{ odd \} \cup  \{ even \}$$  
   
 if we consider $$G$$ as a group with two kind of elements, $$even$$ and $$odd$$, and compare it with $$H$$:
 
 | Group $$G$$| Group $$H$$ |
-| :---------: | :---------: |
+| --------- | --------- |
 | $$even + even = even$$ | $$0 + 0 \equiv   0 \pmod{2}$$|
 | $$even + odd  = odd$$  | $$0 + 1 \equiv   1 \pmod{2}$$|
 | $$odd + even  = odd$$  | $$1 + 0 \equiv   1 \pmod{2}$$|
