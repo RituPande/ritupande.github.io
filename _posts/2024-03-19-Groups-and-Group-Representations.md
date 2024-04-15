@@ -50,7 +50,7 @@ $$Z_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
 
 General Linear Group $$GL_n(F)$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$R$$, rational numbers $$Q$$, complex numbers $$C$$ and quotitent group $$Z_p$$
 
-Special Linear Group $$SL_n(F)$$ is a subgroup of  $$GL_n(F}$$ with the diterminant of the matrices being  one.
+Special Linear Group $$SL_n(F)$$ is a subgroup of  $$GL_n(F)$$ with the diterminant of the matrices being  one.
 
 ### 3.2 Group Homomorphism and Isomorphism
 
