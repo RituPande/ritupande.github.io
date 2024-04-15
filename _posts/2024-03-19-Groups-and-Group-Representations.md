@@ -2,7 +2,7 @@
 layout: post
 title: Basics of Groups and Group Representations
 permalink: /blog/group-representations/
-published: false
+published: true
 ---
 
 ## 1. Introduction
@@ -34,45 +34,45 @@ A ***Group*** is a set G which is closed under an operation ∗ (i.e., for any $
 A ***Subgroup*** is a subset of a group that also a group in its own right.
 
 A ***Field*** is a set $$\cal{F}$$ which is closed under two operations + and * such that:    
-- $$\cal{F}$$ is an abelian group under + and  
-- $$\cal{F}$$ − {0} (the set F without the additive identity 0) is an abelian group under *.  
+- $$F$$ is an abelian group under + and  
+- $$F$$ − {0} (the set F without the additive identity 0) is an abelian group under *.  
 
 ### 3.1 Examples of Abstract groups
 #### 3.1.1 Quotient Groups
 
-The Quotient group $$(\cal{Z}_n; +)$$ is the set of all congruence classes of $$\cal{Z}$$ modulo n where a congruence class $$a \in \cal{Z}$$  modulo n is defined as:
-$$\bar{a}$$ = a + nk where $$k \in \cal{Z}$$
+The Quotient group $$(Z_n; +)$$ is the set of all congruence classes of $$Z$$ modulo n where a congruence class $$a \in Z$$  modulo n is defined as:
+$$\bar{a}$$ = a + nk where $$k \in Z$$
 
-There are always n-1 congruence classes for $$\cal{Z}_n$$. For example, 
-$$\cal{Z}_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
+There are always n-1 congruence classes for $$Z_n$$. For example, 
+$$Z_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
 
 #### 3.1.2 General Linear Groups and Special Linear Groups 
 
-General Linear Group $$GL_n(\cal{F})$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$\cal{R}$$, rational numbers $$\cal{Q}$$, complex numbers $$\cal{C}$$ and quotitent group $$\cal{Z_p}$$
+General Linear Group $$GL_n(F)$$, is a non-abelian group of inveritible n X n matrices under the operation * where * represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$R$$, rational numbers $$Q$$, complex numbers $$C$$ and quotitent group $$Z_p$$
 
-Special Linear Group $$SL_n(\cal{F})$$ is a subgroup of  $$GL_n(\cal{F})$$ with the diterminant of the matrices being  one.
+Special Linear Group $$SL_n(F)$$ is a subgroup of  $$GL_n(F}$$ with the diterminant of the matrices being  one.
 
 ### 3.2 Group Homomorphism and Isomorphism
 
 ***Homomorphism*** is a mathematical tool to compare two groups. it is used to identify whether two groups are similar, identical or completely dissimilar. Let us consider two groups:  
 
-G(Z, +): Infinite group of all integers  
-H(Z/2Z, +): Finite group of integers mod 2-{0, 1}   
+$$G(Z, +)$$: Infinite group of all integers  
+$$H(Z/2Z, +)$$: Finite group of integers mod 2-{0, 1}   
 
 At the surface, these two groups seem to be complely different with no similarities. However, notice that:  
-G = { odd } U { even }  
-  
-even + even = even  
-even + odd  = odd  
-odd + even  = odd  
-odd + odd   = even 
+$$G = \{ odd \} \cup  \{ even \}$$  
+
+It can also be seen that:  
+$$even + even = even$$  
+$$even + odd  = odd$$  
+$$odd + even  = odd$$  
+$$odd + odd   = even$$ 
   
 Shifting the focus to group H: 
-  
-0 + 0 =  0 mod 2  
-0 + 1 =  1 mod 2  
-1 + 0 =  1 mod 2  
-1 + 1 =  0 mod 2   
+$$0 + 0 \equiv   0 \pmod{2}$$  
+$$0 + 1 \equiv   1 \pmod{2}$$  
+$$1 + 0 \equiv   1 \pmod{2}$$  
+$$1 + 1 \equiv   0 \pmod{2}$$  
 
 Dividing two group G into two sets of even and odd integers, one can see that its behavior is similar to that of group H.   More formally, Let us consider a function $$f$$ :  
      
@@ -135,30 +135,30 @@ Then f * g applied to $$S_4$$ results in { 3,1,2,4}
 The identity element of $$S_n$$, is a fixed ordering of its element. Except for $$S_1$$ and $$S_2$$, all symmetric groups are non-abelien. Disjoint permutation however commute.
 
 ## 5. Direct Product of Groups
-The direct products of two groups (G,*) and (H,o) is a cartesian product, such that:  
-G X H: (g,h), where  $$g \in G, h\in H$$  
+The direct products of two groups $$(G,*)$$ and $$(H,\bullet)$$ is a cartesian product, such that:  
+$$ G \times H: (g,h)$$, where  $$g \in G, h\in H$$  
 i.e an ordered pair of every element of G and every element of H.  
   
 Such a direct product itself forms a group whose operator . is defined as:
-```math
-$$ (g,h).(g',h') = (g*g', h \circ h') $$    
-```
+
+$$ (g,h).(g',h') = (g*g', h \bullet h') $$    
 where $$(g,h),(g',h') \in G \times H$$  
+  
 It should be noted that group products are not just limited to two groups. Products can be performed on more than two groups or even infinite groups.   
   
 Group created by a group product is abelian if all the participating groups in the product are abelian. If even a single participating group is non-abelian the group resuting from their product is non-abelian.
 
 
 ## 6. Group Actions
-An action of G on X is a way to assign to each g in G some transformation of X, compatibly with the group structure of G. Formally, A (left) action of a group (G,*) on a set X ( finite or infinite), is a map: 
+An action of G on X is a way to assign to each g in G some transformation of X, compatibly with the group structure of G. Formally, A (left) action of a group $$(G,*)$$ on a set X ( finite or infinite), is a map: 
 
 $$G \times X  \rightarrow Y$$  
 such that, $$(g,x) \rightarrow g.x$$ where $$g \in G, x \in X$$  and it satisfies:  
 
-(1) $$g_1 . (g_2 . x) = (g_1 * g_2).x$$ ,  for $$g_1, g_2 \in G, x \in X$$  
-(2) $$e_g.x = x$$ for all $$x \in X$$ where $$e_g$$ is the identity of the group
+- $$g_1 . (g_2 . x) = (g_1 * g_2).x$$ ,  for $$g_1, g_2 \in G, x \in X$$  
+- $$e_g.x = x$$ for all $$x \in X$$ where $$e_g$$ is the identity of the group
 
-Based on condition (1) it can be said that group action is a group homomorphism.Let us take an example of set X={1,2,3,4} which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being {4,1,2,3}; a horizontal flip on X results in X being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as: 
+Based on the first it can be said that group action is a group homomorphism.Let us take an example of set X={1,2,3,4} which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being {4,1,2,3}; a horizontal flip on X results in X being permuted by (12)(34). The group action $$A$$ on $$D_4$$ can be written as: 
 $$A: D_4 \rightarrow S_4$$    
   
 In the coming subsections we  discuss *orbits* and *stablizers*. These are constructs that relate the structure of the group with the structure of the set they act upon.
@@ -183,26 +183,26 @@ Every group admits a *trivial representation* on every vector space which  sends
 Following subsections give examples of group representations
 
 ### 7.1 Permutation Representation
-Permuatation representation is a group homomorphism of $$S_n$$ to $$R^n$$ i.e.  
+Permuatation representation,$$r$$ is a group homomorphism of $$S_n$$ to $$R^n$$ i.e.  
 
-$$S_n \rightarrow GL(R^n)$$  
+$$ r: S_n \rightarrow GL(R^n)$$  
 
-For example for $$S_3$$, (12) can be represented as: 
-$$\begin{pmatrix}
+For example for $$S_3, (12) $$ can be represented as: 
+$$r=\begin{pmatrix}
 0 & 1 & 0 \\
 1 & 0 & 0 \\
 0 & 0 & 1 \end{pmatrix}$$
 
 ### 7.2 Left Regular Representation
 
-Left regular representation is a kind of permutation represenatation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g \* g_i$$ where i=1,2...,|G| is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:  
-$$G \rightarrow GL(F^{|G|})$$
+Left regular representation,r, is a kind of permutation representation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g \* g_i$$ where i=1,2...,|G| is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:  
+$$r: G \rightarrow GL(F^{\|G\|})$$
 
 ### 7.3 Alternating Representation of $$S_n$$
 
 Any transformation in $$S_n$$ can be formulated as a sequence of transpositions between two elements of a set. if the number of such transpositions is even, the transformation can  be represented +1 and if the number of transpositions is odd, the tranformation can be written as -1. More formally,  
-
-$$ S_n \rightarrow \{\pm 1 \}= GL(F)$$   
+  
+$$ r: S_n \rightarrow \{\pm 1 \}= GL(F)$$   
   
 Note, that this representation has a dimension 1. 
 
@@ -210,9 +210,9 @@ Note, that this representation has a dimension 1.
   
 $$Z_n$$ can be represented in 2 dimensions and visualized as two perpendicular axis rotating about the origin.
 The representation is therefore a homomorphism such that:  
-$$ S_n \rightarrow R^2 $$  
+$$ r: S_n \rightarrow R^2 $$  
 
-$$\begin{pmatrix}
+$$ r=\begin{pmatrix}
 cos(\frac{2\pi m}{n}) & -sin(\frac{2\pi m}{n})  \\
 sin(\frac{2\pi m}{n}) & cos(\frac{2\pi m}{n})  \end{pmatrix}$$
 
