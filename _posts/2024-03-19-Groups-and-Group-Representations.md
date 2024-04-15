@@ -2,7 +2,7 @@
 layout: post
 title: Basics of Groups and Group Representations
 permalink: /blog/group-representations/
-published: false
+published: true
 ---
 
 ## 1. Introduction
@@ -42,7 +42,7 @@ A ***Field*** is a set $$F$$ which is closed under two operations + and * such t
 
 The Quotient group $$(Z_n; +)$$ is the set of all congruence classes of $$Z$$ modulo n where a congruence class $$a \equiv Z \pmod{n}$$ is defined as:   
   
-$$\bar{a}$$ = a + nk where $$k \in Z$$
+$$\bar{a} = a + nk$$ where $$k \in Z$$
   
 There are always $$n-1$$ congruence classes for $$Z_n$$. For example:  
 $$Z_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
@@ -62,24 +62,17 @@ Consider two groups:
 - $$G(Z, +)$$: Infinite group of all integers  
 - $$H(Z/2Z, +)$$: Finite group of integers mod 2-{0, 1}   
 
-At the surface, these two groups seem to be complely different with no similarities. However, notice that:  
+At the surface, these two groups seem to be complely different with no similarities. However, closer examination of group $$G$$ reveals that:  
 $$G = \{ odd \} \cup  \{ even \}$$  
   
-It can also be seen that:  
+if we consider $$G$$ as a group with two kind of elements $$even$$ and $$odd$$ and compare it with $$H$$:
+    
+$$even + even = even$$ | $$0 + 0 \equiv   0 \pmod{2}$$ |
+$$even + odd  = odd$$  | $$0 + 1 \equiv   1 \pmod{2}$$  |
+$$odd + even  = odd$$  | $$1 + 0 \equiv   1 \pmod{2}$$ |
+$$odd + odd   = even$$  | $$1 + 1 \equiv   0 \pmod{2}$$ | 
   
-$$even + even = even$$  
-$$even + odd  = odd$$  
-$$odd + even  = odd$$  
-$$odd + odd   = even$$ 
-  
-Shifting the focus to group $$H$$:  
-  
-$$0 + 0 \equiv   0 \pmod{2}$$  
-$$0 + 1 \equiv   1 \pmod{2}$$  
-$$1 + 0 \equiv   1 \pmod{2}$$  
-$$1 + 1 \equiv   0 \pmod{2}$$  
-  
-Dividing two group G into two sets of even and odd integers, one can see that its behavior is similar to that of group H.   More formally, Let us consider a function $$f$$ :  
+we can see that its behavior of the two groups is very similar.   More formally, Let us consider a function $$f$$ :  
      
 $$f: Z \rightarrow Z/2Z$$  
   
@@ -170,7 +163,9 @@ such that, $$(g,x) \rightarrow g.x$$ where $$g \in G, x \in X$$  and it satisfie
 - $$g_1 . (g_2 . x) = (g_1 * g_2).x$$ ,  for $$g_1, g_2 \in G, x \in X$$  
 - $$e_g.x = x$$ for all $$x \in X$$ where $$e_g$$ is the identity of the group
 
-Based on the first it can be said that group action is a group homomorphism.Let us take an example of set X$$=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being $$\{4,1,2,3\}$$; a horizontal flip on X results in X being permuted by $$(12)(34)$$. The group action $$A$$ on $$D_4$$ can be written as:   
+Based on the first it can be said that group action is a group homomorphism.
+  
+Let us take an example of set X$$=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being $$\{4,1,2,3\}$$; a horizontal flip on X results in X being permuted by $$(12)(34)$$. The group action $$A$$ on $$D_4$$ can be written as:   
   
 $$A: D_4 \rightarrow S_4$$    
   
