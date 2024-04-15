@@ -67,21 +67,35 @@ At the surface, these two groups seem to be complely different with no similarit
 $$G = \{ odd \} \cup  \{ even \}$$  
   
 if we consider $$G$$ as a group with two kind of elements, $$even$$ and $$odd$$, and compare it with $$H$$:
-
- | Group $$G$$| Group $$H$$ | 
- | --------- | --------- | 
- | $$even + even = even$$ | $$0 + 0 \equiv   0 \pmod{2}$$ | 
- | $$even + odd  = odd$$  | $$0 + 1 \equiv   1 \pmod{2}$$ | 
- | $$odd + even  = odd$$  | $$1 + 0 \equiv   1 \pmod{2}$$ | 
- | $$odd + odd   = even$$  | $$1 + 1 \equiv   0 \pmod{2}$$ | 
-  
+ <table>
+   <tr>
+     <th>Group $$G$$</th>
+     <th>Group $$H$$</th>
+    </tr>
+    <tr>
+    <td> $$even + even = even$$</td>
+     <td>  $$0 + 0 \equiv   0 \pmod{2}$$</td>
+    </tr>
+    <tr>
+    <td> $$even + odd  = odd$$ </td>
+     <td> $$0 + 1 \equiv   1 \pmod{2}$$ </td>
+    </tr>
+    <tr>
+    <td> $$odd + even  = odd$$ </td>
+     <td> $$1 + 0 \equiv   1 \pmod{2}$$ </td>
+    </tr>
+    <tr>
+    <td> $$odd + odd   = even$$ </td>
+     <td> $$1 + 1 \equiv   0 \pmod{2}$$ </td>
+    </tr>
+  </table>
 we can see that its behavior of the two groups is very similar.   More formally, Let us consider a function $$f$$ :  
      
 $$f: Z \rightarrow Z/2Z$$  
   
 that maps each *even* element of G to $$0 \in H$$ and each *odd* element of G to $$1 \in H$$     
   
-if we apply $$f$$ to every element of G, we are able to see similarity between G and H.  
+If we apply $$f$$ to every element of G, we are able to see similarity between G and H.  
 #### 3.2.2 Generalization 
 In general, a function that given two groups $$(G,*)$$ and $$(H, \circ ) $$ maps every element of G to an element in H i.e. 
     
