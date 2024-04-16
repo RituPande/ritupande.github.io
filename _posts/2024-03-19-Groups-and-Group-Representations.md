@@ -111,8 +111,7 @@ A vector $$V \in R^n$$ can be written as a column vector with n-elements. A line
   
 $$T: R^n \rightarrow R^n$$   
 
-is a linear map defines where it sends the basis of V. The group of such linear maps that preserves the vector space of a vector for a given basis is called the group of linear transformation as is defined as $$GL(R^n)$$.This transformation is achieved by left multiplying an n x n matrix with the vector V. This implies that:  
-$$GL_n(R)$$ is isomorphic to $$GL(R^n)$$ for a given choice of basis. 
+is a linear map defines where it sends the basis of V. The group of such linear maps that preserves the vector space of a vector for a given basis is called the group of linear transformation as is defined as $$GL(R^n)$$.This transformation is achieved by left multiplying an n x n matrix with the vector V. This implies that $$GL_n(R)$$ is isomorphic to $$GL(R^n)$$ for a given choice of basis. 
   
 This is true for complex numbers as well.
 
