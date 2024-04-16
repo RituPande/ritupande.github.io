@@ -88,12 +88,12 @@ if $$f$$ is bijective then the groups are not just similar but identical. Such a
 
 ## 3. Transformation Groups
 
-To understand what a transformation group is, we need to clearly define a transformation
-A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* a set X.
+To understand what a transformation group is, we need to clearly define transformation.
+A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* a set $$X$$.
 
-Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of X forms a group under composition, whose identity element is the identity transformation $$e$$ fixing every element. Such a group is called **Aut X** or Automorphism of set X
+Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of $$X$$ forms a group under composition, whose identity element is the identity transformation $$e$$ fixing every element. Such a group is called **Aut X** or Automorphism of set $$X$$
 
-A ***transformation group*** is any subgroup of Aut X for some set X.
+A ***transformation group*** is any subgroup of Aut $$X$$ for some set $$X$$.
 
 It should be understood that every abstract groups is isomorphic to a transformation group.
 
