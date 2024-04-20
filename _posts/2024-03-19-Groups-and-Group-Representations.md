@@ -5,41 +5,41 @@ permalink: /blog/group-representations/
 published: true
 ---
 
-The natural world around us is rife with examples of transformations applied to objects that retain some underlying property of the object before and after the transformation. For example, rigid motions in 3D-space that preserve a particular molecule.   A simple example is rotation of a 2-D square ( in XY plane ) about the Z axis. A 0, 90, 180 and 270  degree rotation has no impact on the square shape and orientation.  Such transformations are called ***symmetries***.Two symmetries can be combined to form another symmetry and every symmetry has an opposite or inverse symmetry. For instance,  90 and 180 degree rotation can be combined to produce a 270 degree rotation that does not change a square. Also,a  rotation counterclockwise by 90 degrees can be undone by rotation clockwise by 90 degrees. ***Groups*** are a collection of transformations that preserve some underlying structure of a set to  which they are applied.
+The natural world around us is rife with examples of transformations applied to objects that retain some underlying property of the object before and after the transformation. For example, rigid motions in 3D-space that preserve a particular molecule.   A simple example is rotation of a 2-D square ( in $$XY$$ plane ) about the $$Z$$ axis. A 0, 90, 180 and 270  degree rotation has no impact on the square shape and orientation.  Such transformations are called ***symmetries***.Two symmetries can be combined to form another symmetry and every symmetry has an opposite or inverse symmetry. For instance,  90 and 180 degree rotation can be combined to produce a 270 degree rotation that does not change a square. Also,a  rotation counterclockwise by 90 degrees can be undone by rotation clockwise by 90 degrees. ***Groups*** are a collection of transformations that preserve some underlying structure of a set to  which they are applied.
 
 Historically, groups were not separate from their ***representation*** as a set of transformations. However, in the late nineteenth century Cayley formulated an ***abstract*** definition of a group that separated it from it from its representation as a group of transformations or ***tranformation groups*** . This enabled effective study of transformations which might drastically differ in how they are represented but in essence can be defined as the same generic abstract objects.  Representation theory aims to understand different ways in which  groups can be realized as linear transformations of a euclidean space.
 
 ## 1. How is group theory relevant in machine learning
 
-In machine leanring there are several tasks that require classification, prediction and detection of structured data. For classification it is requried that that the output of the model does not change with change in orientation of position of the strcutured data ( **invariance** ). For prediction and detection tasks, it is required that the output of the model changes in the same way as the input changes (**equivariance**). For instance, is a model that detect the co-ordinates of a person in a pitcure on the left. It should be able to detect the correct co-ordinates of the same person if the location of the person changes.   
+In machine leanring there are several tasks that require classification, prediction and detection of structured data. For classification it is requried that that the output of the model does not change with change in orientation or position of the strcutured data ( **invariance** ). For prediction and detection tasks, it is required that the output of the model changes in the same way as the change in input (**equivariance**). For instance,  a model that detect the co-ordinates of a person in a pitcure on the left, should be able to detect the correct co-ordinates of the same person if the location of the person changes.
 
 Traditionally, the way to achieve invariance in the output of the machine leaning model is data augmentmentation. This however has several disadvantages:  
 - This does not guarantee invariance as it is not possible to take into account every possible chaange in input data structure that should not impact thje model output via data augmentation.  
 - Data augmentation can significantly increase training time and resources.  
 - There is significant redundancy in features learned by the model.  
   
-What if the machine learning model learns features of the input data taking into account the underlying symmetries in the data? For example, CNNs have translational invariance and equivariance built in its model opeartions. Convolution operation ensures translational equivariance and pooling operations ensure invariance.  
+What if the machine learning model learns features of the input data taking into account the underlying symmetries in the data? For example, CNNs have translational invariance and equivariance built in its model opeartions. In CNNs, convolution operation ensures translational equivariance and pooling operation ensures translational invariance.  
    
 This is where group theory can help. If we know the underlying symmetries in the data, we can ensure that while designing the model, we use those operations ( tranformations) that preserve those underlying symmetries. This would ensure that we no longer need additional processes like data augmentation to achieve a more reliable model that is efficient to train.
  
 ## 2 Abstract Groups
-A ***Group*** is a set G which is closed under an operation ∗ (i.e., for any $$x, y \in  G, x ∗ y \in G $$) and satisfies the following properties:
--  Identity: There is an element e in G, such that for every $$x \in G, e ∗ x = x ∗ e = x$$.    
-- Inverse: For every x in G there is an element y ∈ G such that $$x ∗ y = y ∗ x = e$$ , where again e is the identity.
+A ***Group*** is a set $$G$$ which is closed under an operation $$∗$$ (i.e., for any $$x, y \in  G, x ∗ y \in G $$) and satisfies the following properties:
+-  Identity: There is an element $$e$$ in G, such that for every $$x \in G, e ∗ x = x ∗ e = x$$.    
+- Inverse: For every $$x$$ in G there is an element $$y \in G$$ such that $$x ∗ y = y ∗ x = e$$ , where $$e$$ is the identity.
 - Associativity: he following identity holds for every $$x, y, z \in G:x ∗ (y ∗ z) = (x ∗ y) ∗ z$$.  
 
 A group that is also commutative i.e.  for every $$x, y \in G: x ∗ y  = y ∗ z $$ is called an ***abelian*** group.
 
 A ***Subgroup*** is a subset of a group that also a group in its own right.
 
-A ***Field*** is a set $$F$$ which is closed under two operations + and * such that:    
-- $$F$$ is an abelian group under + and  
-- $$F$$ − {0} (the set F without the additive identity 0) is an abelian group under *.  
+A ***Field*** is a set $$F$$ which is closed under two operations $$+$$ and $$*$$ such that:    
+- $$F$$ is an abelian group under $$+$$ and  
+- $$F$$ − {0} (the set $$F$$ without the additive identity 0) is an abelian group under $$*$$.  
 
 ### 2.1 Examples of Abstract groups
 #### 2.1.1 Quotient Groups
 
-The Quotient group $$(Z_n; +)$$ is the set of all congruence classes of $$Z$$ modulo n where a congruence class $$a \equiv Z \pmod{n}$$ is defined as:   
+The Quotient group $$(Z_n; +)$$ is the set of all congruence classes of $$Z$$ modulo $$n$$ where a congruence class $$a \equiv Z \pmod{n}$$ is defined as:   
   
 $$\bar{a} = a + nk$$ where $$k \in Z$$
   
@@ -59,7 +59,7 @@ Special Linear Group $$SL_n(F)$$ is a subgroup of  $$GL_n(F)$$ with the determin
 Consider two groups:  
 
 - $$G(Z, +)$$: Infinite group of all integers  
-- $$H(Z/2Z, +)$$: Finite group of integers mod 2-{0, 1}   
+- $$H(Z/2Z, +)$$: Finite group of integers mod $$2:\{0, 1\}$$  
 
 At the surface, these two groups seem to be complely different with no similarities. However, closer examination of group $$G$$ reveals that:  
   
@@ -74,7 +74,7 @@ we can see that its behavior of the two groups is very similar.   More formally,
        
 $$f: Z \rightarrow Z/2Z$$  
     
-If we apply $$f$$ to every element of G, we are able to see similarity between G and H.  
+If we apply $$f$$ to every element of G, we can see that G and H are actually very similar.  
 #### 2.2.2 Generalization 
 In general, a function that given two groups $$(G,*)$$ and $$(H, \circ ) $$ maps every element of G to an element in H i.e. 
     
@@ -89,9 +89,9 @@ if $$f$$ is bijective then the groups are not just similar but identical. Such a
 ## 3. Transformation Groups
 
 To understand what a transformation group is, we need to clearly define transformation.
-A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* a set $$X$$.
+A ***transformation*** of a set X is a bijective self-map $$f : X \rightarrow X$$. i.e it is a function that when applied on a set returns the same set. A transformation is also  called a *permutation* of a set $$X$$.
 
-Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of bijection"). In other words, the collection of all transformations of $$X$$ forms a group under composition, whose identity element is the identity transformation $$e$$ fixing every element. Such a group is called **Aut X** or Automorphism of set $$X$$
+Two transformations can be composed to produce a third, and every transformation has an inverse transformation (this is essentially the meaning of _bijection_). In other words, the collection of all transformations of $$X$$ forms a group under composition, whose identity element is the identity transformation $$e$$ fixing every element. Such a group is called **Aut X** or Automorphism of set $$X$$
 
 A ***transformation group*** is any subgroup of Aut $$X$$ for some set $$X$$.
 
@@ -100,34 +100,34 @@ It should be understood that every abstract groups is isomorphic to a transforma
 ### 3.1 Examples of Transformation Groups
 
 #### 3.1.1. Dihedral group
-A Diheral group $$D_n$$ is a collection of symmetries of a regular n-gon (for any n > 3) forms the dihedral group $$D_n$$ under composition. It is easy to check that this group has exactly 2n elements: n rotations and n reflections. $$D_n$$ is non-abelian.  
+A collection of symmetries of a regular n-gon (for any n > 3) forms the dihedral group $$D_n$$ under composition. It is easy to check that this group has exactly 2n elements: n rotations and n reflections. $$D_n$$ is non-abelian.  
   
 For example, $$D_4$$, a group of all possible transformations of a square that ensures the same orientation and structure before and after the tranformations includes 8 elements: rotation by 0, 90, 180 and 270 dgrees, a horizontal flip ( or reflection ) and a vertical flip applied to each of the first four rotation transformations.   
 
 $$D_4$$ is isomorphic to $$Z/8Z$$. In general a dihedral group $$D_n$$ has 2n elements and is isomorphic to $$Z/2nZ$$ 
 #### 3.1.2. Groups of Linear tranformation
 
-A vector $$V \in R^n$$ can be written as a column vector with n-elements. A linear transformation:  
+A vector $$V \in R^n$$ can be written as a column vector with $$n$$-elements. A linear transformation:  
   
 $$T: R^n \rightarrow R^n$$   
 
-is a linear map defines where it sends the basis of V. The group of such linear maps that preserves the vector space of a vector for a given basis is called the group of linear transformation as is defined as $$GL(R^n)$$.This transformation is achieved by left multiplying an n x n matrix with the vector V. This implies that $$GL_n(R)$$ is isomorphic to $$GL(R^n)$$ for a given choice of basis. 
+is a linear map which defines where it sends the basis of V. The group of such linear maps that preserves the vector space of a vector for a given basis is called the group of linear transformation as is defined as $$GL(R^n)$$.This transformation is achieved by left multiplying an n x n matrix with the vector V. This implies that $$GL_n(R)$$ is isomorphic to $$GL(R^n)$$ for a given choice of basis. 
   
 This is true for complex numbers as well.
 
 #### 3.1.3.Symmetric Groups
-A symmetric group $$S_n$$ is the group of permutations of a set with n elements. No matter how one permutes the elements of a set, the set still remains the same. Hence, a symmetric group $$S_n$$ is a finite transformation group with n! elements.
-There are many notations for describing a permutation, but the most convinient and compact is the *cycle notation*. A transposition(swapping ) of elements of a set is represented as a tuple (s,d), where s is the element's source index and d is the destination index. A cycle is represented as a tuple of more than two elements.    
+A symmetric group $$S_n$$ is the group of permutations of a set with $$n$$ elements. No matter how one permutes the elements of a set, the set still remains the same. Hence, a symmetric group $$S_n$$ is a finite transformation group with n! elements.
+There are many notations for describing a permutation, but the most convinient and compact is the *cycle notation*. A transposition(swapping) of elements of a set is represented as a tuple (s,d), where s is the element's source index and d is the destination index. A cycle is represented as a tuple of more than two elements.    
   
 For example, Let $$S_4= \{1,2,3,4\}$$  
   
 1. Swapping the first two elements of the set is denoted as **(1,2)** which transforms $$S_4$$ to $$\{2,1,3,4\}$$.
   
-2. Next is we wish to move the resultant set such that element at indexes move as follows:  $$1 \rightarrow 2, 2 \rightarrow 3 , 3 \rightarrow 4, 4 \rightarrow 1$$, the transform  is denoted as $$(1,2,3,4)$$ which transforms the set resulting from transform in the first step to $$\{4,2,1,3\}$$.
+2. Next is we wish to move the resultant set such that element at indexes move as follows:  $$1 \rightarrow 2, 2 \rightarrow 3 , 3 \rightarrow 4, 4 \rightarrow 1$$, the transform  is denoted as $$(1,2,3,4)$$ which transforms the set resulting from transform in step 1 to $$\{4,2,1,3\}$$.
     
 3. Permutations can also be disjoint, for example $$(1,2)(3,4)$$ transforms the resultant set from step 2 to $$\{2,4,1,3\}$$. The notation $$(1,2)(3,4)$$, denotes that first transposition $$(1,2)$$ is performed and then $$(3,4)$$.
      
-4. Two permutations and be combined under the composition operator * to create a new permulation. The permutation are composed right to left. For example, Let $$S_4 = {1,2,3,4} , f = (1,2) , g=(2,3) $$. Then f * g applied to $$S_4$$ results in { 3,1,2,4}      
+4. Two permutations and be combined under the composition operator $$*$$ to create a new permulation. The permutation are composed right to left. For example, Let $$S_4 = {1,2,3,4} , f = (1,2) , g=(2,3) $$. Then f * g applied to $$S_4$$ results in { 3,1,2,4}      
   
 The identity element of $$S_n$$, is a fixed ordering of its element. Except for $$S_1$$ and $$S_2$$, all symmetric groups are non-abelien. Disjoint permutation however commute.
 
@@ -139,7 +139,7 @@ where  $$g \in G, h\in H$$
   
 i.e an ordered pair of every element of G and every element of H.  
   
-Such a direct product itself forms a group whose operator . is defined as:
+Such a direct product itself forms a group whose operator $$.$$ is defined as:
     
 $$ (g,h).(g',h') = (g*g', h \circ h') $$  
   
@@ -150,17 +150,20 @@ It should be noted that group products are not just limited to two groups. Produ
 Group created by a group product is abelian if all the participating groups in the product are abelian. If even a single participating group is non-abelian the group resuting from their product is non-abelian.
 
 ## 5. Group Actions
-An action of G on X is a way to assign to each g in G some transformation of X, compatibly with the group structure of G. Formally, A (left) action of a group $$(G,*)$$ on a set X ( finite or infinite), is a map:   
+An ***action*** of $$G$$ on any set $$X$$ is a way to assign to each g in G some transformation of $$X$$, compatibly with the group structure of G. Formally, A (left) action of a group $$(G,*)$$ on a set $$X$$ ( finite or infinite), is a map:   
   
 $$G \times X  \rightarrow Y$$  
 such that, $$(g,x) \rightarrow g.x$$ where $$g \in G, x \in X$$  and it satisfies:  
 
-- $$g_1 . (g_2 . x) = (g_1 * g_2).x$$ ,  for $$g_1, g_2 \in G, x \in X$$  
+- $$g_1 . (g_2 . x) = (g_1 * g_2).x$$ ,  for $$g_1, g_2 \in G, x \in X$$
+    
 - $$e_g.x = x$$ for all $$x \in X$$ where $$e_g$$ is the identity of the group
 
-Based on the first it can be said that group action is a group homomorphism.
+Based on the first condition it can be said that group action is a group homomorphism.
   
-Let us take an example of set X$$=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on X, $$r_1$$ ( rotation by 90 degrees) results in X being $$\{4,1,2,3\}$$; a horizontal flip on X results in X being permuted by $$(12)(34)$$. The group action $$A$$ on $$D_4$$ can be written as:   
+Let us understand using an example:  
+  
+Let set $$X=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on $$X$$, transformation $$r_1$$ ( rotation by 90 degrees), results in $$X$$ being $$\{4,1,2,3\}$$; a horizontal flip on X results in X being permuted by $$(12)(34)$$. The group action $$A$$ on $$D_4$$ can be written as:   
   
 $$A: D_4 \rightarrow S_4$$    
   
@@ -179,7 +182,7 @@ $$G_x=\{ g:g.x=x \}$$
 
 ## 6. Group Representations
 
-The goal of representation theory is to understand the dierent ways in which  groups can be  realized as transformation groups, primarily, as groups of linear transformations of euclidean space. More specifically, it is group homomorphism from an group G to the groups $$GL(V)$$ i.e.   
+The goal of representation theory is to understand the different ways in which  groups can be  realized as transformation groups, primarily, as groups of linear transformations of euclidean space. More specifically, it is group homomorphism from an group G to the groups $$GL(V)$$ i.e.   
   
 $$G \rightarrow GL(V)$$ 
   
@@ -208,7 +211,7 @@ $$r: G \rightarrow GL(F^{\|G\|})$$
 
 ### 6.3 Alternating Representation of $$S_n$$
 
-Any transformation in $$S_n$$ can be formulated as a sequence of transpositions between two elements of a set. if the number of such transpositions is even, the transformation can  be represented +1 and if the number of transpositions is odd, the tranformation can be written as -1. More formally,  
+Any transformation in $$S_n$$ can be formulated as a sequence of transpositions between two elements of a set. If the number of such transpositions is even, the transformation can  be represented +1 and if the number of transpositions is odd, the tranformation can be written as -1. More formally,  
   
 $$ r: S_n \rightarrow \{\pm 1 \}= GL(F)$$   
   
@@ -216,7 +219,7 @@ Note, that this representation has a dimension 1.
 
 ### 6.4 Representation of $$Z_n$$
   
-$$Z_n$$ can be represented in 2 dimensions and visualized as two perpendicular axis rotating about the origin.
+$$Z_n$$ can be represented in 2 dimensions and visualized as two perpendicular axis rotating about the origin. After $$n$$ equal rotations the axis comes back to its original position.  
 The representation is therefore a homomorphism such that:  
 $$ r: S_n \rightarrow R^2 $$  
 
