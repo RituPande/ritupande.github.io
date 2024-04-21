@@ -20,7 +20,7 @@ Traditionally, the way to achieve invariance in the output of the machine leanin
   
 What if the machine learning model learns features of the input data taking into account the underlying symmetries in the data? For example, CNNs have translational invariance and equivariance built in its model opeartions. In CNNs, convolution operation ensures translational equivariance and pooling operation ensures translational invariance.  
    
-This is where group theory can help. If we know the underlying symmetries in the data, we can ensure that while designing the model, we use those operations ( tranformations) that preserve those underlying symmetries. This would ensure that we no longer need additional processes like data augmentation to achieve a more reliable model that is efficient to train.
+This is where group theory can help. If we know the underlying symmetries in the data, we can ensure that while designing the model, we use those operations ( tranformations) that preserve those underlying symmetries. This would ensure that we no longer need additional processes like data augmentation to achieve a more reliable model that is efficient to train. Models that take care of handling underlying symmetries allow for greater weight sharing and learn more efficient feature representations by utilizing symmetries in  the input data.
  
 ## 2 Abstract Groups
 A ***Group*** is a set $$G$$ which is closed under an operation $$∗$$ (i.e., for any $$x, y \in  G, x ∗ y \in G $$) and satisfies the following properties:
@@ -163,7 +163,7 @@ Based on the first condition it can be said that group action is a group homomor
   
 Let us understand using an example:  
   
-Let set $$X=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on $$X$$, transformation $$r_1$$ ( rotation by 90 degrees), results in $$X$$ being $$\{4,1,2,3\}$$; a horizontal flip on X results in X being permuted by $$(12)(34)$$. The group action $$A$$ on $$D_4$$ can be written as:   
+Let $$X=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 1 to 4 starting with top right. When $$D_4$$ acts on $$X$$, transformation $$r_1$$ ( rotation by 90 degrees), results in $$X$$ being $$\{4,1,2,3\}$$; a horizontal flip on X results in X being permuted by $$(12)(34)$$. The group action $$A$$ on $$D_4$$ can be written as:   
   
 $$A: D_4 \rightarrow S_4$$    
   
@@ -232,7 +232,8 @@ where, $$m=\{1,2,3,...,n\}$$
 1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)    
 2. [Groups and their Representations](https://dept.math.lsa.umich.edu/~kesmith/rep.pdf)  
 3. [Socratica-Abstract Algebra Playlist](https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6)  
-4. [Representation of Finite Groups](https://www.youtube.com/watch?v=LaVmkzu9iK4)
+4. [Representation of Finite Groups](https://www.youtube.com/watch?v=LaVmkzu9iK4)  
+5. [Group Equivariant Deep Learning - Lecture 1.1](https://www.youtube.com/watch?v=z2OEyUgSH2c&list=PL8FnQMH2k7jzPrxqdYufoiYVHim8PyZWd)
 
 
 
