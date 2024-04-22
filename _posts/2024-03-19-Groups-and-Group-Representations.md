@@ -137,7 +137,7 @@ A ***lie*** or continous transformation group moves a point through a smooth man
 
 Let $$z \in S^1$$ such that $$z = cos(\theta) + sin (\theta)$$ and $$x \in C$$ then:  
 
-$$y=z.x$$ rotates x by $$\theta$$ along a continous circle with every change in the value of $$\theta$$.  
+$$y=z.x$$ rotates $$x$$ by $$\theta$$ along a continous circle with every change in the value of $$\theta$$.  
   
 Since, manifold of a lie group is smooth, it can be differentiated, integrated conviniently.  
 
