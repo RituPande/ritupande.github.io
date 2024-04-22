@@ -131,7 +131,17 @@ For example, Let $$S_4= \{1,2,3,4\}$$
   
 The identity element of $$S_n$$, is a fixed ordering of its element. Except for $$S_1$$ and $$S_2$$, all symmetric groups are non-abelien. Disjoint permutation however commute.
 
-## 4. Direct Product of Groups
+## 4. Continuous Transformation or Lie Groups
+
+A ***lie*** or continous transformation group moves a point through a smooth manifold (curve). An example of lie group in two  dimensions is a group of unit complex numbers: $$S^1$$$.  
+
+Let z \in $$S^1$$ such that z = cos(\theta) + sin (\theta) and $$x \in C$$ then:  
+
+$$y=z.x$$ rotates x by $$\theta$$ along a continous circle with every change in the value of $$\theta$$.  
+  
+Since, manifold of a lie group is smooth, it can be differentiated, integrated conviniently.  
+
+## 5. Direct Product of Groups
 The direct products of two groups $$(G,*)$$ and $$(H, \circ )$$ is a cartesian product, such that:  
     
 $$ G \times H: (g,h)$$
@@ -149,7 +159,7 @@ It should be noted that group products are not just limited to two groups. Produ
     
 Group created by a group product is abelian if all the participating groups in the product are abelian. If even a single participating group is non-abelian the group resuting from their product is non-abelian.
 
-## 5. Group Actions
+## 6. Group Actions
 An ***action*** of $$G$$ on any set $$X$$ is a way to assign to each g in G some transformation of $$X$$, compatibly with the group structure of G. Formally, A (left) action of a group $$(G,*)$$ on a set $$X$$ ( finite or infinite), is a map:   
   
 $$G \times X  \rightarrow Y$$  
@@ -168,19 +178,19 @@ Let $$X=\{1,2,3,4\}$$ which includes the labels of vertices of a square labeled 
 $$A: D_4 \rightarrow S_4$$    
   
 In the coming subsections we  discuss *orbits* and *stablizers*. These are constructs that relate the structure of the group with the structure of the set they act upon.
-### 5.1. Orbits
+### 6.1. Orbits
 
 Two points $$x,y \in X$$ acted on by a group $$G$$ are called G-equivalent if there is an element $$g \in G$$ such that when $$g$$ acts on $$x$$, it results in moving $$x$$ to $$y$$, i.e. $$y = gx$$. Note that G-equivalent is an equivalence relation. This results in the set $$X$$ being divided into equivalent classes where one class is all the points $$y$$, that can be reached by $$x$$ if every possible element of G acts on it. Each such class is called an ***Orbit***. We can formally denote orbit of $$x$$ as:  
   
 $$O_x = G.x$$
 
-### 5.2. Stablizers
+### 6.2. Stablizers
 
 All the elements of $$G$$ which do not move an element $$x \in X$$ when they act on it are called stablizers of $$x$$. Formally, stablizer of an element $$x \in X, G_x$$ is a subgroup of a group $$G$$, such that:   
   
 $$G_x=\{ g:g.x=x \}$$   
 
-## 6. Group Representations
+## 7. Group Representations
 
 The goal of representation theory is to understand the different ways in which  groups can be  realized as transformation groups, primarily, as groups of linear transformations of euclidean space. More specifically, it is group homomorphism from an group G to the groups $$GL(V)$$ i.e.   
   
@@ -191,7 +201,7 @@ Every group admits a *trivial representation* on every vector space which  sends
   
 Following subsections give examples of group representations
 
-### 6.1 Permutation Representation
+### 7.1 Permutation Representation
 Permuatation representation,$$r$$ is a group homomorphism of $$S_n$$ to $$R^n$$ i.e.  
 
 $$ r: S_n \rightarrow GL(R^n)$$  
@@ -203,13 +213,13 @@ $$r=\begin{pmatrix}
 1 & 0 & 0 \\
 0 & 0 & 1 \end{pmatrix}$$
 
-### 6.2 Left Regular Representation
+### 7.2 Left Regular Representation
 
 Left regular representation,r, is a kind of permutation representation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g * g_i$$ where $$i=1,2...,\|G\|$$ is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:  
   
 $$r: G \rightarrow GL(F^{\|G\|})$$
 
-### 6.3 Alternating Representation of $$S_n$$
+### 7.3 Alternating Representation of $$S_n$$
 
 Any transformation in $$S_n$$ can be formulated as a sequence of transpositions between two elements of a set. If the number of such transpositions is even, the transformation can  be represented +1 and if the number of transpositions is odd, the tranformation can be written as -1. More formally,  
   
@@ -217,7 +227,7 @@ $$ r: S_n \rightarrow \{\pm 1 \}= GL(F)$$
   
 Note, that this representation has a dimension 1. 
 
-### 6.4 Representation of $$Z_n$$
+### 7.4 Representation of $$Z_n$$
   
 $$Z_n$$ can be represented in 2 dimensions and visualized as two perpendicular axis rotating about the origin. After $$n$$ equal rotations the axis comes back to its original position.  
 The representation is therefore a homomorphism such that:  
@@ -228,7 +238,7 @@ cos(\frac{2\pi m}{n}) & -sin(\frac{2\pi m}{n})  \\
 sin(\frac{2\pi m}{n}) & cos(\frac{2\pi m}{n})  \end{pmatrix}$$
 
 where, $$m=\{1,2,3,...,n\}$$
-## 7. References
+## 8. References
 1. [The Very Basics of Group, Rings and Fields](https://www-users.cse.umn.edu/~brubaker/docs/152/152groups.pdf)    
 2. [Groups and their Representations](https://dept.math.lsa.umich.edu/~kesmith/rep.pdf)  
 3. [Socratica-Abstract Algebra Playlist](https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6)  
