@@ -243,7 +243,8 @@ where, $$m=\{1,2,3,...,n\}$$
 2. [Groups and their Representations](https://dept.math.lsa.umich.edu/~kesmith/rep.pdf)  
 3. [Socratica-Abstract Algebra Playlist](https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6)  
 4. [Representation of Finite Groups](https://www.youtube.com/watch?v=LaVmkzu9iK4)  
-5. [Group Equivariant Deep Learning - Lecture 1.1](https://www.youtube.com/watch?v=z2OEyUgSH2c&list=PL8FnQMH2k7jzPrxqdYufoiYVHim8PyZWd)
+5. [Group Equivariant Deep Learning - Lecture 1.1](https://www.youtube.com/watch?v=z2OEyUgSH2c&list=PL8FnQMH2k7jzPrxqdYufoiYVHim8PyZWd)  
+6. [Lie theory for Roboticist](https://www.youtube.com/watch?v=QR1p0Rabuww&t=1033s)  
 
 
 
