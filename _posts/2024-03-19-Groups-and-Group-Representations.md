@@ -133,7 +133,7 @@ The identity element of $$S_n$$, is a fixed ordering of its element. Except for 
 
 ## 4. Continuous Transformation or Lie Groups
 
-A ***lie*** or continous transformation group moves a point through a smooth manifold (curve). An example of lie group in two  dimensions is a group of unit complex numbers: $$S^1$$.  
+A ***lie*** or continous transformation group moves a point through a smooth manifold (curve). An example of lie group with one-dimensional manifold is a group of unit complex numbers: $$S^1$$.  
 
 Let $$z \in S^1$$ such that $$z = cos(\theta) + sin (\theta)$$ and $$x \in C$$ then:  
 
