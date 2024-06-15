@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basics of Groups and Group Representations
+title: Normal Groups and Quotient Groups
 permalink: /blog/normal-quotient-groups/
 published: false
 ---
