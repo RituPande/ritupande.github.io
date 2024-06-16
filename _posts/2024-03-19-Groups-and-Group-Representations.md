@@ -37,16 +37,8 @@ A ***Field*** is a set $$F$$ which is closed under two operations $$+$$ and $$*$
 - $$F$$ − {0} (the set $$F$$ without the additive identity 0) is an abelian group under $$*$$.  
 
 ### 2.1 Examples of Abstract groups
-#### 2.1.1 Quotient Groups
 
-The Quotient group $$(Z_n; +)$$ is the set of all congruence classes of $$Z$$ modulo $$n$$ where a congruence class $$a \equiv Z \pmod{n}$$ is defined as:   
-  
-$$\bar{a} = a + nk$$ where $$k \in Z$$
-  
-There are always $$n-1$$ congruence classes for $$Z_n$$. For example:  
-$$Z_7 = \{ 1, 2, 3, 4,5 , 6 \} $$
-
-#### 2.1.2 General Linear Groups and Special Linear Groups 
+#### 2.1.1 General Linear Groups and Special Linear Groups 
 
 General Linear Group $$GL_n(F)$$, is a non-abelian group of inveritible $$ n \times n $$ matrices under the operation $$*$$ where $$*$$ represents matrix multiplcation. Since the matrices in this group are invertible, the determinant of the matrices in the group is non-zero. The entries of the matrices can come from real the field of real numbers $$R$$, rational numbers $$Q$$, complex numbers $$C$$ and quotitent group $$Z_p$$
 
