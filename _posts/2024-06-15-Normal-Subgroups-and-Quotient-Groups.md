@@ -18,7 +18,12 @@ Note, that :
   
 ### 2. Normal Subgroups and quotient Groups
 
-Let $$(N,.)$$ be a subgroup of a group $$(G,.)$$, then $$N$$ is called a ***normal subgroup*** if the cosets it creates also form a group, called the ***quotient group***, with $$N$$ being the identity element of the group. Note, that the quotient group is not a subgroup of G but an entirely different group. A quotient group is denoted as $$G/N$$.
+Let $$(N,.)$$ be a subgroup of a group $$(G,.)$$, then $$N$$ is called a ***normal subgroup*** if the cosets it creates also form a group, called the ***quotient group***, with $$N$$ being the identity element of the group. Note, that the quotient group is not a subgroup of G but an entirely different group. A quotient group is denoted as $$G/N$$. 
+  
+Every subgroup is not a normal group. A subgroup is normal, if and only if, it is  invariant under conjugation by members of the group of which it is a part. More formally,   
+  
+if $$(N,.)$$ is a subgroup of $$(G,.)$$, then  N is a normal subgroup of G, if and only if,  
+$$g.N.g^{-1} \in N$$ for $$ g\in G  
 
 
   
