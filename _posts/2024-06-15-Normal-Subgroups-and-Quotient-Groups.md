@@ -16,5 +16,11 @@ Note, that :
 - a coset, barring the subgroup H is not a group, as it does not contain the identity element. The identity element is a part of the subgroup H.  
 - The cardinality of a coset is same as  the cardinality of the subgroup H.
   
+### 2. Normal Subgroups and quotient Groups
+
+Let $$(N,.)$$ be a subgroup of a group $$(G,.)$$, then $$N$$ is called a ***normal subgroup*** if the cosets it creates also form a group, called the ***quotient group***, with $$N$$ being the identity element of the group. Note, that the quotient group is not a subgroup of G but an entirely different group. A quotient group is denoted as $$G/N$$.
+
+
+  
     
 
