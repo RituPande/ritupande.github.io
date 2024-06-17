@@ -23,7 +23,7 @@ Let $$(N,.)$$ be a subgroup of a group $$(G,.)$$, then $$N$$ is called a ***norm
 Every subgroup is not a normal group. A subgroup is normal, if and only if, it is  invariant under conjugation by members of the group of which it is a part. More formally,   
   
 if $$(N,.)$$ is a subgroup of $$(G,.)$$, then  N is a normal subgroup of G, if and only if,  
-$$g.N.g^{-1} \in N$$ for $$ g\in G  
+$$g.N.g^{-1} \in N$$ for $$g\in G$$.  
 
 
   
