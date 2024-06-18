@@ -5,6 +5,10 @@ permalink: /blog/normal-subgroups-quotient-groups/
 published: false
 ---
 
+Groups, just like composite numbers, can be composed from other simpler groups. To study groups, mathematicians  break them up into smaller constituent groups, which are simpler, easier to understand and reveal a lot about the strcuture of the original group.  
+  
+Normal subgroups of a group allow partioning of the group into a smaller group, called the quotient group. In this post, we shall under understand normal groups and quotient groups in a detail.
+
 ## 1. Cosets
 To understand normal subgroups and quotient groups, we first need to understand the concept of *Cosets*. Cosets are one of the basic tools to study groups. Informally, if there is a subgroup (H,.) of a group (G,.), the subgroup H divides the group G into disjoint sets of cardinality equal to the size of the subgroup H.
   
