@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: Normal Subgroups and Quotient Groups
 permalink: /blog/normal-subgroups-quotient-groups/
@@ -60,12 +60,14 @@ $$y^{-1}.n_1.y = n_3.n_2^{-1}$$
 Since $$N$$ is a subgroup $$n_3.n_2^{-1}$$ is also in N. Let us call it $$n_4$$
 $$y^{-1}.n_1.y = n_4$$
   
-This implies that $$y^{-1}.n_1.y \in N$$ and is the condition for a subgroup to be normal. More formally,  
-
-A subgroup is normal, if and only if, it is  invariant under conjugation by members of the group of which it is a part. More formally,   
+This implies that $$y^{-1}.n_1.y \in N$$
+$$\implies y^{-1}.N.y \in N$$ .  
   
-if $$(N,.)$$ is a subgroup of $$(G,.)$$, then  N is a normal subgroup of G, if and only if,  
-$$g.N.g^{-1} \in N$$ for $$g\in G$$.  
+This is called a ***conjugate*** and is the condition that must be satisfied if a subgroup is  normal. 
+
+The reverse can also be proven i.e. if $$y^{-1}.N.y \in N$$, then $$N$$ must be a subgroup. 
+
+More formally, it can be stated that a subgroup is normal, if and only if, it is  invariant under conjugation by members of the group of which it is a part. 
 
 ### 2.1 Properties of a Normal Subgroup
 
