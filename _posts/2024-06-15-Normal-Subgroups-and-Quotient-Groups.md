@@ -79,6 +79,11 @@ if a subgroup $$(N,.)$$ of $$(G,.)$$ is normal, then:
 
 Every group $$(G,.)$$ has atleast two normal subgroups, the identity element $$e$$, and the group $$G$$ itself. If a group has only these two normal subgroups, then such a group is called a ***simple group***. Such groups form the building blocks of other groups.
 
+## 3. References
+1. [Wikipedia-Normal Subgroup](https://en.wikipedia.org/wiki/Normal_subgroup)  
+2. [Socratica-Normal Subgroups and Quotient Groups](https://youtu.be/vYKdh5oQ4Zw?si=Ec1FyITRZ1mOmois)  
+3. [Michael Penn-Normal Subgroups](https://www.youtube.com/watch?v=eK0lc7cOBkY)
+
   
     
 
