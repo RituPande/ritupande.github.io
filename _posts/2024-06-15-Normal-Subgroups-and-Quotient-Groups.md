@@ -1,4 +1,4 @@
----
+--
 layout: post
 title: Normal Subgroups and Quotient Groups
 permalink: /blog/normal-subgroups-quotient-groups/
@@ -22,13 +22,47 @@ Note, that :
   
 ## 2. Normal Subgroups and Quotient Groups
 
-Let $$(N,.)$$ be a subgroup of a group $$(G,.)$$, then $$N$$ is called a ***normal subgroup*** if the cosets it creates also form a group, called the ***quotient group***, $$(Q,*)$$ such that,  
+Let $$(N,.)$$ be a subgroup of a group $$(G,.)$$, then $$N$$ is called a ***normal subgroup*** if the cosets it creates also form a group, called the ***quotient group***, $$(Q,.)$$ such that,  
 - $$N$$ is the identity element of the group $$Q$$.  
-- $$x.N * y.N = x.y.N$$
+- $$x.N * y.N = x.y.N$$, where $$x.N $$ and $$y.N$$ are two elements of the quotient group.
     
 Note, that the quotient group is not a subgroup of G but an entirely different group. A quotient group is denoted as $$G/N$$. 
   
-Every subgroup is not a normal group. A subgroup is normal, if and only if, it is  invariant under conjugation by members of the group of which it is a part. More formally,   
+Every subgroup is not a normal group. There are certain conditions that must be met for a subgroup to divide its group into a quotient group. Let us try to derive these conditions:  
+  
+Let there be two cosets of the group $$G$$, $$x.N$$ and $$y.N$$. if these two are elements of a group $$(Q,*)$$, then,  
+it should be that $$x.N . y.N = x.y.N$$  
+    
+Let $$n_1, n_2 \in N$$, then 
+$$x.n_1 . y.n_2 = x.y.n_1.n_2$$
+  
+Since $$N$$ is a subgroup $$n_1.n_2$$ is also in N. Let us call it $$n_3$$
+$$x.n_1 . y.n_2 = x.y.n_3$$
+    
+Multiplying the equation on both sides by $$x^{-1}$$
+$$x^{-1}.x.n_1 . y.n_2 = x^{-1}.x.y.n_3$$
+  
+Since $$x^{-1}.x = e $$  
+$$n_1.y.n_2 = y.n_3$$
+  
+Multiplying the equation on both sides by $$y^{-1}$$  
+$$y^{-1}.n_1.y.n_2 = y^{-1}.y.n_3$$
+  
+Since $$y^{-1}.y = e $$  
+$$y^{-1}.n_1.y.n_2 = n_3$$
+  
+Multiplying the equation on both sides by $$n_2^{-1}$$  
+$$y^{-1}.n_1.y.n_2.n_2^{-1} = n_3.n_2^{-1}$$
+
+Since $$n_2^{-1}.n_2 = e $$  
+$$y^{-1}.n_1.y = n_3.n_2^{-1}$$
+  
+Since $$N$$ is a subgroup $$n_3.n_2^{-1}$$ is also in N. Let us call it $$n_4$$
+$$y^{-1}.n_1.y = n_4$$
+  
+This implies that $$y^{-1}.n_1.y \in N$$ and is the condition for a subgroup to be normal. More formally,  
+
+A subgroup is normal, if and only if, it is  invariant under conjugation by members of the group of which it is a part. More formally,   
   
 if $$(N,.)$$ is a subgroup of $$(G,.)$$, then  N is a normal subgroup of G, if and only if,  
 $$g.N.g^{-1} \in N$$ for $$g\in G$$.  
