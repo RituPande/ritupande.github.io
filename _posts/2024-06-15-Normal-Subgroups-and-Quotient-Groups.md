@@ -16,8 +16,8 @@ More formally,
 Let there be a Group $$(G,.)$$ which contains a subgroup $$(H,.)$$. Then for every element $$g \in G$$, the left coset is defined $$g.H$$ and the right coset is defined as $$H.g$$.  
   
 Note, that :
-- Subgroup H is also a left coset and right coset wherein $$g.H$$ and $$H.g$$, $$g $$ is the identity element of the subgroup G.
-- a coset, barring the subgroup H is not a group, as it does not contain the identity element. The identity element is a part of the subgroup H.  
+- Subgroup H is also a left coset and right coset wherein  $$g $$ is the identity element of the subgroup G.
+- A coset (barring the subgroup H), is not a group, as it does not contain the identity element. The identity element is only part of the subgroup H.  
 - The cardinality of a coset is same as  the cardinality of the subgroup H.
   
 ## 2. Normal Subgroups and Quotient Groups
