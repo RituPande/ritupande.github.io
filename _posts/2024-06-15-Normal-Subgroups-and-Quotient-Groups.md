@@ -2,7 +2,7 @@
 layout: post
 title: Normal Subgroups and Quotient Groups
 permalink: /blog/normal-subgroups-quotient-groups/
-published: false
+published: true
 ---
 
 Groups, just like composite numbers, can be composed from other simpler groups. To study groups, mathematicians  break them up into smaller constituent groups, which are simpler, easier to understand and reveal a lot about the structure of the original group.  
