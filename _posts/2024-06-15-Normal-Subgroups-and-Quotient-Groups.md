@@ -13,7 +13,7 @@ Normal subgroups of a group allow partioning of the group into a smaller group, 
 To understand normal subgroups and quotient groups, we first need to understand the concept of *Cosets*. Cosets are one of the basic tools to study groups. Informally, if there is a subgroup $$(H,.)$$ of a group $$(G,.)$$, the subgroup $$H$$ divides the group $$G$$ into disjoint sets of cardinality equal to the size of the subgroup H.
   
 More formally,      
-Let there be a Group $$(G,.)$$ which contains a subgroup $$(H,.)$$. Then for every element $$g \in G$$, the left coset is defined $$g.H$$ and the right coset is desined as $$H.g$$.  
+Let there be a Group $$(G,.)$$ which contains a subgroup $$(H,.)$$. Then for every element $$g \in G$$, the left coset is defined $$g.H$$ and the right coset is defined as $$H.g$$.  
   
 Note, that :
 - Subgroup H is also a left coset and right coset wherein $$g.H$$ and $$H.g$$, $$g $$ is the identity element of the subgroup G.
