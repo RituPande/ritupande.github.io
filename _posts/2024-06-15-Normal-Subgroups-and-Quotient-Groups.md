@@ -36,48 +36,48 @@ Every subgroup is not a normal group. There are certain conditions that must be 
 Let there be two cosets of the group $$G$$, $$x.N$$ and $$y.N$$. if these two are elements of a group $$(Q,.)$$, then,  
 it should be that $$x.N . y.N = x.y.N$$  
     
-Let $$n_1, n_2 \in N$$, then 
+Let $$n_1, n_2 \in N$$, then   
 $$x.n_1 . y.n_2 = x.y.n_1.n_2$$
   
-Since $$N$$ is a subgroup $$n_1.n_2$$ is also in N. Let us call it $$n_3$$
+Since $$N$$ is a subgroup $$n_1.n_2$$ is also in N. Let us call it $$n_3$$  
 $$x.n_1 . y.n_2 = x.y.n_3$$
     
-Multiplying the equation on both sides by $$x^{-1}$$
+Multiplying the equation on both sides by $$x^{-1}$$  
 $$x^{-1}.x.n_1 . y.n_2 = x^{-1}.x.y.n_3$$
   
-Since $$x^{-1}.x = e $$
+Since $$x^{-1}.x = e $$  
 $$n_1.y.n_2 = y.n_3$$
   
-Multiplying the equation on both sides by $$y^{-1}$$
+Multiplying the equation on both sides by $$y^{-1}$$  
 $$y^{-1}.n_1.y.n_2 = y^{-1}.y.n_3$$
   
-Since $$y^{-1}.y = e $$
+Since $$y^{-1}.y = e $$  
 $$y^{-1}.n_1.y.n_2 = n_3$$
   
-Multiplying the equation on both sides by $$n_2^{-1}$$
+Multiplying the equation on both sides by $$n_2^{-1}$$  
 $$y^{-1}.n_1.y.n_2.n_2^{-1} = n_3.n_2^{-1}$$
   
-Since $$n_2^{-1}.n_2 = e $$
+Since $$n_2^{-1}.n_2 = e $$  
 $$y^{-1}.n_1.y = n_3.n_2^{-1}$$
-    
-Since $$N$$ is a subgroup $$n_3.n_2^{-1}$$ is also in N. Let us call it $$n_4$$
+      
+Since $$N$$ is a subgroup $$n_3.n_2^{-1}$$ is also in N. Let us call it $$n_4$$  
 $$y^{-1}.n_1.y = n_4$$
   
-This implies that $$y^{-1}.n_1.y \in N$$
-$$\implies y^{-1}.N.y \in N$$ .  
-  
+This implies that $$y^{-1}.n_1.y \in N$$  
+$$\implies y^{-1}.N.y \in N$$
+    
 This operation is called a ***conjugate*** and is the condition that must be satisfied if a subgroup is  normal. 
-
+  
 The reverse can also be proven i.e. if $$y^{-1}.N.y \in N$$, then $$N$$ must be a subgroup.[2]
-
+  
 More formally, it can be stated that a subgroup is normal, if and only if, it is  invariant under conjugation by members of the group of which it is a part. 
 
 ### 2.2 Properties of a Normal Subgroup
 
 if a subgroup $$(N,.)$$ of $$(G,.)$$ is normal, then:  
 - The Left coset $$g.N$$ is equal to the right coset N.g, for $$g \in G$$
-- and $$(g.N)^{-1} = g^{-1}N$$
-
+- $$(g.N)^{-1} = g^{-1}N$$
+  
 ## 3. Simple Groups
 
 Every group $$(G,.)$$ has atleast two normal subgroups, the identity element $$e$$, and the group $$G$$ itself. If a group has only these two normal subgroups, then such a group is called a ***simple group***. Such groups form the building blocks of other groups.
