@@ -8,7 +8,7 @@ Technology principal, specializing in-end-to-end architecture for embedded conne
 I am also an independent researcher, collaborating with experts in academia. My research interests include:      
 - Graph Neural Networks
 - Group Convolutions
-- Self Organizing Systems
+- Self-Organizing Systems
 
 ### News
 
