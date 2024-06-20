@@ -3,9 +3,12 @@ layout: profile
 title: Ritu Pande
 ---
 
-Technology principal, specializing in applied cryptography, public key infrastructure and security architecture for connected embedded devices. Experience in technically building and grooming large teams to take a product/service from conceptualization to deployment.
+Technology principal, specializing in-end-to-end architecture for embedded connected devices. Extensive experience in applied cryptography and public key infrastructure. Deft in technically building and grooming large teams to take a product/service from its conceptualization to deployment.
 
-I am also an independent researcher, collaborating with experts in academia, to publish research in area of machine learning applied to biology/medicine.
+I am also an independent researcher, collaborating with experts in academia. My research interests include:      
+- Graph Neural Networks
+- Group Convolutions
+- Self Organizing Systems
 
 ### News
 
