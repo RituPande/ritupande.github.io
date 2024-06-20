@@ -76,7 +76,7 @@ More formally, it can be stated that a subgroup is normal, if and only if, it is
 
 if a subgroup $$(N,.)$$ of $$(G,.)$$ is normal, then:  
 - The Left coset $$g.N$$ is equal to the right coset N.g, for $$g \in G$$
-- $$(g.N)^{-1} = g^{-1}N$$
+- and $$(g.N)^{-1} = g^{-1}N$$
   
 ## 3. Simple Groups
 
