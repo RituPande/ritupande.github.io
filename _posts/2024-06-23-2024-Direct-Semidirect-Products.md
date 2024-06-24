@@ -30,7 +30,7 @@ Group created by a group product is abelian if all the participating groups in t
 
 **Examples: **   
 - $$(R^n, +) = (R,+) \times (R, +) \times ....\times (R,+)$$
-- $$(C, * )= = (R_+, *) \times S^1$$, where $$R_+$$= positive real numbers and  $$S^1$$ = unit circle
+- $$(C, * )=(R_+, *) \times S^1$$, where $$R_+$$= positive real numbers and  $$S^1$$ = unit circle
   
 
 ### 1.2. Internal Direct Product
