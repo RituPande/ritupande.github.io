@@ -9,7 +9,9 @@ Direct and Semidirect products are techniques to construct larger, more complex 
 
 ## 1. Direct Product
 
-The direct products of two groups $$(G,*)$$ and $$(H, \circ )$$ is a cartesian product, such that:  
+### 1.1. External Direct Product
+
+The external direct products of two groups $$(G,*)$$ and $$(H, \circ )$$ is a cartesian product, such that:  
     
 $$ G \times H: (g,h)$$
 where  $$g \in G, h\in H$$  
@@ -25,4 +27,9 @@ where $$(g,h),(g',h') \in G \times H$$
 It should be noted that group products are not just limited to two groups. Products can be performed on more than two groups or even infinite groups.   
     
 Group created by a group product is abelian if all the participating groups in the product are abelian. If even a single participating group is non-abelian the group resuting from their product is non-abelian.
+
+
+### 1.2. Internal Direct Product
+
+## 2. Semidirect Product
 
