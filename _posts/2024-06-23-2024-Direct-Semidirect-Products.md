@@ -28,9 +28,9 @@ It should be noted that group products are not just limited to two groups. Produ
     
 Group created by a group product is abelian if all the participating groups in the product are abelian. If even a single participating group is non-abelian the group resuting from their product is non-abelian.
 
-**Examples: **   
-- $$(R^n, +) = (R,+) \times (R, +) \times ....\times (R,+)$$
-- $$(C, * )=(R_+, *) \times S^1$$, where $$R_+$$= positive real numbers and  $$S^1$$ = unit circle
+**Examples:**   
+- Group of vector of real numbers $$(R^n, +) = (R,+) \times (R, +) \times ....\times (R,+)$$
+- Group of complex numbers $$(C, * )=(R_+, *) \times S^1$$, where $$R_+$$= positive real numbers and  $$S^1$$ = unit circle
   
 
 ### 1.2. Internal Direct Product
