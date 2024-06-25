@@ -35,6 +35,12 @@ We say  a group $$G$$ in the internal direct product of $$H$$ and $$K$$ i.e $$G 
 - $$H$$ and $$K$$ are normal subgroups of G
 - Every element of $$G$$ is composed by multiplication of an element of $$H$$ with and element of H i.e. $$G= HK$$
 - $$H$$ and $$K$$ have no common elements other than identity element. 
+  
+Note, that an internal direct product  is isomorphic to the external direct product, whenever it is possible to construct the internal direct product.
+
+### 1.3 Difference between external and internal direct product
+
+Elements of $$G$$ constructed using external direct porduct form  ordered pairs from component groups that can be completely unrelated. On the other hand, the groups involved in internal direct product should be normal subgroups of the group created after internal direct product.
 
 ### 1.3 Examples   
 - Group of vector of real numbers $$(R^n, +) = (R,+) \times (R, +) \times ....\times (R,+)$$
