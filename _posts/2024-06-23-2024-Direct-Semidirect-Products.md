@@ -49,8 +49,7 @@ The internal directproduct  $$H \times K = \{ e,  r,r^2, r^3, f, rf, r^2f, r^3,f
 
 ### 1.3 Difference between external and internal direct product
 
-Elements of $$G$$ constructed using external direct porduct form  ordered pairs from component groups that can be completely unrelated. On the other hand, the groups involved in internal direct product should be normal subgroups of the group created after internal direct product.
-
+Elements of $$G$$ constructed using external direct product form  ordered pairs. The component groups of an external direct product can be completely unrelated. On the other hand, the groups involved in internal direct product should be normal subgroups of the group created after internal direct product.
 
 ## 2. Semidirect Product
 
