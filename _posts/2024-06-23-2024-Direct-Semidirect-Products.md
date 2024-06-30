@@ -43,13 +43,21 @@ As in case of external direct product, internal direct product can be extended t
 Note, that an internal direct product  is isomorphic to the external direct product, whenever it is possible to construct the internal direct product.  
   
 **Examples:**  
-Generation of group $$D_4$$ from two normal subgroups $$H = \{e, r, r^3, f, rf, r^2f, r3^f \},  K={e, r^2 }$$, where $$r$$ representes rotation by 90 degrees and $$f$$ represnts flipping operation.
+Generation of group $$D_4$$ from two normal subgroups $$H = \{e, r, r^3, f, rf, r^2f, r3^f \},  K={e, r^2 }$$, where $$r$$ representes rotation by 90 degrees and $$f$$ represents flipping operation.
 
 The internal directproduct  $$H \times K = \{ e,  r,r^2, r^3, f, rf, r^2f, r^3,f \}=D_4 $$   
 
 ### 1.3 Difference between external and internal direct product
 
-Elements of $$G$$ constructed using external direct product form  ordered pairs. The component groups of an external direct product can be completely unrelated. On the other hand, the groups involved in internal direct product should be normal subgroups of the group created after internal direct product.
+A completely new group $$G$$  can be constructed using external direct product by taking ordered pairs of the component groups . The component groups of an external direct product can be completely unrelated. On the other hand, the components involved in internal direct product are normal subgroups of the group created after internal direct product.
 
 ## 2. Semidirect Product
+Semidirect product is a generalization of direct product. , instead of both  the subgroups involved in the product being normal only one of them is required to be normal.  
+  
+Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also, let $$\phi_h(n) be the conjugate action of subgroup $$H$$ on $$N$$, where $$h \in H,n in N$$. Since $$H$$ is a subgroup of $$G$$ , we know that  $$hNh^{-1} \in N$$. This implies that $$ phi$$ is a group homophormism from $$H$$ to $$Aut(N)$$. More formally,    
+$$ \phi: H \implies Aut(N) $$
+
+
+
+
 
