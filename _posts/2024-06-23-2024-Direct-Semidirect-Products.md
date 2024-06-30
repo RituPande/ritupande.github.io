@@ -27,7 +27,10 @@ where $$(g,h),(g',h') \in G \times H$$
 It should be noted that group products are not just limited to two groups. Products can be performed on more than two groups or even infinite groups.   
     
 Group created by a group product is abelian if all the participating groups in the product are abelian. If even a single participating group is non-abelian the group resuting from their product is non-abelian.
- 
+  
+ **Examples:**     
+- Group of vector of real numbers $$(R^n, +) = (R,+) \times (R, +) \times ....\times (R,+)$$
+- Group of complex numbers $$(C, * )=(R_+, *) \times S^1$$, where $$R_+$$= positive real numbers and  $$S^1$$ = unit circle
 
 ### 1.2. Internal Direct Product
 
@@ -35,16 +38,19 @@ We say  a group $$G$$ in the internal direct product of $$H$$ and $$K$$ i.e $$G 
 - $$H$$ and $$K$$ are normal subgroups of G
 - Every element of $$G$$ is composed by multiplication of an element of $$H$$ with and element of H i.e. $$G= HK$$
 - $$H$$ and $$K$$ have no common elements other than identity element. 
+
+As in case of external direct product, internal direct product can be extended to more than two subgroups.  
+Note, that an internal direct product  is isomorphic to the external direct product, whenever it is possible to construct the internal direct product.  
   
-Note, that an internal direct product  is isomorphic to the external direct product, whenever it is possible to construct the internal direct product.
+**Examples:**  
+Generation of group $$D_4$$ from two normal subgroups $$H = \{e, r, r^3, f, rf, r^2f, r3^f \},  K={e, r^2 }$$, where $$r$$ representes rotation by 90 degrees and $$f$$ represnts flipping operation.
+
+The internal directproduct  $$H \times K = \{ e,  r,r^2, r^3, f, rf, r^2f, r^3,f \}=D_4 $$   
 
 ### 1.3 Difference between external and internal direct product
 
 Elements of $$G$$ constructed using external direct porduct form  ordered pairs from component groups that can be completely unrelated. On the other hand, the groups involved in internal direct product should be normal subgroups of the group created after internal direct product.
 
-### 1.3 Examples   
-- Group of vector of real numbers $$(R^n, +) = (R,+) \times (R, +) \times ....\times (R,+)$$
-- Group of complex numbers $$(C, * )=(R_+, *) \times S^1$$, where $$R_+$$= positive real numbers and  $$S^1$$ = unit circle
 
 ## 2. Semidirect Product
 
