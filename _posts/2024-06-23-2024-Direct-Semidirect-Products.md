@@ -52,8 +52,11 @@ The internal directproduct  $$H \times K = \{ e,  r,r^2, r^3, f, rf, r^2f, r^3,f
 A completely new group $$G$$  can be constructed using external direct product by taking ordered pairs of the component groups . The component groups of an external direct product can be completely unrelated. On the other hand, the components involved in internal direct product are normal subgroups of the group created after internal direct product.
 
 ## 2. Semidirect Product
-Semidirect product is a generalization of direct product. , instead of both  the subgroups involved in the product being normal only one of them is required to be normal.  
-  
+Semidirect product is a generalization of direct product.Just like the direct product, there is an external semidirect product and internal semidirect product. 
+
+### 2.1 External Semidirect product
+### 2.2 Indirect Semidirect product
+
 Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also, let $$\phi_h(n) be the conjugate action of subgroup $$H$$ on $$N$$, where $$h \in H,n in N$$. Since $$H$$ is a subgroup of $$G$$ , we know that  $$hNh^{-1} \in N$$. This implies that $$ phi$$ is a group homophormism from $$H$$ to $$Aut(N)$$. More formally,    
 $$ \phi: H \implies Aut(N) $$
 
