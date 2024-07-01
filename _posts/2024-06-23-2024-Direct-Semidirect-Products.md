@@ -13,7 +13,7 @@ Direct and Semidirect products are techniques to construct larger, more complex 
 
 The external direct products of two groups $$(G,*)$$ and $$(H, \circ )$$ is a cartesian product, such that:  
     
-$$ G \times H: (g,h)$$
+$$G \times H: (g,h)$$
 where  $$g \in G, h\in H$$  
   
 i.e an ordered pair of every element of G and every element of H.  
@@ -58,7 +58,31 @@ Semidirect product is a generalization of direct product.Just like the direct pr
 ### 2.2 Indirect Semidirect product
 
 Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also, let $$\phi_h(n) be the conjugate action of subgroup $$H$$ on $$N$$, where $$h \in H,n in N$$. Since $$H$$ is a subgroup of $$G$$ , we know that  $$hNh^{-1} \in N$$. This implies that $$ phi$$ is a group homophormism from $$H$$ to $$Aut(N)$$. More formally,    
-$$ \phi: H \implies Aut(N) $$
+$$\phi: H \implies Aut(N)$$  
+
+Now, the inner semidirect product $$G  = N \rtimes H$$ is constructed of $$(n, h)$$ where $$n \in N, h \in H$$.  
+  
+Let $$(n_1, h_1) , (n_2, h_2) \in G$$    
+$$Then (n_1, h_1) . (n_2, h_2) = n_1.h_1.n_2.h_2 $$  
+
+Adding $$h_1^{-1}.h_1$$ to the R.H.S of equation as it is same as $$e$$  
+$$Then (n_1, h_1) . (n_2, h_2) = n_1.h_1.n_2.h_1^{-1}.h_1.h_2$$  
+
+Using group associativity:  
+$$Then (n_1, h_1) . (n_2, h_2) = n_1.(h_1.n_2.h_1^{-1}).h_1.h_2$$  
+
+Using definition of $$\phi_h(n)$$:  
+$$Then (n_1, h_1) . (n_2, h_2) = n_1.\phi_{h_1}(n_2)).h_1.h_2$$  
+
+This can be written as:  
+$$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$  
+
+This can be summarized into a formal definition:  
+
+
+
+
+
 
 
 
