@@ -79,11 +79,11 @@ $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$
 
 This can be summarized into a formal definition:  
 
-Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$\phi_h(n)$$ be group action of $$H$$ on $$N$$, such that,  $$\phi_h(n) : H \implies N$$, then the semidirect product $$G= N \rtimes$$ is the set of pairs  $$G' = \{ (n,h), n\in N , h \in H \} $$, such that,    
+Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$\phi_h(n)$$ be group action of $$H$$ on $$N$$, such that,  $$\phi_h(n) : H \implies N$$, then the semidirect product $$G'= N \rtimes$$ is the set of pairs  $$G' = \{ (n,h), n\in N , h \in H \} $$, such that,    
 - Group operation: $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$   
 - Identity element = $$(e,e)$$
 - Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
-
+- $$G'$$ is isomorphic to $$G$$ 
 
 
 
