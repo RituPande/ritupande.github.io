@@ -98,33 +98,35 @@ $$Z_2 = {0,1}$$
 Also we know that:  
 - $$g \in G, g=R^i. T^j , i \in Z_n, i \in Z_2$$   
 - $$T.R = R^{-1}.T$$
-
+  
 The action of group T on R via conjugation results in, $$ r^k \in R, k \in Z_n, t \in T$$ :  
 $$t.r^k.t^{-1}$$  
 $$r{-k}.t.t^{-1} = r^{-k}$$
-
-This gives us:
+   
+This gives us:  
 $$ \phi_t(R): T \implies Aut(R)$$  
 $$ \phi_t(r) = (-1)^t.r$$  
-
-Therefore, $$D_n = R \rtimes T$$
-
   
-
-  
-
-  
-
-
+Therefore, $$D_n = R \rtimes T$$  
 
 
 ### 2.2 External Semidirect product
 
-Let $$H$$ and $$K$$ be be any two groups and given $$\phi_h(K) : H \implies K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (h,k), k \in K , h \in H \} $$, such that,    
-- Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1.\phi_{k_1}(h_2)), (k_1.K_2)$$   
+Let $$(H,o)$$ and $$(K,.)$$ be be any two groups and given $$\phi_h(K) : H \implies K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (h,k), k \in K , h \in H \} $$, such that,    
+- Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1 o \phi_{k_1}(h_2)), (k_1.K_2)$$   
 - Identity element = $$(e,e)$$
-- Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}), h^{-1})$$
+- Inverse of $$(n,h) = (\phi_{h^{-1}}.(k^{-1}), h^{-1})$$
 
+### 2.2.1 Example: $$ T = V \rtimes GL(V)$$ 
+Let $$H = (V, +), K = GL(V, .), $$ 
+$$\phi_k(h):GL(V) \implies Aut(V)$$ 
+
+$$\phi_k(h) = A.v, A, B \in GL(V), v,w \in V$$  
+
+By definition of semidirect product:  
+$$(v, A).(w, B) =  (v + A.w, A.B)$$
+
+This group, $$T$$ constructed out of semidirect product of $$V$$ and $$GL(V)$$ is called a group of affine transformations.
 
 
 
