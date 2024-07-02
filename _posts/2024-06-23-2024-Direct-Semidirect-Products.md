@@ -52,10 +52,9 @@ The internal directproduct  $$H \times K = \{ e,  r,r^2, r^3, f, rf, r^2f, r^3,f
 A completely new group $$G$$  can be constructed using external direct product by taking ordered pairs of the component groups . The component groups of an external direct product can be completely unrelated. On the other hand, the components involved in internal direct product are normal subgroups of the group created after internal direct product.
 
 ## 2. Semidirect Product
-Semidirect product is a generalization of direct product.Just like the direct product, there is an external semidirect product and internal semidirect product. 
+Semidirect product is a generalization of direct product. Just like the direct product, the semidirect product can be external or internal
 
-### 2.1 External Semidirect product
-### 2.2 Indirect Semidirect product
+### 2.1 Indirect Semidirect product
 
 Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also, let $$\phi_h(n) be the conjugate action of subgroup $$H$$ on $$N$$, where $$h \in H,n in N$$. Since $$H$$ is a subgroup of $$G$$ , we know that  $$hNh^{-1} \in N$$. This implies that $$ phi$$ is a group homophormism from $$H$$ to $$Aut(N)$$. More formally,    
 $$\phi: H \implies Aut(N)$$  
@@ -79,13 +78,18 @@ $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$
 
 This can be summarized into a formal definition:  
 
-Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$\phi_h(n)$$ be group action of $$H$$ on $$N$$, such that,  $$\phi_h(n) : H \implies N$$, then the semidirect product $$G'= N \rtimes$$ is the set of pairs  $$G' = \{ (n,h), n\in N , h \in H \} $$, such that,    
+Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$\phi_h(n)$$ be group action of $$H$$ on $$N$$, such that,  $$\phi_h(n) : H \implies N$$, then the semidirect product $$G'= N \rtimes H$$ is the set of pairs  $$G' = \{ (n,h), n \in N , h \in H \} $$, such that,    
 - Group operation: $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$   
 - Identity element = $$(e,e)$$
 - Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
 - $$G'$$ is isomorphic to $$G$$ 
 
+### 2.2 External Semidirect product
 
+Let $$H$$ and $$K$$ be be any two groups and given $$\phi_h(K) : H \implies K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (k,h), k \in K , h \in H \} $$, such that,    
+- Group operation: $$(k_1, h_1) . (k_2, h_2) = (k_1.\phi_{h_1}(k_2)), (h_1.h_2)$$   
+- Identity element = $$(e,e)$$
+- Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
 
 
 
