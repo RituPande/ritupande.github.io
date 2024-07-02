@@ -84,7 +84,7 @@ Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$
 - Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
 - $$G'$$ is isomorphic to $$G$$ 
 
-### 2.1.1 Examples: Indirect Semidirect product
+### 2.1.1 Example: $$D_n = R \rtimes T$$
 Let $$G = D_n$$, be the diheral group, $$R$$ = group of rotations , and $$T$$ the group of relections.   
   
 It can be seen that,
