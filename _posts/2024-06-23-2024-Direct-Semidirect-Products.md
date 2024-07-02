@@ -90,7 +90,7 @@ Let $$G = D_n$$, be the diheral group, $$R$$ = group of rotations , and $$T$$ th
 It can be seen that,
 - $$R$$ is normal to $$D_n$$ 
 - $$R \cong Z_n$$  
-- $$$$T \cong Z_2$$  
+- $$T \cong Z_2$$  
   
 $$Z_n = \{0, 1, ..., n-1\}$$
 $$Z_2 = {0,1}$$
