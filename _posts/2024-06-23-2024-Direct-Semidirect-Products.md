@@ -99,7 +99,7 @@ Also we know that:
 - $$g \in G, g=R^i. T^j , i \in Z_n, i \in Z_2$$   
 - $$T.R = R^{-1}.T$$
 
-The action of group T on R via conjugation results in, $$ r^k \in R, k \in Z_n, t \in T :  
+The action of group T on R via conjugation results in, $$ r^k \in R, k \in Z_n, t \in T$$ :  
 $$t.r^k.t^{-1}$$  
 $$r{-k}.t.t^{-1} = r^{-k}$$
 
@@ -123,7 +123,7 @@ Therefore, $$D_n = R \rtimes T$$
 Let $$H$$ and $$K$$ be be any two groups and given $$\phi_h(K) : H \implies K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (h,k), k \in K , h \in H \} $$, such that,    
 - Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1.\phi_{k_1}(h_2)), (k_1.K_2)$$   
 - Identity element = $$(e,e)$$
-- Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
+- Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}), h^{-1})$$
 
 
 
