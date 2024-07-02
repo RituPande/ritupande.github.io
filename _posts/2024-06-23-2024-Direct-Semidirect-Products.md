@@ -99,7 +99,7 @@ Also we know that:
 - $$g \in G, g=R^i. T^j , i \in Z_n, i \in Z_2$$   
 - $$T.R = R^{-1}.T$$
   
-The action of group T on R via conjugation results in, $$ r^k \in R, k \in Z_n, t \in T$$ :  
+The action of group T on R via conjugation results in, $$r^k \in R, k \in Z_n, t \in T$$ :  
 $$t.r^k.t^{-1}$$  
 $$r{-k}.t.t^{-1} = r^{-k}$$
    
