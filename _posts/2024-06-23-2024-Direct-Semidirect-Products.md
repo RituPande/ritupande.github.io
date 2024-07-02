@@ -52,7 +52,7 @@ The internal directproduct  $$H \times K = \{ e,  r,r^2, r^3, f, rf, r^2f, r^3,f
 A completely new group $$G$$  can be constructed using external direct product by taking ordered pairs of the component groups . The component groups of an external direct product can be completely unrelated. On the other hand, the components involved in internal direct product are normal subgroups of the group created after internal direct product.
 
 ## 2. Semidirect Product
-Semidirect product is a generalization of direct product. Just like the direct product, the semidirect product can be external or internal
+Semidirect product is a generalization of direct product. While operation on the elements of the direct product has to be performed component-wise, elements of the semidirect product are constructed by interaction between the component groups. Just like the direct product, the semidirect product can be external or internal. There is a possibility to create a completely new group by applying external semi-direct product. However, in case of internal semidirect product, the resultant group is isomorphic to the group of which one of the components is a subgroup.
 
 ### 2.1 Indirect Semidirect product
 
@@ -90,6 +90,7 @@ Let $$H$$ and $$K$$ be be any two groups and given $$\phi_h(K) : H \implies K$$,
 - Group operation: $$(k_1, h_1) . (k_2, h_2) = (k_1.\phi_{h_1}(k_2)), (h_1.h_2)$$   
 - Identity element = $$(e,e)$$
 - Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
+
 
 
 
