@@ -84,10 +84,44 @@ Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$
 - Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
 - $$G'$$ is isomorphic to $$G$$ 
 
+### 2.1.1 Examples: Indirect Semidirect product
+Let $$G = D_n$$, be the diheral group, $$R$$ = group of rotations , and $$T$$ the group of relections.   
+  
+It can be seen that,
+- $$R$$ is normal to $$D_n$$ 
+- $$R \cong Z_n$$  
+- $$$$T \cong Z_2$$  
+  
+$$Z_n = \{0, 1, ..., n-1\}$$
+$$Z_2 = {0,1}$$
+  
+Also we know that:  
+- $$g \in G, g=R^i. T^j , i \in Z_n, i \in Z_2$$   
+- $$T.R = R^{-1}.T$$
+
+The action of group T on R via conjugation results in, $$ r^k \in R, k \in Z_n, t \in T :  
+$$t.r^k.t^{-1}$$  
+$$r{-k}.t.t^{-1} = r^{-k}$$
+
+This gives us:
+$$ \phi_t(R): T \implies Aut(R)$$  
+$$ \phi_t(r) = (-1)^t.r$$  
+
+Therefore, $$D_n = R \rtimes T$$
+
+  
+
+  
+
+  
+
+
+
+
 ### 2.2 External Semidirect product
 
-Let $$H$$ and $$K$$ be be any two groups and given $$\phi_h(K) : H \implies K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (k,h), k \in K , h \in H \} $$, such that,    
-- Group operation: $$(k_1, h_1) . (k_2, h_2) = (k_1.\phi_{h_1}(k_2)), (h_1.h_2)$$   
+Let $$H$$ and $$K$$ be be any two groups and given $$\phi_h(K) : H \implies K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (h,k), k \in K , h \in H \} $$, such that,    
+- Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1.\phi_{k_1}(h_2)), (k_1.K_2)$$   
 - Identity element = $$(e,e)$$
 - Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
 
