@@ -115,7 +115,7 @@ $$r^{-k}.t.t^{-1} = r^{-k}$$
 This gives us:  
 - Group homomorphism $$\phi_t(R): T \Rightarrow Aut(R)$$
     
-- Represented as $$\phi_t(r) = (-1)^t.r$$  
+- Represented as $$\phi_t(R) = (-1)^t.R$$  
   
 Therefore, $$D_n = R \rtimes T$$  
 
