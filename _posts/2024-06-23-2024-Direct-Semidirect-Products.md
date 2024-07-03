@@ -131,9 +131,7 @@ Let $$(H,o)$$ and $$(K,.)$$ be be any two groups and given $$\phi_h(K) : H \Righ
 
 ### 2.2.1 Example: $$ T = V \rtimes GL(V)$$ 
 Let $$H = (V, +), K = GL(V, .)$$  
-
 $$\phi_k(h):GL(V) \Rightarrow Aut(V)$$  
-  
 $$\phi_k(h) = A.v$$ where $$A, B \in GL(V), v,w \in V$$  
   
 By definition of semidirect product:  
