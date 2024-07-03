@@ -110,7 +110,7 @@ Also we know that:
   
 To find the function that constitutes group homomorphism from $$T \Rightarrow R$$, we consider the action of group $$T$$ on $$R$$ via conjugation.  The conjugation operation can be written as:   
 $$t.r^k.t^{-1}, $$  
-$$r{-k}.t.t^{-1} = r^{-k}$$
+$$r^{-k}.t.t^{-1} = r^{-k}$$
    
 This gives us:  
 - Group homomorphism $$\phi_t(R): T \Rightarrow Aut(R)$$
