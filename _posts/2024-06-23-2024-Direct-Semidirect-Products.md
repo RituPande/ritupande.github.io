@@ -98,20 +98,18 @@ It can be seen that,
     
 - $$T$$ is isomorphic  to Z_2 $$T \cong Z_2$$  
   
-$$Z_n = \{0, 1, ..., n-1\}$$
-$$Z_2 = {0,1}$$
   
 Also we know that:  
-- $$g \in G, g=R^i. T^j , i \in Z_n, i \in Z_2$$   
-- $$T.R = R^{-1}.T$$
+- Every element $$g \in G can be represented as $$g=R^i. T^j , i \in Z_n, j \in Z_2$$   
+- Every element g has a property $$T.R = R^{-1}.T$$
   
-The action of group T on R via conjugation results in, $$r^k \in R, k \in Z_n, t \in T$$ :  
-$$t.r^k.t^{-1}$$  
-$$r{-k}.t.t^{-1} = r^{-k}$$
+The action of group T on R via conjugation results in:   
+$$t.r^k.t^{-1},  $$r^k \in R, k \in Z_n$$  
+$$r{-k}.t.t^{-1} = r^{-k},  t \in T$$
    
 This gives us:  
-$$ \phi_t(R): T \implies Aut(R)$$  
-$$ \phi_t(r) = (-1)^t.r$$  
+$$ Group homomorphism \phi_t(R): T \implies Aut(R)$$  
+$$ Represented as \phi_t(r) = (-1)^t.r$$  
   
 Therefore, $$D_n = R \rtimes T$$  
 
