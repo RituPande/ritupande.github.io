@@ -122,7 +122,7 @@ Therefore, $$D_n = R \rtimes T$$
 ### 2.2 External Semidirect product
 
 Let $$(H,o)$$ and $$(K,.)$$ be be any two groups and given $$\phi_h(K) : H \Rightarrow K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (h,k), k \in K , h \in H \} $$, such that,    
-- Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1 \hspace{2} o \hspace{2} \phi_{k_1}(h_2)), (k_1.K_2)$$
+- Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1 \hspace{2pt} o \hspace{2pt} \phi_{k_1}(h_2)), (k_1.K_2)$$
   
 - Identity element = $$(e,e)$$
     
