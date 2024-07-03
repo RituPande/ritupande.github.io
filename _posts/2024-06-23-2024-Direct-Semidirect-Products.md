@@ -108,8 +108,8 @@ $$t.r^k.t^{-1}, $$
 $$r{-k}.t.t^{-1} = r^{-k}$$
    
 This gives us:  
-$$ Group homomorphism \phi_t(R): T \implies Aut(R)$$  
-$$ Represented as \phi_t(r) = (-1)^t.r$$  
+Group homomorphism $$\phi_t(R): T \implies Aut(R)$$  
+Represented as $$ \phi_t(r) = (-1)^t.r$$  
   
 Therefore, $$D_n = R \rtimes T$$  
 
