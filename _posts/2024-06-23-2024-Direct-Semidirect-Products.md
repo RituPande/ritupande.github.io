@@ -100,12 +100,12 @@ It can be seen that,
   
   
 Also we know that:  
-- Every element $$g \in G can be represented as $$g=R^i. T^j , i \in Z_n, j \in Z_2$$   
-- Every element g has a property $$T.R = R^{-1}.T$$
+- Every element $$g \in G$$ can be represented as $$g=r^i. t^j$$ where $$r^i \in R, t^j in T, i \in Z_n, j \in Z_2$$   
+- Every element g has a property $$t.r = r^{-1}.t$$
   
 The action of group T on R via conjugation results in:   
-$$t.r^k.t^{-1},  $$r^k \in R, k \in Z_n$$  
-$$r{-k}.t.t^{-1} = r^{-k},  t \in T$$
+$$t.r^k.t^{-1}, $$  
+$$r{-k}.t.t^{-1} = r^{-k}$$
    
 This gives us:  
 $$ Group homomorphism \phi_t(R): T \implies Aut(R)$$  
