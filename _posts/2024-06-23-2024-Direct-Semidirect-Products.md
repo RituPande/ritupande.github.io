@@ -82,6 +82,7 @@ $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$
 This can be summarized into a formal definition:  
 
 Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$\phi_h(n)$$ be group action of $$H$$ on $$N$$, such that,  $$\phi_h(n) : H \implies N$$, then the semidirect product $$G'= N \rtimes H$$ is the set of pairs  $$G' = \{ (n,h), n \in N , h \in H \} $$, such that,    
+
 - Group operation: $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$   
 - Identity element = $$(e,e)$$
 - Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
@@ -118,8 +119,10 @@ Therefore, $$D_n = R \rtimes T$$
 ### 2.2 External Semidirect product
 
 Let $$(H,o)$$ and $$(K,.)$$ be be any two groups and given $$\phi_h(K) : H \implies K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (h,k), k \in K , h \in H \} $$, such that,    
-- Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1 o \phi_{k_1}(h_2)), (k_1.K_2)$$   
+- Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1 o \phi_{k_1}(h_2)), (k_1.K_2)$$
+  
 - Identity element = $$(e,e)$$
+    
 - Inverse of $$(n,h) = (\phi_{h^{-1}}.(k^{-1}), h^{-1})$$
 
 ### 2.2.1 Example: $$ T = V \rtimes GL(V)$$ 
