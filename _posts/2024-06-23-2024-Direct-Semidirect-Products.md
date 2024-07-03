@@ -30,15 +30,18 @@ Group created by a group product is abelian if all the participating groups in t
   
  **Examples:**     
 - Group of vector of real numbers $$(R^n, +) = (R,+) \times (R, +) \times ....\times (R,+)$$
+    
 - Group of complex numbers $$(C, * )=(R_+, *) \times S^1$$, where $$R_+$$= positive real numbers and  $$S^1$$ = unit circle
 
 ### 1.2. Internal Direct Product
 
 We say  a group $$G$$ in the internal direct product of $$H$$ and $$K$$ i.e $$G = H \times K$$, if:  
 - $$H$$ and $$K$$ are normal subgroups of G
+    
 - Every element of $$G$$ is composed by multiplication of an element of $$H$$ with and element of H i.e. $$G= HK$$
+    
 - $$H$$ and $$K$$ have no common elements other than identity element. 
-
+  
 As in case of external direct product, internal direct product can be extended to more than two subgroups.  
 Note, that an internal direct product  is isomorphic to the external direct product, whenever it is possible to construct the internal direct product.  
   
@@ -60,19 +63,19 @@ Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also,
 $$\phi: H \implies Aut(N)$$  
 
 Now, the inner semidirect product $$G'  = N \rtimes H$$ is constructed as pairs $$(n, h)$$ where $$n \in N, h \in H$$.  Also, the group operation of this newly generated group can be found as follows:  
-  
+    
 Let $$(n_1, h_1) , (n_2, h_2) \in G$$    
-$$Then (n_1, h_1) . (n_2, h_2) = n_1.h_1.n_2.h_2 $$  
-
+Then $$(n_1, h_1) . (n_2, h_2) = n_1.h_1.n_2.h_2 $$  
+  
 Adding $$h_1^{-1}.h_1$$ to the R.H.S of equation as it is same as $$e$$  
-$$Then (n_1, h_1) . (n_2, h_2) = n_1.h_1.n_2.h_1^{-1}.h_1.h_2$$  
-
+$$(n_1, h_1) . (n_2, h_2) = n_1.h_1.n_2.h_1^{-1}.h_1.h_2$$  
+  
 Using group associativity:  
-$$Then (n_1, h_1) . (n_2, h_2) = n_1.(h_1.n_2.h_1^{-1}).h_1.h_2$$  
-
+$$(n_1, h_1) . (n_2, h_2) = n_1.(h_1.n_2.h_1^{-1}).h_1.h_2$$  
+  
 Using definition of $$\phi_h(n)$$:  
-$$Then (n_1, h_1) . (n_2, h_2) = n_1.\phi_{h_1}(n_2)).h_1.h_2$$  
-
+$$(n_1, h_1) . (n_2, h_2) = n_1.\phi_{h_1}(n_2)).h_1.h_2$$  
+  
 This can be written as:  
 $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$  
 
@@ -88,9 +91,11 @@ Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$
 Let $$G = D_n$$, be the diheral group, $$R$$ = group of rotations , and $$T$$ the group of relections.   
   
 It can be seen that,
-- $$R$$ is normal to $$D_n$$ 
-- $$R \cong Z_n$$  
-- $$T \cong Z_2$$  
+- $$R$$ is normal to $$D_n$$
+     
+- $$R$$ is isomorphic  to Z_n :$$R \cong Z_n$$
+    
+- $$T$$ is isomorphic  to Z_2 $$T \cong Z_2$$  
   
 $$Z_n = \{0, 1, ..., n-1\}$$
 $$Z_2 = {0,1}$$
@@ -119,13 +124,12 @@ Let $$(H,o)$$ and $$(K,.)$$ be be any two groups and given $$\phi_h(K) : H \impl
 
 ### 2.2.1 Example: $$ T = V \rtimes GL(V)$$ 
 Let $$H = (V, +), K = GL(V, .), $$ 
-$$\phi_k(h):GL(V) \implies Aut(V)$$ 
-
+$$\phi_k(h):GL(V) \implies Aut(V)$$  
 $$\phi_k(h) = A.v, A, B \in GL(V), v,w \in V$$  
-
+  
 By definition of semidirect product:  
 $$(v, A).(w, B) =  (v + A.w, A.B)$$
-
+  
 This group, $$T$$ constructed out of semidirect product of $$V$$ and $$GL(V)$$ is called a group of affine transformations.
 
 
