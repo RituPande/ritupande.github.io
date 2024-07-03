@@ -59,7 +59,7 @@ Semidirect product is a generalization of direct product. While operation on the
 
 ### 2.1 Indirect Semidirect product
 
-Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also, let $$\phi_h(n) be the conjugate action of subgroup $$H$$ on $$N$$, where $$h \in H,n in N$$. Since $$H$$ is a subgroup of $$G$$ , we know that  $$hNh^{-1} \in N$$. This implies that $$ phi$$ is a group homophormism from $$H$$ to $$Aut(N)$$. More formally,    
+Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also, let $$\phi_h(n)$$ be the conjugate action of subgroup $$H$$ on $$N$$, where $$h \in H,n in N$$. Since $$H$$ is a subgroup of $$G$$ , we know that  $$hNh^{-1} \in N$$. This implies that $$ phi$$ is a group homophormism from $$H$$ to $$Aut(N)$$. More formally,    
 $$\phi: H \implies Aut(N)$$  
 
 Now, the inner semidirect product $$G'  = N \rtimes H$$ is constructed as pairs $$(n, h)$$ where $$n \in N, h \in H$$.  Also, the group operation of this newly generated group can be found as follows:  
@@ -79,7 +79,7 @@ $$(n_1, h_1) . (n_2, h_2) = n_1.\phi_{h_1}(n_2)).h_1.h_2$$
 This can be written as:  
 $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$  
 
-This can be summarized into a formal definition:  
+This can be summarized into a formal **definition**:  
 
 Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$\phi_h(n)$$ be group action of $$H$$ on $$N$$, such that,  $$\phi_h(n) : H \implies N$$, then the semidirect product $$G'= N \rtimes H$$ is the set of pairs  $$G' = \{ (n,h), n \in N , h \in H \} $$, such that,    
 
