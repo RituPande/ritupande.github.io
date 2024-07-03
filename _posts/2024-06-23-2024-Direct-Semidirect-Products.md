@@ -60,7 +60,7 @@ Semidirect product is a generalization of direct product. While operation on the
 ### 2.1 Indirect Semidirect product
 
 Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also, let $$\phi_h(n)$$ be the conjugate action of subgroup $$H$$ on $$N$$, where $$h \in H,n in N$$. Since $$H$$ is a subgroup of $$G$$ , we know that  $$hNh^{-1} \in N$$. This implies that $$ phi$$ is a group homophormism from $$H$$ to $$Aut(N)$$. More formally,    
-$$\phi: H \implies Aut(N)$$  
+$$\phi: H \Righarrow Aut(N)$$  
 
 Now, the inner semidirect product $$G'  = N \rtimes H$$ is constructed as pairs $$(n, h)$$ where $$n \in N, h \in H$$.  Also, the group operation of this newly generated group can be found as follows:  
     
@@ -81,7 +81,7 @@ $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$
 
 This can be summarized into a formal **definition**:  
 
-Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$\phi_h(n)$$ be group action of $$H$$ on $$N$$, such that,  $$\phi_h(n) : H \implies N$$, then the semidirect product $$G'= N \rtimes H$$ is the set of pairs  $$G' = \{ (n,h), n \in N , h \in H \} $$, such that,    
+Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$\phi_h(n)$$ be group action of $$H$$ on $$N$$, such that,  $$\phi_h(n) : H \Rightarrow N$$, then the semidirect product $$G'= N \rtimes H$$ is the set of pairs  $$G' = \{ (n,h), n \in N , h \in H \} $$, such that,    
 
 - Group operation: $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$
     
@@ -107,12 +107,12 @@ Also we know that:
     
 - Every element g has a property $$t.r = r^{-1}.t$$
   
-To find the function that constitutes group homomorphism from $$T \implies R$$, we consider the action of group $$T$$ on $$R$$ via conjugation.  The conjugation operation can be written as:   
+To find the function that constitutes group homomorphism from $$T \Rightarrow R$$, we consider the action of group $$T$$ on $$R$$ via conjugation.  The conjugation operation can be written as:   
 $$t.r^k.t^{-1}, $$  
 $$r{-k}.t.t^{-1} = r^{-k}$$
    
 This gives us:  
-- Group homomorphism $$\phi_t(R): T \implies Aut(R)$$
+- Group homomorphism $$\phi_t(R): T \Rightarrow Aut(R)$$
     
 - Represented as $$\phi_t(r) = (-1)^t.r$$  
   
@@ -121,7 +121,7 @@ Therefore, $$D_n = R \rtimes T$$
 
 ### 2.2 External Semidirect product
 
-Let $$(H,o)$$ and $$(K,.)$$ be be any two groups and given $$\phi_h(K) : H \implies K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (h,k), k \in K , h \in H \} $$, such that,    
+Let $$(H,o)$$ and $$(K,.)$$ be be any two groups and given $$\phi_h(K) : H \Rightarrow K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (h,k), k \in K , h \in H \} $$, such that,    
 - Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1 o \phi_{k_1}(h_2)), (k_1.K_2)$$
   
 - Identity element = $$(e,e)$$
@@ -130,7 +130,7 @@ Let $$(H,o)$$ and $$(K,.)$$ be be any two groups and given $$\phi_h(K) : H \impl
 
 ### 2.2.1 Example: $$ T = V \rtimes GL(V)$$ 
 Let $$H = (V, +), K = GL(V, .), $$ 
-$$\phi_k(h):GL(V) \implies Aut(V)$$  
+$$\phi_k(h):GL(V) \Rightarrow Aut(V)$$  
 $$\phi_k(h) = A.v, A, B \in GL(V), v,w \in V$$  
   
 By definition of semidirect product:  
