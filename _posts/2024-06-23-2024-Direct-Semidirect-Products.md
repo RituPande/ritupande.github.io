@@ -59,7 +59,7 @@ Semidirect product is a generalization of direct product. While operation on the
 
 ### 2.1 Indirect Semidirect product
 
-Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also, let $$\phi_h(n)$$ be the conjugate action of subgroup $$H$$ on $$N$$, where $$h \in H,n in N$$. Since $$H$$ is a subgroup of $$G$$ , we know that  $$hNh^{-1} \in N$$. This implies that $$ phi$$ is a group homophormism from $$H$$ to $$Aut(N)$$. More formally,  
+Let $$N$$ and $$H$$ be two subgroups of a $$G$$ such that $$N$$ is normal. Also, let $$\phi_h(n)$$ be the conjugate action of subgroup $$H$$ on $$N$$, where $$h \in H,n \in N$$. Since $$H$$ is a subgroup of $$G$$ , we know that  $$hNh^{-1} \in N$$. This implies that $$\phi$$ is a group homophormism from $$H$$ to $$Aut(N)$$. More formally,  
   
 $$\phi: H \Rightarrow Aut(N)$$  
 
