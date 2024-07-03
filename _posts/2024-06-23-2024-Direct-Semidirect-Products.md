@@ -83,9 +83,12 @@ This can be summarized into a formal **definition**:
 
 Let $$N$$ and $$H$$ be two subgroups of $$G$$, with $$N$$ normal to $$G$$ and $$\phi_h(n)$$ be group action of $$H$$ on $$N$$, such that,  $$\phi_h(n) : H \implies N$$, then the semidirect product $$G'= N \rtimes H$$ is the set of pairs  $$G' = \{ (n,h), n \in N , h \in H \} $$, such that,    
 
-- Group operation: $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$   
+- Group operation: $$(n_1, h_1) . (n_2, h_2) = (n_1.\phi_{h_1}(n_2)), (h_1.h_2)$$
+    
 - Identity element = $$(e,e)$$
+    
 - Inverse of $$(n,h) = (\phi_{h^{-1}}(n^{-1}, h^{-1})$$
+    
 - $$G'$$ is isomorphic to $$G$$ 
 
 ### 2.1.1 Example: $$D_n = R \rtimes T$$
@@ -104,7 +107,7 @@ Also we know that:
     
 - Every element g has a property $$t.r = r^{-1}.t$$
   
-The action of group T on R via conjugation results in:   
+To find the function that constitutes group homomorphism from $$T \implies R$$, we consider the action of group $$T$$ on $$R$$ via conjugation.  The conjugation operation can be written as:   
 $$t.r^k.t^{-1}, $$  
 $$r{-k}.t.t^{-1} = r^{-k}$$
    
