@@ -94,9 +94,9 @@ Let $$G = D_n$$, be the diheral group, $$R$$ = group of rotations , and $$T$$ th
 It can be seen that,
 - $$R$$ is normal to $$D_n$$
      
-- $$R$$ is isomorphic  to Z_n :$$R \cong Z_n$$
+- $$R$$ is isomorphic  to $$Z_n$$ :$$R \cong Z_n$$
     
-- $$T$$ is isomorphic  to Z_2 $$T \cong Z_2$$  
+- $$T$$ is isomorphic  to $$Z_2$$ : $$T \cong Z_2$$  
   
   
 Also we know that:  
