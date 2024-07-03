@@ -122,16 +122,17 @@ Therefore, $$D_n = R \rtimes T$$
 ### 2.2 External Semidirect product
 
 Let $$(H,o)$$ and $$(K,.)$$ be be any two groups and given $$\phi_h(K) : H \Rightarrow K$$, then the semidirect product $$G'= H \rtimes K$$ is the set of pairs  $$G' = \{ (h,k), k \in K , h \in H \} $$, such that,    
-- Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1 o \phi_{k_1}(h_2)), (k_1.K_2)$$
+- Group operation: $$(h_1, k_1) . (h_2, k_2) = (h_1 \hspace{2} o \hspace{2} \phi_{k_1}(h_2)), (k_1.K_2)$$
   
 - Identity element = $$(e,e)$$
     
 - Inverse of $$(n,h) = (\phi_{h^{-1}}.(k^{-1}), h^{-1})$$
 
 ### 2.2.1 Example: $$ T = V \rtimes GL(V)$$ 
-Let $$H = (V, +), K = GL(V, .), $$ 
+Let $$H = (V, +), K = GL(V, .), $$  
+
 $$\phi_k(h):GL(V) \Rightarrow Aut(V)$$  
-$$\phi_k(h) = A.v, A, B \in GL(V), v,w \in V$$  
+$$\phi_k(h) = A.v$$ where $$A, B \in GL(V), v,w \in V$$  
   
 By definition of semidirect product:  
 $$(v, A).(w, B) =  (v + A.w, A.B)$$
