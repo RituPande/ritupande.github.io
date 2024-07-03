@@ -137,7 +137,7 @@ $$\phi_k(h) = A.v$$ where $$A, B \in GL(V), v,w \in V$$
 By definition of semidirect product:  
 $$(v, A).(w, B) =  (v + A.w, A.B)$$
   
-This group, $$T$$ constructed out of semidirect product of $$V$$ and $$GL(V)$$ is called a group of affine transformations.
+This group, $$T$$ constructed out of semidirect product of $$V$$ and $$GL(V)$$ is called a  **group of affine transformations**.
 
 
 
