@@ -140,10 +140,10 @@ $$(v, A).(w, B) =  (v + A.w, A.B)$$
 This group, $$T = V \rtimes GL(V)$$ constructed out of semidirect product of $$V$$ and $$GL(V)$$ is called a  **group of affine transformations**.
 
 ## 3. References
-1.[Yuly Billig:Direct and Semidirect Products of Groups](https://youtu.be/Vog1Kvr-u4A?si=U1CXIzbE1XcoUsyZ)  
+1.[Yuly Billig: Direct and Semidirect Products of Groups](https://youtu.be/Vog1Kvr-u4A?si=U1CXIzbE1XcoUsyZ)  
 2.[Kimberly Brehm: Abstract Algebra - 8.1 External Direct Products](https://youtu.be/v11oJwBxZpM?si=3BiH_MdoRkTbc7JM)  
 3.[Kimberly Brehm: Abstract Algebra - 9.3 Internal Direct Products](https://youtu.be/ZoPbDDuQTi4?si=EvgsaaYIGq2HqIjr)  
-4.[Wikipedia:Semidirect Product](https://en.wikipedia.org/wiki/Semidirect_product)  
+4.[Wikipedia: Semidirect Product](https://en.wikipedia.org/wiki/Semidirect_product)  
 
 
 
