@@ -8,3 +8,6 @@
   -  i.e a * x = C_a  x = C_x a.
   -  C_ab =  C_a * C_b
   -  C_a C_b = C_b C_a
+
+- A representation is said to be irreducible if all elements of rep(G)
+cannot be simultaneously block diagonalized.
