@@ -46,7 +46,7 @@ As in case of external direct product, internal direct product can be extended t
 Note, that an internal direct product  is isomorphic to the external direct product, whenever it is possible to construct the internal direct product.  
   
 **Examples:**  
-Generation of group $$D_4$$ from two normal subgroups $$H = \{e, r, r^3, f, rf, r^2f, r3^f \},  K={e, r^2 }$$, where $$r$$ representes rotation by 90 degrees and $$f$$ represents flipping operation.
+Generation of group $$D_4$$ from two normal subgroups $$H = \{e, r, r^3, f, rf, r^2f, r^3f \},  K=\{e, r^2 \}$$, where $$r$$ representes rotation by 90 degrees and $$f$$ represents flipping operation.
 
 The internal directproduct  $$H \times K = \{ e,  r,r^2, r^3, f, rf, r^2f, r^3,f \}=D_4 $$   
 
