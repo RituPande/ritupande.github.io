@@ -16,7 +16,7 @@ published: false
   -  C_ab =  C_a * C_b
   -  C_a C_b = C_b C_a
 
-- A representation is said to be irreducible if all elements of rep(G)
+- if XR = RX, then X has to some scalar multiple of identity matrix.
 cannot be simultaneously block diagonalized.
 
 - if a representation is irreducible it can only commute with identity matrix I
