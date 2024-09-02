@@ -16,5 +16,8 @@ published: false
   -  C_ab =  C_a * C_b
   -  C_a C_b = C_b C_a
 
+Schur's Lemma
+- The only relationship that can exist between who irredicuble repressentation is similarity
+  XR=R'X i.e. $$XRX^{-1} = R'$$  
 - If a matrix X commutes with all the matrices of a collection of irreducible matrices, i.e XR = RX, for all R's in the collection then it has to be a scalar multiple if identity matix I
 
