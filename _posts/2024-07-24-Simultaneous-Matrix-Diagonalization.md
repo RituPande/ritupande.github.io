@@ -11,10 +11,12 @@ published: false
 - The shift operator is in some sense the most fundamental circulant matrix
 - Circular convolution of two vectors a , v is defined as:
   a * v = circulant matrix(a) *v
-  -  Circular convolution is associative and commutatiev
+  -  Circular convolution is associative and commutative
   -  i.e a * x = C_a  x = C_x a.
   -  C_ab =  C_a * C_b
   -  C_a C_b = C_b C_a
 
 - A representation is said to be irreducible if all elements of rep(G)
 cannot be simultaneously block diagonalized.
+
+- if a representation is irreducible it can only commute with identity matrix I
