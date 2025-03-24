@@ -191,7 +191,13 @@ $$r=\begin{pmatrix}
 
 Left regular representation,r, is a kind of permutation representation that is achieved by action of a group $$(G,*)$$ on itself. i.e. $$g * g_i$$ where $$i=1,2...,\|G\|$$ is a permutation of elements of the group in G. This is self-evident as a group is closed under its operator. This representation can be formulated as:  
   
-$$r: G \rightarrow GL(F^{\|G\|})$$
+$$r: G \rightarrow GL(F^{\|G\|})$$  
+  
+A left regular represention $$L_g$$ transforms a function $$f$$ by transforming its domain via an inverse group action :
+$$L_gf(x) =  f(g^{-1} x)$$ where $$g \in G$$   
+  
+**Note**: Refer [7] to undertsand why $$g^-1$$ is used instead of $$g$$ 
+
 
 ### 6.3 Alternating Representation of $$S_n$$
 
@@ -219,6 +225,7 @@ where, $$m=\{1,2,3,...,n\}$$
 4. [Representation of Finite Groups](https://www.youtube.com/watch?v=LaVmkzu9iK4)  
 5. [Group Equivariant Deep Learning - Lecture 1.1](https://www.youtube.com/watch?v=z2OEyUgSH2c&list=PL8FnQMH2k7jzPrxqdYufoiYVHim8PyZWd)  
 6. [Lie theory for Roboticist](https://www.youtube.com/watch?v=QR1p0Rabuww&t=1033s)  
+7. [Action of Left Regular Representation](https://math.stackexchange.com/questions/4306729/a-question-about-left-regular-representation-why-do-we-need-to-take-the-inverse)  
 
 
 
