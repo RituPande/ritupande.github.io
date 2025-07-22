@@ -5,7 +5,7 @@ permalink: /blog/simultaneous-matrix-/
 published: false
 ---
 
-Matrix diagonalization playes an important role in identifying irreducible representations from regular representation of group elements. But before delving into simultaneous diagnolization of regular matrix represenation of all elements of a group to find its irreducible representations, we briefly discuss how a single matrix can be diagnonalized, and when complete diagnozalization is not possible then block diagnonalize it.
+Matrix diagonalization plays an important role in identifying irreducible representations of a group its from regular representation. But before delving into simultaneous diagnolization of regular matrix represenation of all elements of a group to find its irreducible representations, we briefly discuss how a single matrix can be diagnonalized, and when complete diagnozalization is not possible, then block-diagnonalized.
 
 - A matrix is diagonalizable if it has full set of eignevectors i.e. an n x n eigenvector has n linearly independent eignevectors.
 - A group of matrices are simultaneouly diagnonalizable if they are individually diagonalizable and mutually commute.
@@ -21,5 +21,10 @@ Matrix diagonalization playes an important role in identifying irreducible repre
 Schur's Lemma
 - The only relationship that can exist between who irredicuble repressentation is similarity
   XR=R'X i.e. $$XRX^{-1} = R'$$  
-- If a matrix X commutes with all the matrices of a collection of irreducible matrices, i.e XR = RX, for all R's in the collection then it has to be a scalar multiple if identity matix I
+- If a matrix X commutes with all the matrices of a collection of irreducible matrices, i.e XR = RX, for all R's in the
+-  collection then it has to be a scalar multiple if identity matix I
 
+
+https://www.youtube.com/watch?v=SsCiQym5yQU&t=664s
+
+https://www.youtube.com/watch?v=SsCiQym5yQU&t=664s
