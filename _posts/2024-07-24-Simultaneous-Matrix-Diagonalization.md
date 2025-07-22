@@ -5,6 +5,8 @@ permalink: /blog/simultaneous-matrix-/
 published: false
 ---
 
+Matrix diagonalization playes an important role in identifying irreducible representations from regular representation of group elements. But before delving into simultaneous diagnolization of regular matrix represenation of all elements of a group to find its irreducible representations, we briefly discuss how a single matrix can be diagnonalized, and when complete diagnozalization is not possible then block diagnonalize it.
+
 - A matrix is diagonalizable if it has full set of eignevectors i.e. an n x n eigenvector has n linearly independent eignevectors.
 - A group of matrices are simultaneouly diagnonalizable if they are individually diagonalizable and mutually commute.
 - The shift operator and its adjoint commute with ciruclant matrices. Rather it can be said that a matrix is circulant iff it communtes with the shift operator
