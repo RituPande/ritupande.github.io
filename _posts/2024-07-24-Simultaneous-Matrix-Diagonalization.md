@@ -6,21 +6,42 @@ published: false
 ---
 
 Matrix diagonalization plays an important role in identifying irreducible representations of a group its from regular representation. But before delving into simultaneous diagnolization of regular matrix represenation of all elements of a group to find its irreducible representations, we briefly discuss how a single matrix can be diagnonalized, and when complete diagnozalization is not possible, then block-diagnonalized.
-  
+
+## Diagnonalization of a Single Matrix
 Let  matrix $$A$$ be a $$n x n$$ matrix, which has following eigenvalues:  
 -  $$m$$ distinct real eignevalues, $$\lambda_1, \lambda_2, \lambda_3, .... , \lambda_m$$  
 -  One complex conjugate pair, $$\lambda + i\omega, \lambda - i\omega$$  
 -  $$\mu$$ with algebraic and geometric mutiplicity  2, s.t. $$(A- \mu I)$$ has a 2D NULL space.  
 -  $$\gamma$$ with algebraic multiplicity 2 and geometric mutiplicity  1, s.t. $$(A- \gamma I)$$ has a 1D NULL space.
 
-Then A can be block diagnonalized as follows:  
+Then A can be block diagnonalized as follows [1]:  
 
+$$A =
+\begin{bmatrix}
+\begin{bmatrix}
+\lambda_1 & 0 & \cdots & 0 \\
+0 & \lambda_2 & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & \lambda_m
+\end{bmatrix} & 0 & 0 & 0 \\
+0 & 
+\begin{bmatrix}
+\lambda & \omega \\
+-\omega & \lambda
+\end{bmatrix} & 0 & 0 \\
+0 & 0 & 
+\begin{bmatrix}
+\mu & 0 \\
+0 & \mu
+\end{bmatrix} & 0 \\
+0 & 0 & 0 & 
+\begin{bmatrix}
+\gamma & 1 \\
+0 & \gamma
+\end{bmatrix}
+\end{bmatrix}$$
 
-
-
- 
-
-
+## Simultaneous Diagnonalization of Matrices
 - A matrix is diagonalizable if it has full set of eignevectors i.e. an n x n eigenvector has n linearly independent eignevectors.
 - A group of matrices are simultaneouly diagnonalizable if they are individually diagonalizable and mutually commute.
 - The shift operator and its adjoint commute with ciruclant matrices. Rather it can be said that a matrix is circulant iff it communtes with the shift operator
@@ -39,6 +60,7 @@ Schur's Lemma
 -  collection then it has to be a scalar multiple if identity matix I
 
 
-https://www.youtube.com/watch?v=SsCiQym5yQU&t=664s
+## References
+1. [Block Diagnozalization](https://www.youtube.com/watch?v=SsCiQym5yQU)
 
-https://www.youtube.com/watch?v=SsCiQym5yQU&t=664s
+
