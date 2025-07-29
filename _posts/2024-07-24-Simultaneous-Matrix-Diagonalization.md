@@ -8,10 +8,10 @@ published: false
 Matrix diagonalization plays an important role in identifying irreducible representations of a group its from regular representation. But before delving into simultaneous diagnolization of regular matrix represenation of all elements of a group to find its irreducible representations, we briefly discuss how a single matrix can be diagnonalized, and when complete diagnozalization is not possible, then block-diagnonalized.
   
 Let  matrix $$A$$ be a $$n x n$$ matrix, which has following eigenvalues:  
--  $$m$$ Distinct real eignevalues, $$\lambda_1, \lambda_2, \lambda_3, .... , \lambda_m$$  
--  $$\lambda + i\omega, \lambda - i\omega$$  
--  $$\mu$$ times 2, s.t. $$(A- \mu I)$$ has a 2D NULL space.  
--  $$\gamma$$ times 2, s.t. $$(A- \gamma I)$$ has a 1D NULL space.
+-  $$m$$ distinct real eignevalues, $$\lambda_1, \lambda_2, \lambda_3, .... , \lambda_m$$  
+-  One complex conjugate pair, $$\lambda + i\omega, \lambda - i\omega$$  
+-  $$\mu$$ with algebraic and geometric mutiplicity  2, s.t. $$(A- \mu I)$$ has a 2D NULL space.  
+-  $$\gamma$$ with algebraic multiplicity 2 and geometric mutiplicity  1, s.t. $$(A- \gamma I)$$ has a 1D NULL space.
 
 Then A can be block diagnonalized as follows:  
 
