@@ -11,8 +11,8 @@ Matrix diagonalization plays an important role in identifying irreducible repres
 Let  matrix $$A$$ be a $$n x n$$ matrix, which has following eigenvalues:  
 -  $$m$$ distinct real eignevalues, $$\lambda_1, \lambda_2, \lambda_3, .... , \lambda_m$$  
 -  One complex conjugate pair, $$\lambda + i\omega, \lambda - i\omega$$  
--  $$\mu$$ with algebraic and geometric mutiplicity  2, s.t. $$(A- \mu I)$$ has a 2D NULL space.  
--  $$\gamma$$ with algebraic multiplicity 2 and geometric mutiplicity  1, s.t. $$(A- \gamma I)$$ has a 1D NULL space.
+-  $$\mu$$ with algebraic and geometric mutiplicity  2, $$s.t. (A- \mu I)$$ has a 2-D NULL space.  
+-  $$\gamma$$ with algebraic multiplicity 2 and geometric mutiplicity  1, $$s.t. (A- \gamma I)$$ has a 1-D NULL space.
 
 Then A can be block diagnonalized as follows [1]:  
 
