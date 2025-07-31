@@ -42,8 +42,13 @@ $$A =
 \end{bmatrix}$$
 
 ## Simultaneous Diagnonalization of Matrices
-- A matrix is diagonalizable if it has full set of eignevectors i.e. an n x n eigenvector has n linearly independent eignevectors.
-- A group of matrices are simultaneouly diagnonalizable if they are individually diagonalizable and mutually commute.
+A question begs answering: Given a class of matrices or operators, is it possible that one could could find a transformation, a change of basis, in which their matrix representations all have the same structure such as diagonal or block diagonal?
+The answer is, yes. Based on our discussion of diagnonalizing a single matrix, we know that eignevectors can be used to diagnonalize a matrix. So if a group of matrices share a full set of eignevectors they can be simultaneously diagonalized.
+An equivalent condition is that a group of matrices can be simulataneously diagonalized if they are individually diagonalizable and mutually commute.
+
+Simulataneous diagonalization of matrix represenatation of group elements can be used to find irreducible representations of a group.
+
+
 - The shift operator and its adjoint commute with ciruclant matrices. Rather it can be said that a matrix is circulant iff it communtes with the shift operator
 - The shift operator is in some sense the most fundamental circulant matrix
 - Circular convolution of two vectors a , v is defined as:
