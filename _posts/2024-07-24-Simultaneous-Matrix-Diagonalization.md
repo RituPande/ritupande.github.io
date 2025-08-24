@@ -66,6 +66,6 @@ Schur's Lemma
 
 ## References
 1. [Block Diagnozalization](https://www.youtube.com/watch?v=SsCiQym5yQU)
-2. [Discovering Transforms: A Tutorial on Circulant Matrices, Circular Convolution, and the Discrete Fourier Transform] (https://arxiv.org/abs/1805.05533)
+2. [Discovering Transforms: A Tutorial on Circulant Matrices, Circular Convolution, and the Discrete Fourier Transform](https://arxiv.org/abs/1805.05533)
 
 
