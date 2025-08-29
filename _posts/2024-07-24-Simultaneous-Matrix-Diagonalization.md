@@ -8,7 +8,7 @@ published: false
 Matrix diagonalization plays an important role in identifying irreducible representations of a group its from regular representation. But before delving into simultaneous diagnolization of regular matrix represenation of all elements of a group, to find its irreducible representations, we briefly discuss how a single matrix can be diagnonalized. When complete diagonalization is not possible, then a matrix can still be block-diagnonalized.
 
 ## Diagnonalization of a Single Matrix
-Let  matrix $$A$$ be a $$n X n$$ matrix, which has following eigenvalues:  
+Let  matrix $$A$$ be a $$n \times n$$ matrix, which has following eigenvalues:  
 -  $$m$$ distinct real eignevalues, $$\lambda_1, \lambda_2, \lambda_3, .... , \lambda_m$$  
 -  One complex conjugate pair, $$\lambda + i\omega, \lambda - i\omega$$  
 -  $$\mu$$ with algebraic and geometric mutiplicity  2, $$s.t. (A- \mu I)$$ has a 2-D NULL space.  
