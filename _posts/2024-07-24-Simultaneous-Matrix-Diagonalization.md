@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simultaneous Matrix Diagonalization
-permalink: /blog/simultaneous-matrix-/
+permalink: /blog/simultaneous-matrix-diagonalization/
 published: true
 ---
 
