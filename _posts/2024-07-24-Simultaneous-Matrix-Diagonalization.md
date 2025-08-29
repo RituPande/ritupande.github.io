@@ -14,7 +14,7 @@ Let  matrix $$A$$ be a $$n \times n$$ matrix, which has following eigenvalues:
 -  $$\mu$$ with algebraic and geometric mutiplicity  2, $$s.t. (A- \mu I)$$ has a 2-D NULL space.  
 -  $$\gamma$$ with algebraic multiplicity 2 and geometric mutiplicity  1, $$s.t. (A- \gamma I)$$ has a 1-D NULL space.
 
-Then A can be block diagnonalized as follows [1]:  
+Then $$A$$ can be block diagnonalized as follows [1]:  
 
 $$A =
 \begin{bmatrix}
@@ -41,7 +41,7 @@ $$A =
 \end{bmatrix}
 \end{bmatrix}$$
 
-This is called Jordan canonical form of a square matrix.
+This is called ***Jordan canonical form*** of a square matrix.
 
 This implies that the a square matrix is fully diagonalizable, if the direct sum of its eigenspaces spans the whole vector space. i.e algeriac multiplicty of each eignevalue is equal to its geometric multiplicity. In cases where this condition is not met, the matrix is still block diagnonalizable 
 
