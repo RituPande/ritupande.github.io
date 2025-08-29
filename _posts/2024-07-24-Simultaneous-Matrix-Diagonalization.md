@@ -41,29 +41,17 @@ $$A =
 \end{bmatrix}
 \end{bmatrix}$$
 
-This implies that the a matrix is fully diagonalizable, if has real and distinct eigenvectors. In case this condition cannot be met, the matrix can still be block diagonalized
+This is called Jordan canonical form of a square matrix.
+
+This implies that the a matrix is fully diagonalizable, if the direct sum of its eigenspaces spans the whole vector space. i.e algeriac multiplicty of each eignevalue is equal to its geometric multiplicity. In cases where this condition is not met, the matrix is still block diagnonalizable 
 
 ## Simultaneous Diagnonalization of Matrices
 A question begs answering: Given a class of matrices or operators, is it possible that one could could find a transformation, a change of basis, in which their matrix representations all have the same structure such as diagonal or block diagonal?
-The answer is, yes. Based on our discussion of diagnonalizing a single matrix, we know that eignevectors can be used to diagnonalize a matrix. So if a group of matrices share a full set of eignevectors they can be simultaneously and fully diagonalized. An equivalent condition is that a group of matrices can be simulataneously diagonalized if they are individually diagonalizable and mutually commute.
+The answer is, yes. Based on our discussion of diagnonalizing a single matrix, we know that eignevectors can be used to diagnonalize a matrix. So if a group of matrices share a full set of eignevectors they can be simultaneously diagonalized/block diagnoalized. An equivalent condition is that a group of matrices can be simulataneously diagonalized if they are individually diagonalizable and mutually commute.
 
-Simulataneous diagonalization of matrix represenatation of group elements can be used to find irreducible representations of a group.
+Simulataneous diagonalization of matrix represenatation of group elements can be used to find irreducible representations of a group. This approach might work with groups having few elements with simple matrix represenations. However, this approach is not viable for any practical purposes.
 
-
-- The shift operator and its adjoint commute with ciruclant matrices. Rather it can be said that a matrix is circulant iff it communtes with the shift operator
-- The shift operator is in some sense the most fundamental circulant matrix
-- Circular convolution of two vectors a , v is defined as:
-  a * v = circulant matrix(a) *v
-  -  Circular convolution is associative and commutative
-  -  i.e a * x = C_a  x = C_x a.
-  -  C_ab =  C_a * C_b
-  -  C_a C_b = C_b C_a
-
-Schur's Lemma
-- The only relationship that can exist between who irredicuble repressentation is similarity
-  XR=R'X i.e. $$XRX^{-1} = R'$$  
-- If a matrix X commutes with all the matrices of a collection of irreducible matrices, i.e XR = RX, for all R's in the
--  collection then it has to be a scalar multiple if identity matix I
+This is where *Character Theory* steps in, and is the topic on our next post.
 
 
 ## References
