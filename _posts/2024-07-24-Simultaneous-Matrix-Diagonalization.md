@@ -43,7 +43,7 @@ $$A =
 
 This is called Jordan canonical form of a square matrix.
 
-This implies that the a matrix is fully diagonalizable, if the direct sum of its eigenspaces spans the whole vector space. i.e algeriac multiplicty of each eignevalue is equal to its geometric multiplicity. In cases where this condition is not met, the matrix is still block diagnonalizable 
+This implies that the a square matrix is fully diagonalizable, if the direct sum of its eigenspaces spans the whole vector space. i.e algeriac multiplicty of each eignevalue is equal to its geometric multiplicity. In cases where this condition is not met, the matrix is still block diagnonalizable 
 
 ## Simultaneous Diagnonalization of Matrices
 A question begs answering: Given a class of matrices or operators, is it possible that one could could find a transformation, a change of basis, in which their matrix representations all have the same structure such as diagonal or block diagonal?
