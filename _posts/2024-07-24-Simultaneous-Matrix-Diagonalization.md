@@ -51,7 +51,7 @@ The answer is, yes. Based on our discussion of diagnonalizing a single square ma
 
 A group of square matrices can be simulataneously diagonalized if they are individually diagonalizable and mutually commute. To understand this intuituvely, we must appretiate that diagnonal matrices always commute. Hence, they would commute in any basis.
 
-Simulataneous diagonalization of matrix represenatation of group elements can be used to find irreducible representations of a group. This approach might work with groups having few elements with simple matrix represenations. However, this approach is not viable for any practical purposes.
+Simulataneous diagonalization of matrix represenatation of group elements can be used to find irreducible representations of a group. This approach might work with groups having few elements with very simple matrix representations. However, this approach is not viable for any practical purposes.
 
 This is where *Character Theory* steps in, and is the topic on our next post.
 
