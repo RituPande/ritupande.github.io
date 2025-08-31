@@ -5,7 +5,7 @@ permalink: /blog/simultaneous-matrix-diagonalization/
 published: true
 ---
 
-Simultaneous diagonalization of a group of matrices plays an important role in identifying irreducible representations of a group from its regular representation. But before delving into simultaneous diagnolization of regular matrix represenation of all elements of a group, we briefly discuss how a single matrix can be diagnonalized.  
+Simultaneous diagonalization of a group of matrices plays an important role in identifying irreducible representations of a group from its regular representation. But before delving into simultaneous diagnolization of regular matrix represenation of all elements of a group, let us briefly discuss how a single matrix can be diagnonalized.  
   
 ## Diagnonalization of a Single Matrix
 Let  matrix $$A$$ be a $$n \times n$$ matrix, which has following eigenvalues:  
