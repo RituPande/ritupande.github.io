@@ -29,7 +29,11 @@ The character table encodes deep information:
 
 ### 1.1 Properties of the Character Table
 
-- The rows and columns of character table are orthogonal to each other. Mathematically:  
-   $$X_i * \overline{X_j} = 0 $$
+- The rows of a character table are orthogonal to each other. Mathematically:  
+   $$\frac{1}{|G|} \sum_{i=0}^{ncols} s_i*X_i^a * \overline{X_i^b} = 0$$
+  
+   where $$s_i$$ is the size of the conjugacy class corresponding to column $$i$$ and $$X_a , X_b$$ are two rows of the table.
+
+- The columns of a character table are also orthogonal to each other.
 
 - The first column of the character table, corresponds to the identity element and represents the dimensions of the irreducible representation in the corresponding row. 
