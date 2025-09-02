@@ -32,7 +32,7 @@ The character table encodes deep information:
 - The rows of a character table are orthogonal to each other. Mathematically:  
    $$\frac{1}{|G|} \sum_{i=0}^{ncols} s_i*X_i^a * \overline{X_i^b} = 0$$
   
-   where $$s_i$$ is the size of the conjugacy class corresponding to column $$i$$ and $$X_a , X_b$$ are two rows of the table.
+   where $$s_i$$ is the size of the conjugacy class corresponding to column $$i$$ , $$X_a , X_b$$ are two rows of the table and $$|G|$$ is the size of the group
 
 - The columns of a character table are also orthogonal to each other.
 
