@@ -18,7 +18,7 @@ A character table of a finite group $$G$$  is a square matrix where
 - Rows = the distinct irreducible characters of $$G$$  
 - Columns = the conjugacy classes of $$G$$  
   
-It is a grid collecting all irreducible characters of a group against its conjugacy classes. A character $$\Chi{X}_i(g)$$ is the trace of the irreducible representation $$\rho_i$$ in row $$i$$, of conjugacy class $$g$$
+It is a grid collecting all irreducible characters of a group against its conjugacy classes. A character $$X_i(g)$$ is the *trace* of the irreducible representation $$\rho_i$$ in row $$i$$, of conjugacy class $$g$$
 
 The character table encodes deep information:
 
@@ -28,3 +28,8 @@ The character table encodes deep information:
 - Helps decompose any representation into irreducibles.
 
 ### 1.1 Properties of the Character Table
+
+- The rows and columns of character table are orthogonal to each other. Mathematically:  
+   $$X_i * \overline{X_j} = 0 $$
+
+- The first column of the character table, corresponds to the identity element and represents the dimensions of the irreducible representation in the corresponding row. 
