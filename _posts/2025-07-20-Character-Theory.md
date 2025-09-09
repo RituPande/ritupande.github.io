@@ -36,4 +36,12 @@ The character table encodes deep information:
 
 - The columns of a character table are also orthogonal to each other.
 
-- The first column of the character table, corresponds to the identity element and represents the dimensions of the irreducible representation in the corresponding row. 
+- The first column of the character table, corresponds to the identity element and represents the dimensions of the irreducible representation in the corresponding row.
+    
+- Characters of two representations are same iff they are equivalent.
+    
+- The character table is a square matrix. The number of equivalence classes of a group is equal to the number of its irreducible represenatations
+
+- $$\sum d_i^2 = |G|$$ where $$d_i$$ is the dimension of an irreducible representation, $$\rho_i$$ of group G
+
+-     
