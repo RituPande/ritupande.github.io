@@ -5,13 +5,14 @@ permalink: /blog/character-theory/
 published: false
 ---
 
+## 1. Introduction
 Character theory is a tool in  representation theory that allows study group representations using functions rather than matrices. These functions called  ***characters***, are much easier to handle but still encode a large amount of structural information about the group and its representations. A character is a function that maps each element of a group to a real/complex number, such that, group elements that perform same action ( under different perspectives) are assigned the same value, allowing similar elements to be identified easily. This  set of similar elements is called a ***conjugacy class***.
 
 A conjugacy class is the group of elements that produce the SAME tranformation under differnet group perepectives (relabling of group elements) from group theoretic perepective,  or a different basis, from representation theoretic perspective.  In other words, a permutation (12) and (23) are same if the labeling of the elements in the group are changed. The permutation just swaps two numbers next to each other. Mathematically,  
   
 $$g$$ and $$h^{-1}gh$$ belong to the same conjugacy class for every $$g , h \in G$$ , where $$h^{-1}gh$$ is a similarity transform of $$g$$ within the group $$G$$  
 
-## 1. Character Table
+## 2. Character Table
 
 A character table of a finite group $$G$$  is a square matrix where
 
@@ -27,13 +28,17 @@ The character table encodes deep information:
 - Whether the group is abelian (all irreps are 1-dimensional).  
 - Helps decompose any representation into irreducibles.
 
-### 1.1 Properties of the Character Table
+### 2.1 Properties of the Character Table
 
 - The rows of a character table are orthogonal to each other. Mathematically:  
-   $$\frac{1}{|G|} \sum_{i=0}^{ncols} s_i*X_i^a * \overline{X_i^b} = 0$$
+   $$\frac{1}{|G|} \sum_{i=0}^{ncols} m_i*X_i^a * \overline{X_i^b} = 0$$              ...........................(1)
   
    where $$s_i$$ is the size of the conjugacy class corresponding to column $$i$$ , $$X_a , X_b$$ are two rows of the table and $$|G|$$ is the size of the group
 
+- The above relation provides a mechanism to calculate the multiplicity of an irreduicle representation in any given representation of a group element i.e.  
+  $$m_i = \frac{\sum_{i=0}^{ncols} X_i^a * \overline{X_i^b}}{|G|}$$                  ...........................(2)
+
+ 
 - The columns of a character table are also orthogonal to each other.
 
 - The first column of the character table, corresponds to the identity element and represents the dimensions of the irreducible representation in the corresponding row.
@@ -42,6 +47,30 @@ The character table encodes deep information:
     
 - The character table is a square matrix. The number of equivalence classes of a group is equal to the number of its irreducible represenatations
 
-- $$\sum d_i^2 = |G|$$ where $$d_i$$ is the dimension of an irreducible representation, $$\rho_i$$ of group G
+- $$\sum d_i^2 = |G|$$ where $$d_i$$ is the dimension of an irreducible representation, $$\rho_i$$ of group G ...........(3)
 
--     
+## 3. Finding Irreducible Representations
+
+As discussed in the preivous post, finding irreducible representations by simultaneous diagnonalization/ block diagonalization of matrices, is not possible for large groups with complex matrices. Character theory comes to the rescue here. Character theory can be used in two scenarios:  
+
+- We already know all the irreducible represenations of the group. We use the character table to decompose a reducible representation into its irreducible representations.
+
+- We do not know the irreducible represenations of a group and need to find them.
+
+### 3.1 Decompose a reducible representation of a group
+
+Let us assume we are given a reducible representation of a group and we wish to decompose it to its irreducible represenattion. If we already knwo the irreducible representations of the group:  
+
+1. We build the character table from the known irreducible representations  
+2. Use the formula from equation (2) to find the multiplicities of each irreducible representation in the given representation.  
+
+### 3.2 Finding irredicble representation of a group
+
+if we do not know irreducible represenatations of a group and wish to find them, we can do so by following stepes:  
+  
+1. Recall basic facts about like its order and congugacy classes and whether or not it is an abelian group.  
+2. Fine 1-D represenatation of the group like trivial and sign representations.  
+3. Use the sum of dimension squares formula ( eq 3) to find dimensions of other irreducible represenattions.  
+4. Use orthoganality to find characters for those irreducible representations, with the first character always being equal to the dimensions of the representation
+   
+
