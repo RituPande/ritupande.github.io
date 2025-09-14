@@ -69,8 +69,9 @@ Let us assume we are given a reducible representation of a group and we wish to 
 if we do not know irreducible represenatations of a group and wish to find them, we can do so by following stepes:  
   
 1. Recall basic facts about like its order and congugacy classes and whether or not it is an abelian group.  
-2. Fine 1-D represenatation of the group like trivial and sign representations.  
+2. Fine 1-D represenatation of the group. ( refer Appendix for details)
 3. Use the sum of dimension squares formula ( eq 3) to find dimensions of other irreducible represenattions.  
 4. Use orthoganality to find characters for those irreducible representations, with the first character always being equal to the dimensions of the representation
    
-
+4. # Appendix
+5. # References
