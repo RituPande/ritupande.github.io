@@ -69,9 +69,25 @@ Let us assume we are given a reducible representation of a group and we wish to 
 if we do not know irreducible represenatations of a group and wish to find them, we can do so by following stepes:  
   
 1. Recall basic facts about like its order and congugacy classes and whether or not it is an abelian group.  
-2. Fine 1-D represenatation of the group. ( refer Appendix for details)
-3. Use the sum of dimension squares formula ( eq 3) to find dimensions of other irreducible represenattions.  
-4. Use orthoganality to find characters for those irreducible representations, with the first character always being equal to the dimensions of the representation
+2. Fine 1-D represenatation of the group. ( refer Appendix for details)  
+3. Use the sum of dimension squares formula ( eq 3) to find dimensions of other irreducible represenattions.    
+4. Use orthoganality to find characters for those irreducible representations, with the first character always being equal to the dimensions of the representation  
    
-4. # Appendix
-5. # References
+# 4. Appendix
+
+## 4.1 Finding Character Table of Abelian Groups
+Every irreducible representation of a finite abelian group is 1-dimensional.  
+1. Every abelian group is a direct product of cylic groups. So as a first step we decompose a albelian group to its cyclic factors
+2. Assign roots of unity as generators of each cyclic factor.
+3. The 1-D representation of group elements are then calculated using these generators
+4. All combinations of  the characters of cyclic factors are taken to get the chactacer table of the original abelian group 
+
+Example:  
+1. $$Z_6 = Z_2 \times Z_3$$
+2. Generator for $$Z_2$$ can be mapped to 1 or -1, resulting in two possible characters, using each of these three generators
+3. Generator for $$Z_3$$ can be mapped to $$1, e^{2 *pi/3}, e^{4 *pi/3}$$ , resulting in three possible characters, using each of these three generators
+4. All characters for $$Z_6$$ can be found by taking direct product of chacters of $$Z_2$$ and $$Z_3$$
+
+## 4.2 Finding Character Table of non-Abelian Groups
+
+# 5. References
