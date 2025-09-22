@@ -82,7 +82,9 @@ The matrix entries of an irreducible represenatation $$\rho(g)$$  can be extract
 
    $$P^{(\alpha)} = \frac{d_{\alpha}}{G} \sum_{g \in G}\chi^{(\alpha)} (g^{-1}) M(g)$$
 
-3. Find basis vectors for the image of $$P^{(\alpha)}$$ whose number is equal to $$d_{\alpha}$$
+3. Find basis vectors for the image of $$P^{(\alpha)}$$ by applying it to standard basis vectors. Choose $$d_{\alpha}$$ vectors from them for further processing.
+   
+4. Project $$M(g)$$ of the $$d_{\alpha}$$ matrix formed using the basis vectors obtained in the previous step to get the irreducible matrix representation for each group element for character $$\alpha$$
 
 
 
