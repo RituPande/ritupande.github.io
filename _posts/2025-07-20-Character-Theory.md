@@ -105,9 +105,18 @@ Example:
 
 ## 4.2 Finding 1-D Characters of Finite Non-Abelian Groups
 
- Finite Non-Abelian Groups have higer dimensional represenatations than jusy 1-D representations. As stated above, to find all the characters, first we need to find the 1-D chaarcters and then use orthogonality and other properties of a character table to find the characters of higher dimensional representations.
+ Finite Non-Abelian Groups have higer dimensional represenatations than just 1-D representations. As stated above, to find all the characters, first we need to find the 1-D chaarcters and then use orthogonality and other properties of a character table to find the characters of higher dimensional representations.  
+  
+First, It must be understood that finding a 1-D group is same as finding all homomorphisms of the group, since for a 1-D character $$\chi$$,  
+$$\chi(gh) = \chi(g).\chi(h)$$  
+This is because a 1-D chaarcter is a scalar.  
+  
+Second, because a 1-D chaarcter is a scalar,  $$\chi(g).\chi(h)=\chi(h).\chi(g)$$ i.e. they always commute.  For a non-abelian group, 1-D characters only see those parts of the group that are ableian in nature.  
 
- 1. 
+Therefore to find 1-D characters of a non-abelian group, we must remove those aspects of the group that make the group non-commutative. if a group is communtiative, then for every element $$g$,h$$, $$ghg^{-1}h^{-1} = e$$. However, if they are  non-commutiative $$ghg^{-1}h^{-1}$$ gives a measure of the distance of non-commutativity.
+
+  
+
 
 
 # 5. References
