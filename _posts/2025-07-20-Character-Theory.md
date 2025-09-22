@@ -77,7 +77,7 @@ if we do not know irreducible represenatations of a group and wish to find them,
 
 The matrix entries of an irreducible represenatation $$\rho(g)$$  can be extracted from the characters as follows:
 
-1. Get the permutation matrix of the group elements
+1. Find the permutation matrices $$M$$ of the group elements
 2. Build projection operator for a character $$\alpha$$ using projection matrices $$M$$ in the following formula:
 
    $$P^{(\alpha)} = \frac{d_{\alpha}}{G} \sum_{g \in G}\chi^{(\alpha)} (g^{-1}) M(g)$$
