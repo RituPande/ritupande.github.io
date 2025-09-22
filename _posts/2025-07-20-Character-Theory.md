@@ -75,7 +75,16 @@ if we do not know irreducible represenatations of a group and wish to find them,
 
 ### 3.3 Finding Irredicble Representation Matrix from the Character Table
 
-The matrix entries of an irreducible represenatation $$\rho(g)$$  can be extracted from the characters using the formula:
+The matrix entries of an irreducible represenatation $$\rho(g)$$  can be extracted from the characters as follows:
+
+1. Get the permutation matrix of the group elements
+2. Build projection operator for a character $$\alpha$$ using projection matrices $$M$$ in the following formula:
+
+   $$P^{(\alpha)} = \frac{d_{\alpha}}{G} \sum_{g \in G}\chi^{(\alpha)} (g^{-1}) M(g)$$
+
+3. Find basis vectors for the image of $$P^{(\alpha)}$$ whose number is equal to $$d_{\alpha}$$
+
+
 
 ​
 
