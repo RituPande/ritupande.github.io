@@ -117,8 +117,9 @@ Therefore to find 1-D characters of a non-abelian group, we must remove those as
   
 1. Calculate the commutative subgroup  [G, G] = $$ghg^{-1}h^{-1}$$, for $$g,h \in G $$
 2. Calculate abelianization of $$G$$ as $$G_{ab}= G/[G, G]$$ i.e. quotient of G with commutiator subgroup. This only keeps the information in G that is commutiative in nature.
-3. Calculate the 1-D characters of G_{ab}, as for any abelian group
-4. Each 1D character of the G_{ab} gives a 1D character of the original group.
+3. Note that $$G_{ab} contains cosets of G with each coset being commutative
+4. Calculate the 1-D characters of $$G_{ab}$$, as for any abelian group
+5. Each 1D character of the G_{ab} gives a 1D character of the original group.
 
 
   
