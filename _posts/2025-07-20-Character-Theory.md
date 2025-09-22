@@ -75,7 +75,7 @@ if we do not know irreducible represenatations of a group and wish to find them,
 
 ### 3.3 Finding Irredicble Representation Matrix from the Character Table
 
-The matrix entries of an irreducible represenatation $$\rho(g)$$  can be extracted from the irreducible represenattion and characters using the formula:
+The matrix entries of an irreducible represenatation $$\rho(g)$$  can be extracted from the characters using the formula:
 
 ​
 
