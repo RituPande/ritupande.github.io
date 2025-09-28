@@ -59,21 +59,21 @@ As discussed in the preivous post, finding irreducible representations by simult
 
 ### 3.1 Decompose a Reducible Representation
 
-Let us assume we are given a reducible representation of a group and we wish to decompose it to its irreducible represenattion. If we already knwo the irreducible representations of the group:  
+Let us assume we are given a reducible representation of a group and we wish to decompose it to its irreducible represenattion. If we already know the irreducible representations of the group:  
 
 1. We build the character table from the known irreducible representations  
 2. Use the formula from equation (2) to find the multiplicities of each irreducible representation in the given representation.  
 
-### 3.2 Finding irredicble representation of a group
+### 3.2 Finding charater table of a group
 
-if we do not know irreducible represenatations of a group and wish to find them, we can do so by following stepes:  
+If we do not know irreducible represenatations of a group before hand,  we start by finding its charcter table
   
-1. Recall basic facts about like its order and congugacy classes and whether or not it is an abelian group.  
-2. Fine 1-D represenatation of the group. ( refer Appendix for details)  
+1. Understand the properties of the group: order, congugacy classes, and whether or not it is an abelian group.  
+2. Find all 1-D represenatations of the group. ( refer Appendix for details). An abelian group has only 1-D represenatations. However, if the group in non-abelian we proceed to calculate irreducible representations of higher order.
 3. Use the sum of dimension squares formula ( eq 3) to find dimensions of other irreducible represenattions.    
 4. Use orthoganality to find characters for those irreducible representations, with the first character always being equal to the dimensions of the representation  
 
-### 3.3 Finding Irredicble Representation Matrix from the Character Table
+### 3.3 Finding irredicble representation matrix from the Character Table
 
 The matrix entries of an irreducible represenatation $$\rho(g)$$  can be extracted from the characters as follows:
 
