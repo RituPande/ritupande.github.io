@@ -119,7 +119,7 @@ Therefore to find 1-D characters of a non-abelian group, we must remove those as
 2. Calculate abelianization of $$G$$ as $$G_{ab}= G/[G, G]$$ i.e. quotient of G with commutator subgroup. This only keeps the information in G that is commutiative in nature.
 3. Note that $$G_{ab}$$ contains cosets of G with each coset being commutative
 4. Calculate the 1-D characters of $$G_{ab}$$, as for any abelian group
-5. Each 1-D character of $$ G_{ab}$$ gives a 1-D character of the original group.
+5. Each 1-D character of $$G_{ab}$$ gives a 1-D character of the original group.
 
 
   
