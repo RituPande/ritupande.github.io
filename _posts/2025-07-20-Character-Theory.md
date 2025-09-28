@@ -31,12 +31,12 @@ The character table encodes deep information:
 ### 2.1 Properties of the Character Table
 
 - The rows of a character table are orthogonal to each other. Mathematically:  
-   $$\frac{1}{|G|} \sum_{i=0}^{ncols} m_i*X_i^a * \overline{X_i^b} = 0$$              ...........................(1)
+   $$\frac{1}{|G|} \sum_{i=0}^{ncols} m_i*X_i^a * \overline{X_i^b} = 0$$                                                  (1)
   
    where $$s_i$$ is the size of the conjugacy class corresponding to column $$i$$ , $$X_a , X_b$$ are two rows of the table and $$|G|$$ is the size of the group
 
 - The above relation provides a mechanism to calculate the multiplicity of an irreduicle representation in any given representation of a group element i.e.  
-  $$m_i = \frac{\sum_{i=0}^{ncols} X_i^a * \overline{X_i^b}}{|G|}$$                  ...........................(2)
+  $$m_i = \frac{\sum_{i=0}^{ncols} X_i^a * \overline{X_i^b}}{|G|}$$                                                       (2)
 
  
 - The columns of a character table are also orthogonal to each other.
@@ -47,7 +47,7 @@ The character table encodes deep information:
     
 - The character table is a square matrix. The number of equivalence classes of a group is equal to the number of its irreducible represenatations
 
-- $$\sum d_i^2 = |G|$$ where $$d_i$$ is the dimension of an irreducible representation, $$\rho_i$$ of group G ...........(3)
+- $$\sum d_i^2 = |G|$$ where $$d_i$$ is the dimension of an irreducible representation, $$\rho_i$$ of group G            (3)
 
 ## 3. Finding Irreducible Representations
 
@@ -78,7 +78,7 @@ if we do not know irreducible represenatations of a group and wish to find them,
 The matrix entries of an irreducible represenatation $$\rho(g)$$  can be extracted from the characters as follows:
 
 1. Find the permutation matrices $$M$$ of the group elements
-2. Build projection operator for a character $$\alpha$$ using projection matrices $$M$$ in the following formula:
+2. Build projection operator for a character $$\alpha$$ using permutation matrices $$M$$ as below:
 
    $$P^{(\alpha)} = \frac{d_{\alpha}}{G} \sum_{g \in G}\chi^{(\alpha)} (g^{-1}) M(g)$$
 
