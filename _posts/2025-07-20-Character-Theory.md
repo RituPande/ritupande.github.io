@@ -73,7 +73,7 @@ If we do not know irreducible represenatations of a group before hand,  we start
 3. Use the sum of dimension squares formula ( eq 3) to find dimensions of other irreducible represenattions.    
 4. Use orthoganality to find characters for those irreducible representations, with the first character always being equal to the dimensions of the representation  
 
-### 3.3 Finding irredicble representation matrix from the Character Table
+### 3.3 Finding irredicble representation matrix from the character table
 
 The matrix entries of an irreducible represenatation $$\rho(g)$$  can be extracted from the characters as follows:
 
