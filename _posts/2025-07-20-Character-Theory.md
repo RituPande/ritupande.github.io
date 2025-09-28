@@ -69,7 +69,7 @@ Let us assume we are given a reducible representation of a group and we wish to 
 If we do not know irreducible represenatations of a group before hand,  we start by finding its charcter table
   
 1. Understand the properties of the group: order, congugacy classes, and whether or not it is an abelian group.  
-2. Find all 1-D represenatations of the group. ( refer Appendix for details). An abelian group has only 1-D represenatations. However, if the group in non-abelian we proceed to calculate irreducible representations of higher order.
+2. Find all 1-D represenatations of the group. ( refer Appendix for details). An abelian group has only 1-D represenatations. However, if the group in non-abelian we proceed to calculate characters of irreducible representations of higher dimensions.
 3. Use the sum of dimension squares formula ( eq 3) to find dimensions of other irreducible represenattions.    
 4. Use orthoganality to find characters for those irreducible representations, with the first character always being equal to the dimensions of the representation  
 
